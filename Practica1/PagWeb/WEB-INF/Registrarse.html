@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			EcoBiciZara
+		</title>
+		<link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id="cabecera">
+			<b id="titulo">EcoBiciZara</b>
+			<form id="iniciarse" action="" method="post" style="">
+					<b class="inicio1">Usuario:</b>
+					<input class="campo" type="text" name="name" value=""/>
+					<b class="inicio1">Contraseña:</b>
+					<input class="campo" type="text" name="password" value=""/>
+					<input class="campo" type="submit" value="Iniciar Sesión"/>
+				</form>
+		</div>
+		<div id="indice">
+			<a class="links" href="index.html">home</a>
+			<a class="links" href="help.html">help y Contact</a>
+			<div style="float:right">
+				<a class="links1"  style="margin-right:50px" href="Registrarse.html">
+					Registrase
+				</a>
+				<a class="links1" style="margin-right:50px" href="datosPersonales.html">
+					Datos Personales
+				</a>
+			</div>
+		</div>
+		<div id="cuerpo">
+				<form id="registro" action="" method="post">
+					<center><h3>Nuevo Usuario</h3></center>
+					<p>
+						Nombre:
+						<input type="text" name="nombre" value=""/>
+					</p>
+					<p>
+						Apellidos:
+						<input type="text" name="Apellidos" value=""/>
+					</p>
+					<p>
+						Contraseña:
+						<input type="password" name="password" value=""/>
+					</p>
+					<p>
+						Repetir Contraseña:
+						<input type="password" name="password1" value=""/>
+					</p>
+					<p>
+						DNI:
+						<input type="text" name="DNI" value=""/>
+					</p>
+					<p>
+						Dirección de Correo:
+						<input type="text" name="email" value=""/>
+					</p>
+					<p>
+						Fecha de nacimiento:
+						<input type="date" name="dateBrith" value=""/>
+					</p>
+					<p>
+                        Sexo
+                            <input type="radio" name="sexo" value="hombre" checked="checked" /> 
+                            Hombre
+                            <input type="radio" name="sexo" value="mujer" /> 
+							Mujer
+					</p>
+					<p>
+						
+						<select name="vehiculo">
+							<option selected value="0">Elige un tipo de vehiculo</option>
+							<option value="Moto">
+								Moto
+							</option>
+							<option value="Coche">
+								Coche
+							</option>
+							<option value="Furgoneta">
+								Furgoneta
+							</option>
+							<option value="Camión">
+								Camión
+							</option>
+						</select>
+					</p>
+					<input type="reset" value="Resetear"/>
+					<input type="submit" value="Registrase"/>
+				</form>
+		</div>
+	</body>
+</html>

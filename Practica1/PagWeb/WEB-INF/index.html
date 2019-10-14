@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			EcoBiciZara
+		</title>
+		<link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id="cabecera" style="">
+			<b id="titulo">EcoBiciZara</b>
+			<form id="iniciarse" action="" method="post">
+					<b class="inicio1">Usuario:</b>
+					<input class="campo" type="text" name="name" value=""/>
+					<b class="inicio1">Contraseña:</b>
+					<input class="campo" type="text" name="password" value=""/>
+					<input class="campo" type="submit" value="Iniciar Sesión"/>
+				</form>
+		</div>
+		<div id="indice">
+			<a class="links" href="index.html">home</a>
+			<a class="links" href="help.html">help y Contact</a>
+			<div style="float:right">
+				<a class="links1"  style="margin-right:50px" href="Registrarse.html">
+					Registrase
+				</a>
+				<a class="links1" style="margin-right:50px" href="datosPersonales.html">
+					Datos Personales
+				</a>
+			</div>
+		</div>
+		<div id="cuerpo">
+			<form id="consulta" action="" method="post">
+				<p>Origen:</p>
+				<input type="text" name="origen" value=""/>
+				<p>Destino:</p>
+				<input type="text" name="destino" value=""/>
+				<input type="reset" value="Resetear consulta"/>
+				<input type="submit" value="Enviar consulta"/>
+				<input type="submit" value="Guardar consulta"/>
+			</form>
+			<div id="mapa">
+				<img alt="mapa" id="mapa1" src="./imagenes/mapa-zaragoza.png"/>
+			</div>
+			<div id="resultados">
+				<b>Información obtenida a través de la operación</b>
+				<br>-Combustible ahorrado
+				<br>-Gases no emitidos por haber usado una bici en vez de su vehiculo
+			</div>
+			<div id="consulta1">
+				<form action="" method="get">
+					<h3>Buscar consultas</h3>
+					<p>Fecha:</p>
+					<input type="date" name="fecha" value=""/>
+					<input type="reset" value="Resetear consulta"/>
+					<input type="submit" value="Enviar consulta"/>
+				</form>
+			</div>
+			<div id="resultados1">
+				<b>Información obtenida en la consulta</b>
+			</div>
+			
+		</div>
+	</body>
+</html>
