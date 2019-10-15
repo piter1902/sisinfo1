@@ -14,16 +14,16 @@
 		<div id="cabecera">
 			<b id="titulo">EcoBiciZara</b>
 			<form id="iniciarse" action="" method="post">
-					<b class="inicio1">Usuario:</b>
+					<label for="name" class="inicio1">Email:</label>
 					<input class="campo" type="text" name="name" value=""/>
-					<b class="inicio1">Contraseña:</b>
+					<label for="password" class="inicio1">Contraseña:</label>
 					<input class="campo" type="text" name="password" value=""/>
 					<input class="campo" type="submit" value="Iniciar Sesión"/>
 				</form>
 		</div>
 		<div id="indice">
-			<a class="links" href="index.html">home</a>
-			<a class="links" href="help.html">help y Contact</a>
+			<a class="links" href="index.html">Home</a>
+			<a class="links" href="help.html">Help & Contact</a>
 			<div style="float:right">
 				<a class="links1"  style="margin-right:50px" href="Registrarse.html">
 					Registrase
@@ -35,16 +35,23 @@
 		</div>
 		<div id="cuerpo">
 				<div id="preguntas">
-					<p>><a href="javascript:llamarasincrono('tutorial1.htm', 'respuestas');" class="as">&#191Como registrarme?</a></p>
-					<p>><a href="javascript:llamarasincrono('tutorial2.htm', 'respuestas');" class="as">&#191Como darme de baja?</a></p>
+					<ul>
+						<li><a href="javascript:llamarasincrono('tutorial1.htm', 'respuestas');" class="as">¿Como registrarme?</a></li>
+						<li><a href="javascript:llamarasincrono('tutorial2.htm', 'respuestas');" class="as">&#191Como darme de baja?</a></li>
+					</ul>
 				</div>
 				<div id="respuestas">
-					respuestas
+					<p> Respuestas </p>
 				</div>
 				<form id="solicitudEmail" method="get" action="">
 						<h3>Contacta con nosotros</h3>
-						Correo:<input type="email" name="direccion"/>
-						Nombre:<input type="text" name="nombre"/>Apellidos:<input type="text" name="Apellidos"/> 
+						<label for="direccion">Correo:</label>
+						<input type="email" name="direccion"/>
+						<br> &nbsp; <br>
+						<label for="nombre"> Nombre: </label>
+						<input type="text" name="nombre"/>
+						<label for="apellidos"> Apellidos: </label>
+						<input type="text" name="apellidos"/> 
 				</form>
 				<div id="respuestasEmail">
 					Preguntas enviadas 

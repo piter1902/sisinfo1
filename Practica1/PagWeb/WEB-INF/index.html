@@ -9,19 +9,19 @@
 		<link href="css/estilo.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
-		<div id="cabecera" style="">
+		<div id="cabecera">
 			<b id="titulo">EcoBiciZara</b>
 			<form id="iniciarse" action="" method="post">
-					<b class="inicio1">Usuario:</b>
+					<label for="name" class="inicio1">Email:</label>
 					<input class="campo" type="text" name="name" value=""/>
-					<b class="inicio1">Contraseña:</b>
+					<label for="password" class="inicio1">Contraseña:</label>
 					<input class="campo" type="text" name="password" value=""/>
 					<input class="campo" type="submit" value="Iniciar Sesión"/>
 				</form>
 		</div>
 		<div id="indice">
-			<a class="links" href="index.html">home</a>
-			<a class="links" href="help.html">help y Contact</a>
+			<a class="links" href="index.html">Home</a>
+			<a class="links" href="help.html">Help & Contact</a>
 			<div style="float:right">
 				<a class="links1"  style="margin-right:50px" href="Registrarse.html">
 					Registrase
@@ -33,12 +33,15 @@
 		</div>
 		<div id="cuerpo">
 			<form id="consulta" action="" method="post">
-				<p>Origen:</p>
+				<label for="origen">Origen:</label>
 				<input type="text" name="origen" value=""/>
-				<p>Destino:</p>
+				<label for="destino">Destino:</label>
 				<input type="text" name="destino" value=""/>
+				&nbsp;<br>
 				<input type="reset" value="Resetear consulta"/>
+				<br> &nbsp; <br>
 				<input type="submit" value="Enviar consulta"/>
+				<br> &nbsp; <br>
 				<input type="submit" value="Guardar consulta"/>
 			</form>
 			<div id="mapa">
@@ -52,8 +55,9 @@
 			<div id="consulta1">
 				<form action="" method="get">
 					<h3>Buscar consultas</h3>
-					<p>Fecha:</p>
+					<label for="fecha">Fecha:</label>
 					<input type="date" name="fecha" value=""/>
+					&nbsp; <br>
 					<input type="reset" value="Resetear consulta"/>
 					<input type="submit" value="Enviar consulta"/>
 				</form>
