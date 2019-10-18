@@ -1,654 +1,654 @@
-"id","engine_size","fuel","emission_standard","number","engine_description","technology","load","registration_year","wheels_number","motor_type","class"
-376,"1","petrol","euro 3","272",NULL,NULL,NULL,2006,NULL,NULL,"motorcycle"
-397,NULL,"petrol","euro 1","781",NULL,NULL,NULL,1989,NULL,NULL,"motorcycle"
-412,"1.6","diesel","euro 3","756",NULL,NULL,NULL,2003,NULL,NULL,"passenger_car"
-431,"2","diesel","euro 1","123",NULL,NULL,NULL,1993,NULL,NULL,"passenger_car"
-450,"2","diesel","euro 5","2209",NULL,NULL,NULL,2012,NULL,NULL,"passenger_car"
-469,"2.5","diesel","euro 3","948",NULL,NULL,NULL,2002,NULL,NULL,"passenger_car"
-475,"2.5","diesel","euro 4","1023",NULL,NULL,NULL,2008,NULL,NULL,"passenger_car"
-485,"2.5","diesel","conventional","474",NULL,NULL,NULL,1989,NULL,NULL,"passenger_car"
-504,"1.2","diesel","euro 5","19",NULL,NULL,NULL,2012,NULL,NULL,"passenger_car"
-523,"2","lpg","euro 6","5",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-542,"1.6","petrol","euro 1","711",NULL,NULL,NULL,1995,NULL,NULL,"passenger_car"
-561,"1.6","petrol","euro 5","1625",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-580,"2","petrol","euro 3","1378",NULL,NULL,NULL,2004,NULL,NULL,"passenger_car"
-26,NULL,"diesel","euro 6","63",NULL,NULL,NULL,2016,NULL,NULL,"bus"
-29,NULL,"petrol","conventional","1",NULL,NULL,NULL,1989,NULL,NULL,"bus"
-46,NULL,"diesel","euro 4","1429",NULL,NULL,NULL,2006,NULL,NULL,"light_commercial_vehicle"
-63,NULL,"petrol","euro 1","5",NULL,NULL,NULL,1994,NULL,NULL,"light_commercial_vehicle"
-80,NULL,"petrol","euro 5","2",NULL,NULL,NULL,2011,NULL,NULL,"light_commercial_vehicle"
-97,NULL,"diesel","euro 2","115",NULL,NULL,NULL,2000,NULL,NULL,"heavy_duty_truck"
-114,NULL,"diesel","euro 6","102",NULL,NULL,NULL,2017,NULL,NULL,"heavy_duty_truck"
-131,NULL,"diesel","euro 2","6",NULL,NULL,NULL,2009,NULL,NULL,"moped"
-148,NULL,"petrol","euro 2","1002",NULL,NULL,NULL,2007,NULL,NULL,"moped"
-165,NULL,"diesel","euro 1","250",NULL,NULL,NULL,1996,NULL,NULL,"light_commercial_vehicle"
-182,NULL,"diesel","euro 5","428",NULL,NULL,NULL,2013,NULL,NULL,"light_commercial_vehicle"
-199,NULL,"petrol","euro 3","83",NULL,NULL,NULL,2001,NULL,NULL,"light_commercial_vehicle"
-216,NULL,"petrol","conventional","1312",NULL,NULL,NULL,1989,NULL,NULL,"light_commercial_vehicle"
-231,"1","diesel","euro 3","4",NULL,NULL,NULL,2008,NULL,NULL,"motorcycle"
-250,"0.25","petrol","euro 1","134",NULL,NULL,NULL,1999,NULL,NULL,"motorcycle"
-260,"0.25","petrol","euro 3","128",NULL,NULL,NULL,2009,NULL,NULL,"motorcycle"
-270,"0.5","petrol","euro 1","59",NULL,NULL,NULL,1990,NULL,NULL,"motorcycle"
-289,"0.5","petrol","euro 3","93",NULL,NULL,NULL,2009,NULL,NULL,"motorcycle"
-308,"0.75","petrol","euro 1","125",NULL,NULL,NULL,1999,NULL,NULL,"motorcycle"
-327,"0.75","petrol","euro 1","329",NULL,NULL,NULL,1989,NULL,NULL,"motorcycle"
-346,"0.125","petrol","euro 3","1304",NULL,NULL,NULL,2008,NULL,NULL,"motorcycle"
-365,"1","petrol","euro 1","26",NULL,NULL,NULL,1995,NULL,NULL,"motorcycle"
-367,"1","petrol","euro 1","36",NULL,NULL,NULL,1997,NULL,NULL,"motorcycle"
-0,NULL,"diesel","conventional","1",NULL,NULL,NULL,1990,NULL,NULL,"bus"
-1,NULL,"diesel","conventional","2",NULL,NULL,NULL,1991,NULL,NULL,"bus"
-2,NULL,"diesel","euro 1","7",NULL,NULL,NULL,1992,NULL,NULL,"bus"
-3,NULL,"diesel","euro 1","2",NULL,NULL,NULL,1993,NULL,NULL,"bus"
-4,NULL,"diesel","euro 1","1",NULL,NULL,NULL,1994,NULL,NULL,"bus"
-5,NULL,"diesel","euro 1","2",NULL,NULL,NULL,1995,NULL,NULL,"bus"
-6,NULL,"diesel","euro 2","2",NULL,NULL,NULL,1996,NULL,NULL,"bus"
-7,NULL,"diesel","euro 2","5",NULL,NULL,NULL,1997,NULL,NULL,"bus"
-8,NULL,"diesel","euro 2","1",NULL,NULL,NULL,1998,NULL,NULL,"bus"
-9,NULL,"diesel","euro 2","5",NULL,NULL,NULL,1999,NULL,NULL,"bus"
-10,NULL,"diesel","euro 2","7",NULL,NULL,NULL,2000,NULL,NULL,"bus"
-11,NULL,"diesel","euro 3","5",NULL,NULL,NULL,2001,NULL,NULL,"bus"
-12,NULL,"diesel","euro 3","46",NULL,NULL,NULL,2002,NULL,NULL,"bus"
-13,NULL,"diesel","euro 3","48",NULL,NULL,NULL,2003,NULL,NULL,"bus"
-14,NULL,"diesel","euro 3","33",NULL,NULL,NULL,2004,NULL,NULL,"bus"
-15,NULL,"diesel","euro 4","58",NULL,NULL,NULL,2005,NULL,NULL,"bus"
-16,NULL,"diesel","euro 4","51",NULL,NULL,NULL,2006,NULL,NULL,"bus"
-17,NULL,"diesel","euro 4","39",NULL,NULL,NULL,2007,NULL,NULL,"bus"
-18,NULL,"diesel","euro 5","56",NULL,NULL,NULL,2008,NULL,NULL,"bus"
-19,NULL,"diesel","euro 5","40",NULL,NULL,NULL,2009,NULL,NULL,"bus"
-20,NULL,"diesel","euro 5","22",NULL,NULL,NULL,2010,NULL,NULL,"bus"
-21,NULL,"diesel","euro 5","21",NULL,NULL,NULL,2011,NULL,NULL,"bus"
-22,NULL,"diesel","euro 5","13",NULL,NULL,NULL,2012,NULL,NULL,"bus"
-23,NULL,"diesel","euro 5","16",NULL,NULL,NULL,2013,NULL,NULL,"bus"
-24,NULL,"diesel","euro 6","23",NULL,NULL,NULL,2014,NULL,NULL,"bus"
-25,NULL,"diesel","euro 6","41",NULL,NULL,NULL,2015,NULL,NULL,"bus"
-30,NULL,"diesel","conventional","56",NULL,NULL,NULL,1990,NULL,NULL,"light_commercial_vehicle"
-31,NULL,"diesel","conventional","69",NULL,NULL,NULL,1991,NULL,NULL,"light_commercial_vehicle"
-32,NULL,"diesel","conventional","65",NULL,NULL,NULL,1992,NULL,NULL,"light_commercial_vehicle"
-33,NULL,"diesel","conventional","40",NULL,NULL,NULL,1993,NULL,NULL,"light_commercial_vehicle"
-34,NULL,"diesel","euro 1","63",NULL,NULL,NULL,1994,NULL,NULL,"light_commercial_vehicle"
-35,NULL,"diesel","euro 1","190",NULL,NULL,NULL,1995,NULL,NULL,"light_commercial_vehicle"
-36,NULL,"diesel","euro 1","268",NULL,NULL,NULL,1996,NULL,NULL,"light_commercial_vehicle"
-37,NULL,"diesel","euro 1","421",NULL,NULL,NULL,1997,NULL,NULL,"light_commercial_vehicle"
-38,NULL,"diesel","euro 2","503",NULL,NULL,NULL,1998,NULL,NULL,"light_commercial_vehicle"
-39,NULL,"diesel","euro 2","623",NULL,NULL,NULL,1999,NULL,NULL,"light_commercial_vehicle"
-40,NULL,"diesel","euro 2","682",NULL,NULL,NULL,2000,NULL,NULL,"light_commercial_vehicle"
-41,NULL,"diesel","euro 3","676",NULL,NULL,NULL,2001,NULL,NULL,"light_commercial_vehicle"
-42,NULL,"diesel","euro 3","758",NULL,NULL,NULL,2002,NULL,NULL,"light_commercial_vehicle"
-43,NULL,"diesel","euro 3","904",NULL,NULL,NULL,2003,NULL,NULL,"light_commercial_vehicle"
-44,NULL,"diesel","euro 3","1118",NULL,NULL,NULL,2004,NULL,NULL,"light_commercial_vehicle"
-45,NULL,"diesel","euro 3","1315",NULL,NULL,NULL,2005,NULL,NULL,"light_commercial_vehicle"
-47,NULL,"diesel","euro 4","1543",NULL,NULL,NULL,2007,NULL,NULL,"light_commercial_vehicle"
-48,NULL,"diesel","euro 4","703",NULL,NULL,NULL,2008,NULL,NULL,"light_commercial_vehicle"
-49,NULL,"diesel","euro 4","457",NULL,NULL,NULL,2009,NULL,NULL,"light_commercial_vehicle"
-50,NULL,"diesel","euro 4","412",NULL,NULL,NULL,2010,NULL,NULL,"light_commercial_vehicle"
-51,NULL,"diesel","euro 5","325",NULL,NULL,NULL,2011,NULL,NULL,"light_commercial_vehicle"
-52,NULL,"diesel","euro 5","205",NULL,NULL,NULL,2012,NULL,NULL,"light_commercial_vehicle"
-53,NULL,"diesel","euro 5","207",NULL,NULL,NULL,2013,NULL,NULL,"light_commercial_vehicle"
-54,NULL,"diesel","euro 5","246",NULL,NULL,NULL,2014,NULL,NULL,"light_commercial_vehicle"
-55,NULL,"diesel","euro 6 up to 2017","305",NULL,NULL,NULL,2015,NULL,NULL,"light_commercial_vehicle"
-56,NULL,"diesel","euro 6 up to 2017","315",NULL,NULL,NULL,2016,NULL,NULL,"light_commercial_vehicle"
-57,NULL,"diesel","euro 6 up to 2017","259",NULL,NULL,NULL,2017,NULL,NULL,"light_commercial_vehicle"
-58,NULL,"diesel","conventional","802",NULL,NULL,NULL,1989,NULL,NULL,"light_commercial_vehicle"
-59,NULL,"petrol","conventional","8",NULL,NULL,NULL,1990,NULL,NULL,"light_commercial_vehicle"
-60,NULL,"petrol","conventional","4",NULL,NULL,NULL,1991,NULL,NULL,"light_commercial_vehicle"
-61,NULL,"petrol","conventional","4",NULL,NULL,NULL,1992,NULL,NULL,"light_commercial_vehicle"
-62,NULL,"petrol","conventional","4",NULL,NULL,NULL,1993,NULL,NULL,"light_commercial_vehicle"
-64,NULL,"petrol","euro 1","8",NULL,NULL,NULL,1995,NULL,NULL,"light_commercial_vehicle"
-65,NULL,"petrol","euro 1","22",NULL,NULL,NULL,1996,NULL,NULL,"light_commercial_vehicle"
-66,NULL,"petrol","euro 1","24",NULL,NULL,NULL,1997,NULL,NULL,"light_commercial_vehicle"
-67,NULL,"petrol","euro 2","20",NULL,NULL,NULL,1998,NULL,NULL,"light_commercial_vehicle"
-68,NULL,"petrol","euro 2","25",NULL,NULL,NULL,1999,NULL,NULL,"light_commercial_vehicle"
-69,NULL,"petrol","euro 2","19",NULL,NULL,NULL,2000,NULL,NULL,"light_commercial_vehicle"
-70,NULL,"petrol","euro 3","27",NULL,NULL,NULL,2001,NULL,NULL,"light_commercial_vehicle"
-71,NULL,"petrol","euro 3","25",NULL,NULL,NULL,2002,NULL,NULL,"light_commercial_vehicle"
-72,NULL,"petrol","euro 3","28",NULL,NULL,NULL,2003,NULL,NULL,"light_commercial_vehicle"
-73,NULL,"petrol","euro 3","41",NULL,NULL,NULL,2004,NULL,NULL,"light_commercial_vehicle"
-74,NULL,"petrol","euro 3","19",NULL,NULL,NULL,2005,NULL,NULL,"light_commercial_vehicle"
-75,NULL,"petrol","euro 4","30",NULL,NULL,NULL,2006,NULL,NULL,"light_commercial_vehicle"
-76,NULL,"petrol","euro 4","24",NULL,NULL,NULL,2007,NULL,NULL,"light_commercial_vehicle"
-77,NULL,"petrol","euro 4","8",NULL,NULL,NULL,2008,NULL,NULL,"light_commercial_vehicle"
-78,NULL,"petrol","euro 4","4",NULL,NULL,NULL,2009,NULL,NULL,"light_commercial_vehicle"
-79,NULL,"petrol","euro 4","3",NULL,NULL,NULL,2010,NULL,NULL,"light_commercial_vehicle"
-81,NULL,"petrol","euro 5","2",NULL,NULL,NULL,2013,NULL,NULL,"light_commercial_vehicle"
-82,NULL,"petrol","euro 5","6",NULL,NULL,NULL,2014,NULL,NULL,"light_commercial_vehicle"
-83,NULL,"petrol","euro 6 up to 2017","3",NULL,NULL,NULL,2015,NULL,NULL,"light_commercial_vehicle"
-84,NULL,"petrol","euro 6 up to 2017","6",NULL,NULL,NULL,2016,NULL,NULL,"light_commercial_vehicle"
-85,NULL,"petrol","euro 6 up to 2017","5",NULL,NULL,NULL,2017,NULL,NULL,"light_commercial_vehicle"
-86,NULL,"petrol","conventional","60",NULL,NULL,NULL,1989,NULL,NULL,"light_commercial_vehicle"
-87,NULL,"diesel","conventional","44",NULL,NULL,NULL,1990,NULL,NULL,"heavy_duty_truck"
-88,NULL,"diesel","conventional","37",NULL,NULL,NULL,1991,NULL,NULL,"heavy_duty_truck"
-89,NULL,"diesel","euro 1","41",NULL,NULL,NULL,1992,NULL,NULL,"heavy_duty_truck"
-90,NULL,"diesel","euro 1","20",NULL,NULL,NULL,1993,NULL,NULL,"heavy_duty_truck"
-91,NULL,"diesel","euro 1","20",NULL,NULL,NULL,1994,NULL,NULL,"heavy_duty_truck"
-92,NULL,"diesel","euro 1","38",NULL,NULL,NULL,1995,NULL,NULL,"heavy_duty_truck"
-93,NULL,"diesel","euro 2","42",NULL,NULL,NULL,1996,NULL,NULL,"heavy_duty_truck"
-94,NULL,"diesel","euro 2","59",NULL,NULL,NULL,1997,NULL,NULL,"heavy_duty_truck"
-95,NULL,"diesel","euro 2","60",NULL,NULL,NULL,1998,NULL,NULL,"heavy_duty_truck"
-96,NULL,"diesel","euro 2","91",NULL,NULL,NULL,1999,NULL,NULL,"heavy_duty_truck"
-98,NULL,"diesel","euro 3","152",NULL,NULL,NULL,2001,NULL,NULL,"heavy_duty_truck"
-99,NULL,"diesel","euro 3","115",NULL,NULL,NULL,2002,NULL,NULL,"heavy_duty_truck"
-100,NULL,"diesel","euro 3","124",NULL,NULL,NULL,2003,NULL,NULL,"heavy_duty_truck"
-101,NULL,"diesel","euro 3","136",NULL,NULL,NULL,2004,NULL,NULL,"heavy_duty_truck"
-102,NULL,"diesel","euro 4","161",NULL,NULL,NULL,2005,NULL,NULL,"heavy_duty_truck"
-103,NULL,"diesel","euro 4","140",NULL,NULL,NULL,2006,NULL,NULL,"heavy_duty_truck"
-104,NULL,"diesel","euro 4","211",NULL,NULL,NULL,2007,NULL,NULL,"heavy_duty_truck"
-105,NULL,"diesel","euro 5","246",NULL,NULL,NULL,2008,NULL,NULL,"heavy_duty_truck"
-106,NULL,"diesel","euro 5","50",NULL,NULL,NULL,2009,NULL,NULL,"heavy_duty_truck"
-107,NULL,"diesel","euro 5","57",NULL,NULL,NULL,2010,NULL,NULL,"heavy_duty_truck"
-108,NULL,"diesel","euro 5","80",NULL,NULL,NULL,2011,NULL,NULL,"heavy_duty_truck"
-109,NULL,"diesel","euro 5","59",NULL,NULL,NULL,2012,NULL,NULL,"heavy_duty_truck"
-110,NULL,"diesel","euro 5","54",NULL,NULL,NULL,2013,NULL,NULL,"heavy_duty_truck"
-111,NULL,"diesel","euro 6","55",NULL,NULL,NULL,2014,NULL,NULL,"heavy_duty_truck"
-112,NULL,"diesel","euro 6","107",NULL,NULL,NULL,2015,NULL,NULL,"heavy_duty_truck"
-113,NULL,"diesel","euro 6","78",NULL,NULL,NULL,2016,NULL,NULL,"heavy_duty_truck"
-115,NULL,"diesel","conventional","717",NULL,NULL,NULL,1989,NULL,NULL,"heavy_duty_truck"
-116,NULL,"petrol","conventional","1",NULL,NULL,NULL,1997,NULL,NULL,"heavy_duty_truck"
-117,NULL,"petrol","conventional","1",NULL,NULL,NULL,2000,NULL,NULL,"heavy_duty_truck"
-118,NULL,"petrol","conventional","1",NULL,NULL,NULL,2001,NULL,NULL,"heavy_duty_truck"
-119,NULL,"petrol","conventional","3",NULL,NULL,NULL,2006,NULL,NULL,"heavy_duty_truck"
-120,NULL,"petrol","conventional","11",NULL,NULL,NULL,1989,NULL,NULL,"heavy_duty_truck"
-121,NULL,"diesel","euro 1","21",NULL,NULL,NULL,1999,NULL,NULL,"moped"
-122,NULL,"diesel","euro 1","36",NULL,NULL,NULL,2000,NULL,NULL,"moped"
-123,NULL,"diesel","euro 1","30",NULL,NULL,NULL,2001,NULL,NULL,"moped"
-124,NULL,"diesel","euro 1","18",NULL,NULL,NULL,2002,NULL,NULL,"moped"
-125,NULL,"diesel","euro 2","19",NULL,NULL,NULL,2003,NULL,NULL,"moped"
-126,NULL,"diesel","euro 2","19",NULL,NULL,NULL,2004,NULL,NULL,"moped"
-127,NULL,"diesel","euro 2","36",NULL,NULL,NULL,2005,NULL,NULL,"moped"
-128,NULL,"diesel","euro 2","35",NULL,NULL,NULL,2006,NULL,NULL,"moped"
-129,NULL,"diesel","euro 2","33",NULL,NULL,NULL,2007,NULL,NULL,"moped"
-130,NULL,"diesel","euro 2","18",NULL,NULL,NULL,2008,NULL,NULL,"moped"
-132,NULL,"diesel","euro 2","6",NULL,NULL,NULL,2010,NULL,NULL,"moped"
-133,NULL,"diesel","euro 2","4",NULL,NULL,NULL,2011,NULL,NULL,"moped"
-134,NULL,"diesel","euro 2","9",NULL,NULL,NULL,2012,NULL,NULL,"moped"
-135,NULL,"diesel","euro 2","2",NULL,NULL,NULL,2013,NULL,NULL,"moped"
-136,NULL,"diesel","euro 3","6",NULL,NULL,NULL,2014,NULL,NULL,"moped"
-137,NULL,"diesel","euro 3","5",NULL,NULL,NULL,2015,NULL,NULL,"moped"
-138,NULL,"diesel","euro 3","5",NULL,NULL,NULL,2016,NULL,NULL,"moped"
-139,NULL,"diesel","euro 4","6",NULL,NULL,NULL,2017,NULL,NULL,"moped"
-140,NULL,"petrol","euro 1","1379",NULL,NULL,NULL,1999,NULL,NULL,"moped"
-141,NULL,"petrol","euro 1","3400",NULL,NULL,NULL,2000,NULL,NULL,"moped"
-142,NULL,"petrol","euro 1","2551",NULL,NULL,NULL,2001,NULL,NULL,"moped"
-143,NULL,"petrol","euro 1","1083",NULL,NULL,NULL,2002,NULL,NULL,"moped"
-144,NULL,"petrol","euro 2","730",NULL,NULL,NULL,2003,NULL,NULL,"moped"
-145,NULL,"petrol","euro 2","774",NULL,NULL,NULL,2004,NULL,NULL,"moped"
-27,NULL,"diesel","euro 6","25",NULL,NULL,NULL,2017,NULL,NULL,"bus"
-28,NULL,"diesel","conventional","79",NULL,NULL,NULL,1989,NULL,NULL,"bus"
-149,NULL,"petrol","euro 2","805",NULL,NULL,NULL,2008,NULL,NULL,"moped"
-150,NULL,"petrol","euro 2","398",NULL,NULL,NULL,2009,NULL,NULL,"moped"
-151,NULL,"petrol","euro 2","376",NULL,NULL,NULL,2010,NULL,NULL,"moped"
-152,NULL,"petrol","euro 2","240",NULL,NULL,NULL,2011,NULL,NULL,"moped"
-153,NULL,"petrol","euro 2","189",NULL,NULL,NULL,2012,NULL,NULL,"moped"
-154,NULL,"petrol","euro 2","131",NULL,NULL,NULL,2013,NULL,NULL,"moped"
-155,NULL,"petrol","euro 3","162",NULL,NULL,NULL,2014,NULL,NULL,"moped"
-156,NULL,"petrol","euro 3","164",NULL,NULL,NULL,2015,NULL,NULL,"moped"
-157,NULL,"petrol","euro 3","159",NULL,NULL,NULL,2016,NULL,NULL,"moped"
-158,NULL,"petrol","euro 4","186",NULL,NULL,NULL,2017,NULL,NULL,"moped"
-159,NULL,"diesel","conventional","200",NULL,NULL,NULL,1990,NULL,NULL,"light_commercial_vehicle"
-160,NULL,"diesel","conventional","208",NULL,NULL,NULL,1991,NULL,NULL,"light_commercial_vehicle"
-161,NULL,"diesel","conventional","233",NULL,NULL,NULL,1992,NULL,NULL,"light_commercial_vehicle"
-162,NULL,"diesel","conventional","206",NULL,NULL,NULL,1993,NULL,NULL,"light_commercial_vehicle"
-163,NULL,"diesel","euro 1","275",NULL,NULL,NULL,1994,NULL,NULL,"light_commercial_vehicle"
-164,NULL,"diesel","euro 1","236",NULL,NULL,NULL,1995,NULL,NULL,"light_commercial_vehicle"
-166,NULL,"diesel","euro 1","283",NULL,NULL,NULL,1997,NULL,NULL,"light_commercial_vehicle"
-167,NULL,"diesel","euro 2","364",NULL,NULL,NULL,1998,NULL,NULL,"light_commercial_vehicle"
-168,NULL,"diesel","euro 2","426",NULL,NULL,NULL,1999,NULL,NULL,"light_commercial_vehicle"
-169,NULL,"diesel","euro 2","451",NULL,NULL,NULL,2000,NULL,NULL,"light_commercial_vehicle"
-170,NULL,"diesel","euro 3","543",NULL,NULL,NULL,2001,NULL,NULL,"light_commercial_vehicle"
-171,NULL,"diesel","euro 3","659",NULL,NULL,NULL,2002,NULL,NULL,"light_commercial_vehicle"
-172,NULL,"diesel","euro 3","752",NULL,NULL,NULL,2003,NULL,NULL,"light_commercial_vehicle"
-173,NULL,"diesel","euro 3","917",NULL,NULL,NULL,2004,NULL,NULL,"light_commercial_vehicle"
-174,NULL,"diesel","euro 3","1136",NULL,NULL,NULL,2005,NULL,NULL,"light_commercial_vehicle"
-175,NULL,"diesel","euro 4","1099",NULL,NULL,NULL,2006,NULL,NULL,"light_commercial_vehicle"
-176,NULL,"diesel","euro 4","1401",NULL,NULL,NULL,2007,NULL,NULL,"light_commercial_vehicle"
-177,NULL,"diesel","euro 4","936",NULL,NULL,NULL,2008,NULL,NULL,"light_commercial_vehicle"
-178,NULL,"diesel","euro 4","642",NULL,NULL,NULL,2009,NULL,NULL,"light_commercial_vehicle"
-179,NULL,"diesel","euro 4","741",NULL,NULL,NULL,2010,NULL,NULL,"light_commercial_vehicle"
-180,NULL,"diesel","euro 5","614",NULL,NULL,NULL,2011,NULL,NULL,"light_commercial_vehicle"
-181,NULL,"diesel","euro 5","444",NULL,NULL,NULL,2012,NULL,NULL,"light_commercial_vehicle"
-183,NULL,"diesel","euro 5","554",NULL,NULL,NULL,2014,NULL,NULL,"light_commercial_vehicle"
-184,NULL,"diesel","euro 6 up to 2017","660",NULL,NULL,NULL,2015,NULL,NULL,"light_commercial_vehicle"
-185,NULL,"diesel","euro 6 up to 2017","716",NULL,NULL,NULL,2016,NULL,NULL,"light_commercial_vehicle"
-186,NULL,"diesel","euro 6 up to 2017","730",NULL,NULL,NULL,2017,NULL,NULL,"light_commercial_vehicle"
-187,NULL,"diesel","conventional","1302",NULL,NULL,NULL,1989,NULL,NULL,"light_commercial_vehicle"
-188,NULL,"petrol","conventional","101",NULL,NULL,NULL,1990,NULL,NULL,"light_commercial_vehicle"
-189,NULL,"petrol","conventional","146",NULL,NULL,NULL,1991,NULL,NULL,"light_commercial_vehicle"
-190,NULL,"petrol","conventional","167",NULL,NULL,NULL,1992,NULL,NULL,"light_commercial_vehicle"
-191,NULL,"petrol","conventional","152",NULL,NULL,NULL,1993,NULL,NULL,"light_commercial_vehicle"
-192,NULL,"petrol","euro 1","125",NULL,NULL,NULL,1994,NULL,NULL,"light_commercial_vehicle"
-193,NULL,"petrol","euro 1","77",NULL,NULL,NULL,1995,NULL,NULL,"light_commercial_vehicle"
-194,NULL,"petrol","euro 1","43",NULL,NULL,NULL,1996,NULL,NULL,"light_commercial_vehicle"
-195,NULL,"petrol","euro 1","60",NULL,NULL,NULL,1997,NULL,NULL,"light_commercial_vehicle"
-196,NULL,"petrol","euro 2","67",NULL,NULL,NULL,1998,NULL,NULL,"light_commercial_vehicle"
-197,NULL,"petrol","euro 2","79",NULL,NULL,NULL,1999,NULL,NULL,"light_commercial_vehicle"
-198,NULL,"petrol","euro 2","95",NULL,NULL,NULL,2000,NULL,NULL,"light_commercial_vehicle"
-200,NULL,"petrol","euro 3","81",NULL,NULL,NULL,2002,NULL,NULL,"light_commercial_vehicle"
-201,NULL,"petrol","euro 3","83",NULL,NULL,NULL,2003,NULL,NULL,"light_commercial_vehicle"
-202,NULL,"petrol","euro 3","132",NULL,NULL,NULL,2004,NULL,NULL,"light_commercial_vehicle"
-203,NULL,"petrol","euro 3","119",NULL,NULL,NULL,2005,NULL,NULL,"light_commercial_vehicle"
-204,NULL,"petrol","euro 4","87",NULL,NULL,NULL,2006,NULL,NULL,"light_commercial_vehicle"
-205,NULL,"petrol","euro 4","88",NULL,NULL,NULL,2007,NULL,NULL,"light_commercial_vehicle"
-206,NULL,"petrol","euro 4","56",NULL,NULL,NULL,2008,NULL,NULL,"light_commercial_vehicle"
-207,NULL,"petrol","euro 4","28",NULL,NULL,NULL,2009,NULL,NULL,"light_commercial_vehicle"
-208,NULL,"petrol","euro 4","40",NULL,NULL,NULL,2010,NULL,NULL,"light_commercial_vehicle"
-209,NULL,"petrol","euro 5","25",NULL,NULL,NULL,2011,NULL,NULL,"light_commercial_vehicle"
-210,NULL,"petrol","euro 5","17",NULL,NULL,NULL,2012,NULL,NULL,"light_commercial_vehicle"
-211,NULL,"petrol","euro 5","21",NULL,NULL,NULL,2013,NULL,NULL,"light_commercial_vehicle"
-212,NULL,"petrol","euro 5","14",NULL,NULL,NULL,2014,NULL,NULL,"light_commercial_vehicle"
-213,NULL,"petrol","euro 6 up to 2017","17",NULL,NULL,NULL,2015,NULL,NULL,"light_commercial_vehicle"
-214,NULL,"petrol","euro 6 up to 2017","28",NULL,NULL,NULL,2016,NULL,NULL,"light_commercial_vehicle"
-215,NULL,"petrol","euro 6 up to 2017","40",NULL,NULL,NULL,2017,NULL,NULL,"light_commercial_vehicle"
-217,"0.25","diesel","euro 2","5",NULL,NULL,NULL,2005,NULL,NULL,"motorcycle"
-218,"0.25","diesel","euro 3","1",NULL,NULL,NULL,2006,NULL,NULL,"motorcycle"
-219,"0.25","diesel","euro 3","1",NULL,NULL,NULL,2007,NULL,NULL,"motorcycle"
-220,"0.25","diesel","euro 3","1",NULL,NULL,NULL,2008,NULL,NULL,"motorcycle"
-221,"0.75","diesel","euro 3","1",NULL,NULL,NULL,2007,NULL,NULL,"motorcycle"
-222,"0.75","diesel","euro 3","11",NULL,NULL,NULL,2014,NULL,NULL,"motorcycle"
-223,"0.75","diesel","euro 3","1",NULL,NULL,NULL,2016,NULL,NULL,"motorcycle"
-224,"0.125","diesel","euro 2","1",NULL,NULL,NULL,2005,NULL,NULL,"motorcycle"
-225,"1","diesel","euro 1","1",NULL,NULL,NULL,2002,NULL,NULL,"motorcycle"
-226,"1","diesel","euro 2","1",NULL,NULL,NULL,2003,NULL,NULL,"motorcycle"
-227,"1","diesel","euro 2","2",NULL,NULL,NULL,2004,NULL,NULL,"motorcycle"
-228,"1","diesel","euro 2","2",NULL,NULL,NULL,2005,NULL,NULL,"motorcycle"
-229,"1","diesel","euro 3","1",NULL,NULL,NULL,2006,NULL,NULL,"motorcycle"
-230,"1","diesel","euro 3","1",NULL,NULL,NULL,2007,NULL,NULL,"motorcycle"
-232,"1","diesel","euro 3","1",NULL,NULL,NULL,2009,NULL,NULL,"motorcycle"
-233,"1","diesel","euro 3","2",NULL,NULL,NULL,2010,NULL,NULL,"motorcycle"
-234,"1","diesel","euro 3","1",NULL,NULL,NULL,2011,NULL,NULL,"motorcycle"
-235,"1","diesel","euro 3","2",NULL,NULL,NULL,2012,NULL,NULL,"motorcycle"
-236,"1","diesel","euro 3","9",NULL,NULL,NULL,2013,NULL,NULL,"motorcycle"
-237,"1","diesel","euro 3","6",NULL,NULL,NULL,2014,NULL,NULL,"motorcycle"
-238,"1","diesel","euro 3","17",NULL,NULL,NULL,2015,NULL,NULL,"motorcycle"
-239,"1","diesel","euro 3","6",NULL,NULL,NULL,2016,NULL,NULL,"motorcycle"
-240,"1","diesel","euro 4","2",NULL,NULL,NULL,2017,NULL,NULL,"motorcycle"
-241,"0.25","petrol","euro 1","64",NULL,NULL,NULL,1990,NULL,NULL,"motorcycle"
-242,"0.25","petrol","euro 1","62",NULL,NULL,NULL,1991,NULL,NULL,"motorcycle"
-243,"0.25","petrol","euro 1","86",NULL,NULL,NULL,1992,NULL,NULL,"motorcycle"
-244,"0.25","petrol","euro 1","44",NULL,NULL,NULL,1993,NULL,NULL,"motorcycle"
-245,"0.25","petrol","euro 1","53",NULL,NULL,NULL,1994,NULL,NULL,"motorcycle"
-246,"0.25","petrol","euro 1","60",NULL,NULL,NULL,1995,NULL,NULL,"motorcycle"
-247,"0.25","petrol","euro 1","55",NULL,NULL,NULL,1996,NULL,NULL,"motorcycle"
-248,"0.25","petrol","euro 1","98",NULL,NULL,NULL,1997,NULL,NULL,"motorcycle"
-249,"0.25","petrol","euro 1","136",NULL,NULL,NULL,1998,NULL,NULL,"motorcycle"
-251,"0.25","petrol","euro 1","150",NULL,NULL,NULL,2000,NULL,NULL,"motorcycle"
-252,"0.25","petrol","euro 1","179",NULL,NULL,NULL,2001,NULL,NULL,"motorcycle"
-253,"0.25","petrol","euro 1","166",NULL,NULL,NULL,2002,NULL,NULL,"motorcycle"
-254,"0.25","petrol","euro 2","203",NULL,NULL,NULL,2003,NULL,NULL,"motorcycle"
-255,"0.25","petrol","euro 2","267",NULL,NULL,NULL,2004,NULL,NULL,"motorcycle"
-256,"0.25","petrol","euro 2","427",NULL,NULL,NULL,2005,NULL,NULL,"motorcycle"
-257,"0.25","petrol","euro 3","412",NULL,NULL,NULL,2006,NULL,NULL,"motorcycle"
-258,"0.25","petrol","euro 3","428",NULL,NULL,NULL,2007,NULL,NULL,"motorcycle"
-259,"0.25","petrol","euro 3","281",NULL,NULL,NULL,2008,NULL,NULL,"motorcycle"
-146,NULL,"petrol","euro 2","711",NULL,NULL,NULL,2005,NULL,NULL,"moped"
-147,NULL,"petrol","euro 2","895",NULL,NULL,NULL,2006,NULL,NULL,"moped"
-263,"0.25","petrol","euro 3","59",NULL,NULL,NULL,2012,NULL,NULL,"motorcycle"
-264,"0.25","petrol","euro 3","33",NULL,NULL,NULL,2013,NULL,NULL,"motorcycle"
-265,"0.25","petrol","euro 3","43",NULL,NULL,NULL,2014,NULL,NULL,"motorcycle"
-266,"0.25","petrol","euro 3","52",NULL,NULL,NULL,2015,NULL,NULL,"motorcycle"
-267,"0.25","petrol","euro 3","43",NULL,NULL,NULL,2016,NULL,NULL,"motorcycle"
-268,"0.25","petrol","euro 4","35",NULL,NULL,NULL,2017,NULL,NULL,"motorcycle"
-269,"0.25","petrol","euro 1","1587",NULL,NULL,NULL,1989,NULL,NULL,"motorcycle"
-271,"0.5","petrol","euro 1","62",NULL,NULL,NULL,1991,NULL,NULL,"motorcycle"
-272,"0.5","petrol","euro 1","74",NULL,NULL,NULL,1992,NULL,NULL,"motorcycle"
-273,"0.5","petrol","euro 1","34",NULL,NULL,NULL,1993,NULL,NULL,"motorcycle"
-274,"0.5","petrol","euro 1","33",NULL,NULL,NULL,1994,NULL,NULL,"motorcycle"
-275,"0.5","petrol","euro 1","23",NULL,NULL,NULL,1995,NULL,NULL,"motorcycle"
-276,"0.5","petrol","euro 1","13",NULL,NULL,NULL,1996,NULL,NULL,"motorcycle"
-277,"0.5","petrol","euro 1","24",NULL,NULL,NULL,1997,NULL,NULL,"motorcycle"
-278,"0.5","petrol","euro 1","26",NULL,NULL,NULL,1998,NULL,NULL,"motorcycle"
-279,"0.5","petrol","euro 1","40",NULL,NULL,NULL,1999,NULL,NULL,"motorcycle"
-280,"0.5","petrol","euro 1","40",NULL,NULL,NULL,2000,NULL,NULL,"motorcycle"
-281,"0.5","petrol","euro 1","32",NULL,NULL,NULL,2001,NULL,NULL,"motorcycle"
-282,"0.5","petrol","euro 1","36",NULL,NULL,NULL,2002,NULL,NULL,"motorcycle"
-283,"0.5","petrol","euro 2","68",NULL,NULL,NULL,2003,NULL,NULL,"motorcycle"
-284,"0.5","petrol","euro 2","89",NULL,NULL,NULL,2004,NULL,NULL,"motorcycle"
-285,"0.5","petrol","euro 2","117",NULL,NULL,NULL,2005,NULL,NULL,"motorcycle"
-286,"0.5","petrol","euro 3","154",NULL,NULL,NULL,2006,NULL,NULL,"motorcycle"
-287,"0.5","petrol","euro 3","193",NULL,NULL,NULL,2007,NULL,NULL,"motorcycle"
-288,"0.5","petrol","euro 3","174",NULL,NULL,NULL,2008,NULL,NULL,"motorcycle"
-290,"0.5","petrol","euro 3","161",NULL,NULL,NULL,2010,NULL,NULL,"motorcycle"
-291,"0.5","petrol","euro 3","98",NULL,NULL,NULL,2011,NULL,NULL,"motorcycle"
-292,"0.5","petrol","euro 3","104",NULL,NULL,NULL,2012,NULL,NULL,"motorcycle"
-293,"0.5","petrol","euro 3","121",NULL,NULL,NULL,2013,NULL,NULL,"motorcycle"
-294,"0.5","petrol","euro 3","164",NULL,NULL,NULL,2014,NULL,NULL,"motorcycle"
-295,"0.5","petrol","euro 3","178",NULL,NULL,NULL,2015,NULL,NULL,"motorcycle"
-296,"0.5","petrol","euro 3","226",NULL,NULL,NULL,2016,NULL,NULL,"motorcycle"
-297,"0.5","petrol","euro 4","250",NULL,NULL,NULL,2017,NULL,NULL,"motorcycle"
-298,"0.5","petrol","euro 1","399",NULL,NULL,NULL,1989,NULL,NULL,"motorcycle"
-299,"0.75","petrol","euro 1","129",NULL,NULL,NULL,1990,NULL,NULL,"motorcycle"
-300,"0.75","petrol","euro 1","158",NULL,NULL,NULL,1991,NULL,NULL,"motorcycle"
-301,"0.75","petrol","euro 1","199",NULL,NULL,NULL,1992,NULL,NULL,"motorcycle"
-302,"0.75","petrol","euro 1","85",NULL,NULL,NULL,1993,NULL,NULL,"motorcycle"
-303,"0.75","petrol","euro 1","68",NULL,NULL,NULL,1994,NULL,NULL,"motorcycle"
-304,"0.75","petrol","euro 1","48",NULL,NULL,NULL,1995,NULL,NULL,"motorcycle"
-305,"0.75","petrol","euro 1","36",NULL,NULL,NULL,1996,NULL,NULL,"motorcycle"
-306,"0.75","petrol","euro 1","58",NULL,NULL,NULL,1997,NULL,NULL,"motorcycle"
-307,"0.75","petrol","euro 1","104",NULL,NULL,NULL,1998,NULL,NULL,"motorcycle"
-309,"0.75","petrol","euro 1","123",NULL,NULL,NULL,2000,NULL,NULL,"motorcycle"
-310,"0.75","petrol","euro 1","139",NULL,NULL,NULL,2001,NULL,NULL,"motorcycle"
-311,"0.75","petrol","euro 1","152",NULL,NULL,NULL,2002,NULL,NULL,"motorcycle"
-312,"0.75","petrol","euro 2","204",NULL,NULL,NULL,2003,NULL,NULL,"motorcycle"
-313,"0.75","petrol","euro 2","242",NULL,NULL,NULL,2004,NULL,NULL,"motorcycle"
-314,"0.75","petrol","euro 2","366",NULL,NULL,NULL,2005,NULL,NULL,"motorcycle"
-315,"0.75","petrol","euro 3","547",NULL,NULL,NULL,2006,NULL,NULL,"motorcycle"
-316,"0.75","petrol","euro 3","695",NULL,NULL,NULL,2007,NULL,NULL,"motorcycle"
-317,"0.75","petrol","euro 3","561",NULL,NULL,NULL,2008,NULL,NULL,"motorcycle"
-318,"0.75","petrol","euro 3","244",NULL,NULL,NULL,2009,NULL,NULL,"motorcycle"
-319,"0.75","petrol","euro 3","214",NULL,NULL,NULL,2010,NULL,NULL,"motorcycle"
-320,"0.75","petrol","euro 3","158",NULL,NULL,NULL,2011,NULL,NULL,"motorcycle"
-321,"0.75","petrol","euro 3","143",NULL,NULL,NULL,2012,NULL,NULL,"motorcycle"
-322,"0.75","petrol","euro 3","105",NULL,NULL,NULL,2013,NULL,NULL,"motorcycle"
-323,"0.75","petrol","euro 3","139",NULL,NULL,NULL,2014,NULL,NULL,"motorcycle"
-324,"0.75","petrol","euro 3","179",NULL,NULL,NULL,2015,NULL,NULL,"motorcycle"
-325,"0.75","petrol","euro 3","170",NULL,NULL,NULL,2016,NULL,NULL,"motorcycle"
-326,"0.75","petrol","euro 4","236",NULL,NULL,NULL,2017,NULL,NULL,"motorcycle"
-328,"0.125","petrol","euro 1","109",NULL,NULL,NULL,1990,NULL,NULL,"motorcycle"
-329,"0.125","petrol","euro 1","138",NULL,NULL,NULL,1991,NULL,NULL,"motorcycle"
-330,"0.125","petrol","euro 1","85",NULL,NULL,NULL,1992,NULL,NULL,"motorcycle"
-331,"0.125","petrol","euro 1","72",NULL,NULL,NULL,1993,NULL,NULL,"motorcycle"
-332,"0.125","petrol","euro 1","56",NULL,NULL,NULL,1994,NULL,NULL,"motorcycle"
-333,"0.125","petrol","euro 1","67",NULL,NULL,NULL,1995,NULL,NULL,"motorcycle"
-334,"0.125","petrol","euro 1","69",NULL,NULL,NULL,1996,NULL,NULL,"motorcycle"
-335,"0.125","petrol","euro 1","115",NULL,NULL,NULL,1997,NULL,NULL,"motorcycle"
-336,"0.125","petrol","euro 1","129",NULL,NULL,NULL,1998,NULL,NULL,"motorcycle"
-337,"0.125","petrol","euro 1","173",NULL,NULL,NULL,1999,NULL,NULL,"motorcycle"
-338,"0.125","petrol","euro 1","147",NULL,NULL,NULL,2000,NULL,NULL,"motorcycle"
-339,"0.125","petrol","euro 1","101",NULL,NULL,NULL,2001,NULL,NULL,"motorcycle"
-340,"0.125","petrol","euro 1","109",NULL,NULL,NULL,2002,NULL,NULL,"motorcycle"
-341,"0.125","petrol","euro 2","112",NULL,NULL,NULL,2003,NULL,NULL,"motorcycle"
-342,"0.125","petrol","euro 2","407",NULL,NULL,NULL,2004,NULL,NULL,"motorcycle"
-343,"0.125","petrol","euro 2","1059",NULL,NULL,NULL,2005,NULL,NULL,"motorcycle"
-344,"0.125","petrol","euro 3","1373",NULL,NULL,NULL,2006,NULL,NULL,"motorcycle"
-345,"0.125","petrol","euro 3","1518",NULL,NULL,NULL,2007,NULL,NULL,"motorcycle"
-347,"0.125","petrol","euro 3","963",NULL,NULL,NULL,2009,NULL,NULL,"motorcycle"
-348,"0.125","petrol","euro 3","901",NULL,NULL,NULL,2010,NULL,NULL,"motorcycle"
-349,"0.125","petrol","euro 3","947",NULL,NULL,NULL,2011,NULL,NULL,"motorcycle"
-350,"0.125","petrol","euro 3","877",NULL,NULL,NULL,2012,NULL,NULL,"motorcycle"
-351,"0.125","petrol","euro 3","791",NULL,NULL,NULL,2013,NULL,NULL,"motorcycle"
-352,"0.125","petrol","euro 3","926",NULL,NULL,NULL,2014,NULL,NULL,"motorcycle"
-353,"0.125","petrol","euro 3","1083",NULL,NULL,NULL,2015,NULL,NULL,"motorcycle"
-354,"0.125","petrol","euro 3","1139",NULL,NULL,NULL,2016,NULL,NULL,"motorcycle"
-355,"0.125","petrol","euro 4","905",NULL,NULL,NULL,2017,NULL,NULL,"motorcycle"
-356,"0.125","petrol","euro 1","944",NULL,NULL,NULL,1989,NULL,NULL,"motorcycle"
-357,"0.05","petrol","euro 1","1",NULL,NULL,NULL,2001,NULL,NULL,"motorcycle"
-358,"0.05","petrol","euro 2","1",NULL,NULL,NULL,2004,NULL,NULL,"motorcycle"
-359,"0.05","petrol","euro 1","43",NULL,NULL,NULL,1989,NULL,NULL,"motorcycle"
-360,"1","petrol","euro 1","29",NULL,NULL,NULL,1990,NULL,NULL,"motorcycle"
-361,"1","petrol","euro 1","30",NULL,NULL,NULL,1991,NULL,NULL,"motorcycle"
-362,"1","petrol","euro 1","49",NULL,NULL,NULL,1992,NULL,NULL,"motorcycle"
-363,"1","petrol","euro 1","22",NULL,NULL,NULL,1993,NULL,NULL,"motorcycle"
-364,"1","petrol","euro 1","22",NULL,NULL,NULL,1994,NULL,NULL,"motorcycle"
-366,"1","petrol","euro 1","23",NULL,NULL,NULL,1996,NULL,NULL,"motorcycle"
-261,"0.25","petrol","euro 3","107",NULL,NULL,NULL,2010,NULL,NULL,"motorcycle"
-262,"0.25","petrol","euro 3","92",NULL,NULL,NULL,2011,NULL,NULL,"motorcycle"
-370,"1","petrol","euro 1","87",NULL,NULL,NULL,2000,NULL,NULL,"motorcycle"
-371,"1","petrol","euro 1","77",NULL,NULL,NULL,2001,NULL,NULL,"motorcycle"
-372,"1","petrol","euro 1","100",NULL,NULL,NULL,2002,NULL,NULL,"motorcycle"
-373,"1","petrol","euro 2","97",NULL,NULL,NULL,2003,NULL,NULL,"motorcycle"
-374,"1","petrol","euro 2","145",NULL,NULL,NULL,2004,NULL,NULL,"motorcycle"
-375,"1","petrol","euro 2","203",NULL,NULL,NULL,2005,NULL,NULL,"motorcycle"
-377,"1","petrol","euro 3","355",NULL,NULL,NULL,2007,NULL,NULL,"motorcycle"
-378,"1","petrol","euro 3","357",NULL,NULL,NULL,2008,NULL,NULL,"motorcycle"
-379,"1","petrol","euro 3","189",NULL,NULL,NULL,2009,NULL,NULL,"motorcycle"
-380,"1","petrol","euro 3","216",NULL,NULL,NULL,2010,NULL,NULL,"motorcycle"
-381,"1","petrol","euro 3","212",NULL,NULL,NULL,2011,NULL,NULL,"motorcycle"
-382,"1","petrol","euro 3","146",NULL,NULL,NULL,2012,NULL,NULL,"motorcycle"
-383,"1","petrol","euro 3","136",NULL,NULL,NULL,2013,NULL,NULL,"motorcycle"
-384,"1","petrol","euro 3","152",NULL,NULL,NULL,2014,NULL,NULL,"motorcycle"
-385,"1","petrol","euro 3","235",NULL,NULL,NULL,2015,NULL,NULL,"motorcycle"
-386,"1","petrol","euro 3","302",NULL,NULL,NULL,2016,NULL,NULL,"motorcycle"
-387,"1","petrol","euro 4","322",NULL,NULL,NULL,2017,NULL,NULL,"motorcycle"
-388,"1","petrol","euro 1","139",NULL,NULL,NULL,1989,NULL,NULL,"motorcycle"
-389,NULL,"petrol","euro 1","98",NULL,NULL,NULL,1990,NULL,NULL,"motorcycle"
-390,NULL,"petrol","euro 1","125",NULL,NULL,NULL,1991,NULL,NULL,"motorcycle"
-391,NULL,"petrol","euro 1","86",NULL,NULL,NULL,1992,NULL,NULL,"motorcycle"
-392,NULL,"petrol","euro 1","31",NULL,NULL,NULL,1993,NULL,NULL,"motorcycle"
-393,NULL,"petrol","euro 1","20",NULL,NULL,NULL,1994,NULL,NULL,"motorcycle"
-394,NULL,"petrol","euro 1","26",NULL,NULL,NULL,1995,NULL,NULL,"motorcycle"
-395,NULL,"petrol","euro 1","9",NULL,NULL,NULL,1996,NULL,NULL,"motorcycle"
-396,NULL,"petrol","euro 1","1",NULL,NULL,NULL,1998,NULL,NULL,"motorcycle"
-398,"1.6","lpg","conventional","2",NULL,NULL,NULL,1989,NULL,NULL,"passenger_car"
-399,"1.6","diesel","conventional","12",NULL,NULL,NULL,1990,NULL,NULL,"passenger_car"
-400,"1.6","diesel","conventional","17",NULL,NULL,NULL,1991,NULL,NULL,"passenger_car"
-401,"1.6","diesel","conventional","12",NULL,NULL,NULL,1992,NULL,NULL,"passenger_car"
-402,"1.6","diesel","euro 1","14",NULL,NULL,NULL,1993,NULL,NULL,"passenger_car"
-403,"1.6","diesel","euro 1","58",NULL,NULL,NULL,1994,NULL,NULL,"passenger_car"
-404,"1.6","diesel","euro 1","34",NULL,NULL,NULL,1995,NULL,NULL,"passenger_car"
-405,"1.6","diesel","euro 1","40",NULL,NULL,NULL,1996,NULL,NULL,"passenger_car"
-406,"1.6","diesel","euro 2","63",NULL,NULL,NULL,1997,NULL,NULL,"passenger_car"
-407,"1.6","diesel","euro 2","153",NULL,NULL,NULL,1998,NULL,NULL,"passenger_car"
-408,"1.6","diesel","euro 2","133",NULL,NULL,NULL,1999,NULL,NULL,"passenger_car"
-409,"1.6","diesel","euro 2","118",NULL,NULL,NULL,2000,NULL,NULL,"passenger_car"
-410,"1.6","diesel","euro 3","139",NULL,NULL,NULL,2001,NULL,NULL,"passenger_car"
-411,"1.6","diesel","euro 3","355",NULL,NULL,NULL,2002,NULL,NULL,"passenger_car"
-413,"1.6","diesel","euro 3","1644",NULL,NULL,NULL,2004,NULL,NULL,"passenger_car"
-414,"1.6","diesel","euro 3","2567",NULL,NULL,NULL,2005,NULL,NULL,"passenger_car"
-415,"1.6","diesel","euro 4","2986",NULL,NULL,NULL,2006,NULL,NULL,"passenger_car"
-416,"1.6","diesel","euro 4","2847",NULL,NULL,NULL,2007,NULL,NULL,"passenger_car"
-417,"1.6","diesel","euro 4","2164",NULL,NULL,NULL,2008,NULL,NULL,"passenger_car"
-418,"1.6","diesel","euro 4","2944",NULL,NULL,NULL,2009,NULL,NULL,"passenger_car"
-419,"1.6","diesel","euro 4","3016",NULL,NULL,NULL,2010,NULL,NULL,"passenger_car"
-420,"1.6","diesel","euro 5","2488",NULL,NULL,NULL,2011,NULL,NULL,"passenger_car"
-421,"1.6","diesel","euro 5","2144",NULL,NULL,NULL,2012,NULL,NULL,"passenger_car"
-422,"1.6","diesel","euro 5","2331",NULL,NULL,NULL,2013,NULL,NULL,"passenger_car"
-423,"1.6","diesel","euro 5","3087",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-424,"1.6","diesel","euro 6 up to 2016","3724",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-425,"1.6","diesel","euro 6 up to 2016","3560",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-426,"1.6","diesel","euro 6 2017-2019","2772",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-427,"1.6","diesel","conventional","166",NULL,NULL,NULL,1989,NULL,NULL,"passenger_car"
-428,"2","diesel","conventional","43",NULL,NULL,NULL,1990,NULL,NULL,"passenger_car"
-429,"2","diesel","conventional","52",NULL,NULL,NULL,1991,NULL,NULL,"passenger_car"
-430,"2","diesel","conventional","87",NULL,NULL,NULL,1992,NULL,NULL,"passenger_car"
-432,"2","diesel","euro 1","241",NULL,NULL,NULL,1994,NULL,NULL,"passenger_car"
-433,"2","diesel","euro 1","310",NULL,NULL,NULL,1995,NULL,NULL,"passenger_car"
-434,"2","diesel","euro 1","577",NULL,NULL,NULL,1996,NULL,NULL,"passenger_car"
-435,"2","diesel","euro 2","949",NULL,NULL,NULL,1997,NULL,NULL,"passenger_car"
-436,"2","diesel","euro 2","1689",NULL,NULL,NULL,1998,NULL,NULL,"passenger_car"
-437,"2","diesel","euro 2","3038",NULL,NULL,NULL,1999,NULL,NULL,"passenger_car"
-438,"2","diesel","euro 2","3583",NULL,NULL,NULL,2000,NULL,NULL,"passenger_car"
-439,"2","diesel","euro 3","3809",NULL,NULL,NULL,2001,NULL,NULL,"passenger_car"
-440,"2","diesel","euro 3","4365",NULL,NULL,NULL,2002,NULL,NULL,"passenger_car"
-441,"2","diesel","euro 3","5153",NULL,NULL,NULL,2003,NULL,NULL,"passenger_car"
-442,"2","diesel","euro 3","6256",NULL,NULL,NULL,2004,NULL,NULL,"passenger_car"
-443,"2","diesel","euro 3","6647",NULL,NULL,NULL,2005,NULL,NULL,"passenger_car"
-444,"2","diesel","euro 4","6732",NULL,NULL,NULL,2006,NULL,NULL,"passenger_car"
-445,"2","diesel","euro 4","6601",NULL,NULL,NULL,2007,NULL,NULL,"passenger_car"
-446,"2","diesel","euro 4","4688",NULL,NULL,NULL,2008,NULL,NULL,"passenger_car"
-447,"2","diesel","euro 4","4151",NULL,NULL,NULL,2009,NULL,NULL,"passenger_car"
-448,"2","diesel","euro 4","3588",NULL,NULL,NULL,2010,NULL,NULL,"passenger_car"
-449,"2","diesel","euro 5","2611",NULL,NULL,NULL,2011,NULL,NULL,"passenger_car"
-451,"2","diesel","euro 5","2255",NULL,NULL,NULL,2013,NULL,NULL,"passenger_car"
-452,"2","diesel","euro 5","2169",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-453,"2","diesel","euro 6 up to 2016","2260",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-454,"2","diesel","euro 6 up to 2016","2051",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-455,"2","diesel","euro 6 2017-2019","1762",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-456,"2","diesel","conventional","445",NULL,NULL,NULL,1989,NULL,NULL,"passenger_car"
-457,"2.5","diesel","conventional","49",NULL,NULL,NULL,1990,NULL,NULL,"passenger_car"
-458,"2.5","diesel","conventional","60",NULL,NULL,NULL,1991,NULL,NULL,"passenger_car"
-459,"2.5","diesel","conventional","68",NULL,NULL,NULL,1992,NULL,NULL,"passenger_car"
-460,"2.5","diesel","euro 1","60",NULL,NULL,NULL,1993,NULL,NULL,"passenger_car"
-461,"2.5","diesel","euro 1","62",NULL,NULL,NULL,1994,NULL,NULL,"passenger_car"
-462,"2.5","diesel","euro 1","102",NULL,NULL,NULL,1995,NULL,NULL,"passenger_car"
-463,"2.5","diesel","euro 1","180",NULL,NULL,NULL,1996,NULL,NULL,"passenger_car"
-464,"2.5","diesel","euro 2","259",NULL,NULL,NULL,1997,NULL,NULL,"passenger_car"
-465,"2.5","diesel","euro 2","392",NULL,NULL,NULL,1998,NULL,NULL,"passenger_car"
-466,"2.5","diesel","euro 2","418",NULL,NULL,NULL,1999,NULL,NULL,"passenger_car"
-467,"2.5","diesel","euro 2","579",NULL,NULL,NULL,2000,NULL,NULL,"passenger_car"
-468,"2.5","diesel","euro 3","747",NULL,NULL,NULL,2001,NULL,NULL,"passenger_car"
-470,"2.5","diesel","euro 3","1526",NULL,NULL,NULL,2003,NULL,NULL,"passenger_car"
-471,"2.5","diesel","euro 3","1521",NULL,NULL,NULL,2004,NULL,NULL,"passenger_car"
-472,"2.5","diesel","euro 3","1576",NULL,NULL,NULL,2005,NULL,NULL,"passenger_car"
-473,"2.5","diesel","euro 4","1759",NULL,NULL,NULL,2006,NULL,NULL,"passenger_car"
-474,"2.5","diesel","euro 4","1554",NULL,NULL,NULL,2007,NULL,NULL,"passenger_car"
-368,"1","petrol","euro 1","41",NULL,NULL,NULL,1998,NULL,NULL,"motorcycle"
-369,"1","petrol","euro 1","67",NULL,NULL,NULL,1999,NULL,NULL,"motorcycle"
-478,"2.5","diesel","euro 5","526",NULL,NULL,NULL,2011,NULL,NULL,"passenger_car"
-479,"2.5","diesel","euro 5","446",NULL,NULL,NULL,2012,NULL,NULL,"passenger_car"
-480,"2.5","diesel","euro 5","406",NULL,NULL,NULL,2013,NULL,NULL,"passenger_car"
-481,"2.5","diesel","euro 5","547",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-482,"2.5","diesel","euro 6 up to 2016","771",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-483,"2.5","diesel","euro 6 up to 2016","760",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-484,"2.5","diesel","euro 6 2017-2019","655",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-486,"1.2","diesel","conventional","1",NULL,NULL,NULL,1991,NULL,NULL,"passenger_car"
-487,"1.2","diesel","euro 1","4",NULL,NULL,NULL,1994,NULL,NULL,"passenger_car"
-488,"1.2","diesel","euro 1","1",NULL,NULL,NULL,1996,NULL,NULL,"passenger_car"
-489,"1.2","diesel","euro 2","2",NULL,NULL,NULL,1997,NULL,NULL,"passenger_car"
-490,"1.2","diesel","euro 2","3",NULL,NULL,NULL,1998,NULL,NULL,"passenger_car"
-491,"1.2","diesel","euro 2","6",NULL,NULL,NULL,1999,NULL,NULL,"passenger_car"
-492,"1.2","diesel","euro 2","13",NULL,NULL,NULL,2000,NULL,NULL,"passenger_car"
-493,"1.2","diesel","euro 3","2",NULL,NULL,NULL,2001,NULL,NULL,"passenger_car"
-494,"1.2","diesel","euro 3","10",NULL,NULL,NULL,2002,NULL,NULL,"passenger_car"
-495,"1.2","diesel","euro 3","4",NULL,NULL,NULL,2003,NULL,NULL,"passenger_car"
-496,"1.2","diesel","euro 3","2",NULL,NULL,NULL,2004,NULL,NULL,"passenger_car"
-497,"1.2","diesel","euro 3","6",NULL,NULL,NULL,2005,NULL,NULL,"passenger_car"
-498,"1.2","diesel","euro 4","33",NULL,NULL,NULL,2006,NULL,NULL,"passenger_car"
-499,"1.2","diesel","euro 4","6",NULL,NULL,NULL,2007,NULL,NULL,"passenger_car"
-500,"1.2","diesel","euro 4","6",NULL,NULL,NULL,2008,NULL,NULL,"passenger_car"
-501,"1.2","diesel","euro 4","1",NULL,NULL,NULL,2009,NULL,NULL,"passenger_car"
-502,"1.2","diesel","euro 4","13",NULL,NULL,NULL,2010,NULL,NULL,"passenger_car"
-503,"1.2","diesel","euro 5","22",NULL,NULL,NULL,2011,NULL,NULL,"passenger_car"
-505,"1.2","diesel","euro 5","15",NULL,NULL,NULL,2013,NULL,NULL,"passenger_car"
-506,"1.2","diesel","euro 5","12",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-507,"1.2","diesel","euro 6 up to 2016","30",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-508,"1.2","diesel","euro 6 up to 2016","20",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-509,"1.2","diesel","euro 6 2017-2019","9",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-510,"1.2","diesel","conventional","13",NULL,NULL,NULL,1989,NULL,NULL,"passenger_car"
-511,"1.6","lpg","euro 5","27",NULL,NULL,NULL,2012,NULL,NULL,"passenger_car"
-512,"1.6","lpg","euro 5","23",NULL,NULL,NULL,2013,NULL,NULL,"passenger_car"
-513,"1.6","lpg","euro 5","12",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-514,"1.6","lpg","euro 6","15",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-515,"1.6","lpg","euro 6","28",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-516,"1.6","lpg","euro 6","64",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-517,"2","lpg","euro 4","1",NULL,NULL,NULL,2008,NULL,NULL,"passenger_car"
-518,"2","lpg","euro 4","8",NULL,NULL,NULL,2010,NULL,NULL,"passenger_car"
-519,"2","lpg","euro 5","7",NULL,NULL,NULL,2011,NULL,NULL,"passenger_car"
-520,"2","lpg","euro 5","10",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-521,"2","lpg","euro 6","2",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-522,"2","lpg","euro 6","7",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-524,"2.5","lpg","euro 3","1",NULL,NULL,NULL,2004,NULL,NULL,"passenger_car"
-525,"2.5","lpg","euro 4","1",NULL,NULL,NULL,2006,NULL,NULL,"passenger_car"
-526,"2.5","lpg","euro 4","1",NULL,NULL,NULL,2008,NULL,NULL,"passenger_car"
-527,"2.5","lpg","euro 5","1",NULL,NULL,NULL,2013,NULL,NULL,"passenger_car"
-528,"1.2","lpg","euro 5","16",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-529,"1.2","lpg","euro 6","30",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-530,"1.2","lpg","euro 6","8",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-531,"1.2","lpg","euro 6","17",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-532,"1.6","cng","euro 6","3",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-533,"1.6","cng","euro 6","1",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-534,"1.6","cng","euro 6","7",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-535,"2","cng","euro 5","1",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-536,"1.6","cng","euro 6","1",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-537,"1.6","petrol","ece 15/04","312",NULL,NULL,NULL,1990,NULL,NULL,"passenger_car"
-538,"1.6","petrol","ece 15/04","416",NULL,NULL,NULL,1991,NULL,NULL,"passenger_car"
-539,"1.6","petrol","ece 15/04","472",NULL,NULL,NULL,1992,NULL,NULL,"passenger_car"
-540,"1.6","petrol","euro 1","555",NULL,NULL,NULL,1993,NULL,NULL,"passenger_car"
-541,"1.6","petrol","euro 1","745",NULL,NULL,NULL,1994,NULL,NULL,"passenger_car"
-543,"1.6","petrol","euro 1","1151",NULL,NULL,NULL,1996,NULL,NULL,"passenger_car"
-544,"1.6","petrol","euro 2","1593",NULL,NULL,NULL,1997,NULL,NULL,"passenger_car"
-545,"1.6","petrol","euro 2","2133",NULL,NULL,NULL,1998,NULL,NULL,"passenger_car"
-546,"1.6","petrol","euro 2","2875",NULL,NULL,NULL,1999,NULL,NULL,"passenger_car"
-547,"1.6","petrol","euro 2","2914",NULL,NULL,NULL,2000,NULL,NULL,"passenger_car"
-548,"1.6","petrol","euro 3","3331",NULL,NULL,NULL,2001,NULL,NULL,"passenger_car"
-549,"1.6","petrol","euro 3","3257",NULL,NULL,NULL,2002,NULL,NULL,"passenger_car"
-550,"1.6","petrol","euro 3","3598",NULL,NULL,NULL,2003,NULL,NULL,"passenger_car"
-551,"1.6","petrol","euro 3","3600",NULL,NULL,NULL,2004,NULL,NULL,"passenger_car"
-552,"1.6","petrol","euro 3","3592",NULL,NULL,NULL,2005,NULL,NULL,"passenger_car"
-553,"1.6","petrol","euro 4","3336",NULL,NULL,NULL,2006,NULL,NULL,"passenger_car"
-554,"1.6","petrol","euro 4","3480",NULL,NULL,NULL,2007,NULL,NULL,"passenger_car"
-555,"1.6","petrol","euro 4","2526",NULL,NULL,NULL,2008,NULL,NULL,"passenger_car"
-556,"1.6","petrol","euro 4","2441",NULL,NULL,NULL,2009,NULL,NULL,"passenger_car"
-557,"1.6","petrol","euro 4","2302",NULL,NULL,NULL,2010,NULL,NULL,"passenger_car"
-558,"1.6","petrol","euro 5","1685",NULL,NULL,NULL,2011,NULL,NULL,"passenger_car"
-559,"1.6","petrol","euro 5","1557",NULL,NULL,NULL,2012,NULL,NULL,"passenger_car"
-560,"1.6","petrol","euro 5","1515",NULL,NULL,NULL,2013,NULL,NULL,"passenger_car"
-562,"1.6","petrol","euro 6 up to 2016","2067",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-563,"1.6","petrol","euro 6 up to 2016","2527",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-564,"1.6","petrol","euro 6 2017-2019","2851",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-565,"1.6","petrol","ece 15/04","4906",NULL,NULL,NULL,1989,NULL,NULL,"passenger_car"
-566,"2","petrol","ece 15/04","296",NULL,NULL,NULL,1990,NULL,NULL,"passenger_car"
-567,"2","petrol","ece 15/04","387",NULL,NULL,NULL,1991,NULL,NULL,"passenger_car"
-568,"2","petrol","ece 15/04","624",NULL,NULL,NULL,1992,NULL,NULL,"passenger_car"
-569,"2","petrol","euro 1","495",NULL,NULL,NULL,1993,NULL,NULL,"passenger_car"
-570,"2","petrol","euro 1","584",NULL,NULL,NULL,1994,NULL,NULL,"passenger_car"
-571,"2","petrol","euro 1","513",NULL,NULL,NULL,1995,NULL,NULL,"passenger_car"
-572,"2","petrol","euro 1","563",NULL,NULL,NULL,1996,NULL,NULL,"passenger_car"
-573,"2","petrol","euro 2","821",NULL,NULL,NULL,1997,NULL,NULL,"passenger_car"
-574,"2","petrol","euro 2","916",NULL,NULL,NULL,1998,NULL,NULL,"passenger_car"
-575,"2","petrol","euro 2","1345",NULL,NULL,NULL,1999,NULL,NULL,"passenger_car"
-576,"2","petrol","euro 2","1458",NULL,NULL,NULL,2000,NULL,NULL,"passenger_car"
-577,"2","petrol","euro 3","1568",NULL,NULL,NULL,2001,NULL,NULL,"passenger_car"
-578,"2","petrol","euro 3","1339",NULL,NULL,NULL,2002,NULL,NULL,"passenger_car"
-579,"2","petrol","euro 3","1283",NULL,NULL,NULL,2003,NULL,NULL,"passenger_car"
-581,"2","petrol","euro 3","1356",NULL,NULL,NULL,2005,NULL,NULL,"passenger_car"
-476,"2.5","diesel","euro 4","720",NULL,NULL,NULL,2009,NULL,NULL,"passenger_car"
-477,"2.5","diesel","euro 4","733",NULL,NULL,NULL,2010,NULL,NULL,"passenger_car"
-602,"2.5","petrol","euro 2","262",NULL,NULL,NULL,1997,NULL,NULL,"passenger_car"
-603,"2.5","petrol","euro 2","333",NULL,NULL,NULL,1998,NULL,NULL,"passenger_car"
-604,"2.5","petrol","euro 2","470",NULL,NULL,NULL,1999,NULL,NULL,"passenger_car"
-624,"1.2","petrol","ece 15/04","115",NULL,NULL,NULL,1990,NULL,NULL,"passenger_car"
-625,"1.2","petrol","ece 15/04","125",NULL,NULL,NULL,1991,NULL,NULL,"passenger_car"
-626,"1.2","petrol","ece 15/04","145",NULL,NULL,NULL,1992,NULL,NULL,"passenger_car"
-627,"1.2","petrol","euro 1","121",NULL,NULL,NULL,1993,NULL,NULL,"passenger_car"
-628,"1.2","petrol","euro 1","160",NULL,NULL,NULL,1994,NULL,NULL,"passenger_car"
-629,"1.2","petrol","euro 1","120",NULL,NULL,NULL,1995,NULL,NULL,"passenger_car"
-630,"1.2","petrol","euro 1","119",NULL,NULL,NULL,1996,NULL,NULL,"passenger_car"
-631,"1.2","petrol","euro 2","205",NULL,NULL,NULL,1997,NULL,NULL,"passenger_car"
-632,"1.2","petrol","euro 2","289",NULL,NULL,NULL,1998,NULL,NULL,"passenger_car"
-633,"1.2","petrol","euro 2","479",NULL,NULL,NULL,1999,NULL,NULL,"passenger_car"
-634,"1.2","petrol","euro 2","486",NULL,NULL,NULL,2000,NULL,NULL,"passenger_car"
-635,"1.2","petrol","euro 3","520",NULL,NULL,NULL,2001,NULL,NULL,"passenger_car"
-636,"1.2","petrol","euro 3","474",NULL,NULL,NULL,2002,NULL,NULL,"passenger_car"
-637,"1.2","petrol","euro 3","489",NULL,NULL,NULL,2003,NULL,NULL,"passenger_car"
-638,"1.2","petrol","euro 3","639",NULL,NULL,NULL,2004,NULL,NULL,"passenger_car"
-639,"1.2","petrol","euro 3","516",NULL,NULL,NULL,2005,NULL,NULL,"passenger_car"
-640,"1.2","petrol","euro 4","539",NULL,NULL,NULL,2006,NULL,NULL,"passenger_car"
-646,"1.2","petrol","euro 5","533",NULL,NULL,NULL,2012,NULL,NULL,"passenger_car"
-647,"1.2","petrol","euro 5","899",NULL,NULL,NULL,2013,NULL,NULL,"passenger_car"
-648,"1.2","petrol","euro 5","1337",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-649,"1.2","petrol","euro 6 up to 2016","2245",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-650,"1.2","petrol","euro 6 up to 2016","2777",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-651,"1.2","petrol","euro 6 2017-2019","3099",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-652,"1.2","petrol","ece 15/04","7627",NULL,NULL,NULL,1989,NULL,NULL,"passenger_car"
-582,"2","petrol","euro 4","1151",NULL,NULL,NULL,2006,NULL,NULL,"passenger_car"
-583,"2","petrol","euro 4","1121",NULL,NULL,NULL,2007,NULL,NULL,"passenger_car"
-584,"2","petrol","euro 4","940",NULL,NULL,NULL,2008,NULL,NULL,"passenger_car"
-585,"2","petrol","euro 4","678",NULL,NULL,NULL,2009,NULL,NULL,"passenger_car"
-586,"2","petrol","euro 4","504",NULL,NULL,NULL,2010,NULL,NULL,"passenger_car"
-587,"2","petrol","euro 5","412",NULL,NULL,NULL,2011,NULL,NULL,"passenger_car"
-588,"2","petrol","euro 5","374",NULL,NULL,NULL,2012,NULL,NULL,"passenger_car"
-589,"2","petrol","euro 5","258",NULL,NULL,NULL,2013,NULL,NULL,"passenger_car"
-590,"2","petrol","euro 5","330",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-591,"2","petrol","euro 6 up to 2016","468",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-592,"2","petrol","euro 6 up to 2016","717",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-593,"2","petrol","euro 6 2017-2019","908",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-594,"2","petrol","ece 15/04","1856",NULL,NULL,NULL,1989,NULL,NULL,"passenger_car"
-595,"2.5","petrol","ece 15/04","134",NULL,NULL,NULL,1990,NULL,NULL,"passenger_car"
-596,"2.5","petrol","ece 15/04","153",NULL,NULL,NULL,1991,NULL,NULL,"passenger_car"
-597,"2.5","petrol","ece 15/04","242",NULL,NULL,NULL,1992,NULL,NULL,"passenger_car"
-598,"2.5","petrol","euro 1","166",NULL,NULL,NULL,1993,NULL,NULL,"passenger_car"
-599,"2.5","petrol","euro 1","154",NULL,NULL,NULL,1994,NULL,NULL,"passenger_car"
-600,"2.5","petrol","euro 1","173",NULL,NULL,NULL,1995,NULL,NULL,"passenger_car"
-601,"2.5","petrol","euro 1","230",NULL,NULL,NULL,1996,NULL,NULL,"passenger_car"
-605,"2.5","petrol","euro 2","461",NULL,NULL,NULL,2000,NULL,NULL,"passenger_car"
-606,"2.5","petrol","euro 3","605",NULL,NULL,NULL,2001,NULL,NULL,"passenger_car"
-607,"2.5","petrol","euro 3","529",NULL,NULL,NULL,2002,NULL,NULL,"passenger_car"
-608,"2.5","petrol","euro 3","602",NULL,NULL,NULL,2003,NULL,NULL,"passenger_car"
-609,"2.5","petrol","euro 3","568",NULL,NULL,NULL,2004,NULL,NULL,"passenger_car"
-610,"2.5","petrol","euro 3","522",NULL,NULL,NULL,2005,NULL,NULL,"passenger_car"
-611,"2.5","petrol","euro 4","537",NULL,NULL,NULL,2006,NULL,NULL,"passenger_car"
-612,"2.5","petrol","euro 4","464",NULL,NULL,NULL,2007,NULL,NULL,"passenger_car"
-613,"2.5","petrol","euro 4","244",NULL,NULL,NULL,2008,NULL,NULL,"passenger_car"
-614,"2.5","petrol","euro 4","171",NULL,NULL,NULL,2009,NULL,NULL,"passenger_car"
-615,"2.5","petrol","euro 4","138",NULL,NULL,NULL,2010,NULL,NULL,"passenger_car"
-616,"2.5","petrol","euro 5","83",NULL,NULL,NULL,2011,NULL,NULL,"passenger_car"
-617,"2.5","petrol","euro 5","60",NULL,NULL,NULL,2012,NULL,NULL,"passenger_car"
-618,"2.5","petrol","euro 5","54",NULL,NULL,NULL,2013,NULL,NULL,"passenger_car"
-619,"2.5","petrol","euro 5","84",NULL,NULL,NULL,2014,NULL,NULL,"passenger_car"
-620,"2.5","petrol","euro 6 up to 2016","111",NULL,NULL,NULL,2015,NULL,NULL,"passenger_car"
-621,"2.5","petrol","euro 6 up to 2016","209",NULL,NULL,NULL,2016,NULL,NULL,"passenger_car"
-622,"2.5","petrol","euro 6 2017-2019","235",NULL,NULL,NULL,2017,NULL,NULL,"passenger_car"
-623,"2.5","petrol","ece 15/04","911",NULL,NULL,NULL,1989,NULL,NULL,"passenger_car"
-641,"1.2","petrol","euro 4","423",NULL,NULL,NULL,2007,NULL,NULL,"passenger_car"
-642,"1.2","petrol","euro 4","358",NULL,NULL,NULL,2008,NULL,NULL,"passenger_car"
-643,"1.2","petrol","euro 4","422",NULL,NULL,NULL,2009,NULL,NULL,"passenger_car"
-644,"1.2","petrol","euro 4","463",NULL,NULL,NULL,2010,NULL,NULL,"passenger_car"
-645,"1.2","petrol","euro 5","378",NULL,NULL,NULL,2011,NULL,NULL,"passenger_car"
+id,engine_size,fuel,emission_standard,number,engine_description,technology,load,registration_year,wheels_number,motor_type,class
+376,1,petrol,euro 3,272,NULL,NULL,NULL,2006,NULL,NULL,motorcycle
+397,NULL,petrol,euro 1,781,NULL,NULL,NULL,1989,NULL,NULL,motorcycle
+412,1.6,diesel,euro 3,756,NULL,NULL,NULL,2003,NULL,NULL,car
+431,2,diesel,euro 1,123,NULL,NULL,NULL,1993,NULL,NULL,car
+450,2,diesel,euro 5,2209,NULL,NULL,NULL,2012,NULL,NULL,car
+469,2.5,diesel,euro 3,948,NULL,NULL,NULL,2002,NULL,NULL,car
+475,2.5,diesel,euro 4,1023,NULL,NULL,NULL,2008,NULL,NULL,car
+485,2.5,diesel,conventional,474,NULL,NULL,NULL,1989,NULL,NULL,car
+504,1.2,diesel,euro 5,19,NULL,NULL,NULL,2012,NULL,NULL,car
+523,2,lpg,euro 6,5,NULL,NULL,NULL,2017,NULL,NULL,car
+542,1.6,petrol,euro 1,711,NULL,NULL,NULL,1995,NULL,NULL,car
+561,1.6,petrol,euro 5,1625,NULL,NULL,NULL,2014,NULL,NULL,car
+580,2,petrol,euro 3,1378,NULL,NULL,NULL,2004,NULL,NULL,car
+26,NULL,diesel,euro 6,63,NULL,NULL,NULL,2016,NULL,NULL,bus
+29,NULL,petrol,conventional,1,NULL,NULL,NULL,1989,NULL,NULL,bus
+46,NULL,diesel,euro 4,1429,NULL,NULL,NULL,2006,NULL,NULL,car
+63,NULL,petrol,euro 1,5,NULL,NULL,NULL,1994,NULL,NULL,car
+80,NULL,petrol,euro 5,2,NULL,NULL,NULL,2011,NULL,NULL,car
+97,NULL,diesel,euro 2,115,NULL,NULL,NULL,2000,NULL,NULL,truck
+114,NULL,diesel,euro 6,102,NULL,NULL,NULL,2017,NULL,NULL,truck
+131,NULL,diesel,euro 2,6,NULL,NULL,NULL,2009,NULL,NULL,motorcycle
+148,NULL,petrol,euro 2,1002,NULL,NULL,NULL,2007,NULL,NULL,motorcycle
+165,NULL,diesel,euro 1,250,NULL,NULL,NULL,1996,NULL,NULL,car
+182,NULL,diesel,euro 5,428,NULL,NULL,NULL,2013,NULL,NULL,car
+199,NULL,petrol,euro 3,83,NULL,NULL,NULL,2001,NULL,NULL,car
+216,NULL,petrol,conventional,1312,NULL,NULL,NULL,1989,NULL,NULL,car
+231,1,diesel,euro 3,4,NULL,NULL,NULL,2008,NULL,NULL,motorcycle
+250,0.25,petrol,euro 1,134,NULL,NULL,NULL,1999,NULL,NULL,motorcycle
+260,0.25,petrol,euro 3,128,NULL,NULL,NULL,2009,NULL,NULL,motorcycle
+270,0.5,petrol,euro 1,59,NULL,NULL,NULL,1990,NULL,NULL,motorcycle
+289,0.5,petrol,euro 3,93,NULL,NULL,NULL,2009,NULL,NULL,motorcycle
+308,0.75,petrol,euro 1,125,NULL,NULL,NULL,1999,NULL,NULL,motorcycle
+327,0.75,petrol,euro 1,329,NULL,NULL,NULL,1989,NULL,NULL,motorcycle
+346,125,petrol,euro 3,1304,NULL,NULL,NULL,2008,NULL,NULL,motorcycle
+365,1,petrol,euro 1,26,NULL,NULL,NULL,1995,NULL,NULL,motorcycle
+367,1,petrol,euro 1,36,NULL,NULL,NULL,1997,NULL,NULL,motorcycle
+0,NULL,diesel,conventional,1,NULL,NULL,NULL,1990,NULL,NULL,bus
+1,NULL,diesel,conventional,2,NULL,NULL,NULL,1991,NULL,NULL,bus
+2,NULL,diesel,euro 1,7,NULL,NULL,NULL,1992,NULL,NULL,bus
+3,NULL,diesel,euro 1,2,NULL,NULL,NULL,1993,NULL,NULL,bus
+4,NULL,diesel,euro 1,1,NULL,NULL,NULL,1994,NULL,NULL,bus
+5,NULL,diesel,euro 1,2,NULL,NULL,NULL,1995,NULL,NULL,bus
+6,NULL,diesel,euro 2,2,NULL,NULL,NULL,1996,NULL,NULL,bus
+7,NULL,diesel,euro 2,5,NULL,NULL,NULL,1997,NULL,NULL,bus
+8,NULL,diesel,euro 2,1,NULL,NULL,NULL,1998,NULL,NULL,bus
+9,NULL,diesel,euro 2,5,NULL,NULL,NULL,1999,NULL,NULL,bus
+10,NULL,diesel,euro 2,7,NULL,NULL,NULL,2000,NULL,NULL,bus
+11,NULL,diesel,euro 3,5,NULL,NULL,NULL,2001,NULL,NULL,bus
+12,NULL,diesel,euro 3,46,NULL,NULL,NULL,2002,NULL,NULL,bus
+13,NULL,diesel,euro 3,48,NULL,NULL,NULL,2003,NULL,NULL,bus
+14,NULL,diesel,euro 3,33,NULL,NULL,NULL,2004,NULL,NULL,bus
+15,NULL,diesel,euro 4,58,NULL,NULL,NULL,2005,NULL,NULL,bus
+16,NULL,diesel,euro 4,51,NULL,NULL,NULL,2006,NULL,NULL,bus
+17,NULL,diesel,euro 4,39,NULL,NULL,NULL,2007,NULL,NULL,bus
+18,NULL,diesel,euro 5,56,NULL,NULL,NULL,2008,NULL,NULL,bus
+19,NULL,diesel,euro 5,40,NULL,NULL,NULL,2009,NULL,NULL,bus
+20,NULL,diesel,euro 5,22,NULL,NULL,NULL,2010,NULL,NULL,bus
+21,NULL,diesel,euro 5,21,NULL,NULL,NULL,2011,NULL,NULL,bus
+22,NULL,diesel,euro 5,13,NULL,NULL,NULL,2012,NULL,NULL,bus
+23,NULL,diesel,euro 5,16,NULL,NULL,NULL,2013,NULL,NULL,bus
+24,NULL,diesel,euro 6,23,NULL,NULL,NULL,2014,NULL,NULL,bus
+25,NULL,diesel,euro 6,41,NULL,NULL,NULL,2015,NULL,NULL,bus
+30,NULL,diesel,conventional,56,NULL,NULL,NULL,1990,NULL,NULL,car
+31,NULL,diesel,conventional,69,NULL,NULL,NULL,1991,NULL,NULL,car
+32,NULL,diesel,conventional,65,NULL,NULL,NULL,1992,NULL,NULL,car
+33,NULL,diesel,conventional,40,NULL,NULL,NULL,1993,NULL,NULL,car
+34,NULL,diesel,euro 1,63,NULL,NULL,NULL,1994,NULL,NULL,car
+35,NULL,diesel,euro 1,190,NULL,NULL,NULL,1995,NULL,NULL,car
+36,NULL,diesel,euro 1,268,NULL,NULL,NULL,1996,NULL,NULL,car
+37,NULL,diesel,euro 1,421,NULL,NULL,NULL,1997,NULL,NULL,car
+38,NULL,diesel,euro 2,503,NULL,NULL,NULL,1998,NULL,NULL,car
+39,NULL,diesel,euro 2,623,NULL,NULL,NULL,1999,NULL,NULL,car
+40,NULL,diesel,euro 2,682,NULL,NULL,NULL,2000,NULL,NULL,car
+41,NULL,diesel,euro 3,676,NULL,NULL,NULL,2001,NULL,NULL,car
+42,NULL,diesel,euro 3,758,NULL,NULL,NULL,2002,NULL,NULL,car
+43,NULL,diesel,euro 3,904,NULL,NULL,NULL,2003,NULL,NULL,car
+44,NULL,diesel,euro 3,1118,NULL,NULL,NULL,2004,NULL,NULL,car
+45,NULL,diesel,euro 3,1315,NULL,NULL,NULL,2005,NULL,NULL,car
+47,NULL,diesel,euro 4,1543,NULL,NULL,NULL,2007,NULL,NULL,car
+48,NULL,diesel,euro 4,703,NULL,NULL,NULL,2008,NULL,NULL,car
+49,NULL,diesel,euro 4,457,NULL,NULL,NULL,2009,NULL,NULL,car
+50,NULL,diesel,euro 4,412,NULL,NULL,NULL,2010,NULL,NULL,car
+51,NULL,diesel,euro 5,325,NULL,NULL,NULL,2011,NULL,NULL,car
+52,NULL,diesel,euro 5,205,NULL,NULL,NULL,2012,NULL,NULL,car
+53,NULL,diesel,euro 5,207,NULL,NULL,NULL,2013,NULL,NULL,car
+54,NULL,diesel,euro 5,246,NULL,NULL,NULL,2014,NULL,NULL,car
+55,NULL,diesel,euro 6 up to 2017,305,NULL,NULL,NULL,2015,NULL,NULL,car
+56,NULL,diesel,euro 6 up to 2017,315,NULL,NULL,NULL,2016,NULL,NULL,car
+57,NULL,diesel,euro 6 up to 2017,259,NULL,NULL,NULL,2017,NULL,NULL,car
+58,NULL,diesel,conventional,802,NULL,NULL,NULL,1989,NULL,NULL,car
+59,NULL,petrol,conventional,8,NULL,NULL,NULL,1990,NULL,NULL,car
+60,NULL,petrol,conventional,4,NULL,NULL,NULL,1991,NULL,NULL,car
+61,NULL,petrol,conventional,4,NULL,NULL,NULL,1992,NULL,NULL,car
+62,NULL,petrol,conventional,4,NULL,NULL,NULL,1993,NULL,NULL,car
+64,NULL,petrol,euro 1,8,NULL,NULL,NULL,1995,NULL,NULL,car
+65,NULL,petrol,euro 1,22,NULL,NULL,NULL,1996,NULL,NULL,car
+66,NULL,petrol,euro 1,24,NULL,NULL,NULL,1997,NULL,NULL,car
+67,NULL,petrol,euro 2,20,NULL,NULL,NULL,1998,NULL,NULL,car
+68,NULL,petrol,euro 2,25,NULL,NULL,NULL,1999,NULL,NULL,car
+69,NULL,petrol,euro 2,19,NULL,NULL,NULL,2000,NULL,NULL,car
+70,NULL,petrol,euro 3,27,NULL,NULL,NULL,2001,NULL,NULL,car
+71,NULL,petrol,euro 3,25,NULL,NULL,NULL,2002,NULL,NULL,car
+72,NULL,petrol,euro 3,28,NULL,NULL,NULL,2003,NULL,NULL,car
+73,NULL,petrol,euro 3,41,NULL,NULL,NULL,2004,NULL,NULL,car
+74,NULL,petrol,euro 3,19,NULL,NULL,NULL,2005,NULL,NULL,car
+75,NULL,petrol,euro 4,30,NULL,NULL,NULL,2006,NULL,NULL,car
+76,NULL,petrol,euro 4,24,NULL,NULL,NULL,2007,NULL,NULL,car
+77,NULL,petrol,euro 4,8,NULL,NULL,NULL,2008,NULL,NULL,car
+78,NULL,petrol,euro 4,4,NULL,NULL,NULL,2009,NULL,NULL,car
+79,NULL,petrol,euro 4,3,NULL,NULL,NULL,2010,NULL,NULL,car
+81,NULL,petrol,euro 5,2,NULL,NULL,NULL,2013,NULL,NULL,car
+82,NULL,petrol,euro 5,6,NULL,NULL,NULL,2014,NULL,NULL,car
+83,NULL,petrol,euro 6 up to 2017,3,NULL,NULL,NULL,2015,NULL,NULL,car
+84,NULL,petrol,euro 6 up to 2017,6,NULL,NULL,NULL,2016,NULL,NULL,car
+85,NULL,petrol,euro 6 up to 2017,5,NULL,NULL,NULL,2017,NULL,NULL,car
+86,NULL,petrol,conventional,60,NULL,NULL,NULL,1989,NULL,NULL,car
+87,NULL,diesel,conventional,44,NULL,NULL,NULL,1990,NULL,NULL,truck
+88,NULL,diesel,conventional,37,NULL,NULL,NULL,1991,NULL,NULL,truck
+89,NULL,diesel,euro 1,41,NULL,NULL,NULL,1992,NULL,NULL,truck
+90,NULL,diesel,euro 1,20,NULL,NULL,NULL,1993,NULL,NULL,truck
+91,NULL,diesel,euro 1,20,NULL,NULL,NULL,1994,NULL,NULL,truck
+92,NULL,diesel,euro 1,38,NULL,NULL,NULL,1995,NULL,NULL,truck
+93,NULL,diesel,euro 2,42,NULL,NULL,NULL,1996,NULL,NULL,truck
+94,NULL,diesel,euro 2,59,NULL,NULL,NULL,1997,NULL,NULL,truck
+95,NULL,diesel,euro 2,60,NULL,NULL,NULL,1998,NULL,NULL,truck
+96,NULL,diesel,euro 2,91,NULL,NULL,NULL,1999,NULL,NULL,truck
+98,NULL,diesel,euro 3,152,NULL,NULL,NULL,2001,NULL,NULL,truck
+99,NULL,diesel,euro 3,115,NULL,NULL,NULL,2002,NULL,NULL,truck
+100,NULL,diesel,euro 3,124,NULL,NULL,NULL,2003,NULL,NULL,truck
+101,NULL,diesel,euro 3,136,NULL,NULL,NULL,2004,NULL,NULL,truck
+102,NULL,diesel,euro 4,161,NULL,NULL,NULL,2005,NULL,NULL,truck
+103,NULL,diesel,euro 4,140,NULL,NULL,NULL,2006,NULL,NULL,truck
+104,NULL,diesel,euro 4,211,NULL,NULL,NULL,2007,NULL,NULL,truck
+105,NULL,diesel,euro 5,246,NULL,NULL,NULL,2008,NULL,NULL,truck
+106,NULL,diesel,euro 5,50,NULL,NULL,NULL,2009,NULL,NULL,truck
+107,NULL,diesel,euro 5,57,NULL,NULL,NULL,2010,NULL,NULL,truck
+108,NULL,diesel,euro 5,80,NULL,NULL,NULL,2011,NULL,NULL,truck
+109,NULL,diesel,euro 5,59,NULL,NULL,NULL,2012,NULL,NULL,truck
+110,NULL,diesel,euro 5,54,NULL,NULL,NULL,2013,NULL,NULL,truck
+111,NULL,diesel,euro 6,55,NULL,NULL,NULL,2014,NULL,NULL,truck
+112,NULL,diesel,euro 6,107,NULL,NULL,NULL,2015,NULL,NULL,truck
+113,NULL,diesel,euro 6,78,NULL,NULL,NULL,2016,NULL,NULL,truck
+115,NULL,diesel,conventional,717,NULL,NULL,NULL,1989,NULL,NULL,truck
+116,NULL,petrol,conventional,1,NULL,NULL,NULL,1997,NULL,NULL,truck
+117,NULL,petrol,conventional,1,NULL,NULL,NULL,2000,NULL,NULL,truck
+118,NULL,petrol,conventional,1,NULL,NULL,NULL,2001,NULL,NULL,truck
+119,NULL,petrol,conventional,3,NULL,NULL,NULL,2006,NULL,NULL,truck
+120,NULL,petrol,conventional,11,NULL,NULL,NULL,1989,NULL,NULL,truck
+121,NULL,diesel,euro 1,21,NULL,NULL,NULL,1999,NULL,NULL,motorcycle
+122,NULL,diesel,euro 1,36,NULL,NULL,NULL,2000,NULL,NULL,motorcycle
+123,NULL,diesel,euro 1,30,NULL,NULL,NULL,2001,NULL,NULL,motorcycle
+124,NULL,diesel,euro 1,18,NULL,NULL,NULL,2002,NULL,NULL,motorcycle
+125,NULL,diesel,euro 2,19,NULL,NULL,NULL,2003,NULL,NULL,motorcycle
+126,NULL,diesel,euro 2,19,NULL,NULL,NULL,2004,NULL,NULL,motorcycle
+127,NULL,diesel,euro 2,36,NULL,NULL,NULL,2005,NULL,NULL,motorcycle
+128,NULL,diesel,euro 2,35,NULL,NULL,NULL,2006,NULL,NULL,motorcycle
+129,NULL,diesel,euro 2,33,NULL,NULL,NULL,2007,NULL,NULL,motorcycle
+130,NULL,diesel,euro 2,18,NULL,NULL,NULL,2008,NULL,NULL,motorcycle
+132,NULL,diesel,euro 2,6,NULL,NULL,NULL,2010,NULL,NULL,motorcycle
+133,NULL,diesel,euro 2,4,NULL,NULL,NULL,2011,NULL,NULL,motorcycle
+134,NULL,diesel,euro 2,9,NULL,NULL,NULL,2012,NULL,NULL,motorcycle
+135,NULL,diesel,euro 2,2,NULL,NULL,NULL,2013,NULL,NULL,motorcycle
+136,NULL,diesel,euro 3,6,NULL,NULL,NULL,2014,NULL,NULL,motorcycle
+137,NULL,diesel,euro 3,5,NULL,NULL,NULL,2015,NULL,NULL,motorcycle
+138,NULL,diesel,euro 3,5,NULL,NULL,NULL,2016,NULL,NULL,motorcycle
+139,NULL,diesel,euro 4,6,NULL,NULL,NULL,2017,NULL,NULL,motorcycle
+140,NULL,petrol,euro 1,1379,NULL,NULL,NULL,1999,NULL,NULL,motorcycle
+141,NULL,petrol,euro 1,3400,NULL,NULL,NULL,2000,NULL,NULL,motorcycle
+142,NULL,petrol,euro 1,2551,NULL,NULL,NULL,2001,NULL,NULL,motorcycle
+143,NULL,petrol,euro 1,1083,NULL,NULL,NULL,2002,NULL,NULL,motorcycle
+144,NULL,petrol,euro 2,730,NULL,NULL,NULL,2003,NULL,NULL,motorcycle
+145,NULL,petrol,euro 2,774,NULL,NULL,NULL,2004,NULL,NULL,motorcycle
+27,NULL,diesel,euro 6,25,NULL,NULL,NULL,2017,NULL,NULL,bus
+28,NULL,diesel,conventional,79,NULL,NULL,NULL,1989,NULL,NULL,bus
+149,NULL,petrol,euro 2,805,NULL,NULL,NULL,2008,NULL,NULL,motorcycle
+150,NULL,petrol,euro 2,398,NULL,NULL,NULL,2009,NULL,NULL,motorcycle
+151,NULL,petrol,euro 2,376,NULL,NULL,NULL,2010,NULL,NULL,motorcycle
+152,NULL,petrol,euro 2,240,NULL,NULL,NULL,2011,NULL,NULL,motorcycle
+153,NULL,petrol,euro 2,189,NULL,NULL,NULL,2012,NULL,NULL,motorcycle
+154,NULL,petrol,euro 2,131,NULL,NULL,NULL,2013,NULL,NULL,motorcycle
+155,NULL,petrol,euro 3,162,NULL,NULL,NULL,2014,NULL,NULL,motorcycle
+156,NULL,petrol,euro 3,164,NULL,NULL,NULL,2015,NULL,NULL,motorcycle
+157,NULL,petrol,euro 3,159,NULL,NULL,NULL,2016,NULL,NULL,motorcycle
+158,NULL,petrol,euro 4,186,NULL,NULL,NULL,2017,NULL,NULL,motorcycle
+159,NULL,diesel,conventional,200,NULL,NULL,NULL,1990,NULL,NULL,car
+160,NULL,diesel,conventional,208,NULL,NULL,NULL,1991,NULL,NULL,car
+161,NULL,diesel,conventional,233,NULL,NULL,NULL,1992,NULL,NULL,car
+162,NULL,diesel,conventional,206,NULL,NULL,NULL,1993,NULL,NULL,car
+163,NULL,diesel,euro 1,275,NULL,NULL,NULL,1994,NULL,NULL,car
+164,NULL,diesel,euro 1,236,NULL,NULL,NULL,1995,NULL,NULL,car
+166,NULL,diesel,euro 1,283,NULL,NULL,NULL,1997,NULL,NULL,car
+167,NULL,diesel,euro 2,364,NULL,NULL,NULL,1998,NULL,NULL,car
+168,NULL,diesel,euro 2,426,NULL,NULL,NULL,1999,NULL,NULL,car
+169,NULL,diesel,euro 2,451,NULL,NULL,NULL,2000,NULL,NULL,car
+170,NULL,diesel,euro 3,543,NULL,NULL,NULL,2001,NULL,NULL,car
+171,NULL,diesel,euro 3,659,NULL,NULL,NULL,2002,NULL,NULL,car
+172,NULL,diesel,euro 3,752,NULL,NULL,NULL,2003,NULL,NULL,car
+173,NULL,diesel,euro 3,917,NULL,NULL,NULL,2004,NULL,NULL,car
+174,NULL,diesel,euro 3,1136,NULL,NULL,NULL,2005,NULL,NULL,car
+175,NULL,diesel,euro 4,1099,NULL,NULL,NULL,2006,NULL,NULL,car
+176,NULL,diesel,euro 4,1401,NULL,NULL,NULL,2007,NULL,NULL,car
+177,NULL,diesel,euro 4,936,NULL,NULL,NULL,2008,NULL,NULL,car
+178,NULL,diesel,euro 4,642,NULL,NULL,NULL,2009,NULL,NULL,car
+179,NULL,diesel,euro 4,741,NULL,NULL,NULL,2010,NULL,NULL,car
+180,NULL,diesel,euro 5,614,NULL,NULL,NULL,2011,NULL,NULL,car
+181,NULL,diesel,euro 5,444,NULL,NULL,NULL,2012,NULL,NULL,car
+183,NULL,diesel,euro 5,554,NULL,NULL,NULL,2014,NULL,NULL,car
+184,NULL,diesel,euro 6 up to 2017,660,NULL,NULL,NULL,2015,NULL,NULL,car
+185,NULL,diesel,euro 6 up to 2017,716,NULL,NULL,NULL,2016,NULL,NULL,car
+186,NULL,diesel,euro 6 up to 2017,730,NULL,NULL,NULL,2017,NULL,NULL,car
+187,NULL,diesel,conventional,1302,NULL,NULL,NULL,1989,NULL,NULL,car
+188,NULL,petrol,conventional,101,NULL,NULL,NULL,1990,NULL,NULL,car
+189,NULL,petrol,conventional,146,NULL,NULL,NULL,1991,NULL,NULL,car
+190,NULL,petrol,conventional,167,NULL,NULL,NULL,1992,NULL,NULL,car
+191,NULL,petrol,conventional,152,NULL,NULL,NULL,1993,NULL,NULL,car
+192,NULL,petrol,euro 1,125,NULL,NULL,NULL,1994,NULL,NULL,car
+193,NULL,petrol,euro 1,77,NULL,NULL,NULL,1995,NULL,NULL,car
+194,NULL,petrol,euro 1,43,NULL,NULL,NULL,1996,NULL,NULL,car
+195,NULL,petrol,euro 1,60,NULL,NULL,NULL,1997,NULL,NULL,car
+196,NULL,petrol,euro 2,67,NULL,NULL,NULL,1998,NULL,NULL,car
+197,NULL,petrol,euro 2,79,NULL,NULL,NULL,1999,NULL,NULL,car
+198,NULL,petrol,euro 2,95,NULL,NULL,NULL,2000,NULL,NULL,car
+200,NULL,petrol,euro 3,81,NULL,NULL,NULL,2002,NULL,NULL,car
+201,NULL,petrol,euro 3,83,NULL,NULL,NULL,2003,NULL,NULL,car
+202,NULL,petrol,euro 3,132,NULL,NULL,NULL,2004,NULL,NULL,car
+203,NULL,petrol,euro 3,119,NULL,NULL,NULL,2005,NULL,NULL,car
+204,NULL,petrol,euro 4,87,NULL,NULL,NULL,2006,NULL,NULL,car
+205,NULL,petrol,euro 4,88,NULL,NULL,NULL,2007,NULL,NULL,car
+206,NULL,petrol,euro 4,56,NULL,NULL,NULL,2008,NULL,NULL,car
+207,NULL,petrol,euro 4,28,NULL,NULL,NULL,2009,NULL,NULL,car
+208,NULL,petrol,euro 4,40,NULL,NULL,NULL,2010,NULL,NULL,car
+209,NULL,petrol,euro 5,25,NULL,NULL,NULL,2011,NULL,NULL,car
+210,NULL,petrol,euro 5,17,NULL,NULL,NULL,2012,NULL,NULL,car
+211,NULL,petrol,euro 5,21,NULL,NULL,NULL,2013,NULL,NULL,car
+212,NULL,petrol,euro 5,14,NULL,NULL,NULL,2014,NULL,NULL,car
+213,NULL,petrol,euro 6 up to 2017,17,NULL,NULL,NULL,2015,NULL,NULL,car
+214,NULL,petrol,euro 6 up to 2017,28,NULL,NULL,NULL,2016,NULL,NULL,car
+215,NULL,petrol,euro 6 up to 2017,40,NULL,NULL,NULL,2017,NULL,NULL,car
+217,0.25,diesel,euro 2,5,NULL,NULL,NULL,2005,NULL,NULL,motorcycle
+218,0.25,diesel,euro 3,1,NULL,NULL,NULL,2006,NULL,NULL,motorcycle
+219,0.25,diesel,euro 3,1,NULL,NULL,NULL,2007,NULL,NULL,motorcycle
+220,0.25,diesel,euro 3,1,NULL,NULL,NULL,2008,NULL,NULL,motorcycle
+221,0.75,diesel,euro 3,1,NULL,NULL,NULL,2007,NULL,NULL,motorcycle
+222,0.75,diesel,euro 3,11,NULL,NULL,NULL,2014,NULL,NULL,motorcycle
+223,0.75,diesel,euro 3,1,NULL,NULL,NULL,2016,NULL,NULL,motorcycle
+224,125,diesel,euro 2,1,NULL,NULL,NULL,2005,NULL,NULL,motorcycle
+225,1,diesel,euro 1,1,NULL,NULL,NULL,2002,NULL,NULL,motorcycle
+226,1,diesel,euro 2,1,NULL,NULL,NULL,2003,NULL,NULL,motorcycle
+227,1,diesel,euro 2,2,NULL,NULL,NULL,2004,NULL,NULL,motorcycle
+228,1,diesel,euro 2,2,NULL,NULL,NULL,2005,NULL,NULL,motorcycle
+229,1,diesel,euro 3,1,NULL,NULL,NULL,2006,NULL,NULL,motorcycle
+230,1,diesel,euro 3,1,NULL,NULL,NULL,2007,NULL,NULL,motorcycle
+232,1,diesel,euro 3,1,NULL,NULL,NULL,2009,NULL,NULL,motorcycle
+233,1,diesel,euro 3,2,NULL,NULL,NULL,2010,NULL,NULL,motorcycle
+234,1,diesel,euro 3,1,NULL,NULL,NULL,2011,NULL,NULL,motorcycle
+235,1,diesel,euro 3,2,NULL,NULL,NULL,2012,NULL,NULL,motorcycle
+236,1,diesel,euro 3,9,NULL,NULL,NULL,2013,NULL,NULL,motorcycle
+237,1,diesel,euro 3,6,NULL,NULL,NULL,2014,NULL,NULL,motorcycle
+238,1,diesel,euro 3,17,NULL,NULL,NULL,2015,NULL,NULL,motorcycle
+239,1,diesel,euro 3,6,NULL,NULL,NULL,2016,NULL,NULL,motorcycle
+240,1,diesel,euro 4,2,NULL,NULL,NULL,2017,NULL,NULL,motorcycle
+241,0.25,petrol,euro 1,64,NULL,NULL,NULL,1990,NULL,NULL,motorcycle
+242,0.25,petrol,euro 1,62,NULL,NULL,NULL,1991,NULL,NULL,motorcycle
+243,0.25,petrol,euro 1,86,NULL,NULL,NULL,1992,NULL,NULL,motorcycle
+244,0.25,petrol,euro 1,44,NULL,NULL,NULL,1993,NULL,NULL,motorcycle
+245,0.25,petrol,euro 1,53,NULL,NULL,NULL,1994,NULL,NULL,motorcycle
+246,0.25,petrol,euro 1,60,NULL,NULL,NULL,1995,NULL,NULL,motorcycle
+247,0.25,petrol,euro 1,55,NULL,NULL,NULL,1996,NULL,NULL,motorcycle
+248,0.25,petrol,euro 1,98,NULL,NULL,NULL,1997,NULL,NULL,motorcycle
+249,0.25,petrol,euro 1,136,NULL,NULL,NULL,1998,NULL,NULL,motorcycle
+251,0.25,petrol,euro 1,150,NULL,NULL,NULL,2000,NULL,NULL,motorcycle
+252,0.25,petrol,euro 1,179,NULL,NULL,NULL,2001,NULL,NULL,motorcycle
+253,0.25,petrol,euro 1,166,NULL,NULL,NULL,2002,NULL,NULL,motorcycle
+254,0.25,petrol,euro 2,203,NULL,NULL,NULL,2003,NULL,NULL,motorcycle
+255,0.25,petrol,euro 2,267,NULL,NULL,NULL,2004,NULL,NULL,motorcycle
+256,0.25,petrol,euro 2,427,NULL,NULL,NULL,2005,NULL,NULL,motorcycle
+257,0.25,petrol,euro 3,412,NULL,NULL,NULL,2006,NULL,NULL,motorcycle
+258,0.25,petrol,euro 3,428,NULL,NULL,NULL,2007,NULL,NULL,motorcycle
+259,0.25,petrol,euro 3,281,NULL,NULL,NULL,2008,NULL,NULL,motorcycle
+146,NULL,petrol,euro 2,711,NULL,NULL,NULL,2005,NULL,NULL,motorcycle
+147,NULL,petrol,euro 2,895,NULL,NULL,NULL,2006,NULL,NULL,motorcycle
+263,0.25,petrol,euro 3,59,NULL,NULL,NULL,2012,NULL,NULL,motorcycle
+264,0.25,petrol,euro 3,33,NULL,NULL,NULL,2013,NULL,NULL,motorcycle
+265,0.25,petrol,euro 3,43,NULL,NULL,NULL,2014,NULL,NULL,motorcycle
+266,0.25,petrol,euro 3,52,NULL,NULL,NULL,2015,NULL,NULL,motorcycle
+267,0.25,petrol,euro 3,43,NULL,NULL,NULL,2016,NULL,NULL,motorcycle
+268,0.25,petrol,euro 4,35,NULL,NULL,NULL,2017,NULL,NULL,motorcycle
+269,0.25,petrol,euro 1,1587,NULL,NULL,NULL,1989,NULL,NULL,motorcycle
+271,0.5,petrol,euro 1,62,NULL,NULL,NULL,1991,NULL,NULL,motorcycle
+272,0.5,petrol,euro 1,74,NULL,NULL,NULL,1992,NULL,NULL,motorcycle
+273,0.5,petrol,euro 1,34,NULL,NULL,NULL,1993,NULL,NULL,motorcycle
+274,0.5,petrol,euro 1,33,NULL,NULL,NULL,1994,NULL,NULL,motorcycle
+275,0.5,petrol,euro 1,23,NULL,NULL,NULL,1995,NULL,NULL,motorcycle
+276,0.5,petrol,euro 1,13,NULL,NULL,NULL,1996,NULL,NULL,motorcycle
+277,0.5,petrol,euro 1,24,NULL,NULL,NULL,1997,NULL,NULL,motorcycle
+278,0.5,petrol,euro 1,26,NULL,NULL,NULL,1998,NULL,NULL,motorcycle
+279,0.5,petrol,euro 1,40,NULL,NULL,NULL,1999,NULL,NULL,motorcycle
+280,0.5,petrol,euro 1,40,NULL,NULL,NULL,2000,NULL,NULL,motorcycle
+281,0.5,petrol,euro 1,32,NULL,NULL,NULL,2001,NULL,NULL,motorcycle
+282,0.5,petrol,euro 1,36,NULL,NULL,NULL,2002,NULL,NULL,motorcycle
+283,0.5,petrol,euro 2,68,NULL,NULL,NULL,2003,NULL,NULL,motorcycle
+284,0.5,petrol,euro 2,89,NULL,NULL,NULL,2004,NULL,NULL,motorcycle
+285,0.5,petrol,euro 2,117,NULL,NULL,NULL,2005,NULL,NULL,motorcycle
+286,0.5,petrol,euro 3,154,NULL,NULL,NULL,2006,NULL,NULL,motorcycle
+287,0.5,petrol,euro 3,193,NULL,NULL,NULL,2007,NULL,NULL,motorcycle
+288,0.5,petrol,euro 3,174,NULL,NULL,NULL,2008,NULL,NULL,motorcycle
+290,0.5,petrol,euro 3,161,NULL,NULL,NULL,2010,NULL,NULL,motorcycle
+291,0.5,petrol,euro 3,98,NULL,NULL,NULL,2011,NULL,NULL,motorcycle
+292,0.5,petrol,euro 3,104,NULL,NULL,NULL,2012,NULL,NULL,motorcycle
+293,0.5,petrol,euro 3,121,NULL,NULL,NULL,2013,NULL,NULL,motorcycle
+294,0.5,petrol,euro 3,164,NULL,NULL,NULL,2014,NULL,NULL,motorcycle
+295,0.5,petrol,euro 3,178,NULL,NULL,NULL,2015,NULL,NULL,motorcycle
+296,0.5,petrol,euro 3,226,NULL,NULL,NULL,2016,NULL,NULL,motorcycle
+297,0.5,petrol,euro 4,250,NULL,NULL,NULL,2017,NULL,NULL,motorcycle
+298,0.5,petrol,euro 1,399,NULL,NULL,NULL,1989,NULL,NULL,motorcycle
+299,0.75,petrol,euro 1,129,NULL,NULL,NULL,1990,NULL,NULL,motorcycle
+300,0.75,petrol,euro 1,158,NULL,NULL,NULL,1991,NULL,NULL,motorcycle
+301,0.75,petrol,euro 1,199,NULL,NULL,NULL,1992,NULL,NULL,motorcycle
+302,0.75,petrol,euro 1,85,NULL,NULL,NULL,1993,NULL,NULL,motorcycle
+303,0.75,petrol,euro 1,68,NULL,NULL,NULL,1994,NULL,NULL,motorcycle
+304,0.75,petrol,euro 1,48,NULL,NULL,NULL,1995,NULL,NULL,motorcycle
+305,0.75,petrol,euro 1,36,NULL,NULL,NULL,1996,NULL,NULL,motorcycle
+306,0.75,petrol,euro 1,58,NULL,NULL,NULL,1997,NULL,NULL,motorcycle
+307,0.75,petrol,euro 1,104,NULL,NULL,NULL,1998,NULL,NULL,motorcycle
+309,0.75,petrol,euro 1,123,NULL,NULL,NULL,2000,NULL,NULL,motorcycle
+310,0.75,petrol,euro 1,139,NULL,NULL,NULL,2001,NULL,NULL,motorcycle
+311,0.75,petrol,euro 1,152,NULL,NULL,NULL,2002,NULL,NULL,motorcycle
+312,0.75,petrol,euro 2,204,NULL,NULL,NULL,2003,NULL,NULL,motorcycle
+313,0.75,petrol,euro 2,242,NULL,NULL,NULL,2004,NULL,NULL,motorcycle
+314,0.75,petrol,euro 2,366,NULL,NULL,NULL,2005,NULL,NULL,motorcycle
+315,0.75,petrol,euro 3,547,NULL,NULL,NULL,2006,NULL,NULL,motorcycle
+316,0.75,petrol,euro 3,695,NULL,NULL,NULL,2007,NULL,NULL,motorcycle
+317,0.75,petrol,euro 3,561,NULL,NULL,NULL,2008,NULL,NULL,motorcycle
+318,0.75,petrol,euro 3,244,NULL,NULL,NULL,2009,NULL,NULL,motorcycle
+319,0.75,petrol,euro 3,214,NULL,NULL,NULL,2010,NULL,NULL,motorcycle
+320,0.75,petrol,euro 3,158,NULL,NULL,NULL,2011,NULL,NULL,motorcycle
+321,0.75,petrol,euro 3,143,NULL,NULL,NULL,2012,NULL,NULL,motorcycle
+322,0.75,petrol,euro 3,105,NULL,NULL,NULL,2013,NULL,NULL,motorcycle
+323,0.75,petrol,euro 3,139,NULL,NULL,NULL,2014,NULL,NULL,motorcycle
+324,0.75,petrol,euro 3,179,NULL,NULL,NULL,2015,NULL,NULL,motorcycle
+325,0.75,petrol,euro 3,170,NULL,NULL,NULL,2016,NULL,NULL,motorcycle
+326,0.75,petrol,euro 4,236,NULL,NULL,NULL,2017,NULL,NULL,motorcycle
+328,125,petrol,euro 1,109,NULL,NULL,NULL,1990,NULL,NULL,motorcycle
+329,125,petrol,euro 1,138,NULL,NULL,NULL,1991,NULL,NULL,motorcycle
+330,125,petrol,euro 1,85,NULL,NULL,NULL,1992,NULL,NULL,motorcycle
+331,125,petrol,euro 1,72,NULL,NULL,NULL,1993,NULL,NULL,motorcycle
+332,125,petrol,euro 1,56,NULL,NULL,NULL,1994,NULL,NULL,motorcycle
+333,125,petrol,euro 1,67,NULL,NULL,NULL,1995,NULL,NULL,motorcycle
+334,125,petrol,euro 1,69,NULL,NULL,NULL,1996,NULL,NULL,motorcycle
+335,125,petrol,euro 1,115,NULL,NULL,NULL,1997,NULL,NULL,motorcycle
+336,125,petrol,euro 1,129,NULL,NULL,NULL,1998,NULL,NULL,motorcycle
+337,125,petrol,euro 1,173,NULL,NULL,NULL,1999,NULL,NULL,motorcycle
+338,125,petrol,euro 1,147,NULL,NULL,NULL,2000,NULL,NULL,motorcycle
+339,125,petrol,euro 1,101,NULL,NULL,NULL,2001,NULL,NULL,motorcycle
+340,125,petrol,euro 1,109,NULL,NULL,NULL,2002,NULL,NULL,motorcycle
+341,125,petrol,euro 2,112,NULL,NULL,NULL,2003,NULL,NULL,motorcycle
+342,125,petrol,euro 2,407,NULL,NULL,NULL,2004,NULL,NULL,motorcycle
+343,125,petrol,euro 2,1059,NULL,NULL,NULL,2005,NULL,NULL,motorcycle
+344,125,petrol,euro 3,1373,NULL,NULL,NULL,2006,NULL,NULL,motorcycle
+345,125,petrol,euro 3,1518,NULL,NULL,NULL,2007,NULL,NULL,motorcycle
+347,125,petrol,euro 3,963,NULL,NULL,NULL,2009,NULL,NULL,motorcycle
+348,125,petrol,euro 3,901,NULL,NULL,NULL,2010,NULL,NULL,motorcycle
+349,125,petrol,euro 3,947,NULL,NULL,NULL,2011,NULL,NULL,motorcycle
+350,125,petrol,euro 3,877,NULL,NULL,NULL,2012,NULL,NULL,motorcycle
+351,125,petrol,euro 3,791,NULL,NULL,NULL,2013,NULL,NULL,motorcycle
+352,125,petrol,euro 3,926,NULL,NULL,NULL,2014,NULL,NULL,motorcycle
+353,125,petrol,euro 3,1083,NULL,NULL,NULL,2015,NULL,NULL,motorcycle
+354,125,petrol,euro 3,1139,NULL,NULL,NULL,2016,NULL,NULL,motorcycle
+355,125,petrol,euro 4,905,NULL,NULL,NULL,2017,NULL,NULL,motorcycle
+356,125,petrol,euro 1,944,NULL,NULL,NULL,1989,NULL,NULL,motorcycle
+357,0.05,petrol,euro 1,1,NULL,NULL,NULL,2001,NULL,NULL,motorcycle
+358,0.05,petrol,euro 2,1,NULL,NULL,NULL,2004,NULL,NULL,motorcycle
+359,0.05,petrol,euro 1,43,NULL,NULL,NULL,1989,NULL,NULL,motorcycle
+360,1,petrol,euro 1,29,NULL,NULL,NULL,1990,NULL,NULL,motorcycle
+361,1,petrol,euro 1,30,NULL,NULL,NULL,1991,NULL,NULL,motorcycle
+362,1,petrol,euro 1,49,NULL,NULL,NULL,1992,NULL,NULL,motorcycle
+363,1,petrol,euro 1,22,NULL,NULL,NULL,1993,NULL,NULL,motorcycle
+364,1,petrol,euro 1,22,NULL,NULL,NULL,1994,NULL,NULL,motorcycle
+366,1,petrol,euro 1,23,NULL,NULL,NULL,1996,NULL,NULL,motorcycle
+261,0.25,petrol,euro 3,107,NULL,NULL,NULL,2010,NULL,NULL,motorcycle
+262,0.25,petrol,euro 3,92,NULL,NULL,NULL,2011,NULL,NULL,motorcycle
+370,1,petrol,euro 1,87,NULL,NULL,NULL,2000,NULL,NULL,motorcycle
+371,1,petrol,euro 1,77,NULL,NULL,NULL,2001,NULL,NULL,motorcycle
+372,1,petrol,euro 1,100,NULL,NULL,NULL,2002,NULL,NULL,motorcycle
+373,1,petrol,euro 2,97,NULL,NULL,NULL,2003,NULL,NULL,motorcycle
+374,1,petrol,euro 2,145,NULL,NULL,NULL,2004,NULL,NULL,motorcycle
+375,1,petrol,euro 2,203,NULL,NULL,NULL,2005,NULL,NULL,motorcycle
+377,1,petrol,euro 3,355,NULL,NULL,NULL,2007,NULL,NULL,motorcycle
+378,1,petrol,euro 3,357,NULL,NULL,NULL,2008,NULL,NULL,motorcycle
+379,1,petrol,euro 3,189,NULL,NULL,NULL,2009,NULL,NULL,motorcycle
+380,1,petrol,euro 3,216,NULL,NULL,NULL,2010,NULL,NULL,motorcycle
+381,1,petrol,euro 3,212,NULL,NULL,NULL,2011,NULL,NULL,motorcycle
+382,1,petrol,euro 3,146,NULL,NULL,NULL,2012,NULL,NULL,motorcycle
+383,1,petrol,euro 3,136,NULL,NULL,NULL,2013,NULL,NULL,motorcycle
+384,1,petrol,euro 3,152,NULL,NULL,NULL,2014,NULL,NULL,motorcycle
+385,1,petrol,euro 3,235,NULL,NULL,NULL,2015,NULL,NULL,motorcycle
+386,1,petrol,euro 3,302,NULL,NULL,NULL,2016,NULL,NULL,motorcycle
+387,1,petrol,euro 4,322,NULL,NULL,NULL,2017,NULL,NULL,motorcycle
+388,1,petrol,euro 1,139,NULL,NULL,NULL,1989,NULL,NULL,motorcycle
+389,NULL,petrol,euro 1,98,NULL,NULL,NULL,1990,NULL,NULL,motorcycle
+390,NULL,petrol,euro 1,125,NULL,NULL,NULL,1991,NULL,NULL,motorcycle
+391,NULL,petrol,euro 1,86,NULL,NULL,NULL,1992,NULL,NULL,motorcycle
+392,NULL,petrol,euro 1,31,NULL,NULL,NULL,1993,NULL,NULL,motorcycle
+393,NULL,petrol,euro 1,20,NULL,NULL,NULL,1994,NULL,NULL,motorcycle
+394,NULL,petrol,euro 1,26,NULL,NULL,NULL,1995,NULL,NULL,motorcycle
+395,NULL,petrol,euro 1,9,NULL,NULL,NULL,1996,NULL,NULL,motorcycle
+396,NULL,petrol,euro 1,1,NULL,NULL,NULL,1998,NULL,NULL,motorcycle
+398,1.6,lpg,conventional,2,NULL,NULL,NULL,1989,NULL,NULL,car
+399,1.6,diesel,conventional,12,NULL,NULL,NULL,1990,NULL,NULL,car
+400,1.6,diesel,conventional,17,NULL,NULL,NULL,1991,NULL,NULL,car
+401,1.6,diesel,conventional,12,NULL,NULL,NULL,1992,NULL,NULL,car
+402,1.6,diesel,euro 1,14,NULL,NULL,NULL,1993,NULL,NULL,car
+403,1.6,diesel,euro 1,58,NULL,NULL,NULL,1994,NULL,NULL,car
+404,1.6,diesel,euro 1,34,NULL,NULL,NULL,1995,NULL,NULL,car
+405,1.6,diesel,euro 1,40,NULL,NULL,NULL,1996,NULL,NULL,car
+406,1.6,diesel,euro 2,63,NULL,NULL,NULL,1997,NULL,NULL,car
+407,1.6,diesel,euro 2,153,NULL,NULL,NULL,1998,NULL,NULL,car
+408,1.6,diesel,euro 2,133,NULL,NULL,NULL,1999,NULL,NULL,car
+409,1.6,diesel,euro 2,118,NULL,NULL,NULL,2000,NULL,NULL,car
+410,1.6,diesel,euro 3,139,NULL,NULL,NULL,2001,NULL,NULL,car
+411,1.6,diesel,euro 3,355,NULL,NULL,NULL,2002,NULL,NULL,car
+413,1.6,diesel,euro 3,1644,NULL,NULL,NULL,2004,NULL,NULL,car
+414,1.6,diesel,euro 3,2567,NULL,NULL,NULL,2005,NULL,NULL,car
+415,1.6,diesel,euro 4,2986,NULL,NULL,NULL,2006,NULL,NULL,car
+416,1.6,diesel,euro 4,2847,NULL,NULL,NULL,2007,NULL,NULL,car
+417,1.6,diesel,euro 4,2164,NULL,NULL,NULL,2008,NULL,NULL,car
+418,1.6,diesel,euro 4,2944,NULL,NULL,NULL,2009,NULL,NULL,car
+419,1.6,diesel,euro 4,3016,NULL,NULL,NULL,2010,NULL,NULL,car
+420,1.6,diesel,euro 5,2488,NULL,NULL,NULL,2011,NULL,NULL,car
+421,1.6,diesel,euro 5,2144,NULL,NULL,NULL,2012,NULL,NULL,car
+422,1.6,diesel,euro 5,2331,NULL,NULL,NULL,2013,NULL,NULL,car
+423,1.6,diesel,euro 5,3087,NULL,NULL,NULL,2014,NULL,NULL,car
+424,1.6,diesel,euro 6 up to 2016,3724,NULL,NULL,NULL,2015,NULL,NULL,car
+425,1.6,diesel,euro 6 up to 2016,3560,NULL,NULL,NULL,2016,NULL,NULL,car
+426,1.6,diesel,euro 6 2017-2019,2772,NULL,NULL,NULL,2017,NULL,NULL,car
+427,1.6,diesel,conventional,166,NULL,NULL,NULL,1989,NULL,NULL,car
+428,2,diesel,conventional,43,NULL,NULL,NULL,1990,NULL,NULL,car
+429,2,diesel,conventional,52,NULL,NULL,NULL,1991,NULL,NULL,car
+430,2,diesel,conventional,87,NULL,NULL,NULL,1992,NULL,NULL,car
+432,2,diesel,euro 1,241,NULL,NULL,NULL,1994,NULL,NULL,car
+433,2,diesel,euro 1,310,NULL,NULL,NULL,1995,NULL,NULL,car
+434,2,diesel,euro 1,577,NULL,NULL,NULL,1996,NULL,NULL,car
+435,2,diesel,euro 2,949,NULL,NULL,NULL,1997,NULL,NULL,car
+436,2,diesel,euro 2,1689,NULL,NULL,NULL,1998,NULL,NULL,car
+437,2,diesel,euro 2,3038,NULL,NULL,NULL,1999,NULL,NULL,car
+438,2,diesel,euro 2,3583,NULL,NULL,NULL,2000,NULL,NULL,car
+439,2,diesel,euro 3,3809,NULL,NULL,NULL,2001,NULL,NULL,car
+440,2,diesel,euro 3,4365,NULL,NULL,NULL,2002,NULL,NULL,car
+441,2,diesel,euro 3,5153,NULL,NULL,NULL,2003,NULL,NULL,car
+442,2,diesel,euro 3,6256,NULL,NULL,NULL,2004,NULL,NULL,car
+443,2,diesel,euro 3,6647,NULL,NULL,NULL,2005,NULL,NULL,car
+444,2,diesel,euro 4,6732,NULL,NULL,NULL,2006,NULL,NULL,car
+445,2,diesel,euro 4,6601,NULL,NULL,NULL,2007,NULL,NULL,car
+446,2,diesel,euro 4,4688,NULL,NULL,NULL,2008,NULL,NULL,car
+447,2,diesel,euro 4,4151,NULL,NULL,NULL,2009,NULL,NULL,car
+448,2,diesel,euro 4,3588,NULL,NULL,NULL,2010,NULL,NULL,car
+449,2,diesel,euro 5,2611,NULL,NULL,NULL,2011,NULL,NULL,car
+451,2,diesel,euro 5,2255,NULL,NULL,NULL,2013,NULL,NULL,car
+452,2,diesel,euro 5,2169,NULL,NULL,NULL,2014,NULL,NULL,car
+453,2,diesel,euro 6 up to 2016,2260,NULL,NULL,NULL,2015,NULL,NULL,car
+454,2,diesel,euro 6 up to 2016,2051,NULL,NULL,NULL,2016,NULL,NULL,car
+455,2,diesel,euro 6 2017-2019,1762,NULL,NULL,NULL,2017,NULL,NULL,car
+456,2,diesel,conventional,445,NULL,NULL,NULL,1989,NULL,NULL,car
+457,2.5,diesel,conventional,49,NULL,NULL,NULL,1990,NULL,NULL,car
+458,2.5,diesel,conventional,60,NULL,NULL,NULL,1991,NULL,NULL,car
+459,2.5,diesel,conventional,68,NULL,NULL,NULL,1992,NULL,NULL,car
+460,2.5,diesel,euro 1,60,NULL,NULL,NULL,1993,NULL,NULL,car
+461,2.5,diesel,euro 1,62,NULL,NULL,NULL,1994,NULL,NULL,car
+462,2.5,diesel,euro 1,102,NULL,NULL,NULL,1995,NULL,NULL,car
+463,2.5,diesel,euro 1,180,NULL,NULL,NULL,1996,NULL,NULL,car
+464,2.5,diesel,euro 2,259,NULL,NULL,NULL,1997,NULL,NULL,car
+465,2.5,diesel,euro 2,392,NULL,NULL,NULL,1998,NULL,NULL,car
+466,2.5,diesel,euro 2,418,NULL,NULL,NULL,1999,NULL,NULL,car
+467,2.5,diesel,euro 2,579,NULL,NULL,NULL,2000,NULL,NULL,car
+468,2.5,diesel,euro 3,747,NULL,NULL,NULL,2001,NULL,NULL,car
+470,2.5,diesel,euro 3,1526,NULL,NULL,NULL,2003,NULL,NULL,car
+471,2.5,diesel,euro 3,1521,NULL,NULL,NULL,2004,NULL,NULL,car
+472,2.5,diesel,euro 3,1576,NULL,NULL,NULL,2005,NULL,NULL,car
+473,2.5,diesel,euro 4,1759,NULL,NULL,NULL,2006,NULL,NULL,car
+474,2.5,diesel,euro 4,1554,NULL,NULL,NULL,2007,NULL,NULL,car
+368,1,petrol,euro 1,41,NULL,NULL,NULL,1998,NULL,NULL,motorcycle
+369,1,petrol,euro 1,67,NULL,NULL,NULL,1999,NULL,NULL,motorcycle
+478,2.5,diesel,euro 5,526,NULL,NULL,NULL,2011,NULL,NULL,car
+479,2.5,diesel,euro 5,446,NULL,NULL,NULL,2012,NULL,NULL,car
+480,2.5,diesel,euro 5,406,NULL,NULL,NULL,2013,NULL,NULL,car
+481,2.5,diesel,euro 5,547,NULL,NULL,NULL,2014,NULL,NULL,car
+482,2.5,diesel,euro 6 up to 2016,771,NULL,NULL,NULL,2015,NULL,NULL,car
+483,2.5,diesel,euro 6 up to 2016,760,NULL,NULL,NULL,2016,NULL,NULL,car
+484,2.5,diesel,euro 6 2017-2019,655,NULL,NULL,NULL,2017,NULL,NULL,car
+486,1.2,diesel,conventional,1,NULL,NULL,NULL,1991,NULL,NULL,car
+487,1.2,diesel,euro 1,4,NULL,NULL,NULL,1994,NULL,NULL,car
+488,1.2,diesel,euro 1,1,NULL,NULL,NULL,1996,NULL,NULL,car
+489,1.2,diesel,euro 2,2,NULL,NULL,NULL,1997,NULL,NULL,car
+490,1.2,diesel,euro 2,3,NULL,NULL,NULL,1998,NULL,NULL,car
+491,1.2,diesel,euro 2,6,NULL,NULL,NULL,1999,NULL,NULL,car
+492,1.2,diesel,euro 2,13,NULL,NULL,NULL,2000,NULL,NULL,car
+493,1.2,diesel,euro 3,2,NULL,NULL,NULL,2001,NULL,NULL,car
+494,1.2,diesel,euro 3,10,NULL,NULL,NULL,2002,NULL,NULL,car
+495,1.2,diesel,euro 3,4,NULL,NULL,NULL,2003,NULL,NULL,car
+496,1.2,diesel,euro 3,2,NULL,NULL,NULL,2004,NULL,NULL,car
+497,1.2,diesel,euro 3,6,NULL,NULL,NULL,2005,NULL,NULL,car
+498,1.2,diesel,euro 4,33,NULL,NULL,NULL,2006,NULL,NULL,car
+499,1.2,diesel,euro 4,6,NULL,NULL,NULL,2007,NULL,NULL,car
+500,1.2,diesel,euro 4,6,NULL,NULL,NULL,2008,NULL,NULL,car
+501,1.2,diesel,euro 4,1,NULL,NULL,NULL,2009,NULL,NULL,car
+502,1.2,diesel,euro 4,13,NULL,NULL,NULL,2010,NULL,NULL,car
+503,1.2,diesel,euro 5,22,NULL,NULL,NULL,2011,NULL,NULL,car
+505,1.2,diesel,euro 5,15,NULL,NULL,NULL,2013,NULL,NULL,car
+506,1.2,diesel,euro 5,12,NULL,NULL,NULL,2014,NULL,NULL,car
+507,1.2,diesel,euro 6 up to 2016,30,NULL,NULL,NULL,2015,NULL,NULL,car
+508,1.2,diesel,euro 6 up to 2016,20,NULL,NULL,NULL,2016,NULL,NULL,car
+509,1.2,diesel,euro 6 2017-2019,9,NULL,NULL,NULL,2017,NULL,NULL,car
+510,1.2,diesel,conventional,13,NULL,NULL,NULL,1989,NULL,NULL,car
+511,1.6,lpg,euro 5,27,NULL,NULL,NULL,2012,NULL,NULL,car
+512,1.6,lpg,euro 5,23,NULL,NULL,NULL,2013,NULL,NULL,car
+513,1.6,lpg,euro 5,12,NULL,NULL,NULL,2014,NULL,NULL,car
+514,1.6,lpg,euro 6,15,NULL,NULL,NULL,2015,NULL,NULL,car
+515,1.6,lpg,euro 6,28,NULL,NULL,NULL,2016,NULL,NULL,car
+516,1.6,lpg,euro 6,64,NULL,NULL,NULL,2017,NULL,NULL,car
+517,2,lpg,euro 4,1,NULL,NULL,NULL,2008,NULL,NULL,car
+518,2,lpg,euro 4,8,NULL,NULL,NULL,2010,NULL,NULL,car
+519,2,lpg,euro 5,7,NULL,NULL,NULL,2011,NULL,NULL,car
+520,2,lpg,euro 5,10,NULL,NULL,NULL,2014,NULL,NULL,car
+521,2,lpg,euro 6,2,NULL,NULL,NULL,2015,NULL,NULL,car
+522,2,lpg,euro 6,7,NULL,NULL,NULL,2016,NULL,NULL,car
+524,2.5,lpg,euro 3,1,NULL,NULL,NULL,2004,NULL,NULL,car
+525,2.5,lpg,euro 4,1,NULL,NULL,NULL,2006,NULL,NULL,car
+526,2.5,lpg,euro 4,1,NULL,NULL,NULL,2008,NULL,NULL,car
+527,2.5,lpg,euro 5,1,NULL,NULL,NULL,2013,NULL,NULL,car
+528,1.2,lpg,euro 5,16,NULL,NULL,NULL,2014,NULL,NULL,car
+529,1.2,lpg,euro 6,30,NULL,NULL,NULL,2015,NULL,NULL,car
+530,1.2,lpg,euro 6,8,NULL,NULL,NULL,2016,NULL,NULL,car
+531,1.2,lpg,euro 6,17,NULL,NULL,NULL,2017,NULL,NULL,car
+532,1.6,cng,euro 6,3,NULL,NULL,NULL,2015,NULL,NULL,car
+533,1.6,cng,euro 6,1,NULL,NULL,NULL,2016,NULL,NULL,car
+534,1.6,cng,euro 6,7,NULL,NULL,NULL,2017,NULL,NULL,car
+535,2,cng,euro 5,1,NULL,NULL,NULL,2014,NULL,NULL,car
+536,1.6,cng,euro 6,1,NULL,NULL,NULL,2016,NULL,NULL,car
+537,1.6,petrol,ece 15/04,312,NULL,NULL,NULL,1990,NULL,NULL,car
+538,1.6,petrol,ece 15/04,416,NULL,NULL,NULL,1991,NULL,NULL,car
+539,1.6,petrol,ece 15/04,472,NULL,NULL,NULL,1992,NULL,NULL,car
+540,1.6,petrol,euro 1,555,NULL,NULL,NULL,1993,NULL,NULL,car
+541,1.6,petrol,euro 1,745,NULL,NULL,NULL,1994,NULL,NULL,car
+543,1.6,petrol,euro 1,1151,NULL,NULL,NULL,1996,NULL,NULL,car
+544,1.6,petrol,euro 2,1593,NULL,NULL,NULL,1997,NULL,NULL,car
+545,1.6,petrol,euro 2,2133,NULL,NULL,NULL,1998,NULL,NULL,car
+546,1.6,petrol,euro 2,2875,NULL,NULL,NULL,1999,NULL,NULL,car
+547,1.6,petrol,euro 2,2914,NULL,NULL,NULL,2000,NULL,NULL,car
+548,1.6,petrol,euro 3,3331,NULL,NULL,NULL,2001,NULL,NULL,car
+549,1.6,petrol,euro 3,3257,NULL,NULL,NULL,2002,NULL,NULL,car
+550,1.6,petrol,euro 3,3598,NULL,NULL,NULL,2003,NULL,NULL,car
+551,1.6,petrol,euro 3,3600,NULL,NULL,NULL,2004,NULL,NULL,car
+552,1.6,petrol,euro 3,3592,NULL,NULL,NULL,2005,NULL,NULL,car
+553,1.6,petrol,euro 4,3336,NULL,NULL,NULL,2006,NULL,NULL,car
+554,1.6,petrol,euro 4,3480,NULL,NULL,NULL,2007,NULL,NULL,car
+555,1.6,petrol,euro 4,2526,NULL,NULL,NULL,2008,NULL,NULL,car
+556,1.6,petrol,euro 4,2441,NULL,NULL,NULL,2009,NULL,NULL,car
+557,1.6,petrol,euro 4,2302,NULL,NULL,NULL,2010,NULL,NULL,car
+558,1.6,petrol,euro 5,1685,NULL,NULL,NULL,2011,NULL,NULL,car
+559,1.6,petrol,euro 5,1557,NULL,NULL,NULL,2012,NULL,NULL,car
+560,1.6,petrol,euro 5,1515,NULL,NULL,NULL,2013,NULL,NULL,car
+562,1.6,petrol,euro 6 up to 2016,2067,NULL,NULL,NULL,2015,NULL,NULL,car
+563,1.6,petrol,euro 6 up to 2016,2527,NULL,NULL,NULL,2016,NULL,NULL,car
+564,1.6,petrol,euro 6 2017-2019,2851,NULL,NULL,NULL,2017,NULL,NULL,car
+565,1.6,petrol,ece 15/04,4906,NULL,NULL,NULL,1989,NULL,NULL,car
+566,2,petrol,ece 15/04,296,NULL,NULL,NULL,1990,NULL,NULL,car
+567,2,petrol,ece 15/04,387,NULL,NULL,NULL,1991,NULL,NULL,car
+568,2,petrol,ece 15/04,624,NULL,NULL,NULL,1992,NULL,NULL,car
+569,2,petrol,euro 1,495,NULL,NULL,NULL,1993,NULL,NULL,car
+570,2,petrol,euro 1,584,NULL,NULL,NULL,1994,NULL,NULL,car
+571,2,petrol,euro 1,513,NULL,NULL,NULL,1995,NULL,NULL,car
+572,2,petrol,euro 1,563,NULL,NULL,NULL,1996,NULL,NULL,car
+573,2,petrol,euro 2,821,NULL,NULL,NULL,1997,NULL,NULL,car
+574,2,petrol,euro 2,916,NULL,NULL,NULL,1998,NULL,NULL,car
+575,2,petrol,euro 2,1345,NULL,NULL,NULL,1999,NULL,NULL,car
+576,2,petrol,euro 2,1458,NULL,NULL,NULL,2000,NULL,NULL,car
+577,2,petrol,euro 3,1568,NULL,NULL,NULL,2001,NULL,NULL,car
+578,2,petrol,euro 3,1339,NULL,NULL,NULL,2002,NULL,NULL,car
+579,2,petrol,euro 3,1283,NULL,NULL,NULL,2003,NULL,NULL,car
+581,2,petrol,euro 3,1356,NULL,NULL,NULL,2005,NULL,NULL,car
+476,2.5,diesel,euro 4,720,NULL,NULL,NULL,2009,NULL,NULL,car
+477,2.5,diesel,euro 4,733,NULL,NULL,NULL,2010,NULL,NULL,car
+602,2.5,petrol,euro 2,262,NULL,NULL,NULL,1997,NULL,NULL,car
+603,2.5,petrol,euro 2,333,NULL,NULL,NULL,1998,NULL,NULL,car
+604,2.5,petrol,euro 2,470,NULL,NULL,NULL,1999,NULL,NULL,car
+624,1.2,petrol,ece 15/04,115,NULL,NULL,NULL,1990,NULL,NULL,car
+625,1.2,petrol,ece 15/04,125,NULL,NULL,NULL,1991,NULL,NULL,car
+626,1.2,petrol,ece 15/04,145,NULL,NULL,NULL,1992,NULL,NULL,car
+627,1.2,petrol,euro 1,121,NULL,NULL,NULL,1993,NULL,NULL,car
+628,1.2,petrol,euro 1,160,NULL,NULL,NULL,1994,NULL,NULL,car
+629,1.2,petrol,euro 1,120,NULL,NULL,NULL,1995,NULL,NULL,car
+630,1.2,petrol,euro 1,119,NULL,NULL,NULL,1996,NULL,NULL,car
+631,1.2,petrol,euro 2,205,NULL,NULL,NULL,1997,NULL,NULL,car
+632,1.2,petrol,euro 2,289,NULL,NULL,NULL,1998,NULL,NULL,car
+633,1.2,petrol,euro 2,479,NULL,NULL,NULL,1999,NULL,NULL,car
+634,1.2,petrol,euro 2,486,NULL,NULL,NULL,2000,NULL,NULL,car
+635,1.2,petrol,euro 3,520,NULL,NULL,NULL,2001,NULL,NULL,car
+636,1.2,petrol,euro 3,474,NULL,NULL,NULL,2002,NULL,NULL,car
+637,1.2,petrol,euro 3,489,NULL,NULL,NULL,2003,NULL,NULL,car
+638,1.2,petrol,euro 3,639,NULL,NULL,NULL,2004,NULL,NULL,car
+639,1.2,petrol,euro 3,516,NULL,NULL,NULL,2005,NULL,NULL,car
+640,1.2,petrol,euro 4,539,NULL,NULL,NULL,2006,NULL,NULL,car
+646,1.2,petrol,euro 5,533,NULL,NULL,NULL,2012,NULL,NULL,car
+647,1.2,petrol,euro 5,899,NULL,NULL,NULL,2013,NULL,NULL,car
+648,1.2,petrol,euro 5,1337,NULL,NULL,NULL,2014,NULL,NULL,car
+649,1.2,petrol,euro 6 up to 2016,2245,NULL,NULL,NULL,2015,NULL,NULL,car
+650,1.2,petrol,euro 6 up to 2016,2777,NULL,NULL,NULL,2016,NULL,NULL,car
+651,1.2,petrol,euro 6 2017-2019,3099,NULL,NULL,NULL,2017,NULL,NULL,car
+652,1.2,petrol,ece 15/04,7627,NULL,NULL,NULL,1989,NULL,NULL,car
+582,2,petrol,euro 4,1151,NULL,NULL,NULL,2006,NULL,NULL,car
+583,2,petrol,euro 4,1121,NULL,NULL,NULL,2007,NULL,NULL,car
+584,2,petrol,euro 4,940,NULL,NULL,NULL,2008,NULL,NULL,car
+585,2,petrol,euro 4,678,NULL,NULL,NULL,2009,NULL,NULL,car
+586,2,petrol,euro 4,504,NULL,NULL,NULL,2010,NULL,NULL,car
+587,2,petrol,euro 5,412,NULL,NULL,NULL,2011,NULL,NULL,car
+588,2,petrol,euro 5,374,NULL,NULL,NULL,2012,NULL,NULL,car
+589,2,petrol,euro 5,258,NULL,NULL,NULL,2013,NULL,NULL,car
+590,2,petrol,euro 5,330,NULL,NULL,NULL,2014,NULL,NULL,car
+591,2,petrol,euro 6 up to 2016,468,NULL,NULL,NULL,2015,NULL,NULL,car
+592,2,petrol,euro 6 up to 2016,717,NULL,NULL,NULL,2016,NULL,NULL,car
+593,2,petrol,euro 6 2017-2019,908,NULL,NULL,NULL,2017,NULL,NULL,car
+594,2,petrol,ece 15/04,1856,NULL,NULL,NULL,1989,NULL,NULL,car
+595,2.5,petrol,ece 15/04,134,NULL,NULL,NULL,1990,NULL,NULL,car
+596,2.5,petrol,ece 15/04,153,NULL,NULL,NULL,1991,NULL,NULL,car
+597,2.5,petrol,ece 15/04,242,NULL,NULL,NULL,1992,NULL,NULL,car
+598,2.5,petrol,euro 1,166,NULL,NULL,NULL,1993,NULL,NULL,car
+599,2.5,petrol,euro 1,154,NULL,NULL,NULL,1994,NULL,NULL,car
+600,2.5,petrol,euro 1,173,NULL,NULL,NULL,1995,NULL,NULL,car
+601,2.5,petrol,euro 1,230,NULL,NULL,NULL,1996,NULL,NULL,car
+605,2.5,petrol,euro 2,461,NULL,NULL,NULL,2000,NULL,NULL,car
+606,2.5,petrol,euro 3,605,NULL,NULL,NULL,2001,NULL,NULL,car
+607,2.5,petrol,euro 3,529,NULL,NULL,NULL,2002,NULL,NULL,car
+608,2.5,petrol,euro 3,602,NULL,NULL,NULL,2003,NULL,NULL,car
+609,2.5,petrol,euro 3,568,NULL,NULL,NULL,2004,NULL,NULL,car
+610,2.5,petrol,euro 3,522,NULL,NULL,NULL,2005,NULL,NULL,car
+611,2.5,petrol,euro 4,537,NULL,NULL,NULL,2006,NULL,NULL,car
+612,2.5,petrol,euro 4,464,NULL,NULL,NULL,2007,NULL,NULL,car
+613,2.5,petrol,euro 4,244,NULL,NULL,NULL,2008,NULL,NULL,car
+614,2.5,petrol,euro 4,171,NULL,NULL,NULL,2009,NULL,NULL,car
+615,2.5,petrol,euro 4,138,NULL,NULL,NULL,2010,NULL,NULL,car
+616,2.5,petrol,euro 5,83,NULL,NULL,NULL,2011,NULL,NULL,car
+617,2.5,petrol,euro 5,60,NULL,NULL,NULL,2012,NULL,NULL,car
+618,2.5,petrol,euro 5,54,NULL,NULL,NULL,2013,NULL,NULL,car
+619,2.5,petrol,euro 5,84,NULL,NULL,NULL,2014,NULL,NULL,car
+620,2.5,petrol,euro 6 up to 2016,111,NULL,NULL,NULL,2015,NULL,NULL,car
+621,2.5,petrol,euro 6 up to 2016,209,NULL,NULL,NULL,2016,NULL,NULL,car
+622,2.5,petrol,euro 6 2017-2019,235,NULL,NULL,NULL,2017,NULL,NULL,car
+623,2.5,petrol,ece 15/04,911,NULL,NULL,NULL,1989,NULL,NULL,car
+641,1.2,petrol,euro 4,423,NULL,NULL,NULL,2007,NULL,NULL,car
+642,1.2,petrol,euro 4,358,NULL,NULL,NULL,2008,NULL,NULL,car
+643,1.2,petrol,euro 4,422,NULL,NULL,NULL,2009,NULL,NULL,car
+644,1.2,petrol,euro 4,463,NULL,NULL,NULL,2010,NULL,NULL,car
+645,1.2,petrol,euro 5,378,NULL,NULL,NULL,2011,NULL,NULL,car
