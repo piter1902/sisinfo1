@@ -1,0 +1,654 @@
+id;fuel;emission_standard;registration_year;class
+376;petrol;euro 3;2006;motorcycle
+397;petrol;euro 1;1989;motorcycle
+412;diesel;euro 3;2003;car
+431;diesel;euro 1;1993;car
+450;diesel;euro 5;2012;car
+469;diesel;euro 3;2002;car
+475;diesel;euro 4;2008;car
+485;diesel;conventional;1989;car
+504;diesel;euro 5;2012;car
+523;lpg;euro 6;2017;car
+542;petrol;euro 1;1995;car
+561;petrol;euro 5;2014;car
+580;petrol;euro 3;2004;car
+26;diesel;euro 6;2016;bus
+29;petrol;conventional;1989;bus
+46;diesel;euro 4;2006;car
+63;petrol;euro 1;1994;car
+80;petrol;euro 5;2011;car
+97;diesel;euro 2;2000;truck
+114;diesel;euro 6;2017;truck
+131;diesel;euro 2;2009;motorcycle
+148;petrol;euro 2;2007;motorcycle
+165;diesel;euro 1;1996;car
+182;diesel;euro 5;2013;car
+199;petrol;euro 3;2001;car
+216;petrol;conventional;1989;car
+231;diesel;euro 3;2008;motorcycle
+250;petrol;euro 1;1999;motorcycle
+260;petrol;euro 3;2009;motorcycle
+270;petrol;euro 1;1990;motorcycle
+289;petrol;euro 3;2009;motorcycle
+308;petrol;euro 1;1999;motorcycle
+327;petrol;euro 1;1989;motorcycle
+346;petrol;euro 3;2008;motorcycle
+365;petrol;euro 1;1995;motorcycle
+367;petrol;euro 1;1997;motorcycle
+0;diesel;conventional;1990;bus
+1;diesel;conventional;1991;bus
+2;diesel;euro 1;1992;bus
+3;diesel;euro 1;1993;bus
+4;diesel;euro 1;1994;bus
+5;diesel;euro 1;1995;bus
+6;diesel;euro 2;1996;bus
+7;diesel;euro 2;1997;bus
+8;diesel;euro 2;1998;bus
+9;diesel;euro 2;1999;bus
+10;diesel;euro 2;2000;bus
+11;diesel;euro 3;2001;bus
+12;diesel;euro 3;2002;bus
+13;diesel;euro 3;2003;bus
+14;diesel;euro 3;2004;bus
+15;diesel;euro 4;2005;bus
+16;diesel;euro 4;2006;bus
+17;diesel;euro 4;2007;bus
+18;diesel;euro 5;2008;bus
+19;diesel;euro 5;2009;bus
+20;diesel;euro 5;2010;bus
+21;diesel;euro 5;2011;bus
+22;diesel;euro 5;2012;bus
+23;diesel;euro 5;2013;bus
+24;diesel;euro 6;2014;bus
+25;diesel;euro 6;2015;bus
+30;diesel;conventional;1990;car
+31;diesel;conventional;1991;car
+32;diesel;conventional;1992;car
+33;diesel;conventional;1993;car
+34;diesel;euro 1;1994;car
+35;diesel;euro 1;1995;car
+36;diesel;euro 1;1996;car
+37;diesel;euro 1;1997;car
+38;diesel;euro 2;1998;car
+39;diesel;euro 2;1999;car
+40;diesel;euro 2;2000;car
+41;diesel;euro 3;2001;car
+42;diesel;euro 3;2002;car
+43;diesel;euro 3;2003;car
+44;diesel;euro 3;2004;car
+45;diesel;euro 3;2005;car
+47;diesel;euro 4;2007;car
+48;diesel;euro 4;2008;car
+49;diesel;euro 4;2009;car
+50;diesel;euro 4;2010;car
+51;diesel;euro 5;2011;car
+52;diesel;euro 5;2012;car
+53;diesel;euro 5;2013;car
+54;diesel;euro 5;2014;car
+55;diesel;euro 6 up to 2017;2015;car
+56;diesel;euro 6 up to 2017;2016;car
+57;diesel;euro 6 up to 2017;2017;car
+58;diesel;conventional;1989;car
+59;petrol;conventional;1990;car
+60;petrol;conventional;1991;car
+61;petrol;conventional;1992;car
+62;petrol;conventional;1993;car
+64;petrol;euro 1;1995;car
+65;petrol;euro 1;1996;car
+66;petrol;euro 1;1997;car
+67;petrol;euro 2;1998;car
+68;petrol;euro 2;1999;car
+69;petrol;euro 2;2000;car
+70;petrol;euro 3;2001;car
+71;petrol;euro 3;2002;car
+72;petrol;euro 3;2003;car
+73;petrol;euro 3;2004;car
+74;petrol;euro 3;2005;car
+75;petrol;euro 4;2006;car
+76;petrol;euro 4;2007;car
+77;petrol;euro 4;2008;car
+78;petrol;euro 4;2009;car
+79;petrol;euro 4;2010;car
+81;petrol;euro 5;2013;car
+82;petrol;euro 5;2014;car
+83;petrol;euro 6 up to 2017;2015;car
+84;petrol;euro 6 up to 2017;2016;car
+85;petrol;euro 6 up to 2017;2017;car
+86;petrol;conventional;1989;car
+87;diesel;conventional;1990;truck
+88;diesel;conventional;1991;truck
+89;diesel;euro 1;1992;truck
+90;diesel;euro 1;1993;truck
+91;diesel;euro 1;1994;truck
+92;diesel;euro 1;1995;truck
+93;diesel;euro 2;1996;truck
+94;diesel;euro 2;1997;truck
+95;diesel;euro 2;1998;truck
+96;diesel;euro 2;1999;truck
+98;diesel;euro 3;2001;truck
+99;diesel;euro 3;2002;truck
+100;diesel;euro 3;2003;truck
+101;diesel;euro 3;2004;truck
+102;diesel;euro 4;2005;truck
+103;diesel;euro 4;2006;truck
+104;diesel;euro 4;2007;truck
+105;diesel;euro 5;2008;truck
+106;diesel;euro 5;2009;truck
+107;diesel;euro 5;2010;truck
+108;diesel;euro 5;2011;truck
+109;diesel;euro 5;2012;truck
+110;diesel;euro 5;2013;truck
+111;diesel;euro 6;2014;truck
+112;diesel;euro 6;2015;truck
+113;diesel;euro 6;2016;truck
+115;diesel;conventional;1989;truck
+116;petrol;conventional;1997;truck
+117;petrol;conventional;2000;truck
+118;petrol;conventional;2001;truck
+119;petrol;conventional;2006;truck
+120;petrol;conventional;1989;truck
+121;diesel;euro 1;1999;motorcycle
+122;diesel;euro 1;2000;motorcycle
+123;diesel;euro 1;2001;motorcycle
+124;diesel;euro 1;2002;motorcycle
+125;diesel;euro 2;2003;motorcycle
+126;diesel;euro 2;2004;motorcycle
+127;diesel;euro 2;2005;motorcycle
+128;diesel;euro 2;2006;motorcycle
+129;diesel;euro 2;2007;motorcycle
+130;diesel;euro 2;2008;motorcycle
+132;diesel;euro 2;2010;motorcycle
+133;diesel;euro 2;2011;motorcycle
+134;diesel;euro 2;2012;motorcycle
+135;diesel;euro 2;2013;motorcycle
+136;diesel;euro 3;2014;motorcycle
+137;diesel;euro 3;2015;motorcycle
+138;diesel;euro 3;2016;motorcycle
+139;diesel;euro 4;2017;motorcycle
+140;petrol;euro 1;1999;motorcycle
+141;petrol;euro 1;2000;motorcycle
+142;petrol;euro 1;2001;motorcycle
+143;petrol;euro 1;2002;motorcycle
+144;petrol;euro 2;2003;motorcycle
+145;petrol;euro 2;2004;motorcycle
+27;diesel;euro 6;2017;bus
+28;diesel;conventional;1989;bus
+149;petrol;euro 2;2008;motorcycle
+150;petrol;euro 2;2009;motorcycle
+151;petrol;euro 2;2010;motorcycle
+152;petrol;euro 2;2011;motorcycle
+153;petrol;euro 2;2012;motorcycle
+154;petrol;euro 2;2013;motorcycle
+155;petrol;euro 3;2014;motorcycle
+156;petrol;euro 3;2015;motorcycle
+157;petrol;euro 3;2016;motorcycle
+158;petrol;euro 4;2017;motorcycle
+159;diesel;conventional;1990;car
+160;diesel;conventional;1991;car
+161;diesel;conventional;1992;car
+162;diesel;conventional;1993;car
+163;diesel;euro 1;1994;car
+164;diesel;euro 1;1995;car
+166;diesel;euro 1;1997;car
+167;diesel;euro 2;1998;car
+168;diesel;euro 2;1999;car
+169;diesel;euro 2;2000;car
+170;diesel;euro 3;2001;car
+171;diesel;euro 3;2002;car
+172;diesel;euro 3;2003;car
+173;diesel;euro 3;2004;car
+174;diesel;euro 3;2005;car
+175;diesel;euro 4;2006;car
+176;diesel;euro 4;2007;car
+177;diesel;euro 4;2008;car
+178;diesel;euro 4;2009;car
+179;diesel;euro 4;2010;car
+180;diesel;euro 5;2011;car
+181;diesel;euro 5;2012;car
+183;diesel;euro 5;2014;car
+184;diesel;euro 6 up to 2017;2015;car
+185;diesel;euro 6 up to 2017;2016;car
+186;diesel;euro 6 up to 2017;2017;car
+187;diesel;conventional;1989;car
+188;petrol;conventional;1990;car
+189;petrol;conventional;1991;car
+190;petrol;conventional;1992;car
+191;petrol;conventional;1993;car
+192;petrol;euro 1;1994;car
+193;petrol;euro 1;1995;car
+194;petrol;euro 1;1996;car
+195;petrol;euro 1;1997;car
+196;petrol;euro 2;1998;car
+197;petrol;euro 2;1999;car
+198;petrol;euro 2;2000;car
+200;petrol;euro 3;2002;car
+201;petrol;euro 3;2003;car
+202;petrol;euro 3;2004;car
+203;petrol;euro 3;2005;car
+204;petrol;euro 4;2006;car
+205;petrol;euro 4;2007;car
+206;petrol;euro 4;2008;car
+207;petrol;euro 4;2009;car
+208;petrol;euro 4;2010;car
+209;petrol;euro 5;2011;car
+210;petrol;euro 5;2012;car
+211;petrol;euro 5;2013;car
+212;petrol;euro 5;2014;car
+213;petrol;euro 6 up to 2017;2015;car
+214;petrol;euro 6 up to 2017;2016;car
+215;petrol;euro 6 up to 2017;2017;car
+217;diesel;euro 2;2005;motorcycle
+218;diesel;euro 3;2006;motorcycle
+219;diesel;euro 3;2007;motorcycle
+220;diesel;euro 3;2008;motorcycle
+221;diesel;euro 3;2007;motorcycle
+222;diesel;euro 3;2014;motorcycle
+223;diesel;euro 3;2016;motorcycle
+224;diesel;euro 2;2005;motorcycle
+225;diesel;euro 1;2002;motorcycle
+226;diesel;euro 2;2003;motorcycle
+227;diesel;euro 2;2004;motorcycle
+228;diesel;euro 2;2005;motorcycle
+229;diesel;euro 3;2006;motorcycle
+230;diesel;euro 3;2007;motorcycle
+232;diesel;euro 3;2009;motorcycle
+233;diesel;euro 3;2010;motorcycle
+234;diesel;euro 3;2011;motorcycle
+235;diesel;euro 3;2012;motorcycle
+236;diesel;euro 3;2013;motorcycle
+237;diesel;euro 3;2014;motorcycle
+238;diesel;euro 3;2015;motorcycle
+239;diesel;euro 3;2016;motorcycle
+240;diesel;euro 4;2017;motorcycle
+241;petrol;euro 1;1990;motorcycle
+242;petrol;euro 1;1991;motorcycle
+243;petrol;euro 1;1992;motorcycle
+244;petrol;euro 1;1993;motorcycle
+245;petrol;euro 1;1994;motorcycle
+246;petrol;euro 1;1995;motorcycle
+247;petrol;euro 1;1996;motorcycle
+248;petrol;euro 1;1997;motorcycle
+249;petrol;euro 1;1998;motorcycle
+251;petrol;euro 1;2000;motorcycle
+252;petrol;euro 1;2001;motorcycle
+253;petrol;euro 1;2002;motorcycle
+254;petrol;euro 2;2003;motorcycle
+255;petrol;euro 2;2004;motorcycle
+256;petrol;euro 2;2005;motorcycle
+257;petrol;euro 3;2006;motorcycle
+258;petrol;euro 3;2007;motorcycle
+259;petrol;euro 3;2008;motorcycle
+146;petrol;euro 2;2005;motorcycle
+147;petrol;euro 2;2006;motorcycle
+263;petrol;euro 3;2012;motorcycle
+264;petrol;euro 3;2013;motorcycle
+265;petrol;euro 3;2014;motorcycle
+266;petrol;euro 3;2015;motorcycle
+267;petrol;euro 3;2016;motorcycle
+268;petrol;euro 4;2017;motorcycle
+269;petrol;euro 1;1989;motorcycle
+271;petrol;euro 1;1991;motorcycle
+272;petrol;euro 1;1992;motorcycle
+273;petrol;euro 1;1993;motorcycle
+274;petrol;euro 1;1994;motorcycle
+275;petrol;euro 1;1995;motorcycle
+276;petrol;euro 1;1996;motorcycle
+277;petrol;euro 1;1997;motorcycle
+278;petrol;euro 1;1998;motorcycle
+279;petrol;euro 1;1999;motorcycle
+280;petrol;euro 1;2000;motorcycle
+281;petrol;euro 1;2001;motorcycle
+282;petrol;euro 1;2002;motorcycle
+283;petrol;euro 2;2003;motorcycle
+284;petrol;euro 2;2004;motorcycle
+285;petrol;euro 2;2005;motorcycle
+286;petrol;euro 3;2006;motorcycle
+287;petrol;euro 3;2007;motorcycle
+288;petrol;euro 3;2008;motorcycle
+290;petrol;euro 3;2010;motorcycle
+291;petrol;euro 3;2011;motorcycle
+292;petrol;euro 3;2012;motorcycle
+293;petrol;euro 3;2013;motorcycle
+294;petrol;euro 3;2014;motorcycle
+295;petrol;euro 3;2015;motorcycle
+296;petrol;euro 3;2016;motorcycle
+297;petrol;euro 4;2017;motorcycle
+298;petrol;euro 1;1989;motorcycle
+299;petrol;euro 1;1990;motorcycle
+300;petrol;euro 1;1991;motorcycle
+301;petrol;euro 1;1992;motorcycle
+302;petrol;euro 1;1993;motorcycle
+303;petrol;euro 1;1994;motorcycle
+304;petrol;euro 1;1995;motorcycle
+305;petrol;euro 1;1996;motorcycle
+306;petrol;euro 1;1997;motorcycle
+307;petrol;euro 1;1998;motorcycle
+309;petrol;euro 1;2000;motorcycle
+310;petrol;euro 1;2001;motorcycle
+311;petrol;euro 1;2002;motorcycle
+312;petrol;euro 2;2003;motorcycle
+313;petrol;euro 2;2004;motorcycle
+314;petrol;euro 2;2005;motorcycle
+315;petrol;euro 3;2006;motorcycle
+316;petrol;euro 3;2007;motorcycle
+317;petrol;euro 3;2008;motorcycle
+318;petrol;euro 3;2009;motorcycle
+319;petrol;euro 3;2010;motorcycle
+320;petrol;euro 3;2011;motorcycle
+321;petrol;euro 3;2012;motorcycle
+322;petrol;euro 3;2013;motorcycle
+323;petrol;euro 3;2014;motorcycle
+324;petrol;euro 3;2015;motorcycle
+325;petrol;euro 3;2016;motorcycle
+326;petrol;euro 4;2017;motorcycle
+328;petrol;euro 1;1990;motorcycle
+329;petrol;euro 1;1991;motorcycle
+330;petrol;euro 1;1992;motorcycle
+331;petrol;euro 1;1993;motorcycle
+332;petrol;euro 1;1994;motorcycle
+333;petrol;euro 1;1995;motorcycle
+334;petrol;euro 1;1996;motorcycle
+335;petrol;euro 1;1997;motorcycle
+336;petrol;euro 1;1998;motorcycle
+337;petrol;euro 1;1999;motorcycle
+338;petrol;euro 1;2000;motorcycle
+339;petrol;euro 1;2001;motorcycle
+340;petrol;euro 1;2002;motorcycle
+341;petrol;euro 2;2003;motorcycle
+342;petrol;euro 2;2004;motorcycle
+343;petrol;euro 2;2005;motorcycle
+344;petrol;euro 3;2006;motorcycle
+345;petrol;euro 3;2007;motorcycle
+347;petrol;euro 3;2009;motorcycle
+348;petrol;euro 3;2010;motorcycle
+349;petrol;euro 3;2011;motorcycle
+350;petrol;euro 3;2012;motorcycle
+351;petrol;euro 3;2013;motorcycle
+352;petrol;euro 3;2014;motorcycle
+353;petrol;euro 3;2015;motorcycle
+354;petrol;euro 3;2016;motorcycle
+355;petrol;euro 4;2017;motorcycle
+356;petrol;euro 1;1989;motorcycle
+357;petrol;euro 1;2001;motorcycle
+358;petrol;euro 2;2004;motorcycle
+359;petrol;euro 1;1989;motorcycle
+360;petrol;euro 1;1990;motorcycle
+361;petrol;euro 1;1991;motorcycle
+362;petrol;euro 1;1992;motorcycle
+363;petrol;euro 1;1993;motorcycle
+364;petrol;euro 1;1994;motorcycle
+366;petrol;euro 1;1996;motorcycle
+261;petrol;euro 3;2010;motorcycle
+262;petrol;euro 3;2011;motorcycle
+370;petrol;euro 1;2000;motorcycle
+371;petrol;euro 1;2001;motorcycle
+372;petrol;euro 1;2002;motorcycle
+373;petrol;euro 2;2003;motorcycle
+374;petrol;euro 2;2004;motorcycle
+375;petrol;euro 2;2005;motorcycle
+377;petrol;euro 3;2007;motorcycle
+378;petrol;euro 3;2008;motorcycle
+379;petrol;euro 3;2009;motorcycle
+380;petrol;euro 3;2010;motorcycle
+381;petrol;euro 3;2011;motorcycle
+382;petrol;euro 3;2012;motorcycle
+383;petrol;euro 3;2013;motorcycle
+384;petrol;euro 3;2014;motorcycle
+385;petrol;euro 3;2015;motorcycle
+386;petrol;euro 3;2016;motorcycle
+387;petrol;euro 4;2017;motorcycle
+388;petrol;euro 1;1989;motorcycle
+389;petrol;euro 1;1990;motorcycle
+390;petrol;euro 1;1991;motorcycle
+391;petrol;euro 1;1992;motorcycle
+392;petrol;euro 1;1993;motorcycle
+393;petrol;euro 1;1994;motorcycle
+394;petrol;euro 1;1995;motorcycle
+395;petrol;euro 1;1996;motorcycle
+396;petrol;euro 1;1998;motorcycle
+398;lpg;conventional;1989;car
+399;diesel;conventional;1990;car
+400;diesel;conventional;1991;car
+401;diesel;conventional;1992;car
+402;diesel;euro 1;1993;car
+403;diesel;euro 1;1994;car
+404;diesel;euro 1;1995;car
+405;diesel;euro 1;1996;car
+406;diesel;euro 2;1997;car
+407;diesel;euro 2;1998;car
+408;diesel;euro 2;1999;car
+409;diesel;euro 2;2000;car
+410;diesel;euro 3;2001;car
+411;diesel;euro 3;2002;car
+413;diesel;euro 3;2004;car
+414;diesel;euro 3;2005;car
+415;diesel;euro 4;2006;car
+416;diesel;euro 4;2007;car
+417;diesel;euro 4;2008;car
+418;diesel;euro 4;2009;car
+419;diesel;euro 4;2010;car
+420;diesel;euro 5;2011;car
+421;diesel;euro 5;2012;car
+422;diesel;euro 5;2013;car
+423;diesel;euro 5;2014;car
+424;diesel;euro 6 up to 2016;2015;car
+425;diesel;euro 6 up to 2016;2016;car
+426;diesel;euro 6 2017-2019;2017;car
+427;diesel;conventional;1989;car
+428;diesel;conventional;1990;car
+429;diesel;conventional;1991;car
+430;diesel;conventional;1992;car
+432;diesel;euro 1;1994;car
+433;diesel;euro 1;1995;car
+434;diesel;euro 1;1996;car
+435;diesel;euro 2;1997;car
+436;diesel;euro 2;1998;car
+437;diesel;euro 2;1999;car
+438;diesel;euro 2;2000;car
+439;diesel;euro 3;2001;car
+440;diesel;euro 3;2002;car
+441;diesel;euro 3;2003;car
+442;diesel;euro 3;2004;car
+443;diesel;euro 3;2005;car
+444;diesel;euro 4;2006;car
+445;diesel;euro 4;2007;car
+446;diesel;euro 4;2008;car
+447;diesel;euro 4;2009;car
+448;diesel;euro 4;2010;car
+449;diesel;euro 5;2011;car
+451;diesel;euro 5;2013;car
+452;diesel;euro 5;2014;car
+453;diesel;euro 6 up to 2016;2015;car
+454;diesel;euro 6 up to 2016;2016;car
+455;diesel;euro 6 2017-2019;2017;car
+456;diesel;conventional;1989;car
+457;diesel;conventional;1990;car
+458;diesel;conventional;1991;car
+459;diesel;conventional;1992;car
+460;diesel;euro 1;1993;car
+461;diesel;euro 1;1994;car
+462;diesel;euro 1;1995;car
+463;diesel;euro 1;1996;car
+464;diesel;euro 2;1997;car
+465;diesel;euro 2;1998;car
+466;diesel;euro 2;1999;car
+467;diesel;euro 2;2000;car
+468;diesel;euro 3;2001;car
+470;diesel;euro 3;2003;car
+471;diesel;euro 3;2004;car
+472;diesel;euro 3;2005;car
+473;diesel;euro 4;2006;car
+474;diesel;euro 4;2007;car
+368;petrol;euro 1;1998;motorcycle
+369;petrol;euro 1;1999;motorcycle
+478;diesel;euro 5;2011;car
+479;diesel;euro 5;2012;car
+480;diesel;euro 5;2013;car
+481;diesel;euro 5;2014;car
+482;diesel;euro 6 up to 2016;2015;car
+483;diesel;euro 6 up to 2016;2016;car
+484;diesel;euro 6 2017-2019;2017;car
+486;diesel;conventional;1991;car
+487;diesel;euro 1;1994;car
+488;diesel;euro 1;1996;car
+489;diesel;euro 2;1997;car
+490;diesel;euro 2;1998;car
+491;diesel;euro 2;1999;car
+492;diesel;euro 2;2000;car
+493;diesel;euro 3;2001;car
+494;diesel;euro 3;2002;car
+495;diesel;euro 3;2003;car
+496;diesel;euro 3;2004;car
+497;diesel;euro 3;2005;car
+498;diesel;euro 4;2006;car
+499;diesel;euro 4;2007;car
+500;diesel;euro 4;2008;car
+501;diesel;euro 4;2009;car
+502;diesel;euro 4;2010;car
+503;diesel;euro 5;2011;car
+505;diesel;euro 5;2013;car
+506;diesel;euro 5;2014;car
+507;diesel;euro 6 up to 2016;2015;car
+508;diesel;euro 6 up to 2016;2016;car
+509;diesel;euro 6 2017-2019;2017;car
+510;diesel;conventional;1989;car
+511;lpg;euro 5;2012;car
+512;lpg;euro 5;2013;car
+513;lpg;euro 5;2014;car
+514;lpg;euro 6;2015;car
+515;lpg;euro 6;2016;car
+516;lpg;euro 6;2017;car
+517;lpg;euro 4;2008;car
+518;lpg;euro 4;2010;car
+519;lpg;euro 5;2011;car
+520;lpg;euro 5;2014;car
+521;lpg;euro 6;2015;car
+522;lpg;euro 6;2016;car
+524;lpg;euro 3;2004;car
+525;lpg;euro 4;2006;car
+526;lpg;euro 4;2008;car
+527;lpg;euro 5;2013;car
+528;lpg;euro 5;2014;car
+529;lpg;euro 6;2015;car
+530;lpg;euro 6;2016;car
+531;lpg;euro 6;2017;car
+532;cng;euro 6;2015;car
+533;cng;euro 6;2016;car
+534;cng;euro 6;2017;car
+535;cng;euro 5;2014;car
+536;cng;euro 6;2016;car
+537;petrol;ece 15/04;1990;car
+538;petrol;ece 15/04;1991;car
+539;petrol;ece 15/04;1992;car
+540;petrol;euro 1;1993;car
+541;petrol;euro 1;1994;car
+543;petrol;euro 1;1996;car
+544;petrol;euro 2;1997;car
+545;petrol;euro 2;1998;car
+546;petrol;euro 2;1999;car
+547;petrol;euro 2;2000;car
+548;petrol;euro 3;2001;car
+549;petrol;euro 3;2002;car
+550;petrol;euro 3;2003;car
+551;petrol;euro 3;2004;car
+552;petrol;euro 3;2005;car
+553;petrol;euro 4;2006;car
+554;petrol;euro 4;2007;car
+555;petrol;euro 4;2008;car
+556;petrol;euro 4;2009;car
+557;petrol;euro 4;2010;car
+558;petrol;euro 5;2011;car
+559;petrol;euro 5;2012;car
+560;petrol;euro 5;2013;car
+562;petrol;euro 6 up to 2016;2015;car
+563;petrol;euro 6 up to 2016;2016;car
+564;petrol;euro 6 2017-2019;2017;car
+565;petrol;ece 15/04;1989;car
+566;petrol;ece 15/04;1990;car
+567;petrol;ece 15/04;1991;car
+568;petrol;ece 15/04;1992;car
+569;petrol;euro 1;1993;car
+570;petrol;euro 1;1994;car
+571;petrol;euro 1;1995;car
+572;petrol;euro 1;1996;car
+573;petrol;euro 2;1997;car
+574;petrol;euro 2;1998;car
+575;petrol;euro 2;1999;car
+576;petrol;euro 2;2000;car
+577;petrol;euro 3;2001;car
+578;petrol;euro 3;2002;car
+579;petrol;euro 3;2003;car
+581;petrol;euro 3;2005;car
+476;diesel;euro 4;2009;car
+477;diesel;euro 4;2010;car
+602;petrol;euro 2;1997;car
+603;petrol;euro 2;1998;car
+604;petrol;euro 2;1999;car
+624;petrol;ece 15/04;1990;car
+625;petrol;ece 15/04;1991;car
+626;petrol;ece 15/04;1992;car
+627;petrol;euro 1;1993;car
+628;petrol;euro 1;1994;car
+629;petrol;euro 1;1995;car
+630;petrol;euro 1;1996;car
+631;petrol;euro 2;1997;car
+632;petrol;euro 2;1998;car
+633;petrol;euro 2;1999;car
+634;petrol;euro 2;2000;car
+635;petrol;euro 3;2001;car
+636;petrol;euro 3;2002;car
+637;petrol;euro 3;2003;car
+638;petrol;euro 3;2004;car
+639;petrol;euro 3;2005;car
+640;petrol;euro 4;2006;car
+646;petrol;euro 5;2012;car
+647;petrol;euro 5;2013;car
+648;petrol;euro 5;2014;car
+649;petrol;euro 6 up to 2016;2015;car
+650;petrol;euro 6 up to 2016;2016;car
+651;petrol;euro 6 2017-2019;2017;car
+652;petrol;ece 15/04;1989;car
+582;petrol;euro 4;2006;car
+583;petrol;euro 4;2007;car
+584;petrol;euro 4;2008;car
+585;petrol;euro 4;2009;car
+586;petrol;euro 4;2010;car
+587;petrol;euro 5;2011;car
+588;petrol;euro 5;2012;car
+589;petrol;euro 5;2013;car
+590;petrol;euro 5;2014;car
+591;petrol;euro 6 up to 2016;2015;car
+592;petrol;euro 6 up to 2016;2016;car
+593;petrol;euro 6 2017-2019;2017;car
+594;petrol;ece 15/04;1989;car
+595;petrol;ece 15/04;1990;car
+596;petrol;ece 15/04;1991;car
+597;petrol;ece 15/04;1992;car
+598;petrol;euro 1;1993;car
+599;petrol;euro 1;1994;car
+600;petrol;euro 1;1995;car
+601;petrol;euro 1;1996;car
+605;petrol;euro 2;2000;car
+606;petrol;euro 3;2001;car
+607;petrol;euro 3;2002;car
+608;petrol;euro 3;2003;car
+609;petrol;euro 3;2004;car
+610;petrol;euro 3;2005;car
+611;petrol;euro 4;2006;car
+612;petrol;euro 4;2007;car
+613;petrol;euro 4;2008;car
+614;petrol;euro 4;2009;car
+615;petrol;euro 4;2010;car
+616;petrol;euro 5;2011;car
+617;petrol;euro 5;2012;car
+618;petrol;euro 5;2013;car
+619;petrol;euro 5;2014;car
+620;petrol;euro 6 up to 2016;2015;car
+621;petrol;euro 6 up to 2016;2016;car
+622;petrol;euro 6 2017-2019;2017;car
+623;petrol;ece 15/04;1989;car
+641;petrol;euro 4;2007;car
+642;petrol;euro 4;2008;car
+643;petrol;euro 4;2009;car
+644;petrol;euro 4;2010;car
+645;petrol;euro 5;2011;car
