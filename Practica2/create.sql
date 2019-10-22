@@ -4,7 +4,9 @@ CREATE TABLE usuario
 (
     login VARCHAR(20) NOT NULL,
     nombre VARCHAR(20) NOT NULL,
-    CONSTRAINT usuarioPK PRIMARY KEY(login)
+    vehic_id integer,
+    CONSTRAINT usuarioPK PRIMARY KEY(login),
+    CONSTRAINT vehiculoFK FOREIGN KEY (vehic_id) REFERENCES vehiculo(id)
 );
 
 CREATE TABLE comentario
@@ -40,5 +42,10 @@ CREATE TABLE consulta
 -- Para la gestion del vehiculo del usuario
 CREATE TABLE vehiculo
 (
-    -- Completar
+    id integer not null,
+    tipo VARCHAR(20) not null,
+    euro_star varchar(10) not null,
+    fuel varchar(10) not null,
+    regist_year integer not null,
+    CONSTRAINT vehiculoPK PRIMARY KEY (id)
 );
