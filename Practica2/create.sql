@@ -23,7 +23,7 @@ CREATE TABLE comentario
 -- Para las consultas de rutas guardadas por el usuario
 CREATE TABLE consulta
 (
-    id integer not null AUTO_INCREMENT,
+    id BIGINT not null AUTO_INCREMENT,
     login varchar(20) not null,
     fecha date not null,
     origen varchar(40) not null,
@@ -35,7 +35,7 @@ CREATE TABLE consulta
 -- Para la gestion del vehiculo del usuario
 CREATE TABLE vehiculo
 (
-    id integer not null,
+    id BIGINT not null,
     tipo VARCHAR(20) not null,
     euro_star varchar(10) not null,
     fuel varchar(10) not null,
