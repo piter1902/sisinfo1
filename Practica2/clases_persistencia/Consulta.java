@@ -24,7 +24,7 @@ public class Consulta {
         this.fecha = fecha;
     }
 
-    public Consulta(Consulta orig){
+    public Consulta(Consulta orig) {
         this(orig.consultaID, orig.login, orig.origen, orig.destino, orig.fecha);
     }
 
@@ -69,5 +69,4 @@ public class Consulta {
         this.fecha = fecha;
     }
 
-    
 }
