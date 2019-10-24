@@ -3,6 +3,7 @@
 CREATE TABLE usuario
 (
     login VARCHAR(20) NOT NULL,
+    password varbinary(20) not null,
     nombre VARCHAR(20) NOT NULL,
     vehic_id integer,
     CONSTRAINT usuarioPK PRIMARY KEY(login),
@@ -18,14 +19,6 @@ CREATE TABLE comentario
     CONSTRAINT usuarioFK FOREIGN KEY (usuarioId) REFERENCES usuario(login)
 );
 
--- Tablas que usaremos nosotros para la gestión de información
-CREATE TABLE passwd
-(
-    login varchar(20) not null,
-    password varbinary(20) not null,
-    CONSTRAINT passwdPK PRIMARY KEY (login),
-    CONSTRAINT usuarioFK FOREIGN KEY (login) REFERENCES usuario(login)
-);
 
 -- Para las consultas de rutas guardadas por el usuario
 CREATE TABLE consulta
