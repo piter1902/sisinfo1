@@ -139,12 +139,24 @@
         <div id="mapa">
             <script>
 
-                var mymap = L.map('mapa').setView([51.505, -0.09], 13);
-        
-                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                var mymap = L.map('mapa').setView([41.648857, -0.889318], 13);
+                var marcador = L.marker([41.683139, -0.887514], { draggable: true }).addTo(mymap);
+                var circle = L.circle([41.661443, -0.878935],100, {
+                    color: 'red',
+                    fillColor: '#f03',
+                    fillOpacity: 0.5,
+                    radius: 10
                 }).addTo(mymap);
-        
+                // var circle = L.circle([41.661443, -0.878935], 1000, {
+                //     fill: false
+                // }).addTo(mymap);
+                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+                    maxZoom: 18,
+                    id: 'mapbox.satellite',
+                    accessToken: 'your.mapbox.access.token'
+                }).addTo(mymap);
+                L.control.scale(5).addTo(mymap);
             </script>
         </div>
         <!--<div class="container">
