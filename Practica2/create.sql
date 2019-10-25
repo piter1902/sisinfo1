@@ -20,6 +20,7 @@ CREATE TABLE Comentario
     CONSTRAINT comentarioPK PRIMARY KEY (comentarioId)
 );
 
+-- Usar funciones de encriptacion para el password
 CREATE TABLE Usuario
 (
     login VARCHAR(20) NOT NULL,
