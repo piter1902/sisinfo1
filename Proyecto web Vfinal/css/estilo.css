@@ -1,0 +1,20 @@
+.hoja{
+	width:50%;
+	height:50%
+}
+
+.tablaC{
+	background-color:#fff;
+}
+
+.inicio1{
+	color:green;
+}
+
+.header_area .navbar {
+  background: rgba(255, 255, 255,0.3); /*transparent;*/
+}
+
+.nav-link{
+	background: #fff;
+}
