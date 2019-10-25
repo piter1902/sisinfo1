@@ -1,22 +1,25 @@
 -- Fichero SQL para la creacion de tablas
 
-CREATE TABLE usuario
+CREATE TABLE Usuario
 (
     login VARCHAR(20) NOT NULL,
     password varbinary(20) not null,
     nombre VARCHAR(20) NOT NULL,
+    apellidos varchar(30),
+    email VARCHAR(20) not null,
     vehic_id integer,
     CONSTRAINT usuarioPK PRIMARY KEY(login),
     CONSTRAINT vehiculoFK FOREIGN KEY (vehic_id) REFERENCES vehiculo(id)
 );
 
-CREATE TABLE comentario
+CREATE TABLE Comentario
 (
     comentarioId BIGINT NOT NULL AUTO_INCREMENT,
     texto VARCHAR(250) NOT NULL,
-    usuarioId VARCHAR(20),
+    email varchar(20) not null,
+    nombre VARCHAR(20) not null,
+    apellidos varchar(30),
     CONSTRAINT comentarioPK PRIMARY KEY (comentarioId),
-    CONSTRAINT usuarioFK FOREIGN KEY (usuarioId) REFERENCES usuario(login)
 );
 
 

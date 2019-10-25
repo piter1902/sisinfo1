@@ -8,20 +8,22 @@
  */
 public class Comentario {
 
-    private int comentID, userID;
-    private String text;
+    private int comentID;
+    private String email, nombre, apellidos, text;
 
-    public Comentario(int comentID, int userID, String text) {
+    public Comentario(int comentID, String email, String nombre, String apellidos, String text) {
         this.comentID = comentID;
-        this.userID = userID;
+        this.email = email;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
         this.text = text;
     }
 
-    public Comentario(Comentario orig) {
-        this(orig.comentID, orig.userID, orig.text);
+    public Comentario(Comentario c) {
+        this(c.comentID, c.email, c.nombre, c.apellidos, c.text);
     }
 
-    // Metodos setter y getter
+    // Getters y Setters
     public int getComentID() {
         return comentID;
     }
@@ -30,12 +32,28 @@ public class Comentario {
         this.comentID = comentID;
     }
 
-    public int getUserID() {
-        return userID;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUserID(int userID) {
-        this.userID = userID;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
     public String getText() {
@@ -45,5 +63,7 @@ public class Comentario {
     public void setText(String text) {
         this.text = text;
     }
+
+    
 
 }
