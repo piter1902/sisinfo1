@@ -10,20 +10,22 @@
  */
 public class Vehiculo {
     private int id, registr_year;
-    private String tipo, euro_star, fuel;
+    private String tipo, euro_star, fuel, engine_type;
 
     /**
      * Constructor de la clase vehiculo
      * @param id identificador del vehiculo
      * @param tipo tipo del vehiculo
      * @param euro_star clasificacion ambiental del vehiculo
+     * @param engine_type tipo del motor (NULL si no se conoce)
      * @param fuel tipo de combustible del vehiculo
      * @param registr_year año de registro del vehiculo
      */
-    public Vehiculo(int id, String tipo, String euro_star, String fuel, int registr_year) {
+    public Vehiculo(int id, String tipo, String euro_star, String engine_type, String fuel, int registr_year) {
         this.id = id;
         this.tipo = tipo;
         this.euro_star = euro_star;
+        this.engine_type = engine_type;
         this.fuel = fuel;
         this.registr_year = registr_year;
     }
@@ -33,7 +35,7 @@ public class Vehiculo {
      * @param orig vehiculo a copiar
      */
     public Vehiculo(Vehiculo orig) {
-        this(orig.id, orig.tipo, orig.euro_star, orig.fuel, orig.registr_year);
+        this(orig.id, orig.tipo, orig.euro_star, orig.engine_type, orig.fuel, orig.registr_year);
     }
 
 

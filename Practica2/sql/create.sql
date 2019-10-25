@@ -2,10 +2,13 @@
 CREATE TABLE Vehiculo
 (
     id BIGINT not null,
-    tipo VARCHAR(20) not null,
-    euro_star varchar(10) not null,
-    fuel varchar(10) not null,
-    regist_year integer not null,
+    tipo VARCHAR(25) not null,
+    segment varchar(35) not null,
+    euro_star varchar(25) not null,
+    engine_type varchar(10),
+    fuel varchar(20) not null,
+    pollutant varchar(5) not null,
+    emission_factor integer not null,
     CONSTRAINT vehiculoPK PRIMARY KEY (id)
 );
 
