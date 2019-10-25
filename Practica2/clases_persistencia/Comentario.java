@@ -4,7 +4,9 @@
  * página. Estarán provistos de: 
  * - ComentarioID 
  * - Texto del comentario
- * - UsuarioID
+ * - email del usuario
+ * - nombre y apellidos del usuario
+ * - estado del comentario -> respondida o no respondida
  * 
  * @author Pedro Tamargo
  */
@@ -12,6 +14,7 @@ public class Comentario {
 
     private int comentID;
     private String email, nombre, apellidos, text;
+    private boolean respondida;
 
     /**
      * Constructor de la clase Comentario
@@ -20,13 +23,15 @@ public class Comentario {
      * @param nombre nombre de la persona que deja el comentario
      * @param apellidos apellidos de la persona que deja el comentario
      * @param text texto del comentario
+     * @param respondida
      */
-    public Comentario(int comentID, String email, String nombre, String apellidos, String text) {
+    public Comentario(int comentID, String email, String nombre, String apellidos, String text, boolean respondida) {
         this.comentID = comentID;
         this.email = email;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.text = text;
+        this.respondida = respondida;
     }
 
     /**
@@ -34,7 +39,7 @@ public class Comentario {
      * @param c comentario a copiar
      */
     public Comentario(Comentario c) {
-        this(c.comentID, c.email, c.nombre, c.apellidos, c.text);
+        this(c.comentID, c.email, c.nombre, c.apellidos, c.text, c.respondida);
     }
 
     // Getters y Setters
@@ -117,6 +122,22 @@ public class Comentario {
      */
     public void setText(String text) {
         this.text = text;
+    }
+
+    /**
+     * Getter de respondida
+     * @return true si y solo si el comentario ha sido respondido
+     */
+    public boolean isRespondida() {
+        return respondida;
+    }
+
+    /**
+     * Setter de respondida
+     * @param respondida valor actualizado
+     */
+    public void setRespondida(boolean respondida) {
+        this.respondida = respondida;
     }
 
     

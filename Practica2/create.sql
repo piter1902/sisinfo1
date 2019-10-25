@@ -41,7 +41,10 @@ CREATE TABLE Consulta
     fecha date not null,
     origen varchar(40) not null,
     destino varchar(40) not null,
+    respondida boolean not null,
     CONSTRAINT consultaPK PRIMARY KEY (id),
     CONSTRAINT usuarioFK FOREIGN KEY (login) REFERENCES Usuario(login)
 );
 
+alter table Comentario AUTO_INCREMENT = 1;
+alter table Consulta AUTO_INCREMENT = 1;
