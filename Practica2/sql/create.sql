@@ -30,7 +30,7 @@ CREATE TABLE Usuario
     email VARCHAR(20) not null,
     vehic_id bigint not null,
     CONSTRAINT usuarioPK PRIMARY KEY (login),
-    CONSTRAINT vehiculoFK FOREIGN KEY (vehic_id) REFERENCES Vehiculo(id)
+    CONSTRAINT vehiculoFK FOREIGN KEY (vehic_id) REFERENCES Vehiculo(id) on delete cascade
 );
 
 -- Para las consultas de rutas guardadas por el usuario
@@ -43,7 +43,7 @@ CREATE TABLE Consulta
     destino varchar(40) not null,
     respondida boolean not null,
     CONSTRAINT consultaPK PRIMARY KEY (id),
-    CONSTRAINT usuarioFK FOREIGN KEY (login) REFERENCES Usuario(login)
+    CONSTRAINT usuarioFK FOREIGN KEY (login) REFERENCES Usuario(login) on delete cascade
 );
 
 alter table Comentario AUTO_INCREMENT = 1;
