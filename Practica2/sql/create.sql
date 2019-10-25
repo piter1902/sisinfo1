@@ -1,14 +1,14 @@
 -- Para la gestion del vehiculo del usuario
 CREATE TABLE Vehiculo
 (
-    id BIGINT not null,
-    tipo VARCHAR(25) not null,
+    id BIGINT not null AUTO_INCREMENT,
+    tipo VARCHAR(25),
     segment varchar(35) not null,
     euro_star varchar(25) not null,
     engine_type varchar(10),
     fuel varchar(20) not null,
     pollutant varchar(5) not null,
-    emission_factor integer not null,
+    emission_factor float not null,
     CONSTRAINT vehiculoPK PRIMARY KEY (id)
 );
 
@@ -49,5 +49,6 @@ CREATE TABLE Consulta
     CONSTRAINT usuarioFK FOREIGN KEY (login) REFERENCES Usuario(login) on delete cascade
 );
 
+alter table Vehiculo AUTO_INCREMENT = 1;
 alter table Comentario AUTO_INCREMENT = 1;
 alter table Consulta AUTO_INCREMENT = 1;
