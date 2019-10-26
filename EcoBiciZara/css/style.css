@@ -386,8 +386,8 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*=========== event_date_area css ==========*/
-.event_date_area {
-  background: #00c8e6;
+.event_date_area { /*Cambiado*/
+  background: #ccffcc;
   padding: 100px 0px;
 }
 
@@ -694,11 +694,13 @@ h3 {
 /*----------------------------------------------------*/
 /*============ banner_area css =============*/
 .banner_area {
-  /*min-height: 250px;*/											
-  background: -webkit-gradient(linear, left top, right top, from(rgba(230, 255, 230, 0.2)), to(rgba(230, 255, 230, 0.2))), url("../image/natural.jpg");
-  background: -webkit-linear-gradient(left, rgba(230, 255, 230, 0.2), rgba(230, 255, 230, 0.2)), url("../image/natural.jpg");
-  background: -o-linear-gradient(left, rgba(230, 255, 230, 0.2), rgba(230, 255, 230, 0.2)), url("../image/natural.jpg");
-  background: linear-gradient(to right, rgba(230, 255, 230, 0.2), rgba(230, 255, 230, 0.2)), url("../image/natural.jpg");
+  min-height: 150px;
+  width:100%;
+  height:20%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(230, 255, 230, 0.2)), to(rgba(230, 255, 230, 0.2))), url("../imagenes/EcoBici1.JPG");
+  background: -webkit-linear-gradient(left, rgba(230, 255, 230, 0.2), rgba(230, 255, 230, 0.2)), url("../imagenes/EcoBici1.JPG");
+  background: -o-linear-gradient(left, rgba(230, 255, 230, 0.2), rgba(230, 255, 230, 0.2)), url("../imagenes/EcoBici1.JPG");
+  background: linear-gradient(to right, rgba(230, 255, 230, 0.2), rgba(230, 255, 230, 0.2)), url("../imagenes/EcoBici1.JPG");
   background-size: cover;
 }
 
@@ -808,10 +810,11 @@ h3 {
 }
 
 .br_image {
-  background: -webkit-linear-gradient(left, rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("../image/natural.jpg");
-  background: -o-linear-gradient(left, rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("../image/natural.jpg");
-  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 9, 30, 0.8)), to(rgba(4, 9, 30, 0.8))), url("../image/natural.jpg");
-  background: linear-gradient(to right, rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("../image/natural.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(230, 255, 230, 0.2)), to(rgba(230, 255, 230, 0.2))), url("../imagenes/EcoBici1.JPG");
+  background: -webkit-linear-gradient(left, rgba(230, 255, 230, 0.2), rgba(230, 255, 230, 0.2)), url("../imagenes/EcoBici1.JPG");
+  background: -o-linear-gradient(left, rgba(230, 255, 230, 0.2), rgba(230, 255, 230, 0.2)), url("../imagenes/EcoBici1.JPG");
+  background: linear-gradient(to right, rgba(230, 255, 230, 0.2), rgba(230, 255, 230, 0.2)), url("../imagenes/EcoBici1.JPG");
+  background-size: cover;
 }
 
 .page-cover-tittle {

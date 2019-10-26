@@ -146,9 +146,9 @@
     .header_top .top_btn a{
         padding: 0px 10px;
     }
-    .banner_area {
+    /*.banner_area {//Cambiado
         min-height: 560px;
-    }
+    }*/
     .event_time{
         margin-top: 50px;
     }
