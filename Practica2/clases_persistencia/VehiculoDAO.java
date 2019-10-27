@@ -9,6 +9,8 @@
 import java.sql.*;
 import java.util.List;
 import java.util.LinkedList;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class VehiculoDAO {
 
@@ -60,11 +62,53 @@ public class VehiculoDAO {
      */
     public static List<Vehiculo> findOverCondition(String tipo, String segment, String euro_star, String engine_type,
             String fuel, String pollutant) {
+        final String intersect = "intersect ";
         List<Vehiculo> lista = new LinkedList<>();
+        int index = 1;
         try {
             Connection c = ConnectionManager.getConnection();
+            String sqlStmnt = "";
+            Map<Integer, String> mapa = new TreeMap<>();
             if (tipo != null) {
-                //TODO: Acabar esto con intersecciones
+                sqlStmnt = (index == 1 ? findOverCondition_tipo : intersect + findOverCondition_tipo);
+                mapa.put(index, tipo);
+                index++;
+            }
+            if (segment != null) {
+                sqlStmnt = (index == 1 ? findOverCondition_segment : intersect + findOverCondition_segment);
+                mapa.put(index, segment);
+                index++;
+            }
+            if (euro_star != null) {
+                sqlStmnt = (index == 1 ? findOverCondition_euro_star : intersect + findOverCondition_euro_star);
+                mapa.put(index, euro_star);
+                index++;
+            }
+            if (engine_type != null) {
+                sqlStmnt = (index == 1 ? findOverCondition_engine_type : intersect + findOverCondition_engine_type);
+                mapa.put(index, engine_type);
+                index++;
+            }
+            if (fuel != null) {
+                sqlStmnt = (index == 1 ? findOverCondition_fuel : intersect + findOverCondition_fuel);
+                mapa.put(index, fuel);
+                index++;
+            }
+            if (pollutant != null) {
+                sqlStmnt = (index == 1 ? findOverCondition_pollutant : intersect + findOverCondition_pollutant);
+                mapa.put(index, pollutant);
+                index++;
+            }
+            PreparedStatement ps = c.prepareStatement(sqlStmnt);
+            // Ahora recorremos el map para saber los valores de los indices a aplicar
+            for (int i = 1; i <= 6 && mapa.containsKey(i); i++) {
+                String value = mapa.get(i);
+                ps.setString(i, value);
+            }
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                lista.add(new Vehiculo(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5),
+                        rs.getString(6), rs.getString(7), rs.getFloat(8)));
             }
         } catch (SQLException e) {
             // TODO Auto-generated catch block
