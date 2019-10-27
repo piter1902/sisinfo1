@@ -69,15 +69,6 @@ public class Vehiculo {
     }
 
     /**
-     * Getter del año de registro del vehiculo
-     * 
-     * @return año de registro del vehiculo
-     */
-    public int getRegistr_year() {
-        return registr_year;
-    }
-
-    /**
      * Getter del tipo de vehiculo
      * 
      * @return tipo de vehiculo
