@@ -1,0 +1,13 @@
++-------------------+
+| fuel              |
++-------------------+
+| petrol            |
+| diesel            |
+| petrol_hybrid     |
+| lpg_bifuel        |
+| lpg_bifuel_petrol |
+| cng_bifuel        |
+| cng_bifuel_petrol |
+| cng               |
+| biodiesel         |
++-------------------+

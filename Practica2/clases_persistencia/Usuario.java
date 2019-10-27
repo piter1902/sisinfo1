@@ -16,7 +16,7 @@ public class Usuario {
      * @param nombre nombre del usuario
      * @param apellidos apllidos del usuario
      * @param email email del usuario
-     * @param vehicle_id id del vehiculo del usuario
+     * @param vehicle_id id del vehiculo del usuario (TODO: cambiar esta referencia por surco de datos ? -> Tabla nueva que almacene estos datos?)
      */
     public Usuario(String login, String password, String nombre, String apellidos, String email, int vehicle_id) {
         this.login = login;

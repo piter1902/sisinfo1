@@ -9,11 +9,11 @@ import java.sql.*;
 
 public class ConnectionManager {
 	// JDBC nombre del driver y URL de BD
-	private static final String JDBC_DRIVER = "<DRIVER>";
-	private static final String DB_URL = "jdbc:mysql://<IP>:3306/<nombreBD>";
+	private static final String JDBC_DRIVER = "org.mariadb.jdbc.Driver";
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/ecobicizara";
 	// Credenciales de la Base de Datos
-	private static final String USER = "<USER>";
-	private static final String PASS = "<PSSWD>";
+	private static final String USER = "ecobicizara";
+	private static final String PASS = "sis_info_1920";
 
 	// Devuelve una nueva conexion.
 	public final static Connection getConnection() throws SQLException {
