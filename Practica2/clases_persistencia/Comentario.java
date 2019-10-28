@@ -23,7 +23,7 @@ public class Comentario {
      * @param nombre nombre de la persona que deja el comentario
      * @param apellidos apellidos de la persona que deja el comentario
      * @param text texto del comentario
-     * @param respondida
+     * @param respondida estado de la pregunta (true -> esta respondida ; false -> no respondida)
      */
     public Comentario(int comentID, String email, String nombre, String apellidos, String text, boolean respondida) {
         this.comentID = comentID;
