@@ -12,7 +12,7 @@ CREATE TABLE Vehiculo
     CONSTRAINT vehiculoPK PRIMARY KEY (id)
 );
 
--- Fichero SQL para la creacion de tablas
+-- tabla de gestion de los comentarios que se dejan en la seccion "Help & Contact"
 CREATE TABLE Comentario
 (
     comentarioId BIGINT NOT NULL AUTO_INCREMENT,
@@ -20,6 +20,7 @@ CREATE TABLE Comentario
     email varchar(20) not null,
     nombre VARCHAR(20) not null,
     apellidos varchar(30),
+    respondida boolean not null,
     CONSTRAINT comentarioPK PRIMARY KEY (comentarioId)
 );
 
@@ -44,7 +45,6 @@ CREATE TABLE Consulta
     fecha date not null,
     origen varchar(40) not null,
     destino varchar(40) not null,
-    respondida boolean not null,
     CONSTRAINT consultaPK PRIMARY KEY (id),
     CONSTRAINT usuarioFK FOREIGN KEY (login) REFERENCES Usuario(login) on delete cascade
 );

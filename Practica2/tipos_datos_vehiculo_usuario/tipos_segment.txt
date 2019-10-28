@@ -1,0 +1,42 @@
++-------------------------------------+
+| segment                             |
++-------------------------------------+
+| Mini                                |
+| Small                               |
+| Medium                              |
+| Large-SUV-Executive                 |
+| 2-Stroke                            |
+| N1-I                                |
+| N1-II                               |
+| N1-III                              |
+| >3;5 t                              |
+| Rigid <=7;5 t                       |
+| Rigid 7;5 - 12 t                    |
+| Rigid 12 - 14 t                     |
+| Rigid 14 - 20 t                     |
+| Rigid 20 - 26 t                     |
+| Rigid 26 - 28 t                     |
+| Rigid 28 - 32 t                     |
+| Rigid >32 t                         |
+| Articulated 14 - 20 t               |
+| Articulated 20 - 28 t               |
+| Articulated 28 - 34 t               |
+| Articulated 34 - 40 t               |
+| Articulated 40 - 50 t               |
+| Articulated 50 - 60 t               |
+| Urban Buses Midi <=15 t             |
+| Urban Buses Standard 15 - 18 t      |
+| Urban Buses Articulated >18 t       |
+| Coaches Standard <=18 t             |
+| Coaches Articulated >18 t           |
+| Urban CNG Buses                     |
+| Urban Biodiesel Buses               |
+| Mopeds 2-stroke <50 cm³             |
+| Mopeds 4-stroke <50 cm³             |
+| Motorcycles 2-stroke >50 cm³        |
+| Motorcycles 4-stroke <250 cm³       |
+| Motorcycles 4-stroke 250 - 750 cm³  |
+| Motorcycles 4-stroke >750 cm³       |
+| Quad & ATVs                         |
+| Micro-car                           |
++-------------------------------------+
