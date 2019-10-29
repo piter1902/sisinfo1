@@ -18,7 +18,7 @@ public class UsuarioDAO {
     // Sentencia SQL para la validacion del usuario
     protected static final String findIfPasswordMatchs = "select count(*) as veces from Usuario where login = ? and password = MD5(?)";
     // Sentencias SQL para actualizar un usuario de la BD
-    protected static final String updateUser = "update Usuario set password = ?, nombre = ?, apellidos = ?, email = ?, vehic_id = ? where login = ?";
+    protected static final String updateUser = "update Usuario set password = MD5(?), nombre = ?, apellidos = ?, email = ?, vehic_id = ? where login = ?";
 
     /**
      * Metodo para buscar todos los usuarios de la BD

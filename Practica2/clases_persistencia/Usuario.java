@@ -35,8 +35,13 @@ public class Usuario {
         this(orig.login, orig.password, orig.nombre, orig.apellidos, orig.email, orig.vehicle_id);
     }
 
-    // Metodos setters y getters
+    // Metodos para el trabajo con usuarios
+    public boolean esValido(){
+        return getLogin() != null && getPassword() != null && getNombre() != null && getEmail() != null && getVehicle_id() != 0;
+    }
 
+
+    // Metodos setters y getters
     /**
      * Getter del login name del usuario
      * @return login del usuario
