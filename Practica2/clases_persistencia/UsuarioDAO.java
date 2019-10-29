@@ -84,7 +84,6 @@ public class UsuarioDAO {
             // Solo deberia haber un resultado -> correcto = true
             // Podria no haber resultado -> correcto = false
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return correcto;

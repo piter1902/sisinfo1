@@ -13,13 +13,11 @@ public class Usuario {
      * Constructor de la clase Usuario
      * 
      * @param login      login name del usuario
-     * @param password   password no encriptada del usuario (TODO: COMO HACERLO)
+     * @param password   password no encriptada del usuario (se encriptara al comunicarse con la BD -> posible cambio)
      * @param nombre     nombre del usuario
      * @param apellidos  apllidos del usuario
      * @param email      email del usuario
-     * @param vehicle_id id del vehiculo del usuario (TODO: cambiar esta referencia
-     *                   por surco de datos ? -> Tabla nueva que almacene estos
-     *                   datos?)
+     * @param vehicle_id id del vehiculo del usuario 
      */
     public Usuario(String login, String password, String nombre, String apellidos, String email, int vehicle_id) {
         this.login = login;

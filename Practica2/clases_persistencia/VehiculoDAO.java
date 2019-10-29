@@ -41,7 +41,6 @@ public class VehiculoDAO {
                         rs.getString(6), rs.getString(7), rs.getFloat(8)));
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return lista;
@@ -111,7 +110,6 @@ public class VehiculoDAO {
                         rs.getString(6), rs.getString(7), rs.getFloat(8)));
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return lista;
