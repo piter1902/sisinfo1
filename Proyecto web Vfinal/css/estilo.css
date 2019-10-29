@@ -1,0 +1,223 @@
+.campo{
+	font-size:10px;
+}
+.hoja{
+	width:25%;
+	height:25%;
+	margin-left:-150px;
+	margin:auto;
+	background-color:green;
+}
+
+.tablaC{
+	background-color:#fff;
+}
+
+.inicio1{
+	color:green;
+	font-size:10px;
+}
+
+.header_area .navbar {
+  background: rgba(255, 255, 255,0.3); /*transparent;*/
+  height:69px;
+}
+
+.header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
+  color: blue;
+  background-color:#ffcccc;
+  /*margin-top:20px;*/
+}
+
+.logo {
+	/*position:relative;*/
+	/*width:40px;
+	height:40px;*/
+	width:60%;
+	height:60%;
+	margin-right:-300px;
+}
+
+.banner_area {
+  margin-top:180px;
+}
+
+.br_image {
+  height:20px;
+}
+
+#mapa {
+	height:710px;
+	width:1325px;
+	margin-left:180px;
+	margin-top:-320px;
+	background-color:red;
+}
+
+#consulta{
+	width:160px;
+	border-style:solid;
+	border-color:red;
+	border-width:1px;
+	margin-left:5px;
+}
+
+.conjunto {
+	background-color:red;
+}
+
+.row{
+	margin-top: -5px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+	margin-top:5px;
+  }
+}
+
+#iniciarse {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.navbar .navbar-expand-lg .navbar-light{
+	margin-bottom:5px;
+}
+
+#barra {
+	margin-top:-135px;
+	background-color:red;
+	margin:auto;
+}
+
+.campoIntro {
+	font-size:10px;
+	margin-bottom:0px;
+}
+.campoIntroFin {
+	font-size:10px;
+}
+
+.consulIntro {
+	margin-bottom:0px;
+}
+
+.tituloHead {
+	font-style:initial;
+	color:#cc7a00;
+}
+
+.regHead {
+	margin-top:150px;
+}
+
+.breadcrumb_area {
+	margin-top:180px;
+}
+
+#preguntas {
+	background-color:blue;
+	border-style:solid;
+	border-color:blue;
+	width:400px;
+	color:black;
+}
+
+#respuestas {
+	color:black;
+	background-color:red;
+	border-style:solid;
+	border-color:green;
+	width:1100px;
+	height:450px;
+	margin-left:405px;
+	margin-top:-150px;
+	border-radius: 20px;
+}
+
+.lista1 {
+	margin-left:500px;
+}
+
+.entrada1 {
+	float:center;
+	/*background-color:red;*/
+	width:250px;
+	margin-left:480px;
+}
+
+.entrada1_1 {
+	margin-left:25px;
+}
+
+.navbar-toggler {
+	/*margin-left:300px;*/
+}
+
+/*.container {
+	margin-right:400px;
+}*/
+
+/*#navbarSupportedContent {
+	margin-right:300px;
+}*/
+
+/*.cave1 {
+	background-color:#1affa3;
+	width:90px;
+	/*margin-right:50px;
+	margin:auto;
+}
+
+.cave2 {
+	background-color:red;
+	width:150px;
+	margin-left:20px;
+	margin:auto;
+}
+
+.cave3 {
+	background-color:#1affa3;
+	width:100px;
+	margin-left:20px;
+	margin:auto;
+}*/
+
+.nav-link{
+	height:50px;
+	margin-right:50px;
+	/*width:80px;*/
+	/*width:150px;*/
+	/*margin-bottom:50px:*/
+}
+
+.navbar-collapse {
+	/*margin-right:400px;*/
+}
+
+.nav-item {
+	background-color:#1affa3;
+}
+
+.zoneLink {
+	background-color:#fff;
+}
+
+.top_btn {
+	/*background-color:red;*/
+	height:15px;
+}
+
+.preferencias {
+	float:right;
+}
+
+.nav {
+	margin:auto;
+}
+
+.tuerca {
+	height:5%;
+	width:5%;
+}
