@@ -1,7 +1,6 @@
 
 /**
- * Clase DAO para la clase vehiculo. Permitira hacer comprobaciones de factores
- * de emision sobre distintos parametros.
+ * Clase DAO para la clase Usuario. Permitira hacer comprobaciones de usuarios.
  * 
  * @author Pedro Tamargo Allue
  */
