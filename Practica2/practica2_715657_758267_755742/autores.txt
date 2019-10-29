@@ -1,0 +1,7 @@
+
+NIA             Apellidos               Nombres
+-------------------------------------------------
+
+715657          Rustarazo Carmona         Raúl 
+758267          Tamargo Allué             Pedro 
+755742          Tambo Tambo               Juan José  
