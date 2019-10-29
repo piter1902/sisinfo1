@@ -12,7 +12,7 @@ public class Usuario {
     /**
      * Constructor de la clase Usuario
      * @param login login name del usuario
-     * @param password password encriptada del usuario (TODO: COMO HACERLO)
+     * @param password password no encriptada del usuario (TODO: COMO HACERLO)
      * @param nombre nombre del usuario
      * @param apellidos apllidos del usuario
      * @param email email del usuario

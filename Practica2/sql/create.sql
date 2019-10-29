@@ -28,10 +28,10 @@ CREATE TABLE Comentario
 CREATE TABLE Usuario
 (
     login VARCHAR(20) NOT NULL,
-    password varbinary(20) not null,
+    password varchar(50) not null,
     nombre VARCHAR(20) NOT NULL,
     apellidos varchar(30),
-    email VARCHAR(20) not null,
+    email VARCHAR(50) not null,
     vehic_id bigint not null,
     CONSTRAINT usuarioPK PRIMARY KEY (login),
     CONSTRAINT vehiculoFK FOREIGN KEY (vehic_id) REFERENCES Vehiculo(id) on delete cascade

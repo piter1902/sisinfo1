@@ -15,6 +15,8 @@ public class UsuarioDAO {
     // Sentencias SQL para la seleccion de BD
     protected static final String findALL = "select * from Usuario";
     protected static final String findByLogin = "select * from Usuario where login = ?";
+    // Sentencia SQL para la validacion del usuario
+    protected static final String findIfPasswordMatchs = "select count(*) as veces from Usuario where login = ? and password = MD5(?)";
     // Sentencias SQL para actualizar un usuario de la BD
     protected static final String updateUser = "update Usuario set password = ?, nombre = ?, apellidos = ?, email = ?, vehic_id = ? where login = ?";
 
@@ -72,6 +74,19 @@ public class UsuarioDAO {
      */
     public static boolean validateUser(Usuario user) {
         boolean correcto = false;
+        try {
+            Connection c = ConnectionManager.getConnection();
+            PreparedStatement ps = c.prepareStatement(findIfPasswordMatchs);
+            ps.setString(1, user.getLogin());
+            ps.setString(2, user.getPassword());
+            ResultSet rs = ps.executeQuery();
+            correcto = rs.next();
+            // Solo deberia haber un resultado -> correcto = true
+            // Podria no haber resultado -> correcto = false
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         return correcto;
     }
 
