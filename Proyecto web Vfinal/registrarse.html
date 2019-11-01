@@ -43,10 +43,32 @@
                 </div>
             </div>
             <div class="zoneLink">
-				<a  class="logo" href="index.html" ><img class="hoja" src="imagenes/marca.png" alt=""></a>
-				<a 	class="preferencias" href="datosPersonales.html" ><img src="imagenes/Hoja1.png" alt=""></a>
+					<a  class="logo" href="index.html" ><img class="hoja" src="imagenes/marca.png" alt=""></a>
+				<table id="tablaCabecera">
+					<tr>	
+						<td>
+							<a 	class="inicioSesion" href="iniciarSesion.html" ><img  class="iconoInicio" src="imagenes/inicioSesion.png" alt=""></a>
+						</td>
+						<td>
+							<form class="usuarioActual" action="" method="get">
+													<p>
+														<label for="nick">Usuario:</label>
+														<input size="8px" readonly type="text" name="nick" value=""/>
+													</p>
+							</form>
+						</td>
+						<td>
+							<a 	class="preferencias" href="datosPersonales.html" ><img class="tuerca" src="imagenes/tuerca.png" alt=""></a>
+						</td>
+						<td>
+							<form class="cerrarSesion" action="" method="post">
+								<input size="2px" class="campo" type="submit" value="Cerrar Sesión"/>
+							</form>
+						</td>
+					</tr>
+				</table>
 			</div>
-            <nav class="navbar navbar-expand-lg navbar-light" >
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,38 +79,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><center class="cave1"><a class="nav-link"  href="index.html">Home</a></center></li> 
-                            <li class="nav-item"><center class="cave2"><a class="nav-link" href="contact.html">Help & Contact</a></center></li>
-                            <li class="nav-item active" ><center class="cave3"><a class="nav-link" href="registrarse.html">Registrase</a></center></li>
-                            <!--<li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Event</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="event.html">Event</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="event-details.html">Event Details</a></li>
-                                </ul>
-                            </li>-->
-                            <!--<li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-                                </ul>
-                            </li>-->
-                            <!--<li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                </ul>
-                            </li>-->
-                            
-                            <!--<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>-->
+                            <li class="nav-item"><center><a class="nav-link"  href="index.html">Home</a></center></li> 
+                            <li class="nav-item"><center><a class="nav-link" href="contact.html">Contact</a></center></li>
+							<li class="nav-item"><center><a class="nav-link" href="help.html">Help</a></center></li>
+                            <li class="nav-item active" ><center><a class="nav-link" href="registrarse.html">Registrarse</a></center></li>
                         </ul>
-                        <!--<ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
-                        </ul>-->
                     </div> 
                 </div>
             </nav>
@@ -111,11 +106,6 @@
         <!--================Sermons work Area =================-->
         <section class="sermons_work_area section_gap">
             <div class="container">
-                <!--<div class="section_title text-center">
-                    <h2>Sermons This Week</h2>
-                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from</p>
-                </div>-->
-                <!--<div class="sermons_slider owl-carousel">-->
 					<form id="registro" action="" method="post">
 					<center><h3>Nuevo Usuario</h3></center>
 					<center><p>
@@ -178,64 +168,16 @@
 					</p></center>
 					
 				</form>
-                    <!--<div class="item row">
-                        <div class="col-lg-8">
-                            <div class="sermons_image">
-                                <img src="image/sermns.jpg" alt="">
-                                <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="sermons_content">
-                                <h3 class="title_color">Did not find your Package? Feel free to ask us. We‘ll make it for you</h3>
-                                <ul class="list_style sermons_category">
-                                    <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li>
-                                    <li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li>
-                                    <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> 5th may, 2018</li>
-                                </ul>
-                                <a href="#" class="btn_hover">View More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item row">
-                        <div class="col-lg-8">
-                            <div class="sermons_image">
-                                <img src="image/sermns.jpg" alt="">
-                                <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="sermons_content">
-                                <h3 class="title_color">Did not find your Package? Feel free to ask us. We‘ll make it for you</h3>
-                                <ul class="list_style sermons_category">
-                                    <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li>
-                                    <li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li>
-                                    <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> 5th may, 2018</li>
-                                </ul>
-                                <a href="#" class="btn_hover">View More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item row">
-                        <div class="col-lg-8">
-                            <div class="sermons_image">
-                                <img src="image/sermns.jpg" alt="">
-                                <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="sermons_content">
-                                <h3 class="title_color">Did not find your Package? Feel free to ask us. We‘ll make it for you</h3>
-                                <ul class="list_style sermons_category">
-                                    <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li>
-                                    <li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li>
-                                    <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> 5th may, 2018</li>
-                                </ul>
-                                <a href="#" class="btn_hover btn_hover_two">View More Details</a>
-                            </div>
-                        </div>
-                    </div>-->
-                <!--</div>-->
+				<div class="box">
+					  <select>
+						<option data-display="Select">Nothing</option>
+						<option value="1">Some option</option>
+						<option value="2">Another option</option>
+						<option value="3" disabled>A disabled option</option>
+						<option value="4">Potato</option>
+					  </select>
+				</div>
+          
             </div>
         </section>
         <!--================Sermons work Area=================-->

@@ -33,17 +33,43 @@
                             </ul>-->
                         </div>
                         <div class="col-sm-6 col-7">
-							
+							<div class="top_btn d-flex justify-content-end">
+								
+                                <!--<a href="#">My Account</a>
+                                <a href="#">Donate Now</a>-->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light" >
-				<div class="logo"><a href="index.html"><img class="hoja" src="imagenes/marca.png" alt=""></a></div>
-            </nav>
-			<nav class="navbar navbar-expand-lg navbar-light" >
-                <div class="container" style="margin-left:150px">
-					<!--<div><a href="index.html"><img class="hoja" src="imagenes/marca.png" alt=""></a></div>-->
+            <div class="zoneLink">
+					<a  class="logo" href="index.html" ><img class="hoja" src="imagenes/marca.png" alt=""></a>
+				<table id="tablaCabecera">
+					<tr>	
+						<td>
+							<a 	class="inicioSesion" href="iniciarSesion.html" ><img  class="iconoInicio1" src="imagenes/inicioSesion.png" alt=""></a>
+						</td>
+						<td>
+							<form class="usuarioActual" action="" method="get">
+													<p>
+														<label for="nick">Usuario:</label>
+														<input size="8px" readonly type="text" name="nick" value=""/>
+													</p>
+							</form>
+						</td>
+						<td>
+							<a 	class="preferencias" href="datosPersonales.html" ><img class="tuerca" src="imagenes/tuerca.png" alt=""></a>
+						</td>
+						<td>
+							<form class="cerrarSesion" action="" method="post">
+								<input size="2px" class="campo" type="submit" value="Cerrar Sesión"/>
+							</form>
+						</td>
+					</tr>
+				</table>
+			</div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
@@ -51,15 +77,14 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- Collect the nav links, forms, and other content for toggling -->
-					<br>
-                    <center><div class="collapse navbar-collapse offset" id="navbarSupportedContent" style="margin-right:400px">
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item"><center><a class="nav-link"  href="index.html">Home</a></center></li> 
-                            <li class="nav-item"><center><a class="nav-link" href="contact.html">Help & Contact</a></center></li>
-                            <li class="nav-item active" ><center><a class="nav-link" href="registrarse.html">Registrase</a></center></li>
+                            <li class="nav-item"><center><a class="nav-link" href="contact.html">Contact</a></center></li>
+							<li class="nav-item"><center><a class="nav-link" href="help.html">Help</a></center></li>
+                            <li class="nav-item" ><center><a class="nav-link" href="registrarse.html">Registrarse</a></center></li>
                         </ul>
                     </div> 
-					</center>
                 </div>
             </nav>
         </header>
@@ -86,88 +111,25 @@
                     <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from</p>
                 </div>-->
                 <!--<div class="sermons_slider owl-carousel">-->
-					<div class="top_btn d-flex justify-content-end">
-								<form id="iniciarse" action="" method="post">
-									<table class="iniciarS">
-										<tr>
-											<td class="tablaC"><label for="email"><b class="inicio1">Email:</b></label></td>
-										</tr>
-										<tr>
-											<td class="tablaC"><input size="5px" class="campo" type="text" name="name" value=""/></td>
-										</tr>
-										<tr>
-											<td class="tablaC"><label size="5px" for="password"><b class="inicio1">Contraseña:</b></label></td>
-										</tr>
-										<tr>
-											<td class="tablaC"><input size="5px" class="campo" type="text" name="password" value=""/></td>
-										</tr>
-										<tr>
-											<td class="tablaC"><input size="2px" class="campo" type="submit" value="Iniciar Sesión"/></td>
-										</tr>	
-									</table>	
-								</form>
-                                <!--<a href="#">My Account</a>
-                                <a href="#">Donate Now</a>-->
-                    </div>
-				
-                    <!--<div class="item row">
-                        <div class="col-lg-8">
-                            <div class="sermons_image">
-                                <img src="image/sermns.jpg" alt="">
-                                <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="sermons_content">
-                                <h3 class="title_color">Did not find your Package? Feel free to ask us. We‘ll make it for you</h3>
-                                <ul class="list_style sermons_category">
-                                    <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li>
-                                    <li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li>
-                                    <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> 5th may, 2018</li>
-                                </ul>
-                                <a href="#" class="btn_hover">View More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item row">
-                        <div class="col-lg-8">
-                            <div class="sermons_image">
-                                <img src="image/sermns.jpg" alt="">
-                                <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="sermons_content">
-                                <h3 class="title_color">Did not find your Package? Feel free to ask us. We‘ll make it for you</h3>
-                                <ul class="list_style sermons_category">
-                                    <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li>
-                                    <li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li>
-                                    <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> 5th may, 2018</li>
-                                </ul>
-                                <a href="#" class="btn_hover">View More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item row">
-                        <div class="col-lg-8">
-                            <div class="sermons_image">
-                                <img src="image/sermns.jpg" alt="">
-                                <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="sermons_content">
-                                <h3 class="title_color">Did not find your Package? Feel free to ask us. We‘ll make it for you</h3>
-                                <ul class="list_style sermons_category">
-                                    <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li>
-                                    <li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li>
-                                    <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> 5th may, 2018</li>
-                                </ul>
-                                <a href="#" class="btn_hover btn_hover_two">View More Details</a>
-                            </div>
-                        </div>
-                    </div>-->
-                <!--</div>-->
+					<form id="iniciarse" action="" method="get">
+						<table class="iniciarS">
+							<tr>
+								<td class="tablaC"><label for="nick"><b class="inicio1">Nombre de usuario:</b></label></td>
+							</tr>
+							<tr>
+								<td class="tablaC"><input class="campo" type="text" name="name" value=""/></td>
+							</tr>
+							<tr>
+								<td class="tablaC"><label for="password"><b class="inicio1">Contraseña:</b></label></td>
+							</tr>
+							<tr>
+								<td class="tablaC"><input class="campo" type="text" name="password" value=""/></td>
+							</tr>
+							<tr>
+								<td class="tablaC"><input class="campo" type="submit" value="Iniciar Sesión"/></td>
+							</tr>
+						</table>	
+					</form>
             </div>
         </section>
         <!--================Sermons work Area=================-->
@@ -216,15 +178,6 @@
             </div>
         </section>
 		<div>
-		<div class="box">
-					  <select>
-						<option data-display="Select">Nothing</option>
-						<option value="1">Some option</option>
-						<option value="2">Another option</option>
-						<option value="3" disabled>A disabled option</option>
-						<option value="4">Potato</option>
-					  </select>
-		</div>
         <!--================Blog Area=================-->
         
         <!--================ start footer Area  =================-->	
