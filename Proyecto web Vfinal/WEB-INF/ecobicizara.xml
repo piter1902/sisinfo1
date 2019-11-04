@@ -4,7 +4,7 @@
       <servlet-class>servlet.RegisterServlet</servlet-class>
    </servlet>
    <servlet-mapping>
-      <servlet-name>timeservlet</servlet-name>
+      <servlet-name>registerServlet</servlet-name>
       <url-pattern>/registrarse</url-pattern>
    </servlet-mapping>
 </web-app>

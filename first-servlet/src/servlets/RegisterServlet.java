@@ -20,11 +20,15 @@ public class RegisterServlet extends HttpServlet {
 		String pass2= req.getParameter("password1");
 		String email = req.getParameter("email");
 		String vehic = req.getParameter("vehiculo");
-		
+		if(pass1 != pass2) {
+				resp.sendRedirect("registrarse.html");
+		}
 		Usuario introducido = new Usuario(nickName, pass1, nombre,apellidos, email, 0);
 		if (UsuarioDAO.validateUser(introducido)) {
 			//Faltaria especificar que hace si ha sido correcto el login
-			response(resp, "login ok");
+			UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, 0);
+			response(resp, "registro ok");
+			resp.sendRedirect("index.html");
 		} else {
 			response(resp, "invalid login");
 		}
