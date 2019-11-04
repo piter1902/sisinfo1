@@ -1,1 +1,6 @@
-https://es.wikipedia.org/wiki/Normativa_europea_sobre_emisiones
+
+->https://es.wikipedia.org/wiki/Normativa_europea_sobre_emisiones
+Modificaciones de rutas:
+->https://github.com/Project-OSRM/osrm-backend/wiki/Running-OSRM
+Mapa de calor:
+->https://www.patrick-wied.at/static/heatmapjs/
