@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet {
 		String user = req.getParameter("name");
 		String pass = req.getParameter("password");
 		Usuario introducido = new Usuario(user, pass, null,null, null,0);
-		if (UsuarioDAO.validateUser(introducido)) {
+		if (UsuarioDAO.validateUser(introducido, null)) {
 			//Faltaria especificar que hace si ha sido correcto el login
 			response(resp, "login ok");
 		} else {

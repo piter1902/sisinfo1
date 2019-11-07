@@ -8,6 +8,8 @@ package baseDatos;
 
 import java.sql.*;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.LinkedList;
 
 public class UsuarioDAO {
@@ -68,12 +70,42 @@ public class UsuarioDAO {
 	 * Metodo que dado un Usuario <user> comprueba si existe en la BD y si su
 	 * <password> coincide con el de la BD
 	 * 
-	 * @param user usuario a validar
+	 * @param user  usuario a validar
+	 * @param error En caso de que hay un error en la validación, se modifica el
+	 *              valor por una cadena correspondiente al error
 	 * @return true si coincide. false en caso contrario.
 	 */
-	public static boolean validateUser(Usuario user) {
-		boolean correcto = false;
-		return correcto;
+	public static boolean validateUser(Usuario user, String error) {
+		String login = user.getLogin();
+		String password = user.getPassword();
+		String nombre = user.getNombre();
+		String apellidos = user.getApellidos();
+		String email = user.getEmail();
+		int vehicle_id = user.getVehicle_id();
+		// Patrón para comprobar si el email es correcto
+		Pattern patron = Pattern.compile(
+				"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
+		Matcher match = patron.matcher(email);
+		// Comprobamos que no hay ningun campo vacío.
+		if (login.isEmpty() || password.isEmpty() || email.isEmpty() || apellidos.isEmpty()) {
+			error = "Debe completar todos campos.";
+			return false;
+		} else {
+			// Comprobamos patrón
+			if (match.find()) {
+				// Caso de que el patrón es válido, comprobamos si ya existía ese usuario.
+				if (UsuarioDAO.findUserByLogin(login) == null) {
+					error = null;
+					return true;
+				} else {
+					error = "El usuario " + login + " ya esta registrado.";
+					return false;
+				}
+			} else {
+				error = "email incorrecto";
+				return false;
+			}
+		}
 	}
 
 	/**
@@ -119,12 +151,12 @@ public class UsuarioDAO {
 		try {
 			Connection c = ConnectionManager.getConnection();
 			PreparedStatement ps = c.prepareStatement(insertUser);
-			ps.setString(1,login);
-			ps.setString(2,password);
-			ps.setString(3,nombre);
-			ps.setString(4,apellidos);
-			ps.setString(5,email);
-			ps.setInt(6, vehicle_id);			
+			ps.setString(1, login);
+			ps.setString(2, password);
+			ps.setString(3, nombre);
+			ps.setString(4, apellidos);
+			ps.setString(5, email);
+			ps.setInt(6, vehicle_id);
 			ps.execute();
 		} catch (SQLException e) {
 			e.printStackTrace();

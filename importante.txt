@@ -4,3 +4,4 @@ Modificaciones de rutas:
 ->https://github.com/Project-OSRM/osrm-backend/wiki/Running-OSRM
 Mapa de calor:
 ->https://www.patrick-wied.at/static/heatmapjs/
+http://www.forosdelweb.com/f45/aporte-registro-login-usuarios-con-jsp-servlets-mysql-930805/
