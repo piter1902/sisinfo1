@@ -2,7 +2,12 @@ package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -25,6 +30,7 @@ public class RegisterServlet extends HttpServlet {
 		 * Sesión que devolveremos al final de la operación.
 		 */
 		HttpSession respuesta = req.getSession(true);
+		Map<String, String> error = new HashMap<String, String>();
 		String nickName = req.getParameter("nickName");
 		String nombre = req.getParameter("nombre");
 		String apellidos = req.getParameter("apellidos");
@@ -32,19 +38,44 @@ public class RegisterServlet extends HttpServlet {
 		String pass2 = req.getParameter("password1");
 		String email = req.getParameter("email");
 		String vehic = req.getParameter("vehiculo");
-		if (pass1 != pass2) {
-			respuesta.setAttribute("error", "contraseñas no coinciden");
-		}
-		Usuario introducido = new Usuario(nickName, pass1, nombre, apellidos, email, 0);
-		String error = null;
-		if (UsuarioDAO.validateUser(introducido, error)) {
-			respuesta.setAttribute("error", error);
+
+		// Patrón para comprobar si el email es correcto
+		Pattern patron = Pattern.compile(
+				"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
+		Matcher match = patron.matcher(email);
+		if (nickName.isEmpty())
+			error.put("nickname", "Campo obligatorio.");
+		if (pass1.isEmpty())
+			error.put("password", "Campo obligatorio.");
+		if (pass2.isEmpty())
+			error.put("password1", "Campo obligatorio.");
+		if (email.isEmpty())
+			error.put("email", "Campo obligatorio.");
+		if (apellidos.isEmpty())
+			error.put("apellidos", "Campo obligatorio.");
+		if (vehic.isEmpty())
+			error.put("vehiculo", "Campo obligatorio.");
+		if (pass1 != pass2)
+			error.put("password1", "Contraseñas no coinciden.");
+		if (!match.find())
+			error.put("email", "Email incorrecto.");
+		if (UsuarioDAO.findUserByLogin(nickName) != null)
+			error.put("nickName", "El usuario " + nickName + " ya ha sido registrado");
+
+		if (error.isEmpty()) {
 			UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, 0);
-			resp.sendRedirect("index.html");
+			resp.setContentType("text/html; charset=ISO-8859-1");
+			PrintWriter out = resp.getWriter();
+			out.println("<html><head><title>Inserción usuario</title></head>");
+			out.println("<body><p>El usuario con nick " + nickName + " se ha registrado correctamente.</p>");
+			out.println("</body></html>");
 		} else {
-			respuesta.setAttribute("error", error);
-			response(resp, "invalid login");
+			req.setAttribute("errores", error);
+			RequestDispatcher dispatcher = req.getRequestDispatcher("registrarse.html");
+			dispatcher.forward(req, resp);
+			resp.sendRedirect("registrarse.html");
 		}
+
 	}
 
 	private void response(HttpServletResponse resp, String msg) throws IOException {

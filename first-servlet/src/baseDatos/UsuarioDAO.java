@@ -75,37 +75,8 @@ public class UsuarioDAO {
 	 *              valor por una cadena correspondiente al error
 	 * @return true si coincide. false en caso contrario.
 	 */
-	public static boolean validateUser(Usuario user, String error) {
-		String login = user.getLogin();
-		String password = user.getPassword();
-		String nombre = user.getNombre();
-		String apellidos = user.getApellidos();
-		String email = user.getEmail();
-		int vehicle_id = user.getVehicle_id();
-		// Patrón para comprobar si el email es correcto
-		Pattern patron = Pattern.compile(
-				"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
-		Matcher match = patron.matcher(email);
-		// Comprobamos que no hay ningun campo vacío.
-		if (login.isEmpty() || password.isEmpty() || email.isEmpty() || apellidos.isEmpty()) {
-			error = "Debe completar todos campos.";
-			return false;
-		} else {
-			// Comprobamos patrón
-			if (match.find()) {
-				// Caso de que el patrón es válido, comprobamos si ya existía ese usuario.
-				if (UsuarioDAO.findUserByLogin(login) == null) {
-					error = null;
-					return true;
-				} else {
-					error = "El usuario " + login + " ya esta registrado.";
-					return false;
-				}
-			} else {
-				error = "email incorrecto";
-				return false;
-			}
-		}
+	public static boolean validateUser(Usuario user) {
+		return true;
 	}
 
 	/**
