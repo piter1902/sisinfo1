@@ -31,22 +31,30 @@ public class RegisterServlet extends HttpServlet {
 		 */
 		HttpSession respuesta = req.getSession(true);
 		Map<String, String> error = new HashMap<String, String>();
-		String nickName = req.getParameter("nickName");
+		String nickName = req.getParameter("nickname");
 		String nombre = req.getParameter("nombre");
 		String apellidos = req.getParameter("apellidos");
 		String pass1 = req.getParameter("password");
 		String pass2 = req.getParameter("password1");
 		String email = req.getParameter("email");
 		String vehic = req.getParameter("vehiculo");
+		//response(resp, "Valores: " + nickName + "|" + nombre + "|" + apellidos + "|" + pass1 + "|"
+		//		 + pass2 + "|" + email + "|" + vehic);
 
 		// Patrón para comprobar si el email es correcto
 		Pattern patron = Pattern.compile(
 				"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
 		Matcher match = patron.matcher(email);
-		if (nickName.isEmpty())
+		if (nickName == null || nickName.trim().equals("")) {
 			error.put("nickname", "Campo obligatorio.");
+		}else {
+			if (UsuarioDAO.findUserByLogin(nickName) != null)
+				error.put("nickname", "El usuario " + nickName + " ya ha sido registrado");			
+		}
 		if (pass1.isEmpty())
 			error.put("password", "Campo obligatorio.");
+		if (nombre.isEmpty())
+			error.put("nombre", "Campo obligatorio.");	
 		if (pass2.isEmpty())
 			error.put("password1", "Campo obligatorio.");
 		if (email.isEmpty())
@@ -59,8 +67,6 @@ public class RegisterServlet extends HttpServlet {
 			error.put("password1", "Contraseñas no coinciden.");
 		if (!match.find())
 			error.put("email", "Email incorrecto.");
-		if (UsuarioDAO.findUserByLogin(nickName) != null)
-			error.put("nickName", "El usuario " + nickName + " ya ha sido registrado");
 
 		if (error.isEmpty()) {
 			UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, 0);

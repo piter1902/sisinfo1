@@ -9,8 +9,6 @@ package baseDatos;
 
 import java.sql.*;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.LinkedList;
 
 public class UsuarioDAO {
@@ -53,7 +51,7 @@ public class UsuarioDAO {
 	 *         <login>. null si no existe ninguno.
 	 */
 	public static Usuario findUserByLogin(String login) {
-		Usuario user = null;
+		Usuario user = new Usuario(null, null, null, null, null,0);
 		try {
 			Connection c = ConnectionManager.getConnection();
 			PreparedStatement ps = c.prepareStatement(findByLogin);
