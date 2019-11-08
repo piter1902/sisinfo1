@@ -1,0 +1,2 @@
+https://www.galisteocantero.com/sesiones-en-servlets-y-jsp-ejemplo-login-logout/
+https://tomcat.apache.org/tomcat-5.5-doc/servletapi/javax/servlet/http/HttpSession.html
