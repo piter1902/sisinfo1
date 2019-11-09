@@ -708,7 +708,8 @@ h3 {
 }
 
 .banner_content {
-  color: #fff;
+  background-image: url("../imagenes/EcoBici1.jpg");
+  color: aliceblue;
 }
 
 .banner_content h6 {
@@ -825,7 +826,7 @@ h3 {
   font-size: 48px;
   line-height: 55px;
   font-weight: 700;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .breadcrumb {
