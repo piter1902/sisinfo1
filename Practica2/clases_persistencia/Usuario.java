@@ -1,4 +1,4 @@
-
+package baseDatos;
 /**
  * Clase que representa la tabla Usuario de la BD
  * 
@@ -11,13 +11,12 @@ public class Usuario {
 
     /**
      * Constructor de la clase Usuario
-     * 
-     * @param login      login name del usuario
-     * @param password   password no encriptada del usuario (se encriptara al comunicarse con la BD -> posible cambio)
-     * @param nombre     nombre del usuario
-     * @param apellidos  apllidos del usuario
-     * @param email      email del usuario
-     * @param vehicle_id id del vehiculo del usuario 
+     * @param login login name del usuario
+     * @param password password encriptada del usuario (TODO: COMO HACERLO)
+     * @param nombre nombre del usuario
+     * @param apellidos apllidos del usuario
+     * @param email email del usuario
+     * @param vehicle_id id del vehiculo del usuario (TODO: cambiar esta referencia por surco de datos ? -> Tabla nueva que almacene estos datos?)
      */
     public Usuario(String login, String password, String nombre, String apellidos, String email, int vehicle_id) {
         this.login = login;
@@ -30,29 +29,16 @@ public class Usuario {
 
     /**
      * Constructor copia
-     * 
      * @param orig Usuario a copiar
      */
     public Usuario(Usuario orig) {
         this(orig.login, orig.password, orig.nombre, orig.apellidos, orig.email, orig.vehicle_id);
     }
 
-    // Metodos para el trabajo con usuarios
-    /**
-     * Metodo que comprueba que los datos de un usuario son validos, es decir, que
-     * no sean "null" aquellas columnas que en la BD no deban serlo.
-     * 
-     * @return true si el usuario cumple la condicion. false en caso contrario.
-     */
-    public boolean esValido() {
-        return getLogin() != null && getPassword() != null && getNombre() != null && getEmail() != null
-                && getVehicle_id() != 0;
-    }
-
     // Metodos setters y getters
+
     /**
      * Getter del login name del usuario
-     * 
      * @return login del usuario
      */
     public String getLogin() {
@@ -61,7 +47,6 @@ public class Usuario {
 
     /**
      * Setter del login del usuario
-     * 
      * @param login login del usuario actualizado
      */
     public void setLogin(String login) {
@@ -70,7 +55,6 @@ public class Usuario {
 
     /**
      * Getter del password encriptado del usuario
-     * 
      * @return password encriptado
      */
     public String getPassword() {
@@ -79,7 +63,6 @@ public class Usuario {
 
     /**
      * Setter del password encriptado del usuario
-     * 
      * @param password password actualizado
      */
     public void setPassword(String password) {
@@ -88,7 +71,6 @@ public class Usuario {
 
     /**
      * Getter del nombre del usuario
-     * 
      * @return nombre actualizado
      */
     public String getNombre() {
@@ -97,7 +79,6 @@ public class Usuario {
 
     /**
      * Setter del nombre del usuario
-     * 
      * @param nombre nombre actualizado
      */
     public void setNombre(String nombre) {
@@ -105,8 +86,7 @@ public class Usuario {
     }
 
     /**
-     * Getter de los apellidos del usuario
-     * 
+     * Getter de los apellidos del usuario 
      * @return apellidos del usuario
      */
     public String getApellidos() {
@@ -115,7 +95,6 @@ public class Usuario {
 
     /**
      * Setter de los apellidos del usuario
-     * 
      * @param apellidos apellidos actualizados
      */
     public void setApellidos(String apellidos) {
@@ -124,7 +103,6 @@ public class Usuario {
 
     /**
      * Getter del email del usuario
-     * 
      * @return email del usuario
      */
     public String getEmail() {
@@ -133,7 +111,6 @@ public class Usuario {
 
     /**
      * Setter del email del usuario
-     * 
      * @param email email actualizado
      */
     public void setEmail(String email) {
@@ -142,7 +119,6 @@ public class Usuario {
 
     /**
      * Getter del identificador del vehiculo del usuario
-     * 
      * @return id del vehiculo del usuario
      */
     public int getVehicle_id() {
@@ -151,7 +127,6 @@ public class Usuario {
 
     /**
      * Setter del identificador del vehiculo del usuario
-     * 
      * @param vehicle_id identificador del vehiculo actualizado
      */
     public void setVehicle_id(int vehicle_id) {

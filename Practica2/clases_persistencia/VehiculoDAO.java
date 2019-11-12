@@ -1,4 +1,4 @@
-
+package baseDatos;
 /**
  * Clase DAO para la clase vehiculo. Permitira hacer comprobaciones de factores
  * de emision sobre distintos parametros.
@@ -41,6 +41,7 @@ public class VehiculoDAO {
                         rs.getString(6), rs.getString(7), rs.getFloat(8)));
             }
         } catch (SQLException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return lista;
@@ -69,35 +70,36 @@ public class VehiculoDAO {
             String sqlStmnt = "";
             Map<Integer, String> mapa = new TreeMap<>();
             if (tipo != null) {
-                sqlStmnt = (index == 1 ? findOverCondition_tipo : intersect + findOverCondition_tipo);
+                sqlStmnt += (index == 1 ? findOverCondition_tipo : intersect + findOverCondition_tipo);
                 mapa.put(index, tipo);
                 index++;
             }
             if (segment != null) {
-                sqlStmnt = (index == 1 ? findOverCondition_segment : intersect + findOverCondition_segment);
+                sqlStmnt += (index == 1 ? findOverCondition_segment : intersect + findOverCondition_segment);
                 mapa.put(index, segment);
                 index++;
             }
             if (euro_star != null) {
-                sqlStmnt = (index == 1 ? findOverCondition_euro_star : intersect + findOverCondition_euro_star);
+                sqlStmnt += (index == 1 ? findOverCondition_euro_star : intersect + findOverCondition_euro_star);
                 mapa.put(index, euro_star);
                 index++;
             }
             if (engine_type != null) {
-                sqlStmnt = (index == 1 ? findOverCondition_engine_type : intersect + findOverCondition_engine_type);
+                sqlStmnt += (index == 1 ? findOverCondition_engine_type : intersect + findOverCondition_engine_type);
                 mapa.put(index, engine_type);
                 index++;
             }
             if (fuel != null) {
-                sqlStmnt = (index == 1 ? findOverCondition_fuel : intersect + findOverCondition_fuel);
+                sqlStmnt += (index == 1 ? findOverCondition_fuel : intersect + findOverCondition_fuel);
                 mapa.put(index, fuel);
                 index++;
             }
             if (pollutant != null) {
-                sqlStmnt = (index == 1 ? findOverCondition_pollutant : intersect + findOverCondition_pollutant);
+                sqlStmnt += (index == 1 ? findOverCondition_pollutant : intersect + findOverCondition_pollutant);
                 mapa.put(index, pollutant);
                 index++;
             }
+            System.out.println(sqlStmnt);
             PreparedStatement ps = c.prepareStatement(sqlStmnt);
             // Ahora recorremos el map para saber los valores de los indices a aplicar
             for (int i = 1; i <= 6 && mapa.containsKey(i); i++) {
@@ -110,8 +112,11 @@ public class VehiculoDAO {
                         rs.getString(6), rs.getString(7), rs.getFloat(8)));
             }
         } catch (SQLException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return lista;
     }
+    
+    
 }
