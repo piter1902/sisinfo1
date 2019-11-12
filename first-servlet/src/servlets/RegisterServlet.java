@@ -20,14 +20,14 @@ public class RegisterServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		/*
-		 * No se debe permitir que se llame mediante un método Get
+		 * No se debe permitir que se llame mediante un mÃ©todo Get
 		 */
-		resp.sendRedirect("registrarse.html");
+		resp.sendRedirect("registrarse.jsp");
 	}
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		/*
-		 * Sesión que devolveremos al final de la operación.
+		 * SesiÃ³n que devolveremos al final de la operaciÃ³n.
 		 */
 		HttpSession respuesta = req.getSession(true);
 		Map<String, String> error = new HashMap<String, String>();
@@ -38,48 +38,51 @@ public class RegisterServlet extends HttpServlet {
 		String pass2 = req.getParameter("password1");
 		String email = req.getParameter("email");
 		String vehic = req.getParameter("vehiculo");
-		//response(resp, "Valores: " + nickName + "|" + nombre + "|" + apellidos + "|" + pass1 + "|"
-		//		 + pass2 + "|" + email + "|" + vehic);
-
-		// Patrón para comprobar si el email es correcto
+		Boolean passNN = true;
+		// PatrÃ³n para comprobar si el email es correcto
 		Pattern patron = Pattern.compile(
 				"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
 		Matcher match = patron.matcher(email);
 		if (nickName == null || nickName.trim().equals("")) {
 			error.put("nickname", "Campo obligatorio.");
-		}else {
+		} else {
 			if (UsuarioDAO.findUserByLogin(nickName) != null)
-				error.put("nickname", "El usuario " + nickName + " ya ha sido registrado");			
+				error.put("nickname", "El usuario " + nickName + " ya ha sido registrado");
 		}
-		if (pass1.isEmpty())
-			error.put("password", "Campo obligatorio.");
-		if (nombre.isEmpty())
-			error.put("nombre", "Campo obligatorio.");	
-		if (pass2.isEmpty())
-			error.put("password1", "Campo obligatorio.");
-		if (email.isEmpty())
-			error.put("email", "Campo obligatorio.");
-		if (apellidos.isEmpty())
-			error.put("apellidos", "Campo obligatorio.");
-		if (vehic.isEmpty())
-			error.put("vehiculo", "Campo obligatorio.");
-		if (pass1 != pass2)
-			error.put("password1", "Contraseñas no coinciden.");
-		if (!match.find())
-			error.put("email", "Email incorrecto.");
+		if (nickName == null || nickName.trim().equals(""))
+			error.put("password", "password - Campo obligatorio.");
+		if (nombre == null || nombre.trim().equals(""))
+			error.put("nombre", "nombre - Campo obligatorio.");
+		if (pass1 == null || pass1.trim().equals("")) {
+			error.put("password", "password - Campo obligatorio.");
+			passNN = false;
+		}
+		if (pass2 == null || pass2.trim().equals("")) {
+			error.put("password1", "password1 - Campo obligatorio.");
+			passNN = false;
+		}
+		if (apellidos == null || apellidos.trim().equals(""))
+			error.put("apellidos", "apellidos - Campo obligatorio.");
+		if (vehic == null || vehic.trim().equals(""))
+			error.put("vehiculo", "vehiculo - Campo obligatorio.");
+		if (email == null || email.trim().equals("")) {
+			error.put("email", "email - Campo obligatorio.");
+		} else { // Solo se comprueba si el campo no es nulo.
+			if (!match.find()) {
+				error.put("email", "email - Email incorrecto.");
+			}
+		}
+		if (passNN && !pass1.trim().equals(pass2.trim())) { // Para añadir el error, ninguna contraseña debe ser nula.
+			error.put("password1", "passwordss - Contraseñas no coinciden.");
+		}
 
-		if (error.isEmpty()) {
-			UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, 0);
-			resp.setContentType("text/html; charset=ISO-8859-1");
-			PrintWriter out = resp.getWriter();
-			out.println("<html><head><title>Inserción usuario</title></head>");
-			out.println("<body><p>El usuario con nick " + nickName + " se ha registrado correctamente.</p>");
-			out.println("</body></html>");
+		if (error.size() == 0) {
+			UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, 10);
+			resp.sendRedirect("index.jsp");
 		} else {
 			req.setAttribute("errores", error);
-			RequestDispatcher dispatcher = req.getRequestDispatcher("registrarse.html");
+			RequestDispatcher dispatcher = req.getRequestDispatcher("registrarse.jsp");
 			dispatcher.forward(req, resp);
-			resp.sendRedirect("registrarse.html");
 		}
 
 	}

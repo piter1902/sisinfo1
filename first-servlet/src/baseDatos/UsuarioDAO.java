@@ -9,6 +9,8 @@ package baseDatos;
 
 import java.sql.*;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.LinkedList;
 
 public class UsuarioDAO {
@@ -16,11 +18,11 @@ public class UsuarioDAO {
 	// Sentencias SQL para la seleccion de BD
 	protected static final String findALL = "select * from Usuario";
 	protected static final String findByLogin = "select * from Usuario where login = ?";
-    // Sentencia SQL para la validacion del usuario
-    protected static final String findIfPasswordMatchs = "select count(*) as veces from Usuario where login = ? and password = MD5(?)";
+	// Sentencia SQL para la validacion del usuario
+	protected static final String findIfPasswordMatchs = "select count(*) as veces from Usuario where login = ? and password = MD5(?)";
 	// Sentencias SQL para actualizar un usuario de la BD
 	protected static final String updateUser = "update Usuario set password = ?, nombre = ?, apellidos = ?, email = ?, vehic_id = ? where login = ?";
-	protected static final String insertUser = "insert into Usuario (login, password, nombre, apellidos, email, vehic_id) VALUES (?, ?, ?, ?, ?, ?)";
+	protected static final String insertUser = "insert into Usuario (login, password, nombre, apellidos, email, vehic_id) VALUES (?, MD5(?), ?, ?, ?, ?)";
 
 	/**
 	 * Metodo para buscar todos los usuarios de la BD
@@ -51,7 +53,7 @@ public class UsuarioDAO {
 	 *         <login>. null si no existe ninguno.
 	 */
 	public static Usuario findUserByLogin(String login) {
-		Usuario user = new Usuario(null, null, null, null, null,0);
+		Usuario user = null;
 		try {
 			Connection c = ConnectionManager.getConnection();
 			PreparedStatement ps = c.prepareStatement(findByLogin);
@@ -84,7 +86,9 @@ public class UsuarioDAO {
 			ps.setString(1, user.getLogin());
 			ps.setString(2, user.getPassword());
 			ResultSet rs = ps.executeQuery();
-			correcto = rs.next();
+			//correcto = rs.next(); // Esto no esta bien
+			rs.next();
+			correcto = rs.getInt("veces") == 1; 
 			// Solo deberia haber un resultado -> correcto = true
 			// Podria no haber resultado -> correcto = false
 		} catch (SQLException e) {
@@ -135,6 +139,7 @@ public class UsuarioDAO {
 			int vehicle_id) {
 		try {
 			Connection c = ConnectionManager.getConnection();
+			System.out.println("iniciando");
 			PreparedStatement ps = c.prepareStatement(insertUser);
 			ps.setString(1, login);
 			ps.setString(2, password);
@@ -148,4 +153,9 @@ public class UsuarioDAO {
 		}
 	}
 
+	public static void insertUser(Usuario user) {
+		insertUser(user.getLogin(), user.getPassword(), user.getNombre(), user.getApellidos(), user.getEmail(),
+				user.getVehicle_id());
+	}
+	
 }

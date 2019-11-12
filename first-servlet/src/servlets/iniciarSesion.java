@@ -40,16 +40,19 @@ public class iniciarSesion extends HttpServlet {
 		// TODO Auto-generated method stub
 
 		HttpSession session = request.getSession();
+		boolean hay_error = false;
 
 		Map<String, String> errores = new HashMap<>();
 		String name = request.getParameter("name");
 		String psswd = request.getParameter("password");
 
-		if (name != null || name.trim().equals("")) {
+		if (name == null || name.trim().equals("")) {
 			errores.put("Username", "Campo obligatorio");
+			hay_error = true;
 		}
-		if (psswd != null || psswd.trim().equals("")) {
+		if (psswd == null || psswd.trim().equals("")) {
 			errores.put("Contrase�a", "Campo obligatorio");
+			hay_error = true;
 		}
 
 		if (errores.size() == 0) {
@@ -59,24 +62,28 @@ public class iniciarSesion extends HttpServlet {
 				// Inicio de sesion correcto
 				session.setAttribute("nickname", user.getLogin());
 				response.sendRedirect("index.jsp");
+				//response.getWriter().write("Bienvenido " + user.getNombre() + " " + user.getApellidos());
 			} else {
 				// Error en el inicio de sesion
 				// A�adimos como atributo de la peticion el mapa de errores
 				errores.put("Error de inicio de sesion", "Usuario o contrase�a incorrecto");
 				request.setAttribute("errores", errores);
 				// Enviamos la peticion a otra pagina
-				RequestDispatcher dispatcher = request.getRequestDispatcher("iniciarSesion.jsp");
-				dispatcher.forward(request, response);
-				//response.sendRedirect("iniciarSesion.html");
+				// RequestDispatcher dispatcher =
+				// request.getRequestDispatcher("iniciarSesion.jsp");
+				// dispatcher.forward(request, response);
+				// response.sendRedirect("iniciarSesion.jsp");
 			}
-		} else {
+		}
+		if (errores.size() > 0) {
 			// Hay errores
 			// A�adimos como atributo de la peticion el mapa de errores
 			request.setAttribute("errores", errores);
 			// Enviamos la peticion a otra pagina
-			RequestDispatcher dispatcher = request.getRequestDispatcher("iniciarSesion.jsp");
-			dispatcher.forward(request, response);
-			//response.sendRedirect("iniciarSesion.html");
+			//RequestDispatcher dispatcher = request.getRequestDispatcher("iniciarSesion.jsp");
+			//dispatcher.forward(request, response);
+			response.getWriter().write("No eres bienvenido a esta web " + name + " ... " + psswd);
+			// response.sendRedirect("iniciarSesion.jsp");
 		}
 	}
 
