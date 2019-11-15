@@ -23,6 +23,8 @@ public class UsuarioDAO {
 	// Sentencias SQL para actualizar un usuario de la BD
 	protected static final String updateUser = "update Usuario set password = ?, nombre = ?, apellidos = ?, email = ?, vehic_id = ? where login = ?";
 	protected static final String insertUser = "insert into Usuario (login, password, nombre, apellidos, email, vehic_id) VALUES (?, MD5(?), ?, ?, ?, ?)";
+	// Sentencias SQL para borrar un usuario de una BD
+	protected static final String deleteUser = "delete from Usuario where login = ?";
 
 	/**
 	 * Metodo para buscar todos los usuarios de la BD
@@ -86,9 +88,9 @@ public class UsuarioDAO {
 			ps.setString(1, user.getLogin());
 			ps.setString(2, user.getPassword());
 			ResultSet rs = ps.executeQuery();
-			//correcto = rs.next(); // Esto no esta bien
+			// correcto = rs.next(); // Esto no esta bien
 			rs.next();
-			correcto = rs.getInt("veces") == 1; 
+			correcto = rs.getInt("veces") == 1;
 			// Solo deberia haber un resultado -> correcto = true
 			// Podria no haber resultado -> correcto = false
 		} catch (SQLException e) {
@@ -157,5 +159,19 @@ public class UsuarioDAO {
 		insertUser(user.getLogin(), user.getPassword(), user.getNombre(), user.getApellidos(), user.getEmail(),
 				user.getVehicle_id());
 	}
-	
+
+	public static boolean deleteUsuario(Usuario user) {
+		boolean ok = false;
+		try {
+			Connection c = ConnectionManager.getConnection();
+			PreparedStatement ps = c.prepareStatement(deleteUser);
+			ps.setString(1, user.getLogin());
+			ok = ps.executeUpdate() > 0 && VehiculoDAO
+					.deleteVehiculo(new Vehiculo(user.getVehicle_id(), null, null, null, null, null, null, 0));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return ok;
+	}
+
 }

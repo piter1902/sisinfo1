@@ -16,14 +16,17 @@ import java.util.TreeMap;
 public class VehiculoDAO {
 
 	protected static final String findALL = "select * from Vehiculo";
-	// protected static final String findOverCondition_flat = "select * from
-	// Vehiculo where ";
-	protected static final String findOverCondition_tipo = "select * from Vehiculo where tipo = ? ",
-			findOverCondition_segment = "select * from Vehiculo where segment = ? ",
-			findOverCondition_euro_star = "select * from Vehiculo where euro_star = ? ",
-			findOverCondition_engine_type = "select * from Vehiculo where engine_type = ? ",
-			findOverCondition_fuel = "select * from Vehiculo where fuel = ? ",
-			findOverCondition_pollutant = "select * from Vehiculo where pollutant = ? ";
+
+	// Sentencia de busqueda sobre una condicion
+	// Se tienen en cuenta los primeros 8506 elementos (los obtenidos de lafuente de
+	// datos para calcular los factores de emision)
+	private static final int MAX_ELEM_MIRAR = 8506;
+	protected static final String findOverCondition_tipo = "select * from Vehiculo where tipo = ? and id < " + MAX_ELEM_MIRAR,
+			findOverCondition_segment = "select * from Vehiculo where segment = ? and id < " + MAX_ELEM_MIRAR,
+			findOverCondition_euro_star = "select * from Vehiculo where euro_star = ? and id < " + MAX_ELEM_MIRAR,
+			findOverCondition_engine_type = "select * from Vehiculo where engine_type = ? and id < " + MAX_ELEM_MIRAR,
+			findOverCondition_fuel = "select * from Vehiculo where fuel = ? and id < " + MAX_ELEM_MIRAR,
+			findOverCondition_pollutant = "select * from Vehiculo where pollutant = ? and id < " + MAX_ELEM_MIRAR;
 	// Para insertar un vehiculo en la BD -> la clave tiene auto_increment
 	protected static final String insertOnDB = "insert on Vehiculo values (?,?,?,?,?,?,?)";
 	// Para obtener el factor de emision de forma estadistica en funcion de los
@@ -31,6 +34,8 @@ public class VehiculoDAO {
 	protected static final String obtainEmFactor = "select emission_factor as em from ";
 	// Obtener el elemento maximo de la tabla Vehiculo
 	protected static final String getMaxId = "select max(id) as maximo from Vehiculo";
+	// Sentencia SQL para borrar eliminar un vehiculo de la BD
+	protected static final String deleteVehiculo = "delete from Vehiculo where id = ?";
 
 	/**
 	 * Metodo que devuelve una lista con todos los elementos de la tabla Vehiculo
@@ -139,6 +144,19 @@ public class VehiculoDAO {
 			e.printStackTrace();
 		}
 		return lista;
+	}
+
+	public static boolean deleteVehiculo(Vehiculo v) {
+		boolean ok = false;
+		try {
+			Connection c = ConnectionManager.getConnection();
+			PreparedStatement ps = c.prepareStatement(deleteVehiculo);
+			ps.setInt(1, v.getId());
+			ok = ps.executeUpdate() > 0;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return ok;
 	}
 
 	public static int insertStadistic(Vehiculo v, List<Vehiculo> lista) {
