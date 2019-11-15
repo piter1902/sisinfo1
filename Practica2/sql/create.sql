@@ -20,8 +20,9 @@ CREATE TABLE Comentario
     email varchar(20) not null,
     nombre VARCHAR(20) not null,
     apellidos varchar(30),
-    respondida boolean not null,
-    CONSTRAINT comentarioPK PRIMARY KEY (comentarioId)
+    antecesor bigint,
+    CONSTRAINT comentarioPK PRIMARY KEY (comentarioId),
+    CONSTRAINT ComentarioFK FOREIGN KEY (antecesor)
 );
 
 -- Usar funciones de encriptacion para el password
