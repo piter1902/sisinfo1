@@ -1,3 +1,4 @@
+package baseDatos;
 
 /**
  * Clase para representar los comentarios que pueden dejar los visitantes de la
@@ -14,7 +15,7 @@ public class Comentario {
 
     private int comentID;
     private String email, nombre, apellidos, text;
-    private boolean respondida;
+    private int antecesor;
 
     /**
      * Constructor de la clase Comentario
@@ -23,15 +24,15 @@ public class Comentario {
      * @param nombre nombre de la persona que deja el comentario
      * @param apellidos apellidos de la persona que deja el comentario
      * @param text texto del comentario
-     * @param respondida estado de la pregunta (true -> esta respondida ; false -> no respondida)
+     * @param antecesor id del comentario que precede a este (si es != -1 | NULL -> respuesta a comentario hecho por usuario)
      */
-    public Comentario(int comentID, String email, String nombre, String apellidos, String text, boolean respondida) {
+    public Comentario(int comentID, String email, String nombre, String apellidos, String text, int antecesor) {
         this.comentID = comentID;
         this.email = email;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.text = text;
-        this.respondida = respondida;
+        this.antecesor = antecesor;
     }
 
     /**
@@ -39,7 +40,7 @@ public class Comentario {
      * @param c comentario a copiar
      */
     public Comentario(Comentario c) {
-        this(c.comentID, c.email, c.nombre, c.apellidos, c.text, c.respondida);
+        this(c.comentID, c.email, c.nombre, c.apellidos, c.text, c.antecesor);
     }
 
     // Getters y Setters
@@ -125,19 +126,19 @@ public class Comentario {
     }
 
     /**
-     * Getter de respondida
-     * @return true si y solo si el comentario ha sido respondido
+     * Getter de antecesor
+     * @return antecesor
      */
-    public boolean isRespondida() {
-        return respondida;
+    public int getAntecesor() {
+        return antecesor;
     }
 
     /**
-     * Setter de respondida
-     * @param respondida valor actualizado
+     * Setter de antecesor
+     * @param antecesor valor actualizado
      */
-    public void setRespondida(boolean respondida) {
-        this.respondida = respondida;
+    public void setRespondida(int antecesor) {
+        this.antecesor = antecesor;
     }
 
     
