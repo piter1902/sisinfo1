@@ -22,7 +22,7 @@ CREATE TABLE Comentario
     apellidos varchar(30),
     antecesor bigint,
     CONSTRAINT comentarioPK PRIMARY KEY (comentarioId),
-    CONSTRAINT ComentarioFK FOREIGN KEY (antecesor)
+    CONSTRAINT ComentarioFK FOREIGN KEY (antecesor) REFERENCES Comentario(comentarioId)
 );
 
 -- Usar funciones de encriptacion para el password
