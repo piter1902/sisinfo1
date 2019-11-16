@@ -23,6 +23,8 @@ public class UsuarioDAO {
 	// Sentencias SQL para actualizar un usuario de la BD
 	protected static final String updateUser = "update Usuario set password = ?, nombre = ?, apellidos = ?, email = ?, vehic_id = ? where login = ?";
 	protected static final String insertUser = "insert into Usuario (login, password, nombre, apellidos, email, vehic_id) VALUES (?, MD5(?), ?, ?, ?, ?)";
+	// Sentencias SQL para borrar un usuario de una BD
+	protected static final String deleteUser = "delete from Usuario where login = ?";
 
 	/**
 	 * Metodo para buscar todos los usuarios de la BD
@@ -86,9 +88,9 @@ public class UsuarioDAO {
 			ps.setString(1, user.getLogin());
 			ps.setString(2, user.getPassword());
 			ResultSet rs = ps.executeQuery();
-			//correcto = rs.next(); // Esto no esta bien
+			// correcto = rs.next(); // Esto no esta bien
 			rs.next();
-			correcto = rs.getInt("veces") == 1; 
+			correcto = rs.getInt("veces") == 1;
 			// Solo deberia haber un resultado -> correcto = true
 			// Podria no haber resultado -> correcto = false
 		} catch (SQLException e) {
@@ -129,9 +131,7 @@ public class UsuarioDAO {
 	 * @param nombre     nombre del usuario
 	 * @param apellidos  apllidos del usuario
 	 * @param email      email del usuario
-	 * @param vehicle_id id del vehiculo del usuario (TODO: cambiar esta referencia
-	 *                   por surco de datos ? -> Tabla nueva que almacene estos
-	 *                   datos?)
+	 * @param vehicle_id id del vehiculo del usuario 
 	 * 
 	 * @return Si los parámetros son correctos, inserta el usuario en la BD
 	 */
@@ -156,6 +156,36 @@ public class UsuarioDAO {
 	public static void insertUser(Usuario user) {
 		insertUser(user.getLogin(), user.getPassword(), user.getNombre(), user.getApellidos(), user.getEmail(),
 				user.getVehicle_id());
+	}
+
+	public static boolean deleteUsuario(Usuario user) {
+		boolean ok = false;
+		try {
+			Connection c = ConnectionManager.getConnection();
+			PreparedStatement ps = c.prepareStatement(deleteUser);
+			ps.setString(1, user.getLogin());
+			ok = ps.executeUpdate() > 0 && (numUsuariosConVehicId(user.getVehicle_id()) > 0? VehiculoDAO
+					.deleteVehiculo(new Vehiculo(user.getVehicle_id(), null, null, null, null, null, null, 0)) : true);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return ok;
+	}
+
+	private static int numUsuariosConVehicId(int vehicle_id) {
+		int nUser = 0;
+		try{
+			Connection c = ConnectionManager.getConnection();
+			PreparedStatement ps = c.prepareStatement("select count(*) as num_usuarios from Usuario where vehic_id = ?");
+			ps.setInt(1, vehicle_id);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()){
+				nUser = rs.getInt("num_usuarios");
+			}
+		}catch(SQLException e){
+			e.printStackTrace();
+		}
+		return nUser;
 	}
 
 }
