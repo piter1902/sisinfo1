@@ -2,7 +2,7 @@ package baseDatos;
 
 /**
  * Clase para representar los comentarios que pueden dejar los visitantes de la
- * p√°gina. Estar√°n provistos de: 
+ * p·gina. Estar·n provistos de: 
  * - ComentarioID 
  * - Texto del comentario
  * - email del usuario

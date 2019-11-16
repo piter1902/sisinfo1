@@ -1,4 +1,4 @@
-
+package baseDatos;
 /**
  * Clase para representar una consulta de una ruta de un usuario, debe estar provista de:
  * - consultaID

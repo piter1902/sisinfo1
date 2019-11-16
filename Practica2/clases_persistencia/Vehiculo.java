@@ -1,3 +1,4 @@
+package baseDatos;
 /**
  * Clase para representar un vehículo de la BD, debe estar provisto de: - id -
  * tipo (puede ser: Camion, Moto, TransportePublico, Coche) - segment (segmento
