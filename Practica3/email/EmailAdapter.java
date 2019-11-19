@@ -8,11 +8,22 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+/**
+ * Clase para el envío de emails
+ * 
+ * @author Pedro Tamargo Allue
+ *
+ */
 public class EmailAdapter {
 
 	private static final String remitente = "ecobicizara@gmail.com";
 	private static final String clave = "sis_info_1920";
 
+	/**
+	 * Metodo que inicia un objeto Properties con las propiedades de la conexion
+	 * 
+	 * @return propiedades de la conexion
+	 */
 	private static Properties getProps() {
 		Properties props = System.getProperties();
 		props.put("mail.smtp.host", "smtp.gmail.com"); // El servidor SMTP de Google
@@ -27,6 +38,15 @@ public class EmailAdapter {
 		return props;
 	}
 
+	/**
+	 * Metodo que envía un email
+	 * 
+	 * @param email_destinatario email (o emails separados por ,) de los
+	 *                           destinatarios
+	 * @param asunto             asunto del email
+	 * @param cuerpo             cuerpo del mensaje
+	 * @return true si no ha habido ningun fallo
+	 */
 	public static boolean sendEmail(String email_destinatario, String asunto, String cuerpo) {
 		boolean ok = false;
 		Properties props = getProps();

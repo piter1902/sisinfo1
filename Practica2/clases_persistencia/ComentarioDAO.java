@@ -87,4 +87,15 @@ public class ComentarioDAO {
 		return ok;
 	}
 
+	/**
+	 * Metodo que devuelve el padre de un comentario (referenciado por <antecesor>)
+	 * 
+	 * @param com comentario a buscar el padre. Es completo, es decir, tiene todos
+	 *            los campos asignados. (nada a <null>)
+	 * @return <comentario> si existe. <null> en caso contrario
+	 */
+	public static Comentario getParent(Comentario com) {
+		return findByID(com.getAntecesor());
+	}
+
 }
