@@ -1,29 +1,38 @@
 package baseDatos;
 
+/**
+ * Clase DAO para la clase Comentario. Permite comprobar que comentarios han sido respondidos.
+ * 
+ * @author Pedro Tamargo Allue
+ */
+
 import java.sql.*;
-import java.util.LinkedList;
 import java.util.List;
+import java.util.LinkedList;
 
 public class ComentarioDAO {
 
-	// Sentencias de busqueda
-	protected static final String findAll = "select * from Comentario";
-	protected static final String findById = "select * from Comentario where id = ?";
-	protected static final String maxElem = "select max(comentId) from Comentario";
-	// Sentencias de insercion -> id con auto_increment
-	protected static final String insertComentario = "insert into Comentario(texto,email,nombre,apellidos,respondida) values (?,?,?,?,?)";
-	// Update respondida
-	protected static final String updateRespondida = "update Comentario set respondida = true where comentarioId = ?";
+	// Sentencia SQL para obtener todos los comentarios
+	protected static final String findALL = "select * from Comentario";
+	protected static final String findID = "select * from Comentario where comentarioId = ?";
+	// Sentencia SQL para introducir un comentario en la BD
+	protected static final String insertComentario = "insert into Comentario values (?,?,?,?,?)"; // comentId es
+																									// auto_increment
 
-	public static List<Comentario> findAll() {
+	/**
+	 * Metodo que devuelve una lista con todos los Comentarios de la BD
+	 * 
+	 * @return lista con todos los comentarios de la BD
+	 */
+	public static List<Comentario> findAllComentarios() {
 		List<Comentario> lista = new LinkedList<>();
 		try {
 			Connection c = ConnectionManager.getConnection();
-			PreparedStatement ps = c.prepareStatement(findAll);
+			PreparedStatement ps = c.prepareStatement(findALL);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
-				lista.add(new Comentario(rs.getInt("id"), rs.getString("email"), rs.getString("nombre"),
-						rs.getString("apellidos"), rs.getString("texto"), rs.getBoolean("respondida")));
+				lista.add(new Comentario(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4),
+						rs.getString(5), rs.getInt(6)));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -31,16 +40,23 @@ public class ComentarioDAO {
 		return lista;
 	}
 
-	public static Comentario findById(int id) {
+	/**
+	 * Metodo que devuelve el comentario cuyo id concuerda con <id>
+	 * 
+	 * @param id identificador con el que comparar
+	 * @return Comentario cuyo id concuerda con <id>. <null> en caso de que no
+	 *         exista con el identificador dado.
+	 */
+	public static Comentario findByID(int id) {
 		Comentario com = null;
 		try {
 			Connection c = ConnectionManager.getConnection();
-			PreparedStatement ps = c.prepareStatement(findById);
+			PreparedStatement ps = c.prepareStatement(findID);
 			ps.setInt(1, id);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
-				com = new Comentario(rs.getInt("id"), rs.getString("email"), rs.getString("nombre"),
-						rs.getString("apellidos"), rs.getString("texto"), rs.getBoolean("respondida"));
+				com = new Comentario(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5),
+						rs.getInt(6));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -48,49 +64,38 @@ public class ComentarioDAO {
 		return com;
 	}
 
-	public static int insertComentario(Comentario c) {
-		return insertComentario(c.getEmail(), c.getNombre(), c.getApellidos(), c.getText(), c.isRespondida());
-	}
-
-	private static int insertComentario(String email, String nombre, String apellidos, String text,
-			boolean respondida) {
-		int id = -1;
+	/**
+	 * Metodo que inserta un comentario en la BD
+	 * 
+	 * @param com comentario que contiene todos los campos a insertar
+	 * @return true si se ha insertado, false en caso contrario
+	 */
+	public static boolean insertComentario(Comentario com) {
+		boolean ok = false;
 		try {
 			Connection c = ConnectionManager.getConnection();
 			PreparedStatement ps = c.prepareStatement(insertComentario);
-			ps.setString(1, text);
-			ps.setString(2, email);
-			ps.setString(3, nombre);
-			ps.setString(4, apellidos);
-			ps.setBoolean(5, respondida);
-			ps.executeUpdate();
-			ps = c.prepareStatement(maxElem);
-			ResultSet rs = ps.executeQuery();
-			while (rs.next()) {
-				id = rs.getInt(1);
-			}
+			ps.setString(1, com.getText());
+			ps.setString(2, com.getEmail());
+			ps.setString(3, com.getNombre());
+			ps.setString(4, com.getApellidos());
+			ps.setInt(5, com.getAntecesor());
+			ok = ps.executeUpdate() > 0;
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return id;
+		return ok;
 	}
 
-	public static boolean updateRespondida(Comentario c) {
-		return updateRespondida(c.getComentID());
+	/**
+	 * Metodo que devuelve el padre de un comentario (referenciado por <antecesor>)
+	 * 
+	 * @param com comentario a buscar el padre. Es completo, es decir, tiene todos
+	 *            los campos asignados. (nada a <null>)
+	 * @return <comentario> si existe. <null> en caso contrario
+	 */
+	public static Comentario getParent(Comentario com) {
+		return findByID(com.getAntecesor());
 	}
 
-	private static boolean updateRespondida(int id) {
-		try {
-			Connection c = ConnectionManager.getConnection();
-			PreparedStatement ps = c.prepareStatement(updateRespondida);
-			ps.setInt(1, id);
-			return ps.executeUpdate() > 0;
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			return false;
-		}
-
-	}
 }
