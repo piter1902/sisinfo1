@@ -13,8 +13,6 @@ import java.sql.*;
  */
 public class ComentarioEmail {
 
-	private static final String getComent = "select * from Comentario where id = ?";
-
 	/**
 	 * Metodo que dado un comentario (que puede solo contener el identificador unico
 	 * comentID, envía un correo con una estructura html dada al usuario que lo puso
@@ -25,21 +23,9 @@ public class ComentarioEmail {
 	 */
 	public static boolean sendRespuestaAComentario(Comentario com) {
 		boolean ok = false;
-		Comentario com2 = null, com3 = null;
-		try {
-			Connection c = ConnectionManager.getConnection();
-			PreparedStatement ps = c.prepareStatement(getComent);
-			ps.setInt(1, com.getComentID());
-			ResultSet rs = ps.executeQuery();
-			while (rs.next()) {
-				com2 = new Comentario(rs.getInt("comentarioId"), rs.getString("email"), rs.getString("nombre"),
-						rs.getString("apellidos"), rs.getString("texto"), rs.getInt("antecesor"));
-			}
-			// Com2 es el comentario completo que el usuario puso
-			com3 = ComentarioDAO.getParent(com2);
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
+		Comentario com2 = ComentarioDAO.findByID(com.getComentID());
+		// Com2 es el comentario completo que el usuario puso
+		Comentario com3 = com2 != null ? ComentarioDAO.getParent(com2) : null;
 		if (com2 != null && com3 != null) {
 			// Ninguno de los comentarios buscados == null
 			// Establecemos el envío del correo
