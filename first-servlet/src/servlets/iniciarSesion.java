@@ -51,7 +51,7 @@ public class iniciarSesion extends HttpServlet {
 			hay_error = true;
 		}
 		if (psswd == null || psswd.trim().equals("")) {
-			errores.put("Contrase�a", "Campo obligatorio");
+			errores.put("Contraseña", "Campo obligatorio");
 			hay_error = true;
 		}
 
@@ -66,7 +66,7 @@ public class iniciarSesion extends HttpServlet {
 			} else {
 				// Error en el inicio de sesion
 				// A�adimos como atributo de la peticion el mapa de errores
-				errores.put("Error de inicio de sesion", "Usuario o contrase�a incorrecto");
+				errores.put("Error de inicio de sesion", "Usuario o contraseña incorrecto");
 				request.setAttribute("errores", errores);
 				// Enviamos la peticion a otra pagina
 				// RequestDispatcher dispatcher =

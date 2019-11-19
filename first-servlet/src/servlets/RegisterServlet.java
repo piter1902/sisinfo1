@@ -77,12 +77,14 @@ public class RegisterServlet extends HttpServlet {
 		}
 
 		if (error.size() == 0) {
-			// Creamos el vehiculo relacionado con el usuario
+			// TODO descomentar esto,es para pruebas.
 			Vehiculo v = new Vehiculo(-1, "datos", "datos", "datos", "datos", "datos", "datos", 11);
-			// Insertamos el vehiculo en funcion de los datos estadisticos y obtenemos su identificador
-			int id_vehiculo = VehiculoDAO.insertStadistic(v, VehiculoDAO.findOverCondition(v));
+			// Insertamos el vehiculo en funcion de los datos estadisticos y obtenemos su
+			// identificador
+			//int id_vehiculo = VehiculoDAO.insertStadistic(v, VehiculoDAO.findOverCondition(v));
+			
 			// Insertamos al usuario en la BD
-			UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, id_vehiculo);
+			UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, 11);
 			resp.sendRedirect("index.jsp");
 		} else {
 			req.setAttribute("errores", error);
