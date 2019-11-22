@@ -17,6 +17,7 @@ import java.util.LinkedList;
 import org.apache.catalina.startup.PasswdUserDatabase;
 
 import baseDatos.*;
+import email.ComentarioEmail;
 
 /**
  * Servlet implementation class logout
@@ -71,8 +72,9 @@ public class AddComment extends HttpServlet {
 //				ComentarioDAO.insertComentario(coment);
 //			} else {
 			
-				Comentario coment = new Comentario(1,email, nombre, null, msg, 1);
+				Comentario coment = new Comentario(1, email, nombre, null, msg, 1);
 				ComentarioDAO.insertComentario(coment);
+				ComentarioEmail.sendPregunta(coment);
 				response.sendRedirect("contact.jsp");
 
 		} else {
