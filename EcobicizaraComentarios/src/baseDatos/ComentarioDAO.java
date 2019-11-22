@@ -1,9 +1,9 @@
 package baseDatos;
 
-/**
- * Clase DAO para la clase Comentario. Permite comprobar que comentarios han sido respondidos.
- * 
- * @author Pedro Tamargo Allue
+/** 
+ * Clase DAO para la clase Comentario. Permite comprobar que comentarios han sido respondidos. 
+ *  
+ * @author Pedro Tamargo Allue 
  */
 
 import java.sql.*;
@@ -16,8 +16,8 @@ public class ComentarioDAO {
 	protected static final String findALL = "select * from Comentario";
 	protected static final String findID = "select * from Comentario where comentarioId = ?";
 	// Sentencia SQL para introducir un comentario en la BD
-	protected static final String insertComentario = "insert into Comentario(texto,email,nombre,apellidos,antecesor) values (?,?,?,?,?)"; // comentId
-																																			// es
+	protected static final String insertComentario = "insert into Comentario (texto, email, nombre, apellidos, antecesor, asunto) values (?,?,?,?,?,?)"; // comentId
+																																							// es
 	// auto_increment
 
 	/**
@@ -33,7 +33,7 @@ public class ComentarioDAO {
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
 				lista.add(new Comentario(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4),
-						rs.getString(5), rs.getInt(6)));
+						rs.getString(5), rs.getInt(6), rs.getString(7)));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -57,7 +57,7 @@ public class ComentarioDAO {
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
 				com = new Comentario(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5),
-						rs.getInt(6));
+						rs.getInt(6), rs.getString(7));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

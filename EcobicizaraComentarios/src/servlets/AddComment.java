@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,9 +17,9 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.LinkedList;
 import org.apache.catalina.startup.PasswdUserDatabase;
+import email.ComentarioEmail; 
 
 import baseDatos.*;
-import email.ComentarioEmail;
 
 /**
  * Servlet implementation class logout
@@ -47,19 +49,31 @@ public class AddComment extends HttpServlet {
 		String nombre = request.getParameter("nombre");
 		String email = request.getParameter("email");
 		String asunto = request.getParameter("asunto");
-		String msg = request.getParameter("contenido");
-
+		String msg = request.getParameter("msg");
+		Pattern patron = Pattern.compile(
+				"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
 		if (nombre == null || nombre.trim().equals("")) {
 			error.put("nickname", "Por favor, introduzca nombre.");
 		}
 		if (email == null || email.trim().equals("")) {
 			error.put("email", "Por favor, introduzca dirección de correo.");
+		}else{
+			Matcher match = patron.matcher(email);
+			if (!match.find()) {
+				error.put("email", "Por favor, introduzca dirección de correo válida.");
+			}
 		}
 		if (asunto == null || asunto.trim().equals("")) {
 			error.put("asunto", "Debe añadir un asunto.");
+		}else {
+			if (asunto.length() > 30)
+				error.put("asunto", "Asundto demasiado largo. Máximo 30 carácteres.");
 		}
 		if (msg == null || msg.trim().equals("")) {
 			error.put("msg", "Cuerpo de mensaje vacío. Introduzca texto.");
+		} else {
+			if (msg.length() > 250)
+				error.put("msg", "Cuerpo de mensaje demasiado largo. Máximo 250 carácteres.");
 		}
 
 		if (error.size() == 0) {
@@ -71,11 +85,10 @@ public class AddComment extends HttpServlet {
 //				Comentario coment = new Comentario(-1,email, nombre, null, msg, antecesor);
 //				ComentarioDAO.insertComentario(coment);
 //			} else {
-			
-				Comentario coment = new Comentario(1, email, nombre, null, msg, 1);
-				ComentarioDAO.insertComentario(coment);
-				ComentarioEmail.sendPregunta(coment);
-				response.sendRedirect("contact.jsp");
+			Comentario coment = new Comentario(1, email, nombre, null, msg, 1, asunto);
+			ComentarioDAO.insertComentario(coment);
+			ComentarioEmail.sendPregunta(coment); 
+			response.sendRedirect("contact.jsp");
 
 		} else {
 			request.setAttribute("errores", error);

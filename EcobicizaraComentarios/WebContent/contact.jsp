@@ -1,3 +1,4 @@
+<%@ page import="java.util.*"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <!doctype html>
@@ -27,6 +28,34 @@
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 </head>
 <body>
+	<%
+		String emailError = "";
+		String nombError = "";
+		String asuntoError = "";
+		String msgError = "";
+		String emailValor = "";
+		String nombValor = "";
+		String asuntoValor = "";
+		String msgValor = "";
+		Map<String, String> err = (Map<String, String>) request.getAttribute("errores");
+		if (err != null) {
+			String cabecera = "<span style=\"color:red\">";
+			String fin = "</span>";
+			if (err.containsKey("asunto"))
+				asuntoError = cabecera + err.get("asunto") + fin;
+			if (err.containsKey("nombre"))
+				nombError = cabecera + err.get("nombre") + fin;
+			if (err.containsKey("msg"))
+				msgError = cabecera + err.get("msg") + fin;
+			if (err.containsKey("email"))
+				emailError = cabecera + err.get("email") + fin;
+			nombValor = request.getParameter("nombre");
+			emailValor = request.getParameter("email");
+			msgValor = request.getParameter("msg");
+			asuntoValor = request.getParameter("asunto");
+		}
+	%>
+
 	<!--================Header Area =================-->
 	<jsp:include page="cabecera.jsp"></jsp:include>
 	<!--================Header Area =================-->
@@ -106,26 +135,26 @@
 					</div>
 				</div>
 				<div class="col-md-9">
-					<form class="row contact_form" action="addComment"
-						method="post" id="contactForm" novalidate="novalidate">
+					<form class="row contact_form" action="addComment" method="post"
+						id="contactForm" novalidate="novalidate">
 						<div class="col-md-6">
 							<div class="form-group">
 								<input type="text" class="form-control" id="name" name="nombre"
-									placeholder="Introduce tu nombre">
+									placeholder="Introduce tu nombre" value="<%=nombValor %>"><%=nombError %>
 							</div>
 							<div class="form-group">
 								<input type="email" class="form-control" id="email" name="email"
-									placeholder="Introduce correo electrónico">
+									placeholder="Introduce correo electrónico" value="<%=emailValor %>"><%=emailError %>
 							</div>
 							<div class="form-group">
 								<input type="text" class="form-control" id="subject"
-									name="asunto" placeholder="Introduce asunto">
+									name="asunto" placeholder="Introduce asunto" value="<%=asuntoValor %>"><%=asuntoError %>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<textarea class="form-control" name="contenido" id="message"
-									rows="1" placeholder="Escribe mensaje"></textarea>
+								<textarea class="form-control" name="msg" id="message"
+									rows="1" placeholder="Escribe mensaje" ><%=msgValor %></textarea><%=msgError %> 
 							</div>
 						</div>
 						<div class="col-md-12 text-right">
