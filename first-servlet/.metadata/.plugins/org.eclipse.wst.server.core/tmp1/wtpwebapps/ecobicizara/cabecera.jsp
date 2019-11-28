@@ -17,8 +17,8 @@
 		request.setAttribute("origRequestURL", request.getRequestURL());
 		System.out.println(request.getRequestURL());
 		String[] temporal = (request.getRequestURL().toString()).split("/");
-		String[] temporal2 = new String[temporal.length-1];
-		for(int i = 0; i< temporal.length-1; i++){
+		String[] temporal2 = new String[temporal.length - 1];
+		for (int i = 0; i < temporal.length - 1; i++) {
 			temporal2[i] = temporal[i];
 		}
 		String path = String.join("/", temporal2);
@@ -50,38 +50,44 @@
 			<a class="logo" href="index.jsp"><img class="hoja"
 				src="imagenes/marca.png" alt=""></a>
 			<table id="tablaCabecera">
+				<%
+					String nick = (String) session.getAttribute("nickname");
+					if (nick == null || nick.trim().equals("")) {
+						nick = "";
+					}
+				%>
 				<tr>
-					<td><a class="inicioSesion" href="iniciarSesion.jsp"><img
+					<%
+						if (nick.equals("")) {
+					%>
+					<a class="inicioSesion" href="iniciarSesion.jsp" style = "float: right; margin-right: 55px;"><img
+							class="iconoInicio" src="imagenes/inicioSesion.png" alt=""></a>
+					<!-- <td><a class="inicioSesion" href="iniciarSesion.jsp"><img
 							class="iconoInicio" src="imagenes/inicioSesion.png" alt=""></a>
 					</td>
+					<td style="visibility: hidden;"><select></select></td>-->
+						<%
+							} else if (!nick.equals("")) {
+						%>
 					<td>
 						<form class="usuarioActual" action="" method="get">
-							<%
-								String nick = (String) session.getAttribute("nickname");
-								if (nick == null || nick.trim().equals("")) {
-									nick = "";
-								}
-							%>
 							<p>
 								<label for="nick">Usuario:</label> <input size="8px" readonly
 									type="text" name="nick" value="<%=nick%>" />
 							</p>
 						</form>
 					</td>
-					<%
-						if (!nick.equals("")) {
-					%>
 					<td><a class="preferencias" href="datosPersonales.jsp"><img
 							class="tuerca" src="imagenes/tuerca.png" alt=""></a></td>
-					<%
-						}
-					%>
 					<td>
 						<form class="cerrarSesion" action="logout" method="post">
 							<input size="2px" class="campo" type="submit"
 								value="Cerrar Sesión" />
 						</form>
 					</td>
+					<%
+						}
+					%>
 				</tr>
 			</table>
 		</div>
@@ -99,31 +105,31 @@
 				<div class="collapse navbar-collapse offset"
 					id="navbarSupportedContent">
 					<ul class="nav navbar-nav menu_nav ml-auto">
-						<li
-							class="nav-item${origRequestURL  eq  pathURL.concat("/index.jsp") ? ' active' : ''}">
+						<li class="nav-item${origRequestURL  eq  pathURL.concat("/index.jsp") ? ' active' : ''}">
 							<center>
 								<a class="nav-link" href="index.jsp">Home</a>
 							</center>
 						</li>
-						<li
-							class="nav-item${origRequestURL  eq  pathURL.concat("/contact.jsp") ? ' active' : ''}">
+						<li class="nav-item${origRequestURL  eq  pathURL.concat("/contact.jsp") ? ' active' : ''}">
 							<center>
 								<a class="nav-link" href="contact.jsp">Contact</a>
 							</center>
 						</li>
-						<li
-							class="nav-item${origRequestURL  eq  pathURL.concat("/help.jsp") ? ' active' : ''}">
+						<li class="nav-item${origRequestURL  eq  pathURL.concat("/help.jsp") ? ' active' : ''}">
 							<center>
 								<a class="nav-link" href="help.jsp">Help</a>
 							</center>
 						</li>
-						<li
-							class="nav-item${origRequestURL  eq  pathURL.concat("/registrarse.jsp") ? ' active' : ''}">
-							<center>
-								<a class="nav-link" href="registrarse.jsp">Registrarse</a>
-							</center>
-						</li>
-
+						<%
+							String pathURL = (String) request.getAttribute("pathURL");
+							String origRequestURL = ((StringBuffer) request.getAttribute("origRequestURL")).toString();
+							if (nick == null || nick.trim().equals("")) {
+								// Cambiar el writer
+								out.write("<li class=\"nav-item"
+										+ (origRequestURL.equals(pathURL.concat("/registrarse.jsp")) ? " active" : "") + "><center>"
+										+ "<a class=\"nav-link\" href=\"registrarse.jsp\">Registrarse</a></center></li>");
+							}
+						%>
 					</ul>
 				</div>
 			</div>
