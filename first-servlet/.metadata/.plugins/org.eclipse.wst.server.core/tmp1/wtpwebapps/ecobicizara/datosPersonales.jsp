@@ -58,10 +58,6 @@
 		<div class="container">
 			<div class="page-cover text-center">
 				<h2 class="page-cover-tittle">Registrase</h2>
-				<!--<ol class="breadcrumb">
-                        <li><a href="index.jsp">Home</a></li>
-                        <li class="active">Sermons</li>
-                    </ol>-->
 			</div>
 		</div>
 	</section>
@@ -78,11 +74,6 @@
 	<!--================Sermons work Area =================-->
 	<section class="sermons_work_area section_gap">
 		<div class="container">
-			<!--<div class="section_title text-center">
-                    <h2>Sermons This Week</h2>
-                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from</p>
-                </div>-->
-			<!--<div class="sermons_slider owl-carousel">-->
 			<div id="moverse1">
 				<form id="NuevoNick" action="modificarUser" method="post">
 					<table>
@@ -201,65 +192,6 @@
 						value="Darse de baja" />
 				</form>
 			</div>
-
-			<!--<div class="item row">
-                        <div class="col-lg-8">
-                            <div class="sermons_image">
-                                <img src="image/sermns.jpg" alt="">
-                                <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="sermons_content">
-                                <h3 class="title_color">Did not find your Package? Feel free to ask us. We‘ll make it for you</h3>
-                                <ul class="list_style sermons_category">
-                                    <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li>
-                                    <li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li>
-                                    <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> 5th may, 2018</li>
-                                </ul>
-                                <a href="#" class="btn_hover">View More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item row">
-                        <div class="col-lg-8">
-                            <div class="sermons_image">
-                                <img src="image/sermns.jpg" alt="">
-                                <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="sermons_content">
-                                <h3 class="title_color">Did not find your Package? Feel free to ask us. We‘ll make it for you</h3>
-                                <ul class="list_style sermons_category">
-                                    <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li>
-                                    <li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li>
-                                    <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> 5th may, 2018</li>
-                                </ul>
-                                <a href="#" class="btn_hover">View More Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item row">
-                        <div class="col-lg-8">
-                            <div class="sermons_image">
-                                <img src="image/sermns.jpg" alt="">
-                                <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="sermons_content">
-                                <h3 class="title_color">Did not find your Package? Feel free to ask us. We‘ll make it for you</h3>
-                                <ul class="list_style sermons_category">
-                                    <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li>
-                                    <li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li>
-                                    <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> 5th may, 2018</li>
-                                </ul>
-                                <a href="#" class="btn_hover btn_hover_two">View More Details</a>
-                            </div>
-                        </div>
-                    </div>-->
-			<!--</div>-->
 		</div>
 	</section>
 	<!--================Sermons work Area=================-->
@@ -268,42 +200,6 @@
 	<section class="event_blog_area section_gap">
 		<div class="container">
 			<div class="row">
-				<!--<div class="col-md-4">
-                        <div class="event_post">
-                            <img src="image/blog1.jpg" alt="">
-                            <a href="#"><h2 class="event_title">Spreading Peace to world</h2></a>
-                            <ul class="list_style sermons_category">
-                                <li><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
-                                <li><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
-                                <li><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
-                            </ul>
-                            <a href="#" class="btn_hover">View Details</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event_post">
-                            <img src="image/blog2.jpg" alt="">
-                            <a href="#"><h2 class="event_title">Spread Happyness to world</h2></a>
-                            <ul class="list_style sermons_category">
-                                <li><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
-                                <li><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
-                                <li><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
-                            </ul>
-                            <a href="#" class="btn_hover">View Details</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event_post">
-                            <img src="image/blog3.jpg" alt="">
-                            <a href="#"><h2 class="event_title">Spreading Light to world</h2></a>
-                            <ul class="list_style sermons_category">
-                                <li><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
-                                <li><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
-                                <li><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
-                            </ul>
-                            <a href="#" class="btn_hover">View Details</a>
-                        </div>
-                    </div>-->
 			</div>
 		</div>
 	</section>
@@ -399,12 +295,6 @@
 							href="https://colorlib.com" target="_blank">Colorlib</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
-					<!--<div class="col-lg-4 col-sm-4 footer-social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                    </div>-->
 				</div>
 			</div>
 		</footer>

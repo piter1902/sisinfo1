@@ -65,50 +65,12 @@
 		<div class="container">
 			<div class="page-cover text-center">
 				<h2 class="page-cover-tittle">Contact Us</h2>
-				<!--<ol class="breadcrumb">
-                        <li><a href="index.jsp">Home</a></li>
-                        <li class="active">Contact Us</li>
-                    </ol>-->
 			</div>
 		</div>
 	</section>
-	<!--================Breadcrumb Area =================-->
-	<section class="event_date_area">
-		<div id="mapacontact"></div>
-		<script>
-			var mymap = L.map('mapacontact').setView([ 41.683149, -0.887533 ],
-					17);
-
-			L
-					.tileLayer(
-							'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-							{
-								attribution : '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-							}).addTo(mymap);
-
-			var marker = L.marker([ 41.683149, -0.887533 ]).addTo(mymap);
-			marker.bindPopup("<b>Estamos aquí</b><br>").openPopup();
-			var circle = L.circle([ 41.679253, -0.878876 ], {
-				color : 'red',
-				fillColor : '#f03',
-				fillOpacity : 0.5,
-				radius : 500
-			}).addTo(mymap);
-		</script>
-	</section>
-	<!--================Breadcrumb Area =================-->
-
 	<!--================Contact Area =================-->
 	<section class="contact_area section_gap">
 		<div class="container">
-			<!-- <div id="mapacontact" class="mapacontact" 
-                    data-lat="40.701083" 
-                    data-lon="-74.1522848" 
-                    data-zoom="13" 
-                    data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-                    data-mlat="40.701083"
-                    data-mlon="-74.1522848">
-                </div> -->
 			<div class="row">
 				<div class="col-md-3">
 					<div class="contact_info">
@@ -167,7 +129,34 @@
 		</div>
 	</section>
 	<!--================Contact Area =================-->
+	
+	<!--================Breadcrumb Area =================-->
+	<section class="event_date_area">
+		<div id="mapacontact" style="margin-left: 20%; margin-right: 20%"></div>
+		<script>
+			var mymap = L.map('mapacontact').setView([ 41.683149, -0.887533 ],
+					17);
 
+			L
+					.tileLayer(
+							'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+							{
+								attribution : '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+							}).addTo(mymap);
+
+			var marker = L.marker([ 41.683149, -0.887533 ]).addTo(mymap);
+			marker.bindPopup("<b>Estamos aquí</b><br>").openPopup();
+			var circle = L.circle([ 41.679253, -0.878876 ], {
+				color : 'red',
+				fillColor : '#f03',
+				fillOpacity : 0.5,
+				radius : 500
+			}).addTo(mymap);
+		</script>
+	</section>
+	<!--================Breadcrumb Area =================-->
+
+	
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area section_gap">
 		<div class="container">
@@ -244,18 +233,6 @@
 				</div>
 			</div>
 			<div class="border_line"></div>
-			<!--<div class="row footer-bottom d-flex justify-content-between align-items-center">
-                    <p class="col-lg-8 col-sm-8 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			<!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			</p>
-			<!--<div class="col-lg-4 col-sm-4 footer-social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                    </div>
-                </div>-->
 		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
@@ -313,11 +290,5 @@
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
-	<!-- contact js -->
-	<%--  <script src="js/jquery.form.js"></script> --%>
-	<%-- <script src="js/jquery.validate.min.js"></script> --%>
-	<%-- <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>--%>
-	<%-- <script src="js/contact.js"></script>--%>
-	<%-- <script src="js/custom.js"></script>--%>
 </body>
 </html>

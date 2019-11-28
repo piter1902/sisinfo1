@@ -8,11 +8,6 @@
 </head>
 <body>
 	<!--================Header Area =================-->
-	<%--StringBuilder builder = new StringBuilder();
-		for (String s : temporal) {
-			builder.append(s);
-		}
-		String path = builder.toString(); --%>
 	<%
 		request.setAttribute("origRequestURL", request.getRequestURL());
 		System.out.println(request.getRequestURL());
@@ -29,18 +24,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-5">
-						<!--<ul class="nav social_icon">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>-->
 					</div>
 					<div class="col-sm-6 col-7">
 						<div class="top_btn d-flex justify-content-end">
-
-							<!--<a href="#">My Account</a>
-                                <a href="#">Donate Now</a>-->
 						</div>
 					</div>
 				</div>
@@ -62,10 +48,6 @@
 					%>
 					<a class="inicioSesion" href="iniciarSesion.jsp" style = "float: right; margin-right: 55px;"><img
 							class="iconoInicio" src="imagenes/inicioSesion.png" alt=""></a>
-					<!-- <td><a class="inicioSesion" href="iniciarSesion.jsp"><img
-							class="iconoInicio" src="imagenes/inicioSesion.png" alt=""></a>
-					</td>
-					<td style="visibility: hidden;"><select></select></td>-->
 						<%
 							} else if (!nick.equals("")) {
 						%>
@@ -125,7 +107,7 @@
 							String origRequestURL = ((StringBuffer) request.getAttribute("origRequestURL")).toString();
 							if (nick == null || nick.trim().equals("")) {
 								// Cambiar el writer
-								out.write("<li class=\"nav-item"
+								out.write("<li class=\"nav-item\""
 										+ (origRequestURL.equals(pathURL.concat("/registrarse.jsp")) ? " active" : "") + "><center>"
 										+ "<a class=\"nav-link\" href=\"registrarse.jsp\">Registrarse</a></center></li>");
 							}
