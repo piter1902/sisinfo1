@@ -42,20 +42,22 @@
 	</section>
 	<!--================Breadcrumb Area =================-->
 	<section class="event_date_area">
-		<div id="conjunto">
-			<div id="preguntas">
-				<p>
-					<a
-						href="javascript:llamarasincrono('tutorial1.htm', 'respuestas');"
-						class="as">&#191Como registrarme?</a>
-				</p>
-				<p>
-					<a
-						href="javascript:llamarasincrono('tutorial2.htm', 'respuestas');"
-						class="as">&#191Como darme de baja?</a>
-				</p>
+		<div>
+			<div style="background-color: #2eb34e; color:black;">
+				<!-- Pregunta 1: Como registrarse -->
+				<h3> ¿Cómo darse de alta? </h3>
+				<p> Para registrarse, acceda a la pestaña de <a style="color:#0a465c;"href="registrarse.jsp"> registrarse </a> e introduzca sus datos.</p>
 			</div>
-			<div id="respuestas">respuestas</div>
+			<div style="background-color: #2eb34e; color:black;">
+				<!--  Pregunta 2: Como darse de baja -->
+				<h3> ¿Cómo darse de baja? </h3>
+				<p> Para darse de baja, acceda a su cuenta de usuario y dirijase a la pestaña de modificar usuario y seleccione: "Quiero darme de baja" </p>
+			</div>
+			<div style="background-color: #2eb34e; color:black;">
+				<!-- Pregunta 3: Cambiar datos de vehiculo -->
+				<h3> ¿Cómo cambiar los datos de mi vehículo? </h3>
+				<p> Para modificar los datos del vehículo, acceda a su cuenta de usuario y dirijase a la pestaña de modificar usuario y modifique aquellos campos del su vehículo. </p>
+			</div>
 		</div>
 	</section>
 	<!--================Contact Area =================-->
