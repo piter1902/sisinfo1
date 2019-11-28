@@ -8,6 +8,22 @@
 </head>
 <body>
 	<!--================Header Area =================-->
+	<%--StringBuilder builder = new StringBuilder();
+		for (String s : temporal) {
+			builder.append(s);
+		}
+		String path = builder.toString(); --%>
+	<%
+		request.setAttribute("origRequestURL", request.getRequestURL());
+		System.out.println(request.getRequestURL());
+		String[] temporal = (request.getRequestURL().toString()).split("/");
+		String[] temporal2 = new String[temporal.length - 1];
+		for (int i = 0; i < temporal.length - 1; i++) {
+			temporal2[i] = temporal[i];
+		}
+		String path = String.join("/", temporal2);
+		request.setAttribute("pathURL", path);
+	%>
 	<header class="header_area">
 		<div class="header_top">
 			<div class="container">
@@ -83,26 +99,31 @@
 				<div class="collapse navbar-collapse offset"
 					id="navbarSupportedContent">
 					<ul class="nav navbar-nav menu_nav ml-auto">
-						<li class="nav-item active">
+						<li class="nav-item${origRequestURL  eq  pathURL.concat("/index.jsp") ? ' active' : ''}">
 							<center>
 								<a class="nav-link" href="index.jsp">Home</a>
 							</center>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item${origRequestURL  eq  pathURL.concat("/contact.jsp") ? ' active' : ''}">
 							<center>
 								<a class="nav-link" href="contact.jsp">Contact</a>
 							</center>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item${origRequestURL  eq  pathURL.concat("/help.jsp") ? ' active' : ''}">
 							<center>
 								<a class="nav-link" href="help.jsp">Help</a>
 							</center>
 						</li>
-						<li class="nav-item">
-							<center>
-								<a class="nav-link" href="registrarse.jsp">Registrarse</a>
-							</center>
-						</li>
+						<%
+							String pathURL = (String) request.getAttribute("pathURL");
+							String origRequestURL = ((StringBuffer) request.getAttribute("origRequestURL")).toString();
+							if (nick == null || nick.trim().equals("")) {
+								// Cambiar el writer
+								out.write("<li class=\"nav-item"
+										+ (origRequestURL.equals(pathURL.concat("/registrarse.jsp")) ? " active" : "") + "><center>"
+										+ "<a class=\"nav-link\" href=\"registrarse.jsp\">Registrarse</a></center></li>");
+							}
+						%>
 					</ul>
 				</div>
 			</div>

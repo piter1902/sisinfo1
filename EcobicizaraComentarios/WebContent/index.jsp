@@ -151,13 +151,13 @@
 				//Generador de rutas
 				var controlLayer = L.Routing.control({
 					router : new L.Routing.osrmv1({
-						language : 'es',
 						profile : 'car'
 					}),
-					geocoder : L.Control.Geocoder.nominatim({})
+					geocoder : L.Control.Geocoder.nominatim({}),
+					language :'es'
 				}).addTo(map);
-
 				heatmapLayer.setData(testData);
+				
 			</script>
 		</div>
 		<!--<div class="container">
