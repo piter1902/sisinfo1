@@ -9,7 +9,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 /**
- * Clase para el envío de emails
+ * Clase para el envï¿½o de emails
  * 
  * @author Pedro Tamargo Allue
  *
@@ -18,7 +18,7 @@ public class EmailAdapter {
 
 	private static final String remitente = "ecobicizara@gmail.com";
 	private static final String clave = "sis_info_1920";
-
+	
 	/**
 	 * Metodo que inicia un objeto Properties con las propiedades de la conexion
 	 * 
@@ -29,17 +29,17 @@ public class EmailAdapter {
 		props.put("mail.smtp.host", "smtp.gmail.com"); // El servidor SMTP de Google
 		props.put("mail.smtp.user", remitente);
 		props.put("mail.smtp.clave", clave); // La clave de la cuenta
-		props.put("mail.smtp.auth", "true"); // Usar autenticación mediante usuario y clave
+		props.put("mail.smtp.auth", "true"); // Usar autenticaciï¿½n mediante usuario y clave
 		props.put("mail.smtp.starttls.enable", "true"); // Para conectar de manera segura al servidor SMTP
 		props.put("mail.smtp.port", "587"); // El puerto SMTP seguro de Google
 		// TODO: ESTA LINEA ES IMPORTANTE
 		props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
-
+		System.setProperty("mail.mime.charset", "utf-8");
 		return props;
 	}
 
 	/**
-	 * Metodo que envía un email
+	 * Metodo que envï¿½a un email
 	 * 
 	 * @param email_destinatario email (o emails separados por ,) de los
 	 *                           destinatarios
@@ -52,8 +52,8 @@ public class EmailAdapter {
 		Properties props = getProps();
 		Session session = Session.getDefaultInstance(props);
 		MimeMessage message = new MimeMessage(session);
-
 		try {
+			message.setHeader("Content-Type", "text/html");
 			message.setFrom(new InternetAddress(remitente));
 			message.addRecipients(Message.RecipientType.TO, InternetAddress.parse(email_destinatario));
 			message.setSubject(asunto);

@@ -8,6 +8,6 @@
     <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-11-openjdk-amd64"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="start"/>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcatalina.base=&quot;/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet/.metadata/.plugins/org.eclipse.wst.server.core/tmp1&quot; -Dcatalina.home=&quot;/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/apache-tomcat-9.0.26&quot; -Dwtp.deploy=&quot;/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps&quot;"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcatalina.base=&quot;/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/.metadata/.plugins/org.eclipse.wst.server.core/tmp1&quot; -Dcatalina.home=&quot;/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/apache-tomcat-9.0.26&quot; -Dwtp.deploy=&quot;/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps&quot;"/>
     <stringAttribute key="server-id" value="Tomcat v9.0 Server at localhost (2)"/>
 </launchConfiguration>

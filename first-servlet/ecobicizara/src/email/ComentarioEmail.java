@@ -63,10 +63,11 @@ public class ComentarioEmail {
 	 * @return true si todo ha ido bien
 	 */
 	public static boolean sendPregunta(Comentario coment) {
+		
 		String asunto = "PREGUNTA EFECTUADA EN " + new Date();
 		String cuerpo = "<h4>Se ha realizado la pregunta: </h4><br>";
 		cuerpo += "<div style=\"border-style:solid\"> <p>" + coment.getNombre() + "(" + coment.getEmail() + ")"
-				+ " preguntó: </p><br>";
+				+ " pregunta: </p><br>";
 		cuerpo += "<p>" + coment.getText() + "</p> </div>";
 		return EmailAdapter.sendEmail(ourMail + ", " + coment.getEmail(), asunto, cuerpo);
 	}
