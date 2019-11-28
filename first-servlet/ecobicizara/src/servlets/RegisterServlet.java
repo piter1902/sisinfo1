@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import baseDatos.*;
+import email.UsuarioEmail;
 
 public class RegisterServlet extends HttpServlet {
 	@Override
@@ -37,7 +38,66 @@ public class RegisterServlet extends HttpServlet {
 		String pass1 = req.getParameter("password");
 		String pass2 = req.getParameter("password1");
 		String email = req.getParameter("email");
-		String vehic = req.getParameter("vehiculo");
+		// ----------------------------------------------
+		// Obtenemos los distintos parametros introducidos en las listas desplegables
+		String tipo_vehiculo = req.getParameter("tipo_vehiculo");
+		String combustible = req.getParameter("combustible");
+		String contaminante = req.getParameter("contaminante");
+		String motor = req.getParameter("motor");
+		// Comprobacion de errores de los parametros
+		// 1. tipo_vehiculo
+		if (tipo_vehiculo == null || tipo_vehiculo.trim().equals("")) {
+			// Mal introducido
+			// TODO: error
+		} else {
+			// Bien introducido -> Miramos si el campo es valido
+			if (tipo_vehiculo.equals("mal")) {
+				// TODO: error -> este campo es obligatorio (aunque sea responder con
+				// desconocido)
+			} else if (tipo_vehiculo.equals("desconocido")) {
+				tipo_vehiculo = null;
+			}
+		}
+		// 2. combustible
+		if (combustible == null || combustible.trim().equals("")) {
+			// Mal introducido
+			// TODO: error
+		} else {
+			// Bien introducido -> Miramos si el campo es valido
+			if (combustible.equals("mal")) {
+				// TODO: error -> este campo es obligatorio (aunque sea responder con
+				// desconocido)
+			} else if (combustible.equals("desconocido")) {
+				combustible = null;
+			}
+		}
+		// 3. contaminante
+		if (contaminante == null || contaminante.trim().equals("")) {
+			// Mal introducido
+			// TODO: error
+		} else {
+			// Bien introducido -> Miramos si el campo es valido
+			if (contaminante.equals("mal")) {
+				// TODO: error -> este campo es obligatorio (aunque sea responder con
+				// desconocido)
+			} else if (contaminante.equals("desconocido")) {
+				contaminante = null;
+			}
+		}
+		// 4. motor
+		if (motor == null || motor.trim().equals("")) {
+			// Mal introducido
+			// TODO: error
+		} else {
+			// Bien introducido -> Miramos si el campo es valido
+			if (motor.equals("mal")) {
+				// TODO: error -> este campo es obligatorio (aunque sea responder con
+				// desconocido)
+			} else if (motor.equals("desconocido")) {
+				motor = null;
+			}
+		}
+		// ----------------------------------------------
 		Boolean passNN = true;
 		// PatrÃ³n para comprobar si el email es correcto
 		Pattern patron = Pattern.compile(
@@ -63,31 +123,37 @@ public class RegisterServlet extends HttpServlet {
 		}
 		if (apellidos == null || apellidos.trim().equals(""))
 			error.put("apellidos", "apellidos - Campo obligatorio.");
-		if (vehic == null || vehic.trim().equals(""))
-			error.put("vehiculo", "vehiculo - Campo obligatorio.");
 		if (email == null || email.trim().equals("")) {
 			error.put("email", "email - Campo obligatorio.");
 		} else { // Solo se comprueba si el campo no es nulo.
 			if (!match.find()) {
 				error.put("email", "email - Email incorrecto.");
-			} else if (UsuarioDAO.findIfEmailExists(email))
+			} else if (UsuarioDAO.findIfEmailExists(email)) {
 				error.put("email_in_use", "El email " + email + " ya esta en uso"); // TODO: sacar este error
+			}
 		}
 		if (passNN && !pass1.trim().equals(pass2.trim())) { // Para añadir el error, ninguna contraseña debe ser nula.
 			error.put("password1", "passwordss - Contraseñas no coinciden.");
 		}
 
 		if (error.size() == 0) {
-			// TODO descomentar esto,es para pruebas.
-			Vehiculo v = new Vehiculo(-1, "datos", "datos", "datos", "datos", "datos", "datos", 11);
+			System.out.println("HOLA - NO errors");
+			// id y emission_factor se calculan al introducirse a la BD
+			Vehiculo v = new Vehiculo(-1, tipo_vehiculo, null, null, motor, combustible, contaminante, -1);
 			// Insertamos el vehiculo en funcion de los datos estadisticos y obtenemos su
 			// identificador
-			//int id_vehiculo = VehiculoDAO.insertStadistic(v, VehiculoDAO.findOverCondition(v));
-			
+			System.out.format("%s | %s | %s | %s |\n", tipo_vehiculo, motor, combustible, contaminante);
+			int id_vehiculo = VehiculoDAO.insertStadistic(v, VehiculoDAO.findOverCondition(v));
+
 			// Insertamos al usuario en la BD
-			UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, 11);
+			 UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, id_vehiculo);
+//			 UsuarioEmail.sendSignUpMail(UsuarioDAO.findUserByLogin(nickName));
 			resp.sendRedirect("index.jsp");
 		} else {
+			System.out.println("HOLA - SI errors");
+			for (String s : error.keySet()) {
+				System.out.format("%30s | %30s\n", s, error.get(s));
+			}
 			req.setAttribute("errores", error);
 			RequestDispatcher dispatcher = req.getRequestDispatcher("registrarse.jsp");
 			dispatcher.forward(req, resp);

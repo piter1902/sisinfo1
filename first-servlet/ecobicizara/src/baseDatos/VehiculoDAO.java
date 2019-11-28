@@ -21,14 +21,15 @@ public class VehiculoDAO {
 	// Se tienen en cuenta los primeros 8506 elementos (los obtenidos de lafuente de
 	// datos para calcular los factores de emision)
 	private static final int MAX_ELEM_MIRAR = 8506;
-	protected static final String findOverCondition_tipo = "select * from Vehiculo where tipo = ? and id < " + MAX_ELEM_MIRAR,
+	protected static final String findOverCondition_tipo = "select * from Vehiculo where tipo = ? and id < "
+			+ MAX_ELEM_MIRAR,
 			findOverCondition_segment = "select * from Vehiculo where segment = ? and id < " + MAX_ELEM_MIRAR,
 			findOverCondition_euro_star = "select * from Vehiculo where euro_star = ? and id < " + MAX_ELEM_MIRAR,
 			findOverCondition_engine_type = "select * from Vehiculo where engine_type = ? and id < " + MAX_ELEM_MIRAR,
 			findOverCondition_fuel = "select * from Vehiculo where fuel = ? and id < " + MAX_ELEM_MIRAR,
 			findOverCondition_pollutant = "select * from Vehiculo where pollutant = ? and id < " + MAX_ELEM_MIRAR;
 	// Para insertar un vehiculo en la BD -> la clave tiene auto_increment
-	protected static final String insertOnDB = "insert on Vehiculo values (?,?,?,?,?,?,?)";
+	protected static final String insertOnDB = "insert into Vehiculo(tipo,segment,euro_star,engine_type,fuel,pollutant,emission_factor) values (?,?,?,?,?,?,?)";
 	// Para obtener el factor de emision de forma estadistica en funcion de los
 	// parametros especificados
 	protected static final String obtainEmFactor = "select emission_factor as em from ";
@@ -90,7 +91,7 @@ public class VehiculoDAO {
 	 */
 	public static List<Vehiculo> findOverCondition(String tipo, String segment, String euro_star, String engine_type,
 			String fuel, String pollutant) {
-		final String intersect = "intersect ";
+		final String intersect = " intersect ";
 		List<Vehiculo> lista = new LinkedList<>();
 		int index = 1;
 		try {
@@ -182,6 +183,7 @@ public class VehiculoDAO {
 					ps.setString(i, value);
 				}
 			}
+			System.out.println(ps.toString());
 			ps.executeUpdate();
 			// El maximo elemento de la tabla count deberia ser el id de nuestro vehiculo
 			ps = c.prepareStatement(getMaxId);
