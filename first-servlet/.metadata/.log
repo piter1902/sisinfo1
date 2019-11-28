@@ -7413,3 +7413,13 @@ org.eclipse.debug.core.DebugException: Terminate failed
 	at java.base/java.lang.Thread.run(Thread.java:834)
 !SUBENTRY 1 org.eclipse.debug.core 4 5010 2019-11-28 10:20:45.025
 !MESSAGE Terminate failed
+!SESSION 2019-11-28 10:26:01.073 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=11.0.4
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 4 4 2019-11-28 10:26:17.150
+!MESSAGE Plug-in 'org.eclipse.egit.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu' is invalid): org.eclipse.egit.ui.actions.OpenCommitSearchPage

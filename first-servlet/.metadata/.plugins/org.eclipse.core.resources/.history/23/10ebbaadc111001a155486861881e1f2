@@ -18,7 +18,7 @@ public class ComentarioEmail {
 
 	/**
 	 * Metodo que dado un comentario (que puede solo contener el identificador unico
-	 * comentID, envía un correo con una estructura html dada al usuario que lo puso
+	 * comentID, env�a un correo con una estructura html dada al usuario que lo puso
 	 * en la pagina web.
 	 * 
 	 * @param com comentario que contiene (al menos) el identificador de comentario
@@ -49,7 +49,7 @@ public class ComentarioEmail {
 	private static String generateEmailRespuesta(Comentario com_orig, Comentario com_respuesta) {
 		String cabecera = "Estimad@ " + com_orig.getNombre() + ",\n";
 		String cuerpo = "Nuestro equipo de atención al cliente ha resuelto su duda y le escribimos en relación a ello.\n"
-				+ "A continuación, se le muestra la respuesta del seguido de su pregunta.";
+				+ "A continuaci�n, se le muestra la respuesta del seguido de su pregunta.";
 
 		return cabecera + cuerpo + com_respuesta.getText() + "\n" + com_orig.getText() + "\n"
 				+ "Muchas gracias.\nEl equipo de ecobicizara.";

@@ -6,7 +6,7 @@ import java.sql.*;
 import java.util.Date;
 
 /**
- * Clase para el envï¿½o de Comentarios de la BD al usuario que los ha hecho por
+ * Clase para el envío de Comentarios de la BD al usuario que los ha hecho por
  * la pagina web
  * 
  * @author Pedro Tamargo Allue
@@ -18,7 +18,7 @@ public class ComentarioEmail {
 
 	/**
 	 * Metodo que dado un comentario (que puede solo contener el identificador unico
-	 * comentID, envÃ­a un correo con una estructura html dada al usuario que lo puso
+	 * comentID, envía un correo con una estructura html dada al usuario que lo puso
 	 * en la pagina web.
 	 * 
 	 * @param com comentario que contiene (al menos) el identificador de comentario
@@ -31,7 +31,7 @@ public class ComentarioEmail {
 		Comentario com3 = com2 != null ? ComentarioDAO.getParent(com2) : null;
 		if (com2 != null && com3 != null) {
 			// Ninguno de los comentarios buscados == null
-			// Establecemos el envï¿½o del correo
+			// Establecemos el envío del correo
 			String asunto = "Respuesta a su duda";
 			String cuerpo = generateEmailRespuesta(com2, com3);
 			ok = EmailAdapter.sendEmail(com2.getEmail(), asunto, cuerpo);
@@ -48,8 +48,8 @@ public class ComentarioEmail {
 	 */
 	private static String generateEmailRespuesta(Comentario com_orig, Comentario com_respuesta) {
 		String cabecera = "Estimad@ " + com_orig.getNombre() + ",\n";
-		String cuerpo = "Nuestro equipo de atenciÃ³n al cliente ha resuelto su duda y le escribimos en relaciÃ³n a ello.\n"
-				+ "A continuaciÃ³n, se le muestra la respuesta del seguido de su pregunta.";
+		String cuerpo = "Nuestro equipo de atención al cliente ha resuelto su duda y le escribimos en relación a ello.\n"
+				+ "A continuación, se le muestra la respuesta del seguido de su pregunta.";
 
 		return cabecera + cuerpo + com_respuesta.getText() + "\n" + com_orig.getText() + "\n"
 				+ "Muchas gracias.\nEl equipo de ecobicizara.";
@@ -66,7 +66,7 @@ public class ComentarioEmail {
 		String asunto = "PREGUNTA EFECTUADA EN " + new Date();
 		String cuerpo = "<h4>Se ha realizado la pregunta: </h4><br>";
 		cuerpo += "<div style=\"border-style:solid\"> <p>" + coment.getNombre() + "(" + coment.getEmail() + ")"
-				+ " preguntÃ³: </p><br>";
+				+ " preguntó: </p><br>";
 		cuerpo += "<p>" + coment.getText() + "</p> </div>";
 		return EmailAdapter.sendEmail(ourMail + ", " + coment.getEmail(), asunto, cuerpo);
 	}

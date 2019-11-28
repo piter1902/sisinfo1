@@ -18,7 +18,7 @@ public class ComentarioEmail {
 
 	/**
 	 * Metodo que dado un comentario (que puede solo contener el identificador unico
-	 * comentID, envía un correo con una estructura html dada al usuario que lo puso
+	 * comentID, env�a un correo con una estructura html dada al usuario que lo puso
 	 * en la pagina web.
 	 * 
 	 * @param com comentario que contiene (al menos) el identificador de comentario
