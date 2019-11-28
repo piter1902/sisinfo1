@@ -18,6 +18,7 @@ public class UsuarioDAO {
 	// Sentencias SQL para la seleccion de BD 
 	protected static final String findALL = "select * from Usuario"; 
 	protected static final String findByLogin = "select * from Usuario where login = ?"; 
+	protected static final String findIfEmailIsUsed = "select count(*) as veces from Usuario where email = ?"; 
 	// Sentencia SQL para la validacion del usuario 
 	protected static final String findIfPasswordMatchs = "select count(*) as veces from Usuario where login = ? and password = MD5(?)"; 
 	// Sentencias SQL para actualizar un usuario de la BD 
@@ -69,6 +70,24 @@ public class UsuarioDAO {
 			e.printStackTrace(); 
 		} 
 		return user; 
+	} 
+	
+	
+	public static boolean findIfEmailExists(String email) { 
+		Usuario user = null; 
+		boolean exist = false;
+		try { 
+			Connection c = ConnectionManager.getConnection(); 
+			PreparedStatement ps = c.prepareStatement(findIfEmailIsUsed); 
+			ps.setString(1, email); 
+			ResultSet rs = ps.executeQuery(); 
+			while (rs.next()) { 
+				exist = rs.getInt("veces") > 1;
+			} 
+		} catch (SQLException e) { 
+			e.printStackTrace(); 
+		} 
+		return exist; 
 	} 
  
 	/** 

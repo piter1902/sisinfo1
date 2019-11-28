@@ -70,7 +70,8 @@ public class RegisterServlet extends HttpServlet {
 		} else { // Solo se comprueba si el campo no es nulo.
 			if (!match.find()) {
 				error.put("email", "email - Email incorrecto.");
-			}
+			} else if (UsuarioDAO.findIfEmailExists(email))
+				error.put("email_in_use", "El email " + email + " ya esta en uso"); // TODO: sacar este error
 		}
 		if (passNN && !pass1.trim().equals(pass2.trim())) { // Para añadir el error, ninguna contraseña debe ser nula.
 			error.put("password1", "passwordss - Contraseñas no coinciden.");
