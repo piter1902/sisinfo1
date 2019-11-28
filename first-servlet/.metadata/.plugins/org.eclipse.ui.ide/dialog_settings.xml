@@ -4,12 +4,25 @@
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet"/>
+			<item value="/home/jtambo99/Documentos/Universidad/3o/IA/Practicas/Practica1/aima-java-aima3e-v1.8.1"/>
+			<item value="/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1572001754478"/>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
 		<item key="DIALOG_X_ORIGIN" value="297"/>
@@ -18,5 +31,12 @@
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
 		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="435"/>
+		<item key="DIALOG_Y_ORIGIN" value="110"/>
+		<item key="DIALOG_WIDTH" value="563"/>
+		<item key="DIALOG_HEIGHT" value="433"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
 	</section>
 </section>

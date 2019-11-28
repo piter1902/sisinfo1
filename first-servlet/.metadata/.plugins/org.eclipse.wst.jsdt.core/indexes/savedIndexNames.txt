@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+22844669.index
+804626830.index
+4283985870.index
+627117638.index
+1770793557.index
+1970283767.index
+893080086.index
