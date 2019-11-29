@@ -1,4 +1,10 @@
- 
+.envMensaje {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .hoja{ 
 	width:20%; 
 	height:75%; 
@@ -56,16 +62,22 @@
  
 #mapa { 
 	height:400px; 
-	width:77%; 
-	margin-left:225px; 
-	margin-top:-320px; 
-	margin-right: 100px; 
+	width: 80%;
+	margin: auto;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: -70px;
+	z-index:1;
+	overflow-x: auto;
 	background-color:gainsboro; 
+	position: absolute; 
 } 
  
 #mapacontact { 
-	height: 400px;  
+	height: 300px;  
 	margin-bottom: 80px; 
+	margin-right: 5%;
+	margin-left: 70px;
 } 
  
 #consulta{ 

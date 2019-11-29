@@ -62,9 +62,9 @@
 	<!--================banner Area =================-->
 
 	<!--================Event Date Area =================-->
-	<section class="event_date_area">
+	<section class="event_date_area" style="height: 500px">
 		<div id="conjunto">
-			<form id="consulta" action="" method="post">
+			<!-- <form id="consulta" action="" method="post">
 				<table class="tablaConsulta" style="size: 5px">
 					<tr>Realizar Busqueda:
 					</tr>
@@ -93,7 +93,7 @@
 							type="submit" value="Guardar consulta" /></td>
 					</tr>
 				</table>
-			</form>
+			</form> -->
 			<div id="mapa"></div>
 			<script>
 				//Generador puntos calientes.
@@ -154,16 +154,19 @@
 	<!--================Event Date Area =================-->
 
 	<!--================About Area =================-->
+	<!-- 
 	<section class="about_area section_gap">
 		<div class="container"></div>
 	</section>
+	-->
 	<!--================About Area =================-->
 
 	<!--================Features Area =================-->
-	<section class="features_area"></section>
+	<!--  <section class="features_area"></section> -->
 	<!--================Features Area =================-->
 
 	<!--================Sermons work Area =================-->
+	<!-- 
 	<section class="sermons_work_area section_gap">
 		<div id="consulta1">
 			<form action="" method="get">
@@ -186,6 +189,7 @@
 			<b>InformaciÃ³n obtenida en la consulta</b>
 		</div>
 	</section>
+	 -->
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area section_gap">
 		<div class="container">

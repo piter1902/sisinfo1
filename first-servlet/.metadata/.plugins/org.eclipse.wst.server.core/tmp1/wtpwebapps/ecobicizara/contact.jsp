@@ -70,9 +70,9 @@
 	</section>
 	<!--================Contact Area =================-->
 	<section class="contact_area section_gap">
-		<div class="container">
+		<div class="envMensaje" style="float: left">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="row" style="margin-left: 5%">
 					<div class="contact_info">
 						<div class="info_item">
 							<i class="lnr lnr-home"></i>
@@ -90,33 +90,35 @@
 						<div class="info_item">
 							<i class="lnr lnr-envelope"></i>
 							<h6>
-								<a href="#">ecobicizara@gmail.com</a>
+								<a href="mailto:ecobicizara@gmail.com">ecobicizara@gmail.com</a>
 							</h6>
 							<p>Contacta con nosotros para cualquier duda.</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-9">
+				<div class="row" style="margin-left: 5%">
 					<form class="row contact_form" action="addComment" method="post"
 						id="contactForm" novalidate="novalidate">
 						<div class="col-md-6">
 							<div class="form-group">
 								<input type="text" class="form-control" id="name" name="nombre"
-									placeholder="Introduce tu nombre" value="<%=nombValor %>"><%=nombError %>
+									placeholder="Introduce tu nombre" value="<%=nombValor%>"><%=nombError%>
 							</div>
 							<div class="form-group">
 								<input type="email" class="form-control" id="email" name="email"
-									placeholder="Introduce correo electrónico" value="<%=emailValor %>"><%=emailError %>
+									placeholder="Introduce correo electrónico"
+									value="<%=emailValor%>"><%=emailError%>
 							</div>
 							<div class="form-group">
 								<input type="text" class="form-control" id="subject"
-									name="asunto" placeholder="Introduce asunto" value="<%=asuntoValor %>"><%=asuntoError %>
+									name="asunto" placeholder="Introduce asunto"
+									value="<%=asuntoValor%>"><%=asuntoError%>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<textarea class="form-control" name="msg" id="message"
-									rows="1" placeholder="Escribe mensaje" ><%=msgValor %></textarea><%=msgError %> 
+								<textarea class="form-control" name="msg" id="message" rows="1"
+									placeholder="Escribe mensaje"><%=msgValor%></textarea><%=msgError%>
 							</div>
 						</div>
 						<div class="col-md-12 text-right">
@@ -127,12 +129,12 @@
 				</div>
 			</div>
 		</div>
+		<div id="mapacontact"></div>
 	</section>
 	<!--================Contact Area =================-->
-	
+
 	<!--================Breadcrumb Area =================-->
 	<section class="event_date_area">
-		<div id="mapacontact" style="margin-left: 20%; margin-right: 20%"></div>
 		<script>
 			var mymap = L.map('mapacontact').setView([ 41.683149, -0.887533 ],
 					17);
@@ -156,7 +158,7 @@
 	</section>
 	<!--================Breadcrumb Area =================-->
 
-	
+
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area section_gap">
 		<div class="container">
