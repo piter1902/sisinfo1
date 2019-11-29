@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4283985870.index
+/ecobicizara/src
+/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3292042019.index
+/ecobicizaraRaul/src
+/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3984236678.index
+/ecobicizara/src
+/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/983403457.index
+/ecobicizara/src
+/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/219209197.index
+/ecobicizaraRaul/src
+/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4283985870.index
+/ecobicizara/src

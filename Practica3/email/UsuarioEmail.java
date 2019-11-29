@@ -5,8 +5,8 @@ import baseDatos.*;
 import java.sql.*;
 
 /**
- * Clase para el envío de emails para las operaciones de un Usuario (cambios de
- * información), registros, eliminaciones...
+ * Clase para el envï¿½o de emails para las operaciones de un Usuario (cambios de
+ * informaciï¿½n), registros, eliminaciones...
  * 
  * @author Pedro Tamargo Allue
  *
@@ -34,7 +34,7 @@ public class UsuarioEmail {
 	/**
 	 * Metodo que genera un mensaje de bienvenida para ser enviado al usuario <user>
 	 * 
-	 * @param user usuario para el cual se personalizará el mensaje
+	 * @param user usuario para el cual se personalizarï¿½ el mensaje
 	 * @return el cuerpo del mensaje de bienvenida.
 	 */
 	private static String generateWelcomeMail(Usuario user) {

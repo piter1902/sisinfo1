@@ -17,7 +17,8 @@ CREATE TABLE Comentario
 (
     comentarioId BIGINT NOT NULL AUTO_INCREMENT,
     texto VARCHAR(250) NOT NULL,
-    email varchar(30) not null,
+    asunto VARCHAR(30) NOT NULL,
+    email varchar(50) not null,
     nombre VARCHAR(20) not null,
     apellidos varchar(30),
     antecesor bigint,
@@ -31,7 +32,7 @@ CREATE TABLE Usuario
     login VARCHAR(20) NOT NULL,
     password varchar(50) not null,
     nombre VARCHAR(20) NOT NULL,
-    apellidos varchar(30),
+    apellidos varchar(50),
     email VARCHAR(50) not null,
     vehic_id bigint not null,
     CONSTRAINT usuarioPK PRIMARY KEY (login),
