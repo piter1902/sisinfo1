@@ -74,6 +74,10 @@
 		<div class="container">
 			<div class="page-cover text-center">
 				<h2 class="page-cover-tittle">Registrase</h2>
+				<!--<ol class="breadcrumb">
+                        <li><a href="index.jsp">Home</a></li>
+                        <li class="active">Sermons</li>
+                    </ol>-->
 			</div>
 		</div>
 	</section>
@@ -81,80 +85,104 @@
 	<!--================Sermons work Area =================-->
 	<section class="sermons_work_area section_gap">
 		<div class="container">
-			<form id="registro" action="registrarse" method="post"
-				style="display: inline-block; text-align: center;">
+			<form id="registro" action="" method="post">
 				<center>
 					<h3>Nuevo Usuario</h3>
 				</center>
-				<center>
+				<div class="camposReg">
 					<p>
-						<label for="NickName">NickName:</label> <input type="text"
-							name="nickname" value="<%=nickValor%>" id="idNick" /><%=nickError%>
+						<label class="camposNewReg1" for="NickName">NickName:</label> <input
+							class="camposNewReg2" type="text" name="NickName" value="" />
 					</p>
-				</center>
-				<center>
 					<p>
-						<label for="name">Nombre:</label> <input type="text" name="nombre"
-							value="<%=nombValor%>" id="idNombre" /><%=nombError%>
+						<label class="camposNewReg1" for="name">Nombre:</label> <input
+							class="camposNewReg2" type="text" name="nombre" value="" />
 					</p>
-				</center>
-				<center>
 					<p>
-						<label for="apellidos">Apellidos:</label> <input type="text"
-							name="apellidos" value="<%=apeValor%>" id="idValor" /><%=apeError%>
+						<label class="camposNewReg1" for="apellidos">Apellidos:</label> <input
+							class="camposNewReg2" type="text" name="Apellidos" value="" />
 					</p>
-				</center>
-				<center>
 					<p>
-						<label for="password">Contraseña:</label> <input type="password"
-							name="password" value="<%=passValor%>" id="idPassword" /><%=passError%>
+						<label class="camposNewReg1" for="password">Contraseña:</label> <input
+							class="camposNewReg2" type="password" name="password" value="" />
 					</p>
-				</center>
-				<center>
 					<p>
-						<label for="password1">Repetir Contraseña:</label> <input
-							type="password" name="password1" value="<%=pass1Valor%>"
-							id="idPassword1" /><%=pass1Error%>
+						<label class="camposNewReg1" for="password1">Repetir
+							Contraseña:</label> <input class="camposNewReg2" type="password"
+							name="password1" value="" />
 					</p>
-				</center>
-				<center>
 					<p>
-						<label for="email">Dirección de Correo:</label> <input type="text"
-							name="email" value="<%=emailValor%>" id="idEmail" /><%=emailError%>
+						<label class="camposNewReg1" for="email">Dirección de
+							Correo:</label> <input class="camposNewReg2" type="text" name="email"
+							value="" />
 					</p>
-				</center>
-				<p>
-					<select class="lista1" name="vehiculo" value="<%=vehicValor%>"
-						id="idVehiculo" /><%=vehicError%>
-					<option selected value="0"><label for="vehiculo">Elige
-							un tipo de vehiculo</label></option>
-					<option value="Moto"><label for="moto">Moto</label>
-					</option>
-					<option value="Coche"><label for="coche">Coche</label>
-					</option>
-					<option value="Furgoneta"><label for="furgoneta">Furgoneta</label>
-					</option>
-					</select>
-				</p>
-				<br> <br> <br>
-				<center class="entrada1">
-					<p>
-						<input class="entrada1_1" type="reset" value="Resetear" /> <input
-							class="entrada1_1" type="submit" value="Registrase" />
+				</div>
+				<br>
+				<div class="tablaReg">
+					<table>
+						<tr>
+							<th>Tipo de vehiculo</th>
+							<th>Combustible</th>
+						</tr>
+						<tr>
+							<td><label for="tipo_vehiculo"> <select
+									class="listaRegistro" name="tipo_vehiculo">
+										<option value="mal" selected>Elige un tipo de
+											vehiculo</option>
+										<option value="Moto">Moto</option>
+										<option value="Coche">Coche</option>
+										<option value="Bus">Bus</option>
+										<option value="Camión">Camión</option>
+								</select>
+							</label></td>
+							<td><label for="combustible"> <select
+									class="listaRegistro" name="combustible">
+										<option value="mal" selected>Elige un tipo de
+											combustible</option>
+										<option value="gasolina">Gasolina</option>
+										<option value="diesel">Diesel</option>
+										<option value="hibrido">Hibrido</option>
+										<option value="lpg_bifuel">lpg bifuel</option>
+										<option value="lpg_biguel_petrol">lpg_biguel_petrol</option>
+								</select>
+							</label></td>
+						</tr>
+						<tr>
+							<th>Contaminante</th>
+							<th>Motor</th>
+						</tr>
+						<tr>
+							<td><label for="contaminante"> <select
+									class="listaRegistro" name="contaminante">
+										<option value="mal" selected>Elige el contaminante</option>
+										<option value="desconocido">Desconocido</option>
+										<option value="co">co</option>
+										<option value="nox">nox</option>
+										<option value="0">0</option>
+								</select>
+							</label></td>
+							<td><label for="motor"> <select
+									class="listaRegistro" name="motor">
+										<option value="mal" selected>Elige el motor</option>
+										<option value="desconocido">Desconocido</option>
+										<option value="gdi">gdi</option>
+										<option value="pfi">pfi</option>
+										<option value="gdi+gpf">gdi+gpf</option>
+										<option value="dpf">dpf</option>
+										<option value="dpf+src">dpf+src</option>
+										<option value="lnt+dpf">lnt+dpf</option>
+										<option value="src">src</option>
+										<option value="egr">egr</option>
+								</select>
+							</label></td>
+						</tr>
+					</table>
 					</p>
-				</center>
-
+					<br> <br> <br>
+					<div class="botonesRegistro">
+						<input class="entrada1_1" type="submit" value="Registrase" />
+					</div>
 			</form>
-			<div class="box">
-				<select>
-					<option data-display="Select">Nothing</option>
-					<option value="1">Some option</option>
-					<option value="2">Another option</option>
-					<option value="3" disabled>A disabled option</option>
-					<option value="4">Potato</option>
-				</select>
-			</div>
-
 		</div>
 	</section>
 	<!--================Sermons work Area=================-->
@@ -163,6 +191,42 @@
 	<section class="event_blog_area section_gap">
 		<div class="container">
 			<div class="row">
+				<!--<div class="col-md-4">
+                        <div class="event_post">
+                            <img src="image/blog1.jpg" alt="">
+                            <a href="#"><h2 class="event_title">Spreading Peace to world</h2></a>
+                            <ul class="list_style sermons_category">
+                                <li><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
+                                <li><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
+                                <li><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
+                            </ul>
+                            <a href="#" class="btn_hover">View Details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="event_post">
+                            <img src="image/blog2.jpg" alt="">
+                            <a href="#"><h2 class="event_title">Spread Happyness to world</h2></a>
+                            <ul class="list_style sermons_category">
+                                <li><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
+                                <li><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
+                                <li><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
+                            </ul>
+                            <a href="#" class="btn_hover">View Details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="event_post">
+                            <img src="image/blog3.jpg" alt="">
+                            <a href="#"><h2 class="event_title">Spreading Light to world</h2></a>
+                            <ul class="list_style sermons_category">
+                                <li><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
+                                <li><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
+                                <li><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
+                            </ul>
+                            <a href="#" class="btn_hover">View Details</a>
+                        </div>
+                    </div>-->
 			</div>
 		</div>
 	</section>
@@ -258,6 +322,12 @@
 							href="https://colorlib.com" target="_blank">Colorlib</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
+					<!--<div class="col-lg-4 col-sm-4 footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div>-->
 				</div>
 			</div>
 		</footer>
