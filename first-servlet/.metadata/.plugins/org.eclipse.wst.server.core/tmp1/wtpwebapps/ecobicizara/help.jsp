@@ -33,25 +33,31 @@
 		<div class="container">
 			<div class="page-cover text-center">
 				<h2 class="page-cover-tittle">Contact Us</h2>
+				<!--<ol class="breadcrumb">
+                        <li><a href="index.jsp">Home</a></li>
+                        <li class="active">Contact Us</li>
+                    </ol>-->
 			</div>
 		</div>
 	</section>
 	<!--================Breadcrumb Area =================-->
 	<section class="event_date_area">
-		<div id="conjunto">
-			<div id="preguntas">
-				<p>
-					<a
-						href="javascript:llamarasincrono('tutorial1.htm', 'respuestas');"
-						class="as">&#191Como registrarme?</a>
-				</p>
-				<p>
-					<a
-						href="javascript:llamarasincrono('tutorial2.htm', 'respuestas');"
-						class="as">&#191Como darme de baja?</a>
-				</p>
+		<div>
+			<div style="background-color: #2eb34e; color:black;">
+				<!-- Pregunta 1: Como registrarse -->
+				<h3> ¿Cómo darse de alta? </h3>
+				<p> Para registrarse, acceda a la pestaña de <a style="color:#0a465c;"href="registrarse.jsp"> registrarse </a> e introduzca sus datos.</p>
 			</div>
-			<div id="respuestas">respuestas</div>
+			<div style="background-color: #2eb34e; color:black;">
+				<!--  Pregunta 2: Como darse de baja -->
+				<h3> ¿Cómo darse de baja? </h3>
+				<p> Para darse de baja, acceda a su cuenta de usuario y dirijase a la pestaña de modificar usuario y seleccione: "Quiero darme de baja" </p>
+			</div>
+			<div style="background-color: #2eb34e; color:black;">
+				<!-- Pregunta 3: Cambiar datos de vehiculo -->
+				<h3> ¿Cómo cambiar los datos de mi vehículo? </h3>
+				<p> Para modificar los datos del vehículo, acceda a su cuenta de usuario y dirijase a la pestaña de modificar usuario y modifique aquellos campos del su vehículo. </p>
+			</div>
 		</div>
 	</section>
 	<!--================Contact Area =================-->
@@ -144,6 +150,18 @@
 				</div>
 			</div>
 			<div class="border_line"></div>
+			<!--<div class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <p class="col-lg-8 col-sm-8 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			<!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			</p>
+			<!--<div class="col-lg-4 col-sm-4 footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div>
+                </div>-->
 		</div>
 	</footer>
 	<!--================ End footer Area  =================-->

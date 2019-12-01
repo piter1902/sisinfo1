@@ -1,6 +1,6 @@
 
 .hoja{
-	width:75%;
+	width:50%;
 	height:75%;
 	margin-left:-150px;
 	margin:auto;
@@ -60,20 +60,19 @@
   height:20px;
 }
 
-#mapa {
-	height:550px;
-	width:800px;
-	width:80%;
-	margin:auto;
-	margin-top:-80px;
-	margin-bottom:;
-	margin-right:0px;
-	background-color:gainsboro;
-	overflow-x: auto;
-	z-index:1;
-	position: absolute;
-}
-
+#mapa {  
+	height:400px;  
+	width: 80%; 
+	margin: auto; 
+	margin-right: 10%; 
+	margin-left: 10%; 
+	margin-top: -70px; 
+	z-index:1; 
+	overflow-x: auto; 
+	background-color:gainsboro;  
+	position: absolute;  
+}  
+  
 	/*@media (max-width: 800px) {
 		/*.event_date_area{
 			width:50%;
@@ -313,15 +312,15 @@
 }
 
 .tuerca {
-	height:100%;
-	width:100%;
+	height:50%;
+	width:50%;
 }
 
-.iconoInicio {
-	height:100%;
-	width:100%;
-	float:left;
-}
+.iconoInicio {  
+	height: 40px;  
+	width: 40px;  
+	float:right;  
+}  
 
 .tuerca1 {
 	height:50%;

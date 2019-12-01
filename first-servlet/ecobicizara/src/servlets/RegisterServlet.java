@@ -47,52 +47,47 @@ public class RegisterServlet extends HttpServlet {
 		// Comprobacion de errores de los parametros
 		// 1. tipo_vehiculo
 		if (tipo_vehiculo == null || tipo_vehiculo.trim().equals("")) {
-			// Mal introducido
-			// TODO: error
+			// Mal introducido (No debería de llegar aqui.)
+			error.put("tipo_vehiculo", "Campo obligatorio.");
 		} else {
 			// Bien introducido -> Miramos si el campo es valido
 			if (tipo_vehiculo.equals("mal")) {
-				// TODO: error -> este campo es obligatorio (aunque sea responder con
-				// desconocido)
-			} else if (tipo_vehiculo.equals("desconocido")) {
-				tipo_vehiculo = null;
+				error.put("tipo_vehiculo", "Campo obligatorio.");
 			}
 		}
 		// 2. combustible
 		if (combustible == null || combustible.trim().equals("")) {
-			// Mal introducido
-			// TODO: error
+			// Mal introducido (No debería de llegar aqui.)
+			error.put("combustible", "Campo obligatorio.");
 		} else {
 			// Bien introducido -> Miramos si el campo es valido
 			if (combustible.equals("mal")) {
-				// TODO: error -> este campo es obligatorio (aunque sea responder con
-				// desconocido)
-			} else if (combustible.equals("desconocido")) {
-				combustible = null;
+				error.put("combustible", "Campo obligatorio.");
 			}
 		}
 		// 3. contaminante
 		if (contaminante == null || contaminante.trim().equals("")) {
-			// Mal introducido
-			// TODO: error
+			// Mal introducido (No debería de llegar aqui.)
+			error.put("contaminante", "Campo obligatorio.");
 		} else {
 			// Bien introducido -> Miramos si el campo es valido
 			if (contaminante.equals("mal")) {
-				// TODO: error -> este campo es obligatorio (aunque sea responder con
-				// desconocido)
+				error.put("contaminante", "Campo obligatorio.");
+
 			} else if (contaminante.equals("desconocido")) {
 				contaminante = null;
 			}
 		}
 		// 4. motor
 		if (motor == null || motor.trim().equals("")) {
-			// Mal introducido
-			// TODO: error
+			// Mal introducido (No debería de llegar aqui.)
+			error.put("motor", "Campo obligatorio.");
+
 		} else {
 			// Bien introducido -> Miramos si el campo es valido
 			if (motor.equals("mal")) {
-				// TODO: error -> este campo es obligatorio (aunque sea responder con
-				// desconocido)
+				error.put("motor", "Campo obligatorio.");
+				
 			} else if (motor.equals("desconocido")) {
 				motor = null;
 			}
@@ -146,7 +141,7 @@ public class RegisterServlet extends HttpServlet {
 			int id_vehiculo = VehiculoDAO.insertStadistic(v, VehiculoDAO.findOverCondition(v));
 
 			// Insertamos al usuario en la BD
-			 UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, id_vehiculo);
+			UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, id_vehiculo);
 //			 UsuarioEmail.sendSignUpMail(UsuarioDAO.findUserByLogin(nickName));
 			resp.sendRedirect("index.jsp");
 		} else {

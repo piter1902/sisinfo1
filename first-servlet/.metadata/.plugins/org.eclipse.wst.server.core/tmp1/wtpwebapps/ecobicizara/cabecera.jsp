@@ -10,7 +10,6 @@
 	<!--================Header Area =================-->
 	<%
 		request.setAttribute("origRequestURL", request.getRequestURL());
-		System.out.println(request.getRequestURL());
 		String[] temporal = (request.getRequestURL().toString()).split("/");
 		String[] temporal2 = new String[temporal.length - 1];
 		for (int i = 0; i < temporal.length - 1; i++) {
@@ -23,11 +22,9 @@
 		<div class="header_top">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6 col-5">
-					</div>
+					<div class="col-sm-6 col-5"></div>
 					<div class="col-sm-6 col-7">
-						<div class="top_btn d-flex justify-content-end">
-						</div>
+						<div class="top_btn d-flex justify-content-end"></div>
 					</div>
 				</div>
 			</div>
@@ -46,11 +43,12 @@
 					<%
 						if (nick.equals("")) {
 					%>
-					<a class="inicioSesion" href="iniciarSesion.jsp" style = "float: right; margin-right: 55px;"><img
-							class="iconoInicio" src="imagenes/inicioSesion.png" alt=""></a>
-						<%
-							} else if (!nick.equals("")) {
-						%>
+					<a class="inicioSesion" href="iniciarSesion.jsp"
+						style="float: right; margin-right: 55px;"><img
+						class="iconoInicio" src="imagenes/inicioSesion.png" alt=""></a>
+					<%
+						} else if (!nick.equals("")) {
+					%>
 					<td>
 						<form class="usuarioActual" action="" method="get">
 							<p>
@@ -103,15 +101,20 @@
 							</center>
 						</li>
 						<%
+							//Solo se muestra pestaña de registro si no ha iniciado sesión.
 							String pathURL = (String) request.getAttribute("pathURL");
 							String origRequestURL = ((StringBuffer) request.getAttribute("origRequestURL")).toString();
 							if (nick == null || nick.trim().equals("")) {
-								// Cambiar el writer
-								out.write("<li class=\"nav-item\""
-										+ (origRequestURL.equals(pathURL.concat("/registrarse.jsp")) ? " active" : "") + "><center>"
-										+ "<a class=\"nav-link\" href=\"registrarse.jsp\">Registrarse</a></center></li>");
+						%>
+						<li class="nav-item${origRequestURL  eq  pathURL.concat("/registrarse.jsp") ? ' active' : ''}">
+							<center>
+								<a class="nav-link" href="registrarse.jsp">Registrarse</a>
+							</center>
+						</li>
+						<%
 							}
 						%>
+
 					</ul>
 				</div>
 			</div>

@@ -1,4 +1,5 @@
 <!doctype html>
+<%@page import="baseDatos.VehiculoDAO"%>
 <%@page import="baseDatos.UsuarioDAO"%>
 <%@page import="baseDatos.Usuario"%>
 <%@ page import="java.lang.*"%>
@@ -69,7 +70,8 @@
 		String userName = currentUser.getNombre();
 		String userApell = currentUser.getApellidos();
 		String userEmail = currentUser.getEmail();
-		int userVehic = currentUser.getVehicle_id();
+		int userVehicId = currentUser.getVehicle_id();
+		String usertipoVehic = VehiculoDAO.getVehicleType(userVehicId);
 	%>
 	<!--================Sermons work Area =================-->
 	<section class="sermons_work_area section_gap">
@@ -156,7 +158,7 @@
 							<td>
 								<p>
 									<label for="vehiculo">Vehiculo actual:</label> <input readonly
-										type="text" name="vehiculo" value="<%=userVehic%>" />
+										type="text" name="vehiculo" value="<%=usertipoVehic%>" />
 								</p>
 							</td>
 							<td>

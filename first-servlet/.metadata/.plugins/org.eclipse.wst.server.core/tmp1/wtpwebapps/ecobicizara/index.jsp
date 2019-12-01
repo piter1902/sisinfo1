@@ -145,8 +145,33 @@
 						language : 'es'
 					}),
 					geocoder : L.Control.Geocoder.photon({}),
-					language : 'es'
-				}).addTo(map);
+					language : 'es',
+					routeWhileDragging : true
+				}).on(
+						'routeselected',
+						function(e) {
+							/*var coord = e.route.coordinates;
+							var time = e.route.summary.totalTime;
+							var distance = e.route.summary.totalDistance;
+							var instr = e.route.instructions;
+							var formatter = new L.Routing.Formatter();
+							var puntos = 
+							/*for (var i = 0; i < instr.length; ++i) {
+							 	alert("Instruccion: " + instr[i].text);
+							  }*/
+							//Time in seconds
+							/*alert("time " + time/60 + " minutes");
+							alert("distance " + distance/1000 + "Km");
+							alert("Nombre " + name);
+							 */
+							var route = e.route;
+							
+							 for(var i = 0; i < route.inputWaypoints.length; ++i){
+								 alert("Origen: " + route.inputWaypoints[i].name);
+							 }
+						}).addTo(map);
+				// Para capturar errores.
+				L.Routing.errorControl(controlLayer).addTo(map);
 				heatmapLayer.setData(testData);
 			</script>
 		</div>

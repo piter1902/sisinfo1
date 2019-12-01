@@ -28,15 +28,21 @@
 		String pass1Error = "";
 		String emailError = "";
 		String apeError = "";
-		String vehicError = "";
 		String nombError = "";
+		String tipoVehicError = "";
+		String combustError = "";
+		String contamError = "";
+		String motorError = "";
 		String nickValor = "";
 		String passValor = "";
 		String pass1Valor = "";
 		String emailValor = "";
 		String apeValor = "";
-		String vehicValor = "";
 		String nombValor = "";
+		String tipoVehicValor = "";
+		String combustValor = "";
+		String contamValor = "";
+		String motorValor = "";
 		Map<String, String> err = (Map<String, String>) request.getAttribute("errores");
 		if (err != null) {
 			String cabecera = "<span style=\"color:red\">";
@@ -53,15 +59,24 @@
 				apeError = cabecera + err.get("apellidos") + fin;
 			if (err.containsKey("email"))
 				emailError = cabecera + err.get("email") + fin;
-			if (err.containsKey("vehiculo"))
-				vehicError = cabecera + err.get("vehiculo") + fin;
+			if (err.containsKey("tipo_vehiculo"))
+				tipoVehicError = cabecera + err.get("tipo_vehiculo") + fin;
+			if (err.containsKey("combustible"))
+				tipoVehicError = cabecera + err.get("combustible") + fin;
+			if (err.containsKey("contaminante"))
+				tipoVehicError = cabecera + err.get("contaminante") + fin;
+			if (err.containsKey("motor"))
+				tipoVehicError = cabecera + err.get("motor") + fin;
 			nickValor = request.getParameter("nickname");
 			nombValor = request.getParameter("nombre");
 			passValor = request.getParameter("password");
 			pass1Valor = request.getParameter("password1");
 			apeValor = request.getParameter("apellidos");
 			emailValor = request.getParameter("email");
-			vehicValor = request.getParameter("vehiculo");
+			tipoVehicValor = request.getParameter("tipo_vehiculo");
+			combustValor = request.getParameter("combustible");
+			contamValor = request.getParameter("contaminante");
+			motorValor = request.getParameter("motor");
 		}
 	%>
 
@@ -85,36 +100,40 @@
 	<!--================Sermons work Area =================-->
 	<section class="sermons_work_area section_gap">
 		<div class="container">
-			<form id="registro" action="" method="post">
+			<form id="registro" action="registrarse" method="post">
 				<center>
 					<h3>Nuevo Usuario</h3>
 				</center>
 				<div class="camposReg">
 					<p>
 						<label class="camposNewReg1" for="NickName">NickName:</label> <input
-							class="camposNewReg2" type="text" name="NickName" value="" />
+							class="camposNewReg2" type="text" name="nickname"
+							value="<%=nickValor%>" id="idNick" /><%=nickError%>
 					</p>
 					<p>
 						<label class="camposNewReg1" for="name">Nombre:</label> <input
-							class="camposNewReg2" type="text" name="nombre" value="" />
+							class="camposNewReg2" type="text" name="nombre"
+							value="<%=nombValor%>" id="idNombre" /><%=nombError%>
 					</p>
 					<p>
 						<label class="camposNewReg1" for="apellidos">Apellidos:</label> <input
-							class="camposNewReg2" type="text" name="Apellidos" value="" />
+							class="camposNewReg2" type="text" name="apellidos"
+							value="<%=apeValor%>" id="idValor" /><%=apeError%>
 					</p>
 					<p>
 						<label class="camposNewReg1" for="password">Contraseña:</label> <input
-							class="camposNewReg2" type="password" name="password" value="" />
+							class="camposNewReg2" type="password" name="password"
+							value="<%=passValor%>" id="idPassword" /><%=passError%>
 					</p>
 					<p>
 						<label class="camposNewReg1" for="password1">Repetir
 							Contraseña:</label> <input class="camposNewReg2" type="password"
-							name="password1" value="" />
+							name="password1" value="<%=pass1Valor%>" id="idPassword1" /><%=pass1Error%>
 					</p>
 					<p>
 						<label class="camposNewReg1" for="email">Dirección de
 							Correo:</label> <input class="camposNewReg2" type="text" name="email"
-							value="" />
+							value="<%=emailValor%>" id="idEmail" /><%=emailError%>
 					</p>
 				</div>
 				<br>
@@ -126,25 +145,24 @@
 						</tr>
 						<tr>
 							<td><label for="tipo_vehiculo"> <select
-									class="listaRegistro" name="tipo_vehiculo">
-										<option value="mal" selected>Elige un tipo de
-											vehiculo</option>
-										<option value="Moto">Moto</option>
-										<option value="Coche">Coche</option>
-										<option value="Bus">Bus</option>
-										<option value="Camión">Camión</option>
-								</select>
+									class="listaRegistro" name="tipo_vehiculo"
+									value="<%=tipoVehicValor%>" id="idVehiculo" /><%=tipoVehicError%>
+									<option value="mal" selected>Elige un tipo de vehiculo</option>
+									<option value="Moto">Moto</option>
+									<option value="Coche">Coche</option>
+									<option value="Bus">Bus</option>
+									<option value="Camión">Camión</option> </select>
 							</label></td>
 							<td><label for="combustible"> <select
-									class="listaRegistro" name="combustible">
-										<option value="mal" selected>Elige un tipo de
-											combustible</option>
-										<option value="gasolina">Gasolina</option>
-										<option value="diesel">Diesel</option>
-										<option value="hibrido">Hibrido</option>
-										<option value="lpg_bifuel">lpg bifuel</option>
-										<option value="lpg_biguel_petrol">lpg_biguel_petrol</option>
-								</select>
+									class="listaRegistro" name="combustible"
+									value="<%=combustValor%>" id="idCombust" /><%=combustError%>
+									<option value="mal" selected>Elige un tipo de
+										combustible</option>
+									<option value="gasolina">Gasolina</option>
+									<option value="diesel">Diesel</option>
+									<option value="hibrido">Hibrido</option>
+									<option value="lpg_bifuel">lpg bifuel</option>
+									<option value="lpg_biguel_petrol">lpg_biguel_petrol</option> </select>
 							</label></td>
 						</tr>
 						<tr>
@@ -153,27 +171,27 @@
 						</tr>
 						<tr>
 							<td><label for="contaminante"> <select
-									class="listaRegistro" name="contaminante">
-										<option value="mal" selected>Elige el contaminante</option>
-										<option value="desconocido">Desconocido</option>
-										<option value="co">co</option>
-										<option value="nox">nox</option>
-										<option value="0">0</option>
-								</select>
+									class="listaRegistro" name="contaminante"
+									value="<%=contamValor%>" id="idContam" /><%=contamError%>
+									<option value="mal" selected>Elige el contaminante</option>
+									<option value="desconocido">Desconocido</option>
+									<option value="co">co</option>
+									<option value="nox">nox</option>
+									<option value="0">0</option> </select>
 							</label></td>
 							<td><label for="motor"> <select
-									class="listaRegistro" name="motor">
-										<option value="mal" selected>Elige el motor</option>
-										<option value="desconocido">Desconocido</option>
-										<option value="gdi">gdi</option>
-										<option value="pfi">pfi</option>
-										<option value="gdi+gpf">gdi+gpf</option>
-										<option value="dpf">dpf</option>
-										<option value="dpf+src">dpf+src</option>
-										<option value="lnt+dpf">lnt+dpf</option>
-										<option value="src">src</option>
-										<option value="egr">egr</option>
-								</select>
+									class="listaRegistro" name="motor" value="<%=motorValor%>"
+									id="idMotor" /><%=motorError%>
+									<option value="mal" selected>Elige el motor</option>
+									<option value="desconocido">Desconocido</option>
+									<option value="gdi">gdi</option>
+									<option value="pfi">pfi</option>
+									<option value="gdi+gpf">gdi+gpf</option>
+									<option value="dpf">dpf</option>
+									<option value="dpf+src">dpf+src</option>
+									<option value="lnt+dpf">lnt+dpf</option>
+									<option value="src">src</option>
+									<option value="egr">egr</option> </select>
 							</label></td>
 						</tr>
 					</table>

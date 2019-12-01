@@ -37,6 +37,8 @@ public class VehiculoDAO {
 	protected static final String getMaxId = "select max(id) as maximo from Vehiculo";
 	// Sentencia SQL para borrar eliminar un vehiculo de la BD
 	protected static final String deleteVehiculo = "delete from Vehiculo where id = ?";
+	// Sentencia SQL para obtener el tipo vehículo dado un id
+	protected static final String getVehicType = "select tipo as tipoVehic from Vehiculo where id = ?";
 
 	/**
 	 * Metodo que devuelve una lista con todos los elementos de la tabla Vehiculo
@@ -103,6 +105,8 @@ public class VehiculoDAO {
 				mapa.put(index, tipo);
 				index++;
 			}
+			//Se comenta para no hacer la búsqueda tan estricta
+			/*
 			if (segment != null) {
 				sqlStmnt += (index == 1 ? findOverCondition_segment : intersect + findOverCondition_segment);
 				mapa.put(index, segment);
@@ -117,7 +121,7 @@ public class VehiculoDAO {
 				sqlStmnt += (index == 1 ? findOverCondition_engine_type : intersect + findOverCondition_engine_type);
 				mapa.put(index, engine_type);
 				index++;
-			}
+			}*/
 			if (fuel != null) {
 				sqlStmnt += (index == 1 ? findOverCondition_fuel : intersect + findOverCondition_fuel);
 				mapa.put(index, fuel);
@@ -160,6 +164,22 @@ public class VehiculoDAO {
 		return ok;
 	}
 
+	public static String getVehicleType(int id) {
+		String tipo = new String();
+		try {
+			Connection c = ConnectionManager.getConnection();
+			PreparedStatement ps = c.prepareStatement(getVehicType);
+			ps.setInt(1, id);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				tipo = rs.getString("tipoVehic");				
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return tipo;
+	}
+	
 	public static int insertStadistic(Vehiculo v, List<Vehiculo> lista) {
 		int index = 1;
 		int id = -1;
@@ -172,7 +192,9 @@ public class VehiculoDAO {
 			mapa.put(4, v.getEngine_type());
 			mapa.put(5, v.getFuel());
 			mapa.put(6, v.getPollutant());
-			float emission_factor = calcularMedia_emissionFactor(lista);
+			//Si la lista devuelta es vacía, se asigna media calculada de la base de datos. 
+			float emission_factor = (float)(lista.size() !=0 ? calcularMedia_emissionFactor(lista) : 313.363);
+			System.out.println("factor de emision resultante: " + emission_factor);
 			mapa.put(7, Float.toString(emission_factor));
 			PreparedStatement ps = c.prepareStatement(insertOnDB);
 			for (int i = 1; i <= 7 && mapa.containsKey(i); i++) {
