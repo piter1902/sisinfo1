@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="baseDatos.Usuario"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="baseDatos.ExcepcionesBD"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
@@ -23,4 +22,5 @@
     <fullyQualifiedTypeName name="baseDatos.Comentario"/>
     <fullyQualifiedTypeName name="baseDatos.ComentarioDAO"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
 </qualifiedTypeNameHistroy>

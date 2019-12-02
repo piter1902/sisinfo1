@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<%@ page import="java.lang.*"%>
+<%@ page import="java.io.*"%>
+<%@ page import="java.util.*"%>
 <!doctype html>
 <html lang="en">
 
@@ -42,6 +45,22 @@
 </head>
 
 <body>
+	<%
+		String nickError = "";
+		String origError = "";
+		String destError = "";
+		Map<String, String> err = (Map<String, String>) request.getAttribute("errores");
+		if (err != null) {
+			String cabecera = "<span style=\"color:red\">";
+			String fin = "</span>";
+			if (err.containsKey("nickname"))
+				nickError = cabecera + err.get("nickname") + fin;
+			if (err.containsKey("origen"))
+				origError = cabecera + err.get("origen") + fin;
+			if (err.containsKey("destino"))
+				destError = cabecera + err.get("destino") + fin;
+		}
+	%>
 	<!--================Header Area =================-->
 	<jsp:include page="cabecera.jsp"></jsp:include>
 	<!--================Header Area =================-->
@@ -62,6 +81,13 @@
 	<!--================banner Area =================-->
 
 	<!--================Event Date Area =================-->
+	<div id="row" style="margin-top: 10px; margin-bottom: 10px">
+		<form name="botonConsulta" action="guardarConsulta" method="post"><%=nickError%><%=origError%><%=destError%>
+			<input type="hidden" name="origen" id="origen" /> <input
+				type="hidden" name="destino" id="destino" /> <input type="submit"
+				value="Guardar consulta" onClick="procesarConsulta()" />
+		</form>
+	</div>
 	<section class="event_date_area" style="height: 500px">
 		<div id="conjunto">
 			<!-- <form id="consulta" action="" method="post">
@@ -95,9 +121,24 @@
 				</table>
 			</form> -->
 			<div id="mapa"></div>
-			<script>
-				//Generador puntos calientes.
 
+			<script>
+				//Definición de variables para obtener valores de consulta realizado 
+				var origen_val = "";
+				var destino_val = "";
+
+				// Función que procesa el origen y destino
+				function procesarConsulta() {
+					var hiddenOrigen = document.getElementById("origen");
+					hiddenOrigen.value = origen_val;
+					var hiddenDestino = document.getElementById("destino");
+					hiddenDestino.value = destino_val;
+					// Ejecutamos para servlet
+					var form = document.getElementById("botonConsulta");
+					form.submit();
+				}
+
+				//Generador puntos calientes.
 				var testData = {
 					max : 8,
 					data : [ {
@@ -106,7 +147,7 @@
 						count : 1
 					} ]
 				};
-
+				//Prueba de punto caliente
 				var cfg = {
 					"radius" : .001,
 					"maxOpacity" : .8,
@@ -138,7 +179,7 @@
 					layers : [ baseLayer, heatmapLayer ]
 				});
 
-				//Generador de rutas
+				//Generador de rutas que añadimos al mapa
 				var controlLayer = L.Routing.control({
 					router : new L.Routing.osrmv1({
 						profile : 'car',
@@ -147,29 +188,31 @@
 					geocoder : L.Control.Geocoder.photon({}),
 					language : 'es',
 					routeWhileDragging : true
-				}).on(
-						'routeselected',
-						function(e) {
-							/*var coord = e.route.coordinates;
-							var time = e.route.summary.totalTime;
-							var distance = e.route.summary.totalDistance;
-							var instr = e.route.instructions;
-							var formatter = new L.Routing.Formatter();
-							var puntos = 
-							/*for (var i = 0; i < instr.length; ++i) {
-							 	alert("Instruccion: " + instr[i].text);
-							  }*/
-							//Time in seconds
-							/*alert("time " + time/60 + " minutes");
-							alert("distance " + distance/1000 + "Km");
-							alert("Nombre " + name);
-							 */
-							var route = e.route;
-							
-							 for(var i = 0; i < route.inputWaypoints.length; ++i){
-								 alert("Origen: " + route.inputWaypoints[i].name);
-							 }
-						}).addTo(map);
+				}).on('routeselected', function(e) { // Código ejecutado al generar ruta
+					/*var coord = e.route.coordinates;
+					var time = e.route.summary.totalTime;
+					var distance = e.route.summary.totalDistance;
+					var instr = e.route.instructions;
+					var formatter = new L.Routing.Formatter();
+					var puntos = 
+					/*for (var i = 0; i < instr.length; ++i) {
+					 	alert("Instruccion: " + instr[i].text);
+					  }*/
+					//Time in seconds
+					/*alert("time " + time/60 + " minutes");
+					alert("distance " + distance/1000 + "Km");
+					alert("Nombre " + name);
+					 */
+					var route = e.route;
+					//Este bulce se puede usar si queremos guardar además de origen y destino, puntos intermedios. 
+
+					for (var i = 0; i < route.inputWaypoints.length; ++i) {
+						alert("Origen: " + route.inputWaypoints[i].name);
+					}
+					// Guardamos los valores de la ruta generada
+					origen_val = route.inputWaypoints[0].name;
+					destino_val = route.inputWaypoints[1].name;
+				}).addTo(map);
 				// Para capturar errores.
 				L.Routing.errorControl(controlLayer).addTo(map);
 				heatmapLayer.setData(testData);

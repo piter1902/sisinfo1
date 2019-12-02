@@ -1,4 +1,4 @@
-!SESSION 2019-11-19 20:28:39.667 -----------------------------------------------
+!SESSION 2019-12-02 10:13:53.872 -----------------------------------------------
 eclipse.buildId=4.13.0.I20190916-1045
 java.version=11.0.4
 java.vendor=Ubuntu
@@ -6,181 +6,10 @@ BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-This is a continuation of log file /home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet/.metadata/.bak_0.log
-Created Time: 2019-11-20 00:27:48.259
+This is a continuation of log file /home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/.metadata/.bak_0.log
+Created Time: 2019-12-02 12:42:43.175
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.259
-!MESSAGE java.lang.NullPointerException
-!STACK 0
-org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
-	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:90)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.mergeWithModel(Web25MergedModelProvider.java:182)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.merge(Web25MergedModelProvider.java:164)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:155)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.xmlModelChanged(Web25MergedModelProvider.java:146)
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$XmlModelListener.modelsChanged(AbstractMergedModelProvider.java:91)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$NotifyRunner.run(JEE5ModelProvider.java:470)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.notifyListeners(JEE5ModelProvider.java:445)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.resourceChanged(JEE5ModelProvider.java:117)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$ResourceAdapter.notifyChanged(JEE5ModelProvider.java:81)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.setModified(ResourceImpl.java:1867)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ModificationTrackingAdapter.notifyChanged(ResourceImpl.java:1756)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
-	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:294)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHelperImpl.setValue(XMLHelperImpl.java:1173)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.setFeatureValue(XMLHandler.java:2710)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.setFeatureValue(XMLHandler.java:2700)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.createObjectFromFeatureType(XMLHandler.java:2221)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.createObject(XMLHandler.java:2089)
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.createObject(XMIHandler.java:151)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleFeature(XMLHandler.java:1868)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.processElement(XMLHandler.java:1048)
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.processElement(XMIHandler.java:82)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:1026)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:720)
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.startElement(XMIHandler.java:190)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:510)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2710)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
-	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
-	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
-	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
-	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1563)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1342)
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
-	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:811)
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
-	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:1003)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:187)
-	at org.eclipse.jst.jee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:44)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:233)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.getXmlWebApp(Web25MergedModelProvider.java:59)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:155)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.xmlModelChanged(Web25MergedModelProvider.java:146)
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$XmlModelListener.modelsChanged(AbstractMergedModelProvider.java:91)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$NotifyRunner.run(JEE5ModelProvider.java:470)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.notifyListeners(JEE5ModelProvider.java:445)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.resourceChanged(JEE5ModelProvider.java:117)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$ResourceAdapter.notifyChanged(JEE5ModelProvider.java:81)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.setModified(ResourceImpl.java:1867)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.modified(ResourceImpl.java:486)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didRemove(ResourceImpl.java:447)
-	at org.eclipse.emf.common.util.AbstractEList.didClear(AbstractEList.java:170)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didClear(ResourceImpl.java:466)
-	at org.eclipse.emf.common.util.BasicEList.clear(BasicEList.java:639)
-	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.doClear(NotifyingListImpl.java:1158)
-	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.clear(NotifyingListImpl.java:1085)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.doUnload(ResourceImpl.java:1699)
-	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doUnload(XMLResourceImpl.java:720)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.unload(ResourceImpl.java:1721)
-	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.processDeferredUnloadedResources(ResourceSetWorkbenchEditSynchronizer.java:164)
-	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.processDeferredResources(ResourceSetWorkbenchEditSynchronizer.java:232)
-	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.resourceChanged(ResourceSetWorkbenchEditSynchronizer.java:141)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
-	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
-	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
-	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
-	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:76)
-	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:66)
-	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:461)
-	at org.eclipse.ui.editors.text.TextFileDocumentProvider.saveDocument(TextFileDocumentProvider.java:764)
-	at org.eclipse.ui.texteditor.AbstractTextEditor.performSave(AbstractTextEditor.java:5052)
-	at org.eclipse.ui.texteditor.AbstractTextEditor.doSave(AbstractTextEditor.java:4852)
-	at org.eclipse.wst.sse.ui.StructuredTextEditor.doSave(StructuredTextEditor.java:1976)
-	at org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart.doSave(XMLMultiPageEditorPart.java:916)
-	at org.eclipse.ui.internal.SaveableHelper.lambda$0(SaveableHelper.java:156)
-	at org.eclipse.ui.internal.SaveableHelper.lambda$3(SaveableHelper.java:271)
-	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:436)
-	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:352)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:2368)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
-	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2366)
-	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:278)
-	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:260)
-	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:160)
-	at org.eclipse.ui.internal.WorkbenchPage.saveSaveable(WorkbenchPage.java:3830)
-	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3843)
-	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
-	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:498)
-	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:584)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:653)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:443)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$2(KeyBindingDispatcher.java:386)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1836)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1404)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1431)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1414)
-	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1455)
-	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:819)
-	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:4012)
-	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:857)
-	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2243)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6846)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5842)
-	at org.eclipse.swt.internal.gtk.GTK._gtk_main_do_event(Native Method)
-	at org.eclipse.swt.internal.gtk.GTK.gtk_main_do_event(GTK.java:4154)
-	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1474)
-	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
-	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:1603)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4404)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
-Caused by: java.lang.NullPointerException
-
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.262
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.175
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -294,7 +123,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -352,8 +181,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.263
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.178
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -468,7 +302,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -526,8 +360,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.265
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.185
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -639,7 +478,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -697,8 +536,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.268
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.201
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -812,7 +658,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -870,8 +716,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.269
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.204
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -986,7 +837,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1044,8 +895,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.271
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.212
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -1157,7 +1013,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1215,8 +1071,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.274
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.227
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -1330,7 +1193,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1388,8 +1251,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.276
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.229
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -1504,7 +1372,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1562,8 +1430,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.278
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.234
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -1675,7 +1548,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1733,8 +1606,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.281
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.244
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -1848,7 +1728,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -1906,8 +1786,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.283
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.247
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -2022,7 +1907,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2080,8 +1965,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.285
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.260
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -2193,7 +2083,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2251,8 +2141,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.289
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.272
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -2366,7 +2263,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2424,8 +2321,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.290
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:43.276
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -2540,7 +2442,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2598,179 +2500,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:48.292
-!MESSAGE java.lang.NullPointerException
-!STACK 0
-org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
-	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:90)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.mergeWithModel(Web25MergedModelProvider.java:182)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.merge(Web25MergedModelProvider.java:164)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:155)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.xmlModelChanged(Web25MergedModelProvider.java:146)
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$XmlModelListener.modelsChanged(AbstractMergedModelProvider.java:91)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$NotifyRunner.run(JEE5ModelProvider.java:470)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.notifyListeners(JEE5ModelProvider.java:445)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.resourceChanged(JEE5ModelProvider.java:117)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$ResourceAdapter.notifyChanged(JEE5ModelProvider.java:81)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.setModified(ResourceImpl.java:1867)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ModificationTrackingAdapter.notifyChanged(ResourceImpl.java:1756)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
-	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:294)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHelperImpl.setValue(XMLHelperImpl.java:1173)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.setFeatureValue(XMLHandler.java:2710)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.setFeatureValue(XMLHandler.java:2700)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.createObjectFromFeatureType(XMLHandler.java:2221)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.createObject(XMLHandler.java:2089)
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.createObject(XMIHandler.java:151)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleFeature(XMLHandler.java:1868)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.processElement(XMLHandler.java:1048)
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.processElement(XMIHandler.java:82)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:1026)
-	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:720)
-	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.startElement(XMIHandler.java:190)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:510)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2710)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
-	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
-	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:324)
-	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
-	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1563)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1342)
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
-	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:811)
-	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
-	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:1003)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:187)
-	at org.eclipse.jst.jee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:44)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:233)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.getXmlWebApp(Web25MergedModelProvider.java:59)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.internalModelChanged(Web25MergedModelProvider.java:155)
-	at org.eclipse.jst.jee.model.internal.Web25MergedModelProvider.xmlModelChanged(Web25MergedModelProvider.java:146)
-	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$XmlModelListener.modelsChanged(AbstractMergedModelProvider.java:91)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$NotifyRunner.run(JEE5ModelProvider.java:470)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.notifyListeners(JEE5ModelProvider.java:445)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider.resourceChanged(JEE5ModelProvider.java:117)
-	at org.eclipse.jst.jee.model.internal.JEE5ModelProvider$ResourceAdapter.notifyChanged(JEE5ModelProvider.java:81)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.setModified(ResourceImpl.java:1867)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.modified(ResourceImpl.java:486)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didRemove(ResourceImpl.java:447)
-	at org.eclipse.emf.common.util.AbstractEList.didClear(AbstractEList.java:170)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl$ContentsEList.didClear(ResourceImpl.java:466)
-	at org.eclipse.emf.common.util.BasicEList.clear(BasicEList.java:639)
-	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.doClear(NotifyingListImpl.java:1158)
-	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.clear(NotifyingListImpl.java:1085)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.doUnload(ResourceImpl.java:1699)
-	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doUnload(XMLResourceImpl.java:720)
-	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.unload(ResourceImpl.java:1721)
-	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.processDeferredUnloadedResources(ResourceSetWorkbenchEditSynchronizer.java:164)
-	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.processDeferredResources(ResourceSetWorkbenchEditSynchronizer.java:232)
-	at org.eclipse.wst.common.internal.emfworkbench.integration.ResourceSetWorkbenchEditSynchronizer.resourceChanged(ResourceSetWorkbenchEditSynchronizer.java:141)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
-	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
-	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
-	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
-	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:76)
-	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:66)
-	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:461)
-	at org.eclipse.ui.editors.text.TextFileDocumentProvider.saveDocument(TextFileDocumentProvider.java:764)
-	at org.eclipse.ui.texteditor.AbstractTextEditor.performSave(AbstractTextEditor.java:5052)
-	at org.eclipse.ui.texteditor.AbstractTextEditor.doSave(AbstractTextEditor.java:4852)
-	at org.eclipse.wst.sse.ui.StructuredTextEditor.doSave(StructuredTextEditor.java:1976)
-	at org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart.doSave(XMLMultiPageEditorPart.java:916)
-	at org.eclipse.ui.internal.SaveableHelper.lambda$0(SaveableHelper.java:156)
-	at org.eclipse.ui.internal.SaveableHelper.lambda$3(SaveableHelper.java:271)
-	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:436)
-	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:352)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:2368)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
-	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2366)
-	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:278)
-	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:260)
-	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:160)
-	at org.eclipse.ui.internal.WorkbenchPage.saveSaveable(WorkbenchPage.java:3830)
-	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3843)
-	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
-	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:498)
-	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:584)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:653)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:443)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$2(KeyBindingDispatcher.java:386)
-	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1836)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1404)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1431)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1414)
-	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1455)
-	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:819)
-	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:4012)
-	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:857)
-	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2243)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6846)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5842)
-	at org.eclipse.swt.internal.gtk.GTK._gtk_main_do_event(Native Method)
-	at org.eclipse.swt.internal.gtk.GTK.gtk_main_do_event(GTK.java:4154)
-	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1474)
-	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
-	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:1603)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4404)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
-Caused by: java.lang.NullPointerException
-
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.919
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.333
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -2884,7 +2620,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -2942,8 +2678,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.921
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.336
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -3058,7 +2799,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -3116,8 +2857,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.923
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.339
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -3229,7 +2975,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -3287,8 +3033,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.926
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.344
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -3402,7 +3155,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -3460,8 +3213,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.927
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.347
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -3576,7 +3334,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -3634,8 +3392,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.928
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.350
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -3747,7 +3510,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -3805,8 +3568,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.931
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.356
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -3920,7 +3690,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -3978,8 +3748,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.932
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.362
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -4094,7 +3869,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -4152,8 +3927,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.933
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.367
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -4265,7 +4045,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -4323,8 +4103,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.935
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.371
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -4438,7 +4225,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -4496,8 +4283,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.937
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.373
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -4612,7 +4404,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -4670,8 +4462,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.938
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.377
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -4783,7 +4580,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -4841,8 +4638,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.941
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.399
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -4956,7 +4760,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -5014,8 +4818,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.942
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.402
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -5130,7 +4939,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -5188,8 +4997,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.944
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.409
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -5301,7 +5115,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -5359,8 +5173,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.946
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.416
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -5474,7 +5295,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -5532,8 +5353,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.947
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.419
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -5648,7 +5474,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -5706,8 +5532,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:27:57.948
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.423
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -5819,7 +5650,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -5877,8 +5708,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.201
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.433
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -5992,7 +5830,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -6050,8 +5888,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.203
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.439
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -6166,7 +6009,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -6224,8 +6067,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.205
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:49.446
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -6337,7 +6185,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -6395,8 +6243,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.208
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.156
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -6510,7 +6365,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -6568,8 +6423,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.209
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.158
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -6684,7 +6544,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -6742,8 +6602,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.211
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.161
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -6855,7 +6720,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -6913,8 +6778,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.213
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.165
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -7028,7 +6900,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -7086,8 +6958,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.214
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.167
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -7202,7 +7079,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -7260,8 +7137,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.216
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.169
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -7373,7 +7255,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -7431,8 +7313,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.218
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.172
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -7546,7 +7435,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -7604,8 +7493,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.219
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.173
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -7720,7 +7614,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -7778,8 +7672,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.221
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.175
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -7891,7 +7790,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -7949,8 +7848,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.223
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.178
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -8064,7 +7970,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -8122,8 +8028,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.224
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.181
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -8238,7 +8149,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -8296,8 +8207,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.225
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.183
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -8409,7 +8325,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -8467,8 +8383,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.227
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.186
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -8582,7 +8505,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -8640,8 +8563,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.228
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.189
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -8756,7 +8684,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -8814,8 +8742,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:03.230
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.192
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -8927,7 +8860,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -8985,8 +8918,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.639
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.196
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -9100,7 +9040,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -9158,8 +9098,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.640
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.197
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -9274,7 +9219,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -9332,8 +9277,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.641
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.199
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -9445,7 +9395,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -9503,8 +9453,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.644
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.203
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -9618,7 +9575,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -9676,8 +9633,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.645
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.204
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -9792,7 +9754,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -9850,8 +9812,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.647
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:42:59.206
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -9963,7 +9930,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -10021,8 +9988,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.650
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:43:14.306
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -10136,7 +10110,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -10194,8 +10168,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.652
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:43:14.307
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -10310,7 +10289,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -10368,8 +10347,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.654
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:43:14.309
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -10481,7 +10465,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -10539,8 +10523,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.656
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:43:14.311
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -10654,7 +10645,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -10712,8 +10703,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.657
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:43:14.313
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -10828,7 +10824,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -10886,8 +10882,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.658
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:43:14.314
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -10999,7 +11000,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -11057,8 +11058,15 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:315)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.artifactExists(WebAppMerger.java:277)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.copyMissingContentInBase(WebAppMerger.java:258)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:50)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 164 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.661
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:43:14.318
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -11172,7 +11180,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -11230,8 +11238,13 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 166 more
 
-!ENTRY org.eclipse.jst.jee.web 4 0 2019-11-20 00:28:07.661
+!ENTRY org.eclipse.jst.jee.web 4 0 2019-12-02 12:43:14.320
 !MESSAGE java.lang.NullPointerException
 !STACK 0
 org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
@@ -11346,7 +11359,7 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:57)
 	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
 	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
-	at jdk.internal.reflect.GeneratedMethodAccessor59.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
@@ -11404,3 +11417,8 @@ org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointer
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
 Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.getArtifactFromList(WebAppMerger.java:307)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServletMappings(WebApp3Merger.java:48)
+	at org.eclipse.jst.jee.model.internal.mergers.WebApp3Merger.mergeServlets(WebApp3Merger.java:36)
+	at org.eclipse.jst.jee.model.internal.mergers.WebAppMerger.process(WebAppMerger.java:79)
+	... 167 more

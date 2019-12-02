@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="print"/>
+		<item key="selection" value="obtainEmFactor"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="obtainEmFactor"/>
+			<item value="mapa"/>
+			<item value="usuarioActual"/>
+			<item value="usuario"/>
+			<item value="usuarioactual"/>
+			<item value="tuerca"/>
+			<item value="mapac"/>
+			<item value="map"/>
+			<item value="ma"/>
+			<item value="icono"/>
+			<item value="inicio"/>
+			<item value="log"/>
 			<item value="print"/>
 			<item value="leaflet-routing-alt "/>
 			<item value="h3"/>
-			<item value="realiza"/>
-			<item value="map"/>
-			<item value="col-md-3"/>
-			<item value="url"/>
-			<item value=".lnr"/>
-			<item value="lnr"/>
-			<item value="lnr-home"/>
-			<item value="mapacontact"/>
-			<item value="contact_area"/>
-			<item value="container"/>
-			<item value="page-cover-tittle"/>
-			<item value="&#x09;&#x09;String[] temporal = (request.getRequestURL().toString()).split(&quot;/&quot;, 5);"/>
 		</list>
 		<list key="replacehistory">
 			<item value="Cancelar"/>
