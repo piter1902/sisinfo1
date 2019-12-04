@@ -23,4 +23,9 @@
     <fullyQualifiedTypeName name="baseDatos.ComentarioDAO"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="baseDatos.Consulta"/>
+    <fullyQualifiedTypeName name="baseDatos.ConsultaDAO"/>
+    <fullyQualifiedTypeName name="baseDatos.PuntosNegros"/>
 </qualifiedTypeNameHistroy>
