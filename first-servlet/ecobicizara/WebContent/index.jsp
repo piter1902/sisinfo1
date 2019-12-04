@@ -220,8 +220,9 @@
 				L.Routing.errorControl(controlLayer).addTo(map);
 
 				function get_info() {
-					var prueba ='<%= String JSON = PuntosNegrosDAO.getJSON(PuntosNegrosDAO.findAllPuntos()) %>';
-				alert(lista)
+					<%! String list = PuntosNegrosDAO.getJSON(PuntosNegrosDAO.findAllPuntos()); %>
+					var lista = <%= list %>
+					alert(lista)
 				};
 			</script>
 		</div>
