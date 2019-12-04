@@ -9,6 +9,8 @@ package baseDatos;
 import java.sql.*; 
 import java.util.List; 
 import java.util.LinkedList; 
+
+import com.google.gson.Gson;
  
 public class PuntosNegrosDAO { 
  
@@ -34,4 +36,8 @@ public class PuntosNegrosDAO {
 		} 
 		return lista; 
 	} 
+	
+	public static String getJSON(List<PuntosNegros> lista) {
+		return new Gson().toJson(lista);
+	}
 }
