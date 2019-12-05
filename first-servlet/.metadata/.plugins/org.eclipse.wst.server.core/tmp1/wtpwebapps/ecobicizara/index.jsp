@@ -1,3 +1,10 @@
+<%@page import="com.google.gson.JsonParser"%>
+<%@page import="baseDatos.PuntosNegrosDAO"%>
+<%@page import="baseDatos.PuntosNegros"%>
+<%@page import="baseDatos.UsuarioDAO"%>
+<%@page import="com.google.gson.JsonArray"%>
+<%@page import="com.google.gson.JsonElement"%>
+<%@page import="com.google.gson.JsonObject"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@ page import="java.lang.*"%>
@@ -44,7 +51,7 @@
 
 </head>
 
-<body>
+<body onload="get_info()">
 	<%
 		String nickError = "";
 		String origError = "";
@@ -90,81 +97,74 @@
 	</div>
 	<section class="event_date_area" style="height: 500px">
 		<div id="conjunto">
-			<!-- <form id="consulta" action="" method="post">
-				<table class="tablaConsulta" style="size: 5px">
-					<tr>Realizar Busqueda:
-					</tr>
-					<tr>
-						<td><label for="origen:" class="consulIntro">
-								<p class="campoIntro">Origen:</p>
-						</label><br> <input class="introConsul" size="10px" type="text"
-							name="origen" value="" /></td>
-					</tr>
-					<tr>
-						<td><label for="destino" class="consulIntro">
-								<p class="campoIntro">Destino:</p>
-						</label><br> <input class="introConsul" size="10px" type="text"
-							name="destino" value="" /></td>
-					</tr>
-					<tr>
-						<td><input class="introConsul campoIntroFin" size="10px"
-							type="reset" value="Reiniciar consulta" /></td>
-					</tr>
-					<tr>
-						<td><input class="introConsul campoIntroFin" size="10px"
-							type="submit" value="Enviar consulta" /></td>
-					</tr>
-					<tr>
-						<td><input class="introConsul campoIntroFin" size="10px"
-							type="submit" value="Guardar consulta" /></td>
-					</tr>
-				</table>
+			<!-- <form id="consulta" action="" method="post"> 
+				<table class="tablaConsulta" style="size: 5px"> 
+					<tr>Realizar Busqueda: 
+					</tr> 
+					<tr> 
+						<td><label for="origen:" class="consulIntro"> 
+								<p class="campoIntro">Origen:</p> 
+						</label><br> <input class="introConsul" size="10px" type="text" 
+							name="origen" value="" /></td> 
+					</tr> 
+					<tr> 
+						<td><label for="destino" class="consulIntro"> 
+								<p class="campoIntro">Destino:</p> 
+						</label><br> <input class="introConsul" size="10px" type="text" 
+							name="destino" value="" /></td> 
+					</tr> 
+					<tr> 
+						<td><input class="introConsul campoIntroFin" size="10px" 
+							type="reset" value="Reiniciar consulta" /></td> 
+					</tr> 
+					<tr> 
+						<td><input class="introConsul campoIntroFin" size="10px" 
+							type="submit" value="Enviar consulta" /></td> 
+					</tr> 
+					<tr> 
+						<td><input class="introConsul campoIntroFin" size="10px" 
+							type="submit" value="Guardar consulta" /></td> 
+					</tr> 
+				</table> 
 			</form> -->
 			<div id="mapa"></div>
 
 			<script>
-				//Definición de variables para obtener valores de consulta realizado 
+				//Definición de variables para obtener valores de consulta realizado  
 				var origen_val = "";
 				var destino_val = "";
 
-				// Función que procesa el origen y destino
+				// Función que procesa el origen y destino 
 				function procesarConsulta() {
 					var hiddenOrigen = document.getElementById("origen");
 					hiddenOrigen.value = origen_val;
 					var hiddenDestino = document.getElementById("destino");
 					hiddenDestino.value = destino_val;
-					// Ejecutamos para servlet
+					// Ejecutamos para servlet 
 					var form = document.getElementById("botonConsulta");
 					form.submit();
 				}
 
-				//Generador puntos calientes.
-				var testData = {
-					max : 8,
-					data : [ {
-						lat : 41.670735,
-						lng : -0.889915,
-						count : 1
-					} ]
-				};
-				//Prueba de punto caliente
+				
+				//Prueba de punto caliente 
 				var cfg = {
 					"radius" : .001,
 					"maxOpacity" : .8,
-					// scales the radius based on map zoom
+					// scales the radius based on map zoom 
 					"scaleRadius" : true,
-					// if set to false the heatmap uses the global maximum for colorization
-					// if activated: uses the data maximum within the current map boundaries
-					//   (there will always be a red spot with useLocalExtremas true)
+					// if set to false the heatmap uses the global maximum for colorization 
+					// if activated: uses the data maximum within the current map boundaries 
+					//   (there will always be a red spot with useLocalExtremas true) 
 					"useLocalExtrema" : true,
-					latField : 'lat',
-					lngField : 'lng',
-					valueField : 'count'
+					latField : 'latitud',
+					lngField : 'longitud',
+					valueField : 'contaminacion'
 				};
 
 				var heatmapLayer = new HeatmapOverlay(cfg);
 
-				//Capa base del mapa
+				//Capa base del mapa 
+
 				var baseLayer = L
 						.tileLayer(
 								'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
@@ -172,14 +172,13 @@
 									attribution : 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery Â© <a href="http://cloudmade.com">CloudMade</a>',
 									maxZoom : 18
 								});
-				//creamos el objeto mapa, aplicandole las capas creadas anteriormente
+				//creamos el objeto mapa, aplicandole las capas creadas anteriormente 
 				var map = new L.Map('mapa', {
 					center : new L.LatLng(41.648986, -0.891893),
 					zoom : 12,
 					layers : [ baseLayer, heatmapLayer ]
 				});
-
-				//Generador de rutas que añadimos al mapa
+				//Generador de rutas que añadimos al mapa 
 				var controlLayer = L.Routing.control({
 					router : new L.Routing.osrmv1({
 						profile : 'car',
@@ -188,44 +187,61 @@
 					geocoder : L.Control.Geocoder.photon({}),
 					language : 'es',
 					routeWhileDragging : true
-				}).on('routeselected', function(e) { // Código ejecutado al generar ruta
-					/*var coord = e.route.coordinates;
-					var time = e.route.summary.totalTime;
-					var distance = e.route.summary.totalDistance;
-					var instr = e.route.instructions;
-					var formatter = new L.Routing.Formatter();
-					var puntos = 
-					/*for (var i = 0; i < instr.length; ++i) {
-					 	alert("Instruccion: " + instr[i].text);
+				}).on('routeselected', function(e) { // Código ejecutado al generar ruta 
+					/*var coord = e.route.coordinates; 
+					var time = e.route.summary.totalTime; 
+					var distance = e.route.summary.totalDistance; 
+					var instr = e.route.instructions; 
+					var formatter = new L.Routing.Formatter(); 
+					var puntos =  
+					/*for (var i = 0; i < instr.length; ++i) { 
+					 	alert("Instruccion: " + instr[i].text); 
 					  }*/
-					//Time in seconds
-					/*alert("time " + time/60 + " minutes");
-					alert("distance " + distance/1000 + "Km");
-					alert("Nombre " + name);
+					//Time in seconds 
+					/*alert("time " + time/60 + " minutes"); 
+					alert("distance " + distance/1000 + "Km"); 
+					alert("Nombre " + name); 
 					 */
 					var route = e.route;
-					//Este bulce se puede usar si queremos guardar además de origen y destino, puntos intermedios. 
+					//Este bulce se puede usar si queremos guardar además de origen y destino, puntos intermedios.  
 
 					for (var i = 0; i < route.inputWaypoints.length; ++i) {
 						alert("Origen: " + route.inputWaypoints[i].name);
 					}
-					// Guardamos los valores de la ruta generada
+					// Guardamos los valores de la ruta generada 
 					origen_val = route.inputWaypoints[0].name;
 					destino_val = route.inputWaypoints[1].name;
 				}).addTo(map);
-				// Para capturar errores.
+				// Para capturar errores. 
 				L.Routing.errorControl(controlLayer).addTo(map);
-				heatmapLayer.setData(testData);
+
+				function get_info() {
+					<%! String list = PuntosNegrosDAO.getJSON(PuntosNegrosDAO.findAllPuntos()); %>
+					// Se utiliza para separar la lista devuelta en un array de elementos tipo JSON
+					<%! JsonParser parser = new JsonParser(); %>
+					<%! JsonArray gsonArr = parser.parse(list).getAsJsonArray();%>
+					//Se recorre el array para obtener cada elemento
+					<% for (JsonElement obj : gsonArr) { %>
+						var punto = JSON.parse(<%="'" +  obj.toString() + "'" %>);
+						//Generador puntos calientes. 
+						var dataPoint = { 
+							latitud : punto.latitud, 
+							longitud : punto.longitud, 
+							contaminacion : punto.contaminacion 
+						};
+						heatmapLayer.addData(dataPoint);
+					<%}%>
+				};
 			</script>
 		</div>
 	</section>
 	<!--================Event Date Area =================-->
 
 	<!--================About Area =================-->
-	<!-- 
-	<section class="about_area section_gap">
-		<div class="container"></div>
-	</section>
+	<!--  
+	<section class="about_area section_gap"> 
+		<div class="container"></div> 
+	</section> 
 	-->
 	<!--================About Area =================-->
 
@@ -234,30 +250,29 @@
 	<!--================Features Area =================-->
 
 	<!--================Sermons work Area =================-->
-	<!-- 
-	<section class="sermons_work_area section_gap">
-		<div id="consulta1">
-			<form action="" method="get">
-				<h5>Buscar consultas</h5>
-				<label for="fecha">
-					<p>Fecha:</p>
-				</label> <input type="date" name="fecha" value="" /> &nbsp; <br> <label
-					for="origen">
-					<p>Origen:</p>
-				</label> &nbsp; <br> <input size="5px" type="text" name="origen"
-					value="" /> &nbsp; <br> <label for="destino">
-					<p>Destino:</p>
-				</label> &nbsp; <br> <input size="5px" type="text" name="destino"
-					value="" /> &nbsp; <br> <input size="15px" type="reset"
-					value="Resetear consulta" /> <br> &nbsp; <br> <input
-					size="15px" type="submit" value="Enviar consulta" />
-			</form>
-		</div>
-		<div id="resultados1">
-			<b>InformaciÃ³n obtenida en la consulta</b>
-		</div>
-	</section>
-	 -->
+	<section class="sermons_work_area section_gap"> 
+		<div id="consulta1"> 
+			<form action="" method="get"> 
+				<h5>Buscar consultas</h5> 
+				<label for="fecha"> 
+					<p>Fecha:</p> 
+				</label> <input type="date" name="fecha" value="" /> &nbsp; <br> <label 
+					for="origen"> 
+					<p>Origen:</p> 
+				</label> &nbsp; <br> <input size="5px" type="text" name="origen" 
+					value="" /> &nbsp; <br> <label for="destino"> 
+					<p>Destino:</p> 
+				</label> &nbsp; <br> <input size="5px" type="text" name="destino" 
+					value="" /> &nbsp; <br> <input size="15px" type="reset" 
+					value="Resetear consulta" /> <br> &nbsp; <br> <input 
+					size="15px" type="submit" value="Enviar consulta" /> 
+			</form> 
+		</div> 
+		<div id="resultados1"> 
+			<b>Información obtenida en la consulta</b> 
+		</div> 
+	</section> 
+
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area section_gap">
 		<div class="container">

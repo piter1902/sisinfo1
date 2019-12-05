@@ -1,6 +1,10 @@
+<%@page import="com.google.gson.JsonParser"%>
 <%@page import="baseDatos.PuntosNegrosDAO"%>
 <%@page import="baseDatos.PuntosNegros"%>
 <%@page import="baseDatos.UsuarioDAO"%>
+<%@page import="com.google.gson.JsonArray"%>
+<%@page import="com.google.gson.JsonElement"%>
+<%@page import="com.google.gson.JsonObject"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@ page import="java.lang.*"%>
@@ -141,15 +145,7 @@
 					form.submit();
 				}
 
-				//Generador puntos calientes. 
-				/*var testData = { 
-					max : 8, 
-					data : [ { 
-						lat : 41.670735, 
-						lng : -0.889915, 
-						count : 1 
-					} ] 
-				};*/
+				
 				//Prueba de punto caliente 
 				var cfg = {
 					"radius" : .001,
@@ -160,9 +156,9 @@
 					// if activated: uses the data maximum within the current map boundaries 
 					//   (there will always be a red spot with useLocalExtremas true) 
 					"useLocalExtrema" : true,
-					latField : 'lat',
-					lngField : 'lng',
-					valueField : 'count'
+					latField : 'latitud',
+					lngField : 'longitud',
+					valueField : 'contaminacion'
 				};
 
 				var heatmapLayer = new HeatmapOverlay(cfg);
@@ -221,8 +217,20 @@
 
 				function get_info() {
 					<%! String list = PuntosNegrosDAO.getJSON(PuntosNegrosDAO.findAllPuntos()); %>
-					var lista = <%= list %>
-					alert(lista)
+					// Se utiliza para separar la lista devuelta en un array de elementos tipo JSON
+					<%! JsonParser parser = new JsonParser(); %>
+					<%! JsonArray gsonArr = parser.parse(list).getAsJsonArray();%>
+					//Se recorre el array para obtener cada elemento
+					<% for (JsonElement obj : gsonArr) { %>
+						var punto = JSON.parse(<%="'" +  obj.toString() + "'" %>);
+						//Generador puntos calientes. 
+						var dataPoint = { 
+							latitud : punto.latitud, 
+							longitud : punto.longitud, 
+							contaminacion : punto.contaminacion 
+						};
+						heatmapLayer.addData(dataPoint);
+					<%}%>
 				};
 			</script>
 		</div>
@@ -242,7 +250,6 @@
 	<!--================Features Area =================-->
 
 	<!--================Sermons work Area =================-->
-	<!--  
 	<section class="sermons_work_area section_gap"> 
 		<div id="consulta1"> 
 			<form action="" method="get"> 
@@ -262,10 +269,10 @@
 			</form> 
 		</div> 
 		<div id="resultados1"> 
-			<b>InformaciÃ³n obtenida en la consulta</b> 
+			<b>Información obtenida en la consulta</b> 
 		</div> 
 	</section> 
-	 -->
+
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area section_gap">
 		<div class="container">

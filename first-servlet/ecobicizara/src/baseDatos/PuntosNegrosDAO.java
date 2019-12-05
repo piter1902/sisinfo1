@@ -29,7 +29,7 @@ public class PuntosNegrosDAO {
 			PreparedStatement ps = c.prepareStatement(findALL); 
 			ResultSet rs = ps.executeQuery(); 
 			while (rs.next()) { 
-				lista.add(new PuntosNegros(rs.getDouble(1), rs.getDouble(2), rs.getInt(3))); 
+				lista.add(new PuntosNegros(rs.getDouble(2), rs.getDouble(3), rs.getInt(4)));
 			} 
 		} catch (SQLException e) { 
 			e.printStackTrace(); 
