@@ -8,12 +8,16 @@ package baseDatos;
 
 import java.sql.*;
 import java.util.List;
+
+import com.google.gson.Gson;
+
 import java.util.LinkedList;
 
 public class ConsultaDAO {
 
 	// Sentencia SQL para obtener todos los comentarios
 	protected static final String findALL = "select * from Comentario";
+	protected static final String findByDate = "select * from Consulta where login = ? and fecha = ?";
 	protected static final String findID = "select * from Consulta where id = ?";
 	// Sentencia SQL para introducir un comentario en la BD
 	protected static final String insertConsulta = "insert into Consulta (login, fecha, origen, destino) values (?,?,?,?)";
@@ -62,7 +66,40 @@ public class ConsultaDAO {
 		}
 		return con;
 	}
-
+	/**
+	 * Metodo que devuelve una lista de consultas efectuadas en un día en concreto
+	 * 
+	 * @param login login del usuario que realiza la consulta
+	 * @param fecha fecha de la/las consultas a obtener 
+	 * @return Lista de consultas cuya fecha coincide con <fecha> del usuario <login>
+	 * 
+	 */
+	public static List<Consulta> findByDate(String login, Date fecha) {
+		List<Consulta> list_con = new LinkedList<>();
+		try {
+			Connection c = ConnectionManager.getConnection();
+			PreparedStatement ps = c.prepareStatement(findByDate);
+			ps.setString(1, login );
+			ps.setDate(2, fecha);
+			ResultSet rs = ps.executeQuery();
+			while (rs.next()) {
+				list_con.add(new Consulta(rs.getInt(1), rs.getString(2), rs.getString(4), rs.getString(5), rs.getDate(3)));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return list_con;
+	}
+	/**
+	 * Metodo que devuelve una cadena en formato JSON
+	 * 
+	 * @param lista lista de consultas
+	 * @return
+	 */
+	public static String getJSON(List<Consulta> lista) {
+		return new Gson().toJson(lista);
+	}
+	
 	/**
 	 * Metodo que inserta una consulta en la BD
 	 * 

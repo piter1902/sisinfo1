@@ -37,3 +37,6 @@
 2019-12-05 11:08:00,469 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2019-12-05 11:08:16,427 [main] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: /home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/.metadata/com.genuitec.eclipse.webclipse.livepreview/0/store
 2019-12-05 12:13:58,087 [main] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: /home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/.metadata/com.genuitec.eclipse.webclipse.livepreview/1/store
+2019-12-06 12:40:03,995 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-12-06 12:40:16,665 [main] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: /home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/.metadata/com.genuitec.eclipse.webclipse.livepreview/0/store
+2019-12-06 13:04:10,194 [main] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: /home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/.metadata/com.genuitec.eclipse.webclipse.livepreview/1/store

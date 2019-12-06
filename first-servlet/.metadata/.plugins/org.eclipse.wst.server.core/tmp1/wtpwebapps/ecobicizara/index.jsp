@@ -1,3 +1,6 @@
+<%@page import="java.sql.Date"%>
+<%@page import="baseDatos.ConsultaDAO"%>
+<%@page import="javax.security.auth.message.callback.PrivateKeyCallback.Request"%>
 <%@page import="com.google.gson.JsonParser"%>
 <%@page import="baseDatos.PuntosNegrosDAO"%>
 <%@page import="baseDatos.PuntosNegros"%>
@@ -51,7 +54,7 @@
 
 </head>
 
-<body onload="get_info()">
+<body onload="get_info();listarConsultas_onload()">
 	<%
 		String nickError = "";
 		String origError = "";
@@ -250,30 +253,99 @@
 	<!--================Features Area =================-->
 
 	<!--================Sermons work Area =================-->
+	<!--
+	<form name="botonConsulta" action="guardarConsulta" method="post"><%=nickError%><%=origError%><%=destError%>
+			<input type="hidden" name="origen" id="origen" /> <input
+				type="hidden" name="destino" id="destino" /> <input type="submit"
+				value="Guardar consulta" onClick="procesarConsulta()" />
+	</form>
+	-->
 	<section class="sermons_work_area section_gap"> 
 		<div id="consulta1"> 
-			<form action="" method="get"> 
+			<form name="getConsultas" action="" method="get"> 
 				<h5>Buscar consultas</h5> 
 				<label for="fecha"> 
 					<p>Fecha:</p> 
-				</label> <input type="date" name="fecha" value="" /> &nbsp; <br> <label 
+				</label> <input id="fechaConsulta" type="date" name="fechaConsulta" value="" /> &nbsp; <br> <label 
 					for="origen"> 
 					<p>Origen:</p> 
-				</label> &nbsp; <br> <input size="5px" type="text" name="origen" 
+				</label> &nbsp; <br> <input id="origenConsulta" size="5px" type="text" name="origenConsulta" 
 					value="" /> &nbsp; <br> <label for="destino"> 
 					<p>Destino:</p> 
-				</label> &nbsp; <br> <input size="5px" type="text" name="destino" 
+				</label> &nbsp; <br> <input id="destinoConsulta" size="5px" type="text" name="destinoConsulta" 
 					value="" /> &nbsp; <br> <input size="15px" type="reset" 
 					value="Resetear consulta" /> <br> &nbsp; <br> <input 
-					size="15px" type="submit" value="Enviar consulta" /> 
+					size="15px" type="button" value="Enviar consulta" onclick="return listarConsultas();"/> 
 			</form> 
 		</div> 
 		<div id="resultados1"> 
 			<b>Información obtenida en la consulta</b> 
 		</div> 
 	</section> 
+	<script>
+	function listarConsultas(){
+		//Procedemos a obtener todas las consultas efectuadas en la fecha indicada	
+		var fechaConsulta=document.getElementById("fechaConsulta").value; 
+		 window.location.replace("index.jsp?fechaConsulta="+ fechaConsulta);
+	}
+	function listarConsultas_onload(){
+		<% String fechaCon = request.getParameter("fechaConsulta");%>
+		<% System.out.println("La fecha es: " + fechaCon); %>
+		<% String origenCon =request.getParameter("origenConsulta");%>
+		<% String destinoCon =request.getParameter("destinoConsulta");%>
+		<% String userNick = (String) session.getAttribute("nickname");%>
+		//Es necesario trasnformarlo a variable tipo sql.date para la consulta
+		<% Date dateCon = null;
+			if(fechaCon != null){
+				dateCon = Date.valueOf(fechaCon); 
+				System.out.println("Prueba: " + dateCon);
+				String lista_consultas = ConsultaDAO.getJSON(ConsultaDAO.findByDate(userNick, dateCon));
+				System.out.println("Query: " + lista_consultas);
+				// Tratamos la lista de consultas como un objeto de tipo JSON
+				JsonParser parser = new JsonParser(); 
+				JsonArray gsonArr = parser.parse(lista_consultas).getAsJsonArray();
+		%>
+				//dentro del if, se crea la cabecera de la tabla con javascript
+				//Tomamos referencia de donde poner la tabla
+				var tableReference = document.getElementById("resultados1");
+ 				var tbl  = document.createElement("table");
+   				tbl.style.width  = '600px';
+    			tbl.style.border = '1px solid black';
+   				//Creamos cabecera
+    			var tr = tbl.insertRow();
+				var td1 = tr.insertCell();
+				td1.style.border = '1px solid black';
+   	            td1.appendChild(document.createTextNode('Origen'));
+   	         	var td2 = tr.insertCell();
+	            td2.appendChild(document.createTextNode('Destino'));
+	            td2.style.border = '1px solid black';
+		//El bucle, recorre los elementos de la consulta realizada
+		<%
+				for (JsonElement obj : gsonArr) { 
+	    %>
+	    			// Consulta es un elemento JSON que contiene el origen y destino 
+	    			var consulta = JSON.parse(<%="'" +  obj.toString() + "'" %>);
+	    			// Creamos nueva fila con origen y destino
+	    			var tr = tbl.insertRow();
+					var td1 = tr.insertCell();
+					td1.style.border = '1px solid black';
+	   	            td1.appendChild(document.createTextNode(consulta.origen));
+	   	         	var td2 = tr.insertCell();
+	   	         	td2.style.border = '1px solid black';
+		            td2.appendChild(document.createTextNode(consulta.destino));
+	    <%
+				}
+		%>
+				tableReference.appendChild(tbl);
+		<%
+			}
+		%>			
+		return false;
+	}
+	</script>
 
 	<!--================ start footer Area  =================-->
+	
 	<footer class="footer-area section_gap">
 		<div class="container">
 			<div class="row">
