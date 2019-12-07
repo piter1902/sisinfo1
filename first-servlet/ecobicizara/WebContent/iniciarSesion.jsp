@@ -73,7 +73,7 @@
 					</tr>
 					<tr>
 						<td class="tablaC"><label for="password"><b
-								class="inicio1">ContraseÃ±a:</b></label></td>
+								class="inicio1">Contraseña:</b></label></td>
 					</tr>
 					<tr>
 						<td class="tablaC"><input class="campo" type="password"
@@ -81,7 +81,7 @@
 					</tr>
 					<tr>
 						<td class="tablaC"><input class="campo" type="submit"
-							value="Iniciar SesiÃ³n" /></td>
+							value="Iniciar Sesión" /></td>
 					</tr>
 				</table>
 			</form>
