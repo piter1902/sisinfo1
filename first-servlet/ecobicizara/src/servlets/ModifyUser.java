@@ -19,6 +19,7 @@ import javax.websocket.Session;
 //import org.apache.catalina.startup.PasswdUserDatabase;
 
 import baseDatos.*;
+import email.UsuarioEmail;
 
 /**
  * Servlet implementation class ModifyUser
@@ -48,6 +49,7 @@ public class ModifyUser extends HttpServlet {
 		HttpSession session = request.getSession(true);
 		String userNick = (String)session.getAttribute("nickname");
 		Usuario currentUser = UsuarioDAO.findUserByLogin(userNick);
+		Usuario oldUser = new Usuario(currentUser);
 		Map<String, String> error = new HashMap<String, String>();
 		String nickName = request.getParameter("newnickname");
 		String nombre = request.getParameter("newnombre");
@@ -99,6 +101,7 @@ public class ModifyUser extends HttpServlet {
 				session.setAttribute("nickname", nickName);				
 			}
 			UsuarioDAO.updateUsuario(currentUser, userNick);
+			UsuarioEmail.sendChangesEmail(oldUser, UsuarioDAO.findUserByLogin(nickName));
 			response.sendRedirect("datosPersonales.jsp");
 		} else {
 			

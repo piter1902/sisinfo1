@@ -5,8 +5,8 @@ import baseDatos.*;
 import java.sql.*;
 
 /**
- * Clase para el envío de emails para las operaciones de un Usuario (cambios de
- * información), registros, eliminaciones...
+ * Clase para el envï¿½o de emails para las operaciones de un Usuario (cambios de
+ * informaciï¿½n), registros, eliminaciones...
  * 
  * @author Pedro Tamargo Allue
  *
@@ -33,7 +33,7 @@ public class UsuarioEmail {
 
 	/**
 	 * Metodo que envia un email al usuario, si email de <old> == <nuevo>, solo lo
-	 * enviará una vez, en caso contrario, lo enviará a ambos para confirmar los
+	 * enviarï¿½ una vez, en caso contrario, lo enviarï¿½ a ambos para confirmar los
 	 * cambios.
 	 * 
 	 * @param old   parametros del Usuario antes del cambio. Tiene que ser completo.
@@ -68,23 +68,36 @@ public class UsuarioEmail {
 	 * @return cuerpo del correo electronico.
 	 */
 	private static String generateUserChangesMail(Usuario old, Usuario nuevo) {
-		String cuerpo = "";
-		return cuerpo;
+		String cuerpo = "<p> Hola " + nuevo.getLogin() + ", hemos detectado cambios en la configuracion de tu cuenta:</p>";
+		cuerpo += "<table border=1>";
+		cuerpo += "<tr>" + "<th>Atributo</th>" + "<th>Valor Viejo</th>" + "<th>Valor nuevo</th>" + "</tr>";
+		cuerpo += "<tr>" + "<th>Login</th>" + "<td>" + old.getLogin() +"</td>" + "<td>" + nuevo.getLogin() +"</td>" + "</tr>";  
+		cuerpo += "<tr>" + "<th>Nombre</th>" + "<td>" + old.getNombre() +"</td>" + "<td>" + nuevo.getNombre() +"</td>" + "</tr>";
+		cuerpo += "<tr>" + "<th>Apellidos</th>" + "<td>" + old.getApellidos() +"</td>" + "<td>" + nuevo.getApellidos() +"</td>" + "</tr>";
+		cuerpo += "<tr>" + "<th>Email</th>" + "<td>" + old.getEmail() +"</td>" + "<td>" + nuevo.getEmail() +"</td>" + "</tr>";
+		if(!old.getPassword().equals(nuevo.getPassword())) {
+			// Los password no coinciden
+			cuerpo += "<tr>" + "<th>Password</th>" + "<td>Los valores han cambiado</td>" + "<td>Los valores han cambiado</td>" + "</tr>";  
+			
+		}
+		cuerpo +="</table>";
+		cuerpo += "<p> Gracias por confiar en nosotros. <br> El equipo de ecobicizara.</p>";
+		return cuerpo; 
 	}
 
 	/**
 	 * Metodo que genera un mensaje de bienvenida para ser enviado al usuario <user>
 	 * 
-	 * @param user usuario para el cual se personalizará el mensaje
+	 * @param user usuario para el cual se personalizarï¿½ el mensaje
 	 * @return el cuerpo del mensaje de bienvenida.
 	 */
 	private static String generateWelcomeMail(Usuario user) {
-		String cuerpo = "Hola " + user.getNombre() + ",\nBienvenido a Ecobicizara."
-				+ "Te has dado de alta correctamente en nuestro servicio con los siguientes datos:\n";
-		cuerpo += "Nombre completo: " + user.getNombre() + " " + user.getApellidos() + "\n";
-		cuerpo += "Login: " + user.getLogin() + "\n";
-		cuerpo += "Email: " + user.getEmail() + "\n";
-		cuerpo += "Muchas gracias por confiar en nosotros.\nUn saludo.\nEl equipo de Ecobicizara";
+		String cuerpo = "<h5>Hola " + user.getNombre() + ",\nBienvenido a Ecobicizara.</h5>"
+				+ "<br><p>Te has dado de alta correctamente en nuestro servicio con los siguientes datos:</p><br>";
+		cuerpo += "<p>Nombre completo: " + user.getNombre() + " " + user.getApellidos() + "</p>";
+		cuerpo += "<p>Login: " + user.getLogin() + "</p>";
+		cuerpo += "<p>Email: " + user.getEmail() + "</p>";
+		cuerpo += "<p>Muchas gracias por confiar en nosotros.<br>Un saludo.<br>El equipo de Ecobicizara</p>";
 		return cuerpo;
 	}
 }

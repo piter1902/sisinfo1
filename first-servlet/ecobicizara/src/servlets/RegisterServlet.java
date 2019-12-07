@@ -142,7 +142,7 @@ public class RegisterServlet extends HttpServlet {
 
 			// Insertamos al usuario en la BD
 			UsuarioDAO.insertUser(nickName, pass1, nombre, apellidos, email, id_vehiculo);
-//			 UsuarioEmail.sendSignUpMail(UsuarioDAO.findUserByLogin(nickName));
+			UsuarioEmail.sendSignUpMail(UsuarioDAO.findUserByLogin(nickName));
 			resp.sendRedirect("index.jsp");
 		} else {
 			System.out.println("HOLA - SI errors");
