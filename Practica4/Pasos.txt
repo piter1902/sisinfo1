@@ -1,0 +1,18 @@
+Despliegue
+_____________
+
+-Descomprimir el fichero DespliegueApp
+-Tal vez sea necesario conceder pemisos de ejecucion a los siguientes ficheros :
+	-despliegue.sh
+	-/tomcat/apache-tomcat-8.5.47/bin/catalina.sh
+-Ejecutar el siguiente comando
+	-sudo -./despliegue.sh
+-El servidor y BD deberian haberse deslegado de manera exitosa
+
+IMPORTANTE
+En la BD desplegada no existen mediciones ya que los sensores han sido creados artificialmente y no emiten dichas mediciones a la BD. Por lo tanto se adjunta un pequeño fichero sql para poder probarlas
+
+-ejecutar con contraseña -> sisinf
+
+
+
