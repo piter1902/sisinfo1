@@ -3,7 +3,6 @@ INDEX VERSION 1.4+/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/si
 2284402644.index
 4283985870.index
 1970283767.index
-4283985870.index
 102325802.index
 191908858.index
 1335553607.index
