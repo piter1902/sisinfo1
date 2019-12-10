@@ -312,8 +312,12 @@
 }
 
 .tuerca {
-	height:50%;
-	width:50%;
+	width:40%;
+}
+
+.usuarioActual{
+	margin-top: 10%;
+	margin-right: 5%;
 }
 
 .iconoInicio {  
@@ -327,7 +331,7 @@
 	width:50%;
 	border-style:solid;
 	border-color:red;
-	border-width:0.5px:
+	border-width:0.5px;
 }
 
 .iconoInicio1 {
@@ -336,19 +340,19 @@
 	float:right;
 	border-style:solid;
 	border-color:red;
-	border-width:0.5px:
+	border-width:0.5px;
 }
 /*Sección datos de usuario*/
 #tablaCabecera {
 	float:right;
 	/*margin:auto;*/
 	margin-right:0px;
-	margin-top:0px;
+	margin-top:-20px;
 	/*position:sticky;*/
-	height:35%;
+	height:20%;
 	/*background-color:red;*/
-	width:400px;
-	margin-bottom:20px;
+	width:500px;
+	/* margin-bottom:20px; */
 }
 
 .columna1{
@@ -371,27 +375,26 @@
 	float:left;
 }
 .cerrarSesion {
-	margin-top:0px;
 	float:left;
 }
 
 #resultados1{
-			background-color:#D3D3D3;
-			border: solid 3px yellow;
+			background-color:honeydew;
+			border: solid 3px #00cc66;
 			margin:auto;
 			margin-right:50px;
-			margin-left:200px;
-			margin-top:-400px;
+			margin-left:300px;
+			margin-top:-350px;
 			margin-bottom:50px;
-			font-size:15px;
+			font-size:17px;
 			height:450px;
 }
 
 #consulta1{
 			background-color:#F0FFF0;
-			width:150px;
-			margin-left:50px;
-			margin-top:-50px;
+			width:200px;
+			margin-left:75px;
+			
 }
 
 .container2 {

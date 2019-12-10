@@ -72,7 +72,7 @@
 			</table>
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="container">
+			<div class="container" style="margin-top: -50px">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent"

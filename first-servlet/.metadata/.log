@@ -2446,3 +2446,62 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+!SESSION 2019-12-10 13:17:16.473 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=11.0.4
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-12-10 13:17:40.767
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-12-10 13:18:22.061
+!MESSAGE Verifying CodeMix Engine runtime integrity...
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-12-10 13:18:22.463
+!MESSAGE IntegrityCheck: Artifacts located at: [/home/jtambo99/Descargas/eclipse-jee-2019-09-R-linux-gtk-x86_64/eclipse/artifacts.xml]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-12-10 13:18:22.484
+!MESSAGE Integrity check PASSED
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-12-10 13:18:25.291
+!MESSAGE CodeMix Engine engine has been started
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2019-12-10 13:18:32.728
+!MESSAGE Several ports (8080, 8009) required by Tomcat v9.0 Server at localhost (2) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+!SESSION 2019-12-10 15:13:12.855 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=11.0.4
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-12-10 15:14:14.722
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-12-10 15:15:15.502
+!MESSAGE Verifying CodeMix Engine runtime integrity...
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-12-10 15:15:15.657
+!MESSAGE IntegrityCheck: Artifacts located at: [/home/jtambo99/Descargas/eclipse-jee-2019-09-R-linux-gtk-x86_64/eclipse/artifacts.xml]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-12-10 15:15:15.677
+!MESSAGE Integrity check PASSED
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-12-10 15:15:19.354
+!MESSAGE CodeMix Engine engine has been started
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2019-12-10 16:13:29.603
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v9.0 Server at localhost (2) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2019-12-10 16:13:32.474
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v9.0 Server at localhost (2) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-12-10 16:15:22.873
+!MESSAGE CodeMix blocked calls before Editor was ready [/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/ecobicizara/WebContent/css/style.css]: activateEditor=1 -- this message can normally be ignored but is tracked for support sessions.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2019-12-10 16:42:15.547
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v9.0 Server at localhost (2) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).

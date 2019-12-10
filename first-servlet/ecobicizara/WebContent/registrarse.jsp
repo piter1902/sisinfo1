@@ -82,10 +82,8 @@
 
 	<!--================Header Area =================-->
 	<jsp:include page="cabecera.jsp"></jsp:include>
-	<!--================Header Area =================-->
-	<div></div>
 	<!--================Breadcrumb Area =================-->
-	<section class="breadcrumb_area br_image">
+	<section class="breadcrumb_area br_image" style="margin-top: 150px">
 		<div class="container">
 			<div class="page-cover text-center">
 				<h2 class="page-cover-tittle">Registrase</h2>

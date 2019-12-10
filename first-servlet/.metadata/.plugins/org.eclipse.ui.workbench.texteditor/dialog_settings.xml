@@ -8,21 +8,21 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="session"/>
-			<item value=".add"/>
-			<item value="procesarConsulta"/>
-			<item value="guardar"/>
-			<item value="guardad"/>
-			<item value="obtainEmFactor"/>
-			<item value="mapa"/>
+			<item value="getConsultas"/>
+			<item value="nav"/>
+			<item value="navbar-collapse"/>
+			<item value="result"/>
+			<item value="d-flex"/>
+			<item value="banner"/>
+			<item value="td"/>
+			<item value="tabla"/>
 			<item value="usuarioActual"/>
-			<item value="usuario"/>
-			<item value="usuarioactual"/>
+			<item value="cerrar"/>
+			<item value="preferencias"/>
 			<item value="tuerca"/>
-			<item value="mapac"/>
-			<item value="map"/>
-			<item value="ma"/>
-			<item value="icono"/>
+			<item value="usuario"/>
+			<item value="Guarda"/>
+			<item value="Guaradr"/>
 		</list>
 		<list key="replacehistory">
 			<item value="Cancelar"/>

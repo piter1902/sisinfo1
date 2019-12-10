@@ -101,7 +101,7 @@ public class ModifyUser extends HttpServlet {
 				session.setAttribute("nickname", nickName);				
 			}
 			UsuarioDAO.updateUsuario(currentUser, userNick);
-			UsuarioEmail.sendChangesEmail(oldUser, UsuarioDAO.findUserByLogin(nickName));
+			UsuarioEmail.sendChangesEmail(oldUser, UsuarioDAO.findUserByLogin(currentUser.getLogin()));
 			response.sendRedirect("datosPersonales.jsp");
 		} else {
 			

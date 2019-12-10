@@ -192,10 +192,23 @@ public class VehiculoDAO {
 			mapa.put(4, v.getEngine_type());
 			mapa.put(5, v.getFuel());
 			mapa.put(6, v.getPollutant());
-			//Si la lista devuelta es vacía, se asigna media calculada de la base de datos. 
-			float emission_factor = (float)(lista.size() !=0 ? calcularMedia_emissionFactor(lista) : 313.363);
+			//Si la lista devuelta es vacía, se asigna media calculada de la base de datos segun tipo de vehículo. 
+			double emission_factor = 1.8839;
+			if(lista.size() != 0) {
+				emission_factor = calcularMedia_emissionFactor(lista);
+			}else {
+				switch(v.getTipo()) {
+					case "Coche": emission_factor =  1.3603;
+							break;
+					case "Camion": emission_factor =  3.8746;
+							break;
+					case "Bus": emission_factor = 3.3464;
+							break;
+					case "Moto": emission_factor = 7.5162;
+				}
+			}
 			System.out.println("factor de emision resultante: " + emission_factor);
-			mapa.put(7, Float.toString(emission_factor));
+			mapa.put(7, Double.toString(emission_factor));
 			PreparedStatement ps = c.prepareStatement(insertOnDB);
 			for (int i = 1; i <= 7 && mapa.containsKey(i); i++) {
 				String value = mapa.get(i);

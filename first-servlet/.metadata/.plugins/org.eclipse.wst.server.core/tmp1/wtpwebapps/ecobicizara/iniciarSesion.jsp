@@ -37,10 +37,8 @@
 	%>
 	<!--================Header Area =================-->
 	<jsp:include page="cabecera.jsp"></jsp:include>
-	<!--================Header Area =================-->
-	<div></div>
 	<!--================Breadcrumb Area =================-->
-	<section class="breadcrumb_area br_image">
+	<section class="breadcrumb_area br_image" style="margin-top: 150px">
 		<div class="container">
 			<div class="page-cover text-center">
 				<h2 class="page-cover-tittle">Iniciar Sesión</h2>
@@ -73,7 +71,7 @@
 					</tr>
 					<tr>
 						<td class="tablaC"><label for="password"><b
-								class="inicio1">ContraseÃ±a:</b></label></td>
+								class="inicio1">Contraseña:</b></label></td>
 					</tr>
 					<tr>
 						<td class="tablaC"><input class="campo" type="password"
@@ -81,7 +79,7 @@
 					</tr>
 					<tr>
 						<td class="tablaC"><input class="campo" type="submit"
-							value="Iniciar SesiÃ³n" /></td>
+							value="Iniciar Sesión" /></td>
 					</tr>
 				</table>
 			</form>
