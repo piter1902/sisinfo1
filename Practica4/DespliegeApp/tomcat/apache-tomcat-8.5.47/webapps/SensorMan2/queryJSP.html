@@ -1,0 +1,94 @@
+<%@ page import=“build.MedicionVO”>
+<!DOCTYPE html>
+<html>
+
+//BUSCAR JSTL
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body class="flex-fill">
+	<%
+		//Funcion = request.getParameter(") ->getParameter es el nombre de la función
+		int C6H6;
+		int CO;
+		int NO2;
+		int NO;
+		int O3;
+		int roughness_length;
+		int Convectie_scale_velocity;
+		int Planetary_Boundary;
+		int Surface_friction_vel;
+
+		try { 
+		int tipo = 0; //No tiene tipo
+		C6H6 = response.getC6H6();
+		int roughness_length = response.getroughness_length();
+		if(C6H6 != null){
+			//Tipo = 1 (C6H6,CO,NO,NO2,O3)
+			tipo = 1;
+			CO = response.getCO();
+			NO2 = response.getNO2();
+			NO = response.getNO();
+			O3 = response.getO3();
+		}else if(roughness_length != null){
+			//Tipo = 3 (roughness_length,Convectie_scale_velocity,Planetary_Boundary,Surface_friction_vel)
+			tipo = 3;
+			Convectie_scale_velocity = response.getConvectie_scale_velocity();
+			Planetary_Boundary = response.getPlanetary_Boundary();
+			Surface_friction_vel = response.getSurface_friction_vel();
+		}else{
+			tipo = 2;
+			CO = response.getCO();
+			NO2 = response.getNO2();
+			NO = response.getNO();
+			O3 = response.getO3();
+		}
+		} catch Exception e{ response.sendRedirect(“paginaError.html”)}
+	%>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" style="background-color: rgb(52,4,81);color: rgb(255,255,255);height: 80px;">
+        <div class="container"><a class="navbar-brand logo" href="#" style="color: #ffffff;"><br>Sensor Maintenance<br><br></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="background-color: #624592;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon shadow-lg" style="color: rgb(255,255,255);background-color: #ffffff;"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="background-color: rgb(52,4,81);color: rgb(255,255,255);">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" style="color: #ffffff;">Inicio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="query.html" style="color: #ffffff;">Consulta</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="log_in.html" style="color: #ffffff;">Log in</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="flex-fill" style="background-image: url(&quot;assets/img/smartcity-1565003196783.jpg&quot;);background-position: top;background-size: cover;background-repeat: no-repeat;height: 95%;padding-top: 85px;">
+        <div class="container">
+            <div>
+                <h1 class="display-4 text-monospace text-center" style="padding-top: 10px;height: 10%;color: rgb(255,255,255);">Consulta de mediciones</h1>
+                <p class="lead text-center" style="color: rgb(255,255,255);">Obtenga las mediciones más recientes de un sensor específico introduciendo la id.</p><input type="number" style="width: 100%;" name="ID" value="ID"><button class="btn btn-primary active btn-block btn-lg" type="submit" style="margin-top: 20px;padding-top: 2px;padding-bottom: 2px;">Consultar</button></div>
+
+               <div>
+               	<c:choose>
+				   <c:when test="${tipo == 1}">...</c:when>
+				   <c:when test="${tipo == 2}">...</c:when>
+				   <c:otherwise>...</c:otherwise>
+				</c:choose>
+			</div>
+
+        </div>
+
+    </main>
+    <footer style="background-color: rgb(52,4,81);height: 46px;">
+        <p class="text-center" id="COPY" style="align-self: stretch;color: rgb(255,255,255);padding-top: 9px;margin-bottom: 4px;">© 2019 Copyright&nbsp;<br></p>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
