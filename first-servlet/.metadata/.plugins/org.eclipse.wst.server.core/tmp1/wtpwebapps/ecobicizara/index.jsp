@@ -260,6 +260,15 @@
 				value="Guardar consulta" onClick="procesarConsulta()" />
 	</form>
 	-->
+		<%
+			String userNick = (String) session.getAttribute("nickname");
+			if (userNick == null || userNick.trim().equals("")) {
+				userNick = "";
+			}
+		%>
+		<%
+			if (!userNick.equals("")) {
+		%>
 	<section class="sermons_work_area section_gap"> 
 		<div id="consulta1"> 
 			<form name="getConsultas" action="" method="get"> 
@@ -282,6 +291,9 @@
 			<b>Información obtenida en la consulta</b> 
 		</div> 
 	</section> 
+	<%
+			}
+	%>
 	<script>
 	function listarConsultas(){
 		//Procedemos a obtener todas las consultas efectuadas en la fecha indicada	
@@ -293,7 +305,6 @@
 		<% System.out.println("La fecha es: " + fechaCon); %>
 		<% String origenCon =request.getParameter("origenConsulta");%>
 		<% String destinoCon =request.getParameter("destinoConsulta");%>
-		<% String userNick = (String) session.getAttribute("nickname");%>
 		//Es necesario trasnformarlo a variable tipo sql.date para la consulta
 		<% Date dateCon = null;
 			if(fechaCon != null){
