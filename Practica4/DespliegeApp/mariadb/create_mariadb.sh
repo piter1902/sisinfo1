@@ -16,18 +16,18 @@ if [ ! -d $PORTAL_PATH/mysql ]; then
 fi
  
 sudo rm -R -f $PORTAL_PATH/*
-unzip -X -o -d $PORTAL_PATH sisinf.zip
+#unzip -X -o -d $PORTAL_PATH sisinf.zip
 sudo chown -R 1001:root $PORTAL_PATH
 
 docker stop ecobicizara-mariadb
 docker rm ecobicizara-mariadb
 
-docker run -d --name ecobicizara-mariadb \
+sudo docker run -d --name ecobicizara-mariadb \
     -e MARIADB_ROOT_PASSWORD=sis_info_1920 \
     -e MARIADB_DATABASE=ecobicizara  \
-    -v $PORTAL_PATH/mysql:/bitnami/mariadb \
     -p 3306:3306 \
     bitnami/mariadb:latest
+#    -v $PORTAL_PATH/mysql:/bitnami/mariadb \
 
     
 
