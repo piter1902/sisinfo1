@@ -6,10 +6,10 @@
 		<item value="Apache Tomcat v9.0"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/Practica4/docker/ecobicizara.war"/>
 		<item value="/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/ecobicizara.war"/>
 		<item value="/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/apache-tomcat-9.0.26/webapps/ecobicizara/ecobicizara.war"/>
 		<item value="/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/apache-tomcat-9.0.26/webapps/ecobicizara.war"/>
 		<item value="/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/Practica3/proyecto/fuentes-proyecto/ecobicizara.war"/>
-		<item value="/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/first-servlet/ecobicizara.war"/>
 	</list>
 </section>

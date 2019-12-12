@@ -76,7 +76,7 @@
 	<jsp:include page="cabecera.jsp"></jsp:include>
 	<!--================Header Area =================-->
 	<!--================banner Area =================-->
-	<section class="banner_area d-flex text-center" style="">
+	<section class="banner_area d-flex text-center" style="margin-top: 150px">
 		<div class="container align-self-center">
 			<div class="row">
 				<div class="col-md-12">

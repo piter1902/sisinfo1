@@ -124,7 +124,7 @@ public class RegisterServlet extends HttpServlet {
 			if (!match.find()) {
 				error.put("email", "email - Email incorrecto.");
 			} else if (UsuarioDAO.findIfEmailExists(email)) {
-				error.put("email_in_use", "El email " + email + " ya esta en uso"); // TODO: sacar este error
+				error.put("email", "El email " + email + " ya esta en uso"); // TODO: sacar este error
 			}
 		}
 		if (passNN && !pass1.trim().equals(pass2.trim())) { // Para añadir el error, ninguna contraseña debe ser nula.

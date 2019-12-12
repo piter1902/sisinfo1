@@ -11,6 +11,7 @@ public class ConnectionManager {
 	// JDBC nombre del driver y URL de BD
 	private static final String JDBC_DRIVER = "org.mariadb.jdbc.Driver";
 	private static final String DB_URL = "jdbc:mysql://pidrive.ddns.net:3306/ecobicizara";
+	// private static final String DB_URL = "jdbc:mysql://sisinf-mariadb:3306/ecobicizara";
 	// Credenciales de la Base de Datos
 	private static final String USER = "jtambo";
 	private static final String PASS = "sis_info_1920";

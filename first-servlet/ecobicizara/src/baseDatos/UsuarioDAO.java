@@ -82,7 +82,7 @@ public class UsuarioDAO {
 			ps.setString(1, email); 
 			ResultSet rs = ps.executeQuery(); 
 			while (rs.next()) { 
-				exist = rs.getInt("veces") > 1;
+				exist = rs.getInt("veces") >= 1;
 			} 
 		} catch (SQLException e) { 
 			e.printStackTrace(); 

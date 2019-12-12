@@ -11,3 +11,5 @@ INDEX VERSION 1.131
 /ecobicizaraRaul/src
 /home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4283985870.index
 /ecobicizara/src
+/home/jtambo99/Documentos/Universidad/3o/Sis_Info/Practicas/sistemas_info_1920/first-servlet/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2479015922.index
+/prueba_raul/src

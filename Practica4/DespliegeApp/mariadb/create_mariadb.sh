@@ -11,8 +11,8 @@ if [ ! -d $PORTAL_PATH ]; then
 fi
 
 if [ ! -d $PORTAL_PATH/mysql ]; then
-    mkdir $PORTAL_PATH/mysql
-    chmod 777 $PORTAL_PATH/mysql
+    sudo mkdir $PORTAL_PATH/mysql
+    sudo chmod 777 $PORTAL_PATH/mysql
 fi
  
 sudo rm -R -f $PORTAL_PATH/*

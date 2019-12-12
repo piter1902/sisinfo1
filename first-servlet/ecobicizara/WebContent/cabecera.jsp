@@ -32,44 +32,46 @@
 		<div class="zoneLink">
 			<a class="logo" href="index.jsp"><img class="hoja"
 				src="imagenes/marca.png" alt=""></a>
-			<table id="tablaCabecera">
+			<div id="tablaCabecera">
 				<%
 					String nick = (String) session.getAttribute("nickname");
 					if (nick == null || nick.trim().equals("")) {
 						nick = "";
 					}
 				%>
-				<tr>
-					<%
-						if (nick.equals("")) {
-					%>
-					<a class="inicioSesion" href="iniciarSesion.jsp"
-						style="float: right; margin-right: 55px;"><img
-						class="iconoInicio" src="imagenes/inicioSesion.png" alt=""></a>
-					<%
-						} else if (!nick.equals("")) {
-					%>
-					<td>
-						<form class="usuarioActual" action="" method="get">
-							<p>
-								<label for="nick">Usuario:</label> <input size="8px" readonly
-									type="text" name="nick" value="<%=nick%>" />
-							</p>
-						</form>
-					</td>
-					<td><a class="preferencias" href="datosPersonales.jsp"><img
-							class="tuerca" src="imagenes/tuerca.png" alt=""></a></td>
-					<td>
-						<form class="cerrarSesion" action="logout" method="post">
-							<input size="2px" class="campo" type="submit"
-								value="Cerrar Sesión" />
-						</form>
-					</td>
-					<%
-						}
-					%>
-				</tr>
-			</table>
+
+				<%
+					if (nick.equals("")) {
+				%>
+				<a class="inicioSesion" href="iniciarSesion.jsp"
+					style="float: right; margin-right: 55px;"><img
+					class="iconoInicio" src="imagenes/inicioSesion.png" alt=""></a>
+				<%
+					} else if (!nick.equals("")) {
+				%>
+				<div style="float: left; width: 50%; height: 100px;">
+					<form class="usuarioActual" action="" method="get">
+						<p>
+							<label for="nick">Usuario:</label> <input size="8px" readonly
+								type="text" name="nick" value="<%=nick%>" />
+						</p>
+					</form>
+				</div>
+				<div style="float: left; width: 10%; height: 100px;">
+					<a class="preferencias" href="datosPersonales.jsp"><img
+						class="tuerca" src="imagenes/tuerca.png" alt=""></a>
+				</div>
+				<div style="float: left; width: 40%; height: 100px;">
+					<form class="cerrarSesion" action="logout" method="post">
+						<input size="2px" class="campo" type="submit"
+							value="Cerrar Sesión" />
+					</form>
+				</div>
+				<%
+					}
+				%>
+
+			</div>
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container" style="margin-top: -50px">

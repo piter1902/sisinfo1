@@ -76,110 +76,95 @@
 		<div class="container">
 			<div id="moverse1">
 				<form id="NuevoNick" action="modificarUser" method="post">
-					<table>
-						<tr>
-							<td>
-								<p>
-									<label for="nick">Nick:</label> <input readonly type="text"
-										name="nick" value="<%=userNick%>" />
-								</p>
-							</td>
-							<td>
-								<p>
-									<label for="name">Cambiar Nick:</label> <input type="text"
-										name="newnickname" value="<%=nickValor%>" id="idNickname" /><%=nickError%><br>
-								</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>
-									<label for="name">Nombre:</label> <input readonly type="text"
-										name="nombre" value="<%=userName%>" />
-								</p>
-							</td>
-							<td>
-								<p>
-									<label for="name">Cambiar Nombre:</label> <input type="text"
-										name="newnombre" value="" />
-								</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>
-									<label for="apellidos">Apellidos:</label> <input readonly
-										type="text" name="apellidos" value="<%=userApell%>" />
-								</p>
-							</td>
-							<td>
-								<p>
-									<label for="appellidos">Cambiar Apellidos:</label> <input
-										type="text" name="newapellidos" value="" />
-								</p>
-							<td>
-						</tr>
-						<tr>
-							<td>
-								<p>
-									<label for="password">Contraseña:</label> <input
-										type="password" readonly name="password" value="" />
-								</p>
-							</td>
-							<td>
-								<p>
-									<label for="password">Contraseña:</label> <input
-										type="password" name="newpassword" value="" />
-								</p>
-								<p>
-									<label for="password1">Repetir Contraseña:</label> <input
-										type="password" name="newpassword1" value="" id="idPassword" /><%=passError%>
-								</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>
-									<label for="email">Dirección de Correo:</label> <input readonly
-										type="text" name="email" value="<%=userEmail%>" />
-								</p>
-							</td>
-							<td>
-								<p>
-									<label for="email">Cambiar Dirección de Correo:</label> <input
-										type="text" name="newemail" value="<%=emailValor%>"
-										id="idEmail" /><%=emailError%><br>
-								</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>
-									<label for="vehiculo">Vehiculo actual:</label> <input readonly
-										type="text" name="vehiculo" value="<%=usertipoVehic%>" />
-								</p>
-							</td>
-							<td>
-								<p>
-									<label for="vehiculo">Cambiar Vehículo:</label> <select
-										name="newvehiculo">
-										<option selected value="">Elige un tipo de vehículo</option>
-										<option value="Moto"><label for="moto">Moto</label>
-										</option>
-										<option value="Coche"><label for="coche">Coche</label>
-										</option>
-										<option value="Furgoneta"><label for="furgoneta">Furgoneta</label>
-										</option>
-										<option value="Camión"><label for="camion">Camión</label>
-										</option>
-									</select>
-								</p>
-							</td>
-						</tr>
-					</table>
-					<input type="reset" value="Cancelar" /> <input type="submit"
-						value="Modificar Usuario" /> <br>
+					<div class="antesVehic">
+
+						<p>
+							<label for="nick">Nick:</label> <input readonly type="text"
+								name="nick" value="<%=userNick%>" />
+						</p>
+
+						<p>
+							<label for="name">Nombre:</label> <input readonly type="text"
+								name="nombre" value="<%=userName%>" />
+						</p>
+						<p>
+							<label for="apellidos">Apellidos:</label> <input readonly
+								type="text" name="apellidos" value="<%=userApell%>" />
+						</p>
+						<p>
+							<label for="password">Contraseña:</label> <input type="password"
+								readonly name="password" value="" />
+						</p>
+						<p>
+							<label for="email">Dirección de Correo:</label> <input readonly
+								type="text" name="email" value="<%=userEmail%>" />
+						</p>
+						<p>
+							<label for="vehiculo">Vehiculo actual:</label> <input readonly
+								type="text" name="vehiculo" value="<%=usertipoVehic%>" />
+						</p>
+					</div>
+					<div class="despuesVehic">
+						<p>
+							<label for="name">Cambiar Nick:</label> <input type="text"
+								name="newnickname" value="<%=nickValor%>" id="idNickname" /><%=nickError%><br>
+						</p>
+
+
+
+						<p>
+							<label for="name">Cambiar Nombre:</label> <input type="text"
+								name="newnombre" value="" />
+						</p>
+
+
+
+						<p>
+							<label for="appellidos">Cambiar Apellidos:</label> <input
+								type="text" name="newapellidos" value="" />
+						</p>
+
+
+
+						<p>
+							<label for="password">Contraseña:</label> <input type="password"
+								name="newpassword" value="" />
+						</p>
+						<p>
+							<label for="password1">Repetir Contraseña:</label> <input
+								type="password" name="newpassword1" value="" id="idPassword" /><%=passError%>
+						</p>
+
+
+
+						<p>
+							<label for="email">Cambiar Dirección de Correo:</label> <input
+								type="text" name="newemail" value="<%=emailValor%>" id="idEmail" /><%=emailError%><br>
+						</p>
+
+						<p>
+							<label for="vehiculo">Cambiar Vehículo:</label><br><select
+								name="newvehiculo">
+								<option selected value="">Elige un tipo de vehículo</option>
+								<option value="Moto"><label for="moto">Moto</label>
+								</option>
+								<option value="Coche"><label for="coche">Coche</label>
+								</option>
+								<option value="Furgoneta"><label for="furgoneta">Furgoneta</label>
+								</option>
+								<option value="Camión"><label for="camion">Camión</label>
+								</option>
+							</select>
+						</p>
+
+					</div>
+
+					<div style="text-align: center;">
+						<input type="reset" value="Cancelar" /> <input type="submit"
+							value="Modificar Usuario" /> <br>
+					</div>
 				</form>
+				<br> <br>
 				<form id="DarseDeBaja" action="eliminarUser" method="post"
 					style="text-align: center">
 					<center>
@@ -199,8 +184,7 @@
 	<!--================Event Blog Area=================-->
 	<section class="event_blog_area section_gap">
 		<div class="container">
-			<div class="row">
-			</div>
+			<div class="row"></div>
 		</div>
 	</section>
 	<div>

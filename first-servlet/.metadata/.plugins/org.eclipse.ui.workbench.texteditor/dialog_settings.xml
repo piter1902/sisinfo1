@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="antes"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="getConsultas"/>
-			<item value="nav"/>
-			<item value="navbar-collapse"/>
-			<item value="result"/>
-			<item value="d-flex"/>
-			<item value="banner"/>
-			<item value="td"/>
+			<item value="antesº"/>
+			<item value="antes"/>
+			<item value="mover"/>
 			<item value="tabla"/>
-			<item value="usuarioActual"/>
-			<item value="cerrar"/>
-			<item value="preferencias"/>
 			<item value="tuerca"/>
-			<item value="usuario"/>
-			<item value="Guarda"/>
-			<item value="Guaradr"/>
+			<item value="cerrar"/>
+			<item value="cerra"/>
+			<item value="prefere"/>
+			<item value="usu"/>
+			<item value="zone"/>
+			<item value="tablaCa"/>
+			<item value="cerr"/>
+			<item value="usua"/>
+			<item value="colum"/>
+			<item value="getConsultas"/>
 		</list>
 		<list key="replacehistory">
 			<item value="Cancelar"/>
