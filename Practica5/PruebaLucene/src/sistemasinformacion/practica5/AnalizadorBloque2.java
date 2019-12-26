@@ -42,6 +42,7 @@ public class AnalizadorBloque2 {
 			// Comprobamos si realmente existe y no es un directorio
 			if(docu.isFile() && !docu.isDirectory()) {
 				ficheros.add(docu.getName()); // Añadimos el archivo al conjunto de ficheros
+				System.out.println("Fichero indexados correctamente.");
 			}else {
 				System.out.println("ERROR: El archivo indicado no existe o es un directorio.");
 			}

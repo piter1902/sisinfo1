@@ -29,17 +29,17 @@ public class Menu implements Closeable {
 			switch (op) {
 			case 1:
 				// Indexar un directorio
-				String directorio = menu.obtenerString();
+				String directorio = menu.obtenerString("Nombre del directorio: ");
 				menu.getAb2().indexarDirectorio(directorio);
 				break;
 			case 2:
 				// Añadir un documento al índice
-				String documento = menu.obtenerString();
+				String documento = menu.obtenerString("Nombre del fichero: ");
 				menu.getAb2().AgnadirDocumentoIndice(documento);
 				break;
 			case 3:
 				// Buscar termino
-				String termino = menu.obtenerString();
+				String termino = menu.obtenerString("Termino a buscar: ");
 				try {
 					menu.getAb2().buscarTermino(termino);
 				} catch (IOException ioe) {
@@ -67,9 +67,10 @@ public class Menu implements Closeable {
 		}
 	}
 
-	private String obtenerString() {
+	private String obtenerString(String msg) {
 		String res = "";
-		res = S.nextLine();
+		System.out.print(msg + " ");
+		res = S.next();
 		return res;
 	}
 
@@ -92,7 +93,7 @@ public class Menu implements Closeable {
 
 	private void mostrarOptions() {
 		System.out.println("Elige una opcion:");
-		System.out.println(String.format("%3s.-\t%s", "1", "Indexar un documento"));
+		System.out.println(String.format("%3s.-\t%s", "1", "Indexar un directorio"));
 		System.out.println(String.format("%3s.-\t%s", "2", "Añadir un documento al índice"));
 		System.out.println(String.format("%3s.-\t%s", "3", "Buscar un término"));
 		System.out.println(String.format("%3s.-\t%s", "4", "Salir"));
