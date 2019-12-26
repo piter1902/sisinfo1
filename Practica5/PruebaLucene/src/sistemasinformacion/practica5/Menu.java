@@ -5,17 +5,19 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Menu implements Closeable{
-	
+public class Menu implements Closeable {
+
 	private Scanner S;
+	private AnalizadorBloque2 ab2;
 
 	public Menu() {
 		this.S = new Scanner(System.in);
+		this.ab2 = new AnalizadorBloque2();
 	}
-	
+
 	@Override
 	public void close() throws IOException {
-		S.close();		
+		S.close();
 	}
 
 	public static void main(String[] args) {
@@ -26,18 +28,36 @@ public class Menu implements Closeable{
 			op = menu.elegirOption();
 			switch (op) {
 			case 1:
+				// Indexar un directorio
+				String directorio = menu.obtenerString();
+				menu.getAb2().indexarDirectorio(directorio);
 				break;
 			case 2:
+				// Añadir un documento al índice
+				String documento = menu.obtenerString();
+				menu.getAb2().AgnadirDocumentoIndice(documento);
 				break;
 			case 3:
+				// Buscar termino
+				String termino = menu.obtenerString();
+				try {
+					menu.getAb2().buscarTermino(termino);
+				} catch (IOException ioe) {
+					// Excepcion por un fichero no existente
+					System.out.println("Un fichero del indice no existe.");
+					System.out.println("Mostrando traza del error:");
+					ioe.printStackTrace();
+				}
 				break;
 			case 4:
+				// Salir
+				System.out.println("Muchas gracias. Hasta luego");
 				break;
 			default:
 				// No deberias estar aqui nunca
 				System.exit(-1);
 			}
-			System.out.println(String.format("Ha seleccionado usted %d", op));
+//			System.out.println(String.format("Ha seleccionado usted %d", op));
 		} while (op != 4);
 		// Final de la operativa. Cerramos el objeto
 		try {
@@ -45,6 +65,12 @@ public class Menu implements Closeable{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	private String obtenerString() {
+		String res = "";
+		res = S.nextLine();
+		return res;
 	}
 
 	private int elegirOption() {
@@ -71,4 +97,14 @@ public class Menu implements Closeable{
 		System.out.println(String.format("%3s.-\t%s", "3", "Buscar un término"));
 		System.out.println(String.format("%3s.-\t%s", "4", "Salir"));
 	}
+
+	// Getters && Setters
+	public AnalizadorBloque2 getAb2() {
+		return ab2;
+	}
+
+	public void setAb2(AnalizadorBloque2 ab2) {
+		this.ab2 = ab2;
+	}
+
 }

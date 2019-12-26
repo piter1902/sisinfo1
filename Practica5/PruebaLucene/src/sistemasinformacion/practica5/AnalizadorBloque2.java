@@ -8,7 +8,11 @@ import java.util.Collection;
 import org.apache.lucene.store.Directory;
 
 public class AnalizadorBloque2 {
-		private Collection <String> ficheros = new ArrayList <String>();
+		private Collection <String> ficheros;
+		
+		public AnalizadorBloque2() {
+			 ficheros = new ArrayList <String>();
+		}
 		
 		public void indexarDirectorio(String directorio) {
 			File dir = new File(directorio);
