@@ -14,6 +14,10 @@ public class AnalizadorBloque2 {
 			 ficheros = new ArrayList <String>();
 		}
 		
+		/**
+		 * 
+		 * @param directorio 
+		 */
 		public void indexarDirectorio(String directorio) {
 			File dir = new File(directorio);
 			if(dir.isDirectory()) {
@@ -32,7 +36,7 @@ public class AnalizadorBloque2 {
 				if(fich.isDirectory()) {
 					procesarFicheros(fich);
 				}else {
-					ficheros.add(fich.getName());
+					ficheros.add(fich.getPath());
 				}
 			}
 		}
@@ -41,7 +45,7 @@ public class AnalizadorBloque2 {
 			File docu = new File(documento);
 			// Comprobamos si realmente existe y no es un directorio
 			if(docu.isFile() && !docu.isDirectory()) {
-				ficheros.add(docu.getName()); // Añadimos el archivo al conjunto de ficheros
+				ficheros.add(docu.getPath()); // Añadimos el archivo al conjunto de ficheros
 				System.out.println("Fichero indexados correctamente.");
 			}else {
 				System.out.println("ERROR: El archivo indicado no existe o es un directorio.");
@@ -54,7 +58,6 @@ public class AnalizadorBloque2 {
 			queries.add(termino);
 			// Creamos el idexador / buscador
 			IndexadorYBuscador ejemplo = new IndexadorYBuscador(ficheros, queries);
-
 			// Indexamos los ficheros
 			Directory directorioDelIndiceCreado = ejemplo.crearIndiceEnUnDirectorio();
 
