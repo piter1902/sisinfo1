@@ -101,7 +101,7 @@ public class IndexadorYBuscador {
 	 * @return un índice (Directory) en memoria, con los índices de los ficheros
 	 * @throws IOException
 	 */
-	private Directory crearIndiceEnUnDirectorio() throws IOException {
+	public Directory crearIndiceEnUnDirectorio() throws IOException {
 		IndexWriter indice = null;
 		Directory directorioAlmacenarIndice = new MMapDirectory(Paths.get(INDEXDIR));
 
@@ -164,7 +164,7 @@ public class IndexadorYBuscador {
 	 * @param hitsPorPagina
 	 * @throws IOException
 	 */
-	private void buscarQueries(Directory directorioDelIndice, int paginas, int hitsPorPagina) throws IOException {
+	public void buscarQueries(Directory directorioDelIndice, int paginas, int hitsPorPagina) throws IOException {
 		for (String palabra : queries) {
 			buscarQueryEnIndice(directorioDelIndice, paginas, hitsPorPagina, palabra);
 		}
