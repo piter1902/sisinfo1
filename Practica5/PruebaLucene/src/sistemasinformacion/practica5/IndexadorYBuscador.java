@@ -63,17 +63,18 @@ public class IndexadorYBuscador {
 	public IndexadorYBuscador(Collection<String> ficherosAIndexar, Collection<String> queries) {
 		this.ficherosAIndexar = ficherosAIndexar;
 		this.queries = queries;
+		
+		//analizador = new SimpleAnalyzer();
 
-		analizador = new SimpleAnalyzer();
+//		try {
+//			FileReader reader = new FileReader("./ficheros/stopwords.txt");
+//			analizador = new StandardAnalyzer(reader);
+//		} catch (Exception e) {
+//			System.out.println("Error leyendo fichero de Stop Words. Usando valor por defecto");
+//			analizador = new StandardAnalyzer();
+//		} 
 
-		/*
-		 * try { FileReader reader = new FileReader("./ficheros/stopwords.txt");
-		 * analizador = new StandardAnalyzer(reader); } catch (Exception e) {
-		 * System.out.
-		 * println("Error leyendo fichero de Stop Words. Usando valor por defecto");
-		 * analizador = new StandardAnalyzer(); }
-		 */
-		// analizador = new SpanishAnalyzer();
+		analizador = new SpanishAnalyzer();
 
 	}
 
